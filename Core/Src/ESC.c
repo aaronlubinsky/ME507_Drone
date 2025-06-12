@@ -102,7 +102,17 @@ int D = 0; ///< Motor D PWM compare value
 /** @} */
 
 int armCompare = 0;     ///< PWM compare value used during ESC arming sequence
-int max_integral = 100000; ///< Maximum integral windup limit
+int max_integral = 400000; ///< Maximum integral windup limit
+
+
+// Add these global variables for rolling average derivative calculation
+
+#define DERIVATIVE_SAMPLES 20
+
+// Rolling average arrays for each axis (no index needed)
+int roll_delta_history[DERIVATIVE_SAMPLES] = {0};
+int pitch_delta_history[DERIVATIVE_SAMPLES] = {0};
+int yaw_delta_history[DERIVATIVE_SAMPLES] = {0};
 
 /**
  * @brief Arms all ESC motors by sending initialization sequence
@@ -174,6 +184,7 @@ void armESC()
  *
  * @see armESC()
  */
+
 void update_Motors()
 {
     // PWM Mapping: Compare 960 = 1ms (0%), Compare 2000 = 2ms (100%)
@@ -182,18 +193,32 @@ void update_Motors()
     roll_error = -roll_set + roll_true;
 
     roll_integral += roll_error/1000; //Wind up protection for integral
-        if (roll_integral > max_integral) {
-            roll_integral = max_integral;
-        } else if (roll_integral < -max_integral) {
-            roll_integral = -max_integral;
-        }
-    roll_integral += roll_error;
-    roll_derivative = roll_error - last_roll_error;
+    if (roll_integral > max_integral) {
+        roll_integral = max_integral;
+    } else if (roll_integral < -max_integral) {
+        roll_integral = -max_integral;
+    }
+
+
+    // Shift array left and add new delta at end
+    float roll_delta = roll_error - last_roll_error;
+    for (int i = 0; i < DERIVATIVE_SAMPLES - 1; i++) {
+        roll_delta_history[i] = roll_delta_history[i + 1];
+    }
+    roll_delta_history[DERIVATIVE_SAMPLES - 1] = roll_delta;
+
+    // Calculate rolling average derivative
+    float roll_derivative_sum = 0;
+    for (int i = 0; i < DERIVATIVE_SAMPLES; i++) {
+        roll_derivative_sum += roll_delta_history[i];
+    }
+    roll_derivative = roll_derivative_sum / DERIVATIVE_SAMPLES;
+
     // TESTING ONLY - Roll effort disabled
     roll_effort = -(Kp_roll * roll_error + Ki_roll * roll_integral + Kd_roll * roll_derivative) / PID_SCALE;
     last_roll_error = roll_error;
 
-    /* ===== ROLL PID CALCULATION ===== */
+    /* ===== PITCH PID CALCULATION ===== */
     pitch_error = -pitch_set + pitch_true;
     pitch_integral += pitch_error/1000; //Wind up protection for integral
     if (pitch_integral > max_integral) {
@@ -201,17 +226,44 @@ void update_Motors()
     } else if (pitch_integral < -max_integral) {
         pitch_integral = -max_integral;
     }
-    pitch_derivative = pitch_error - last_pitch_error;
+
+    // Shift array left and add new delta at end
+    float pitch_delta = pitch_error - last_pitch_error;
+    for (int i = 0; i < DERIVATIVE_SAMPLES - 1; i++) {
+        pitch_delta_history[i] = pitch_delta_history[i + 1];
+    }
+    pitch_delta_history[DERIVATIVE_SAMPLES - 1] = pitch_delta;
+
+    // Calculate rolling average derivative
+    float pitch_derivative_sum = 0;
+    for (int i = 0; i < DERIVATIVE_SAMPLES; i++) {
+        pitch_derivative_sum += pitch_delta_history[i];
+    }
+    pitch_derivative = pitch_derivative_sum / DERIVATIVE_SAMPLES;
+
     pitch_effort = -(Kp_pitch * pitch_error + Ki_pitch * pitch_integral + Kd_pitch * pitch_derivative) / PID_SCALE;
     last_pitch_error = pitch_error;
 
     /* ===== YAW PID CALCULATION ===== */
     yaw_error = -yaw_set + yaw_true;
     yaw_integral += yaw_error;
-    yaw_derivative = yaw_error - last_yaw_error;
+
+    // Shift array left and add new delta at end
+    float yaw_delta = yaw_error - last_yaw_error;
+    for (int i = 0; i < DERIVATIVE_SAMPLES - 1; i++) {
+        yaw_delta_history[i] = yaw_delta_history[i + 1];
+    }
+    yaw_delta_history[DERIVATIVE_SAMPLES - 1] = yaw_delta;
+
+    // Calculate rolling average derivative
+    float yaw_derivative_sum = 0;
+    for (int i = 0; i < DERIVATIVE_SAMPLES; i++) {
+        yaw_derivative_sum += yaw_delta_history[i];
+    }
+    yaw_derivative = yaw_derivative_sum / DERIVATIVE_SAMPLES;
+
     yaw_effort = -(Kp_yaw * yaw_error + Ki_yaw * yaw_integral + Kd_yaw * yaw_derivative) / PID_SCALE;
     last_yaw_error = yaw_error;
-
 
     /* ===== BASE THROTTLE CALCULATION ===== */
     // Start with base throttle plus individual motor offsets
@@ -250,6 +302,7 @@ void update_Motors()
         A -= yaw_effort; // CCW motors get more power
         C -= yaw_effort;
     }
+
 
     /* ===== SAFETY LIMITS ===== */
     // Clamp all motors between 960 (0%) and 1500 (≈50% for safety)

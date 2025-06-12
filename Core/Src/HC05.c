@@ -153,7 +153,7 @@ void processInput(char *charBuf, int32_t *roll, int32_t *pitch, int32_t *yaw, in
 
     // Constrain effort to safe limits
     stopFlag = false;
-    if (*effort < 0) {
+    if (*effort <= 0) {
         *effort = 0;
         stopFlag = true;
     } else if (*effort > 1000) {
@@ -206,7 +206,7 @@ void dumpBlackbox(void)
                 blackbox[i].pitchSet,
                 blackbox[i].roll,
                 blackbox[i].rollSet);
-        HAL_UART_Transmit(&huart2, (uint8_t*)msg, strlen(msg), HAL_MAX_DELAY);
+        HAL_UART_Transmit(&huart2, (uint8_t*)msg, strlen(msg), HAL_MAX_DELAY/200);
     }
 }
 

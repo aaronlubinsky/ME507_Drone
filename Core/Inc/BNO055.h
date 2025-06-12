@@ -33,6 +33,7 @@ void BNO_Read(int32_t *roll, int32_t *pitch, int32_t *yaw);
 #define BNO055_OPR_MODE_ADDR  0x3D        ///< Operation mode register
 #define BNO055_EULER_LSB      0x1A        ///< Start of Euler angle registers
 #define BNO055_CALIB_STAT     0x35        ///< Calibration status register
+#define BNO055_OFFSET_X       0x55        //offset x LSB
 #define MAX_SAMPLES           5000        ///< Maximum samples for blackbox logging
 #define blackboxFreq          2           ///< Logging frequency (Hz)
 #define true 1                           ///< Boolean true

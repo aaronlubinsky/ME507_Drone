@@ -82,13 +82,13 @@ int32_t last_last_roll_error, last_last_pitch_error, last_last_yaw_error; // err
 // Gains
 int32_t K_effort = 50000;
 // Roll Axis
-int32_t Kp_roll = 200;
-int32_t Ki_roll = 15;
-int32_t Kd_roll = 0;
+int32_t Kp_roll = 450;
+int32_t Ki_roll = 30;
+int32_t Kd_roll = 120000;
 // Pitch Axis
-int32_t Kp_pitch = 200;
-int32_t Ki_pitch = 15;
-int32_t Kd_pitch = 0;
+int32_t Kp_pitch = 350;
+int32_t Ki_pitch = 40;
+int32_t Kd_pitch = 60000;
 
 // Yaw Axis
 int32_t Kp_yaw  =0;
@@ -191,6 +191,8 @@ int main(void)
 		  update_Motors();
 		  if (dumpFlag == 1){
 		  			effort_set = 0;
+		  			HAL_Delay(1000);
+		  			update_Motors();
 		  			state = 3;
 		  		 }
 
@@ -201,6 +203,7 @@ int main(void)
 		 	HAL_UART_Receive_DMA(&huart2, BT_RxBuf, BT_MSG_LEN-1);
 		 	state = 2;
 		 	effort_set = 0;
+		 	update_Motors();
 		 	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_1, GPIO_PIN_SET);   // Set PA0 High (go signal)
 
 

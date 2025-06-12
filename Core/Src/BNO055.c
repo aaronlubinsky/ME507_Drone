@@ -45,6 +45,8 @@ extern int32_t pitch_set;        ///< Roll setpoint (desired roll angle)
 IMUSample blackbox[MAX_SAMPLES]; ///< Flight data buffer for post-flight analysis
 uint16_t sample_index = 0;       ///< Current index in blackbox buffer
 int counter = 0;                 ///< Counter for blackbox data sampling
+int pitch_offset = 18000;
+int roll_offset = 0;
 
 /**
  * @brief Initializes the BNO055 IMU sensor
@@ -70,6 +72,7 @@ int counter = 0;                 ///< Counter for blackbox data sampling
 void BNO_Init(){
     uint8_t ndof_mode = 0x0C;      ///< NDOF operation mode value
     uint8_t config_mode = 0x00;    ///< Configuration mode value
+    uint8_t clear_reg = 0x00;
     uint8_t successfulRead = false; ///< Flag for successful I2C communication
     uint8_t sampleData = 0x00;     ///< Data read from chip ID register
     int calibrated = false;        ///< Calibration completion flag
@@ -105,6 +108,18 @@ void BNO_Init(){
     HAL_Delay(25);
 
     /* ===== CALIBRATION MONITORING ===== */
+
+    for (int i = 0; i < 18; i++)
+    {
+        HAL_I2C_Mem_Write(&hi2c1,
+                          BNO055_I2C_ADDR,
+                          BNO055_OFFSET_X + i,
+                          I2C_MEMADD_SIZE_8BIT,
+                          &clear_reg,
+                          1,
+                          100);
+    }
+
     while(calibrated == false){
         // Wait for IMU to calibrate
         HAL_GPIO_WritePin(GPIOA, GPIO_PIN_0, GPIO_PIN_SET);   // Red LED on during calibration
@@ -165,8 +180,8 @@ void BNO_Read(int32_t *roll, int32_t *pitch, int32_t *yaw){
 
     // Convert from 1/16 degree resolution to millidegrees
     *yaw   = ((int32_t)rawYaw16 * 1000) / 16;
-    *roll  = ((int32_t)rawRoll16 * 1000) / 16;
-    *pitch = ((int32_t)rawPitch16 * 1000) / 16;
+    *roll  = (((int32_t)rawRoll16 * 1000) / 16) - roll_offset;
+    *pitch = (((int32_t)rawPitch16 * 1000) / 16) - pitch_offset;
 
     /* ===== FLIGHT DATA LOGGING ===== */
     // Log data to blackbox at specified frequency
