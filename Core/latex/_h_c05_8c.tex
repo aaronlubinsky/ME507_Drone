@@ -18,7 +18,13 @@ HC-\/05 Bluetooth module driver for wireless communication and control.
 void \mbox{\hyperlink{_h_c05_8c_a83f5acf008b13325bde24f48268f13b9}{process\+Input}} (char \texorpdfstring{$\ast$}{*}char\+Buf, int32\+\_\+t \texorpdfstring{$\ast$}{*}roll, int32\+\_\+t \texorpdfstring{$\ast$}{*}pitch, int32\+\_\+t \texorpdfstring{$\ast$}{*}yaw, int32\+\_\+t \texorpdfstring{$\ast$}{*}effort, int \texorpdfstring{$\ast$}{*}dump\+Flag)
 \begin{DoxyCompactList}\small\item\em Processes incoming control input from Bluetooth connection. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{_h_c05_8c_a649f4d21cf63078c636631ef6269a882}{dump\+Blackbox}} (void)
-\begin{DoxyCompactList}\small\item\em Transmits flight data blackbox over Bluetooth connection. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Transmits flight data blackbox over Bluetooth connection. \end{DoxyCompactList}\item 
+\Hypertarget{_h_c05_8c_aeda0d62d97cb0991d7f226c525bcd16d}\label{_h_c05_8c_aeda0d62d97cb0991d7f226c525bcd16d} 
+void {\bfseries send\+ATCommand} (const char \texorpdfstring{$\ast$}{*}cmd)
+\item 
+\Hypertarget{_h_c05_8c_abbc568724c9d998398ed07448c7cafab}\label{_h_c05_8c_abbc568724c9d998398ed07448c7cafab} 
+void {\bfseries configure\+\_\+\+HC05} ()
+\end{DoxyCompactItemize}
 \doxysubsubsection*{Variables}
 \begin{DoxyCompactItemize}
 \item 
@@ -127,8 +133,6 @@ void dump\+Blackbox (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCapt
 
 Transmits flight data blackbox over Bluetooth connection. 
 
-Outputs the blackbox flight data via UART.
-
 Sends all recorded flight data from the blackbox buffer via UART to the connected Bluetooth device. Data is transmitted in CSV format with one sample per line containing pitch, pitch setpoint, roll, and roll setpoint values.
 
 Output format per line\+: "{}pitch,pitch\+Set,roll,roll\+Set\textbackslash{}r\textbackslash{}n"{} All values are in millidegrees.
@@ -150,7 +154,7 @@ Ensure receiver can handle the data rate
 Function blocks until all data is transmitted
 \end{DoxyWarning}
 \begin{DoxySeeAlso}{See also}
-\doxylink{_h_c05_8h_a83f5acf008b13325bde24f48268f13b9}{process\+Input()} 
+\doxylink{_h_c05_8c_a83f5acf008b13325bde24f48268f13b9}{process\+Input()} 
 
 Initialize\+BT() 
 \end{DoxySeeAlso}
@@ -163,8 +167,6 @@ void process\+Input (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}
 
 
 Processes incoming control input from Bluetooth connection. 
-
-Parses input from the HC-\/05 Bluetooth module.
 
 
 \begin{DoxyParams}[1]{Parameters}
@@ -210,7 +212,7 @@ Function modifies input buffer (uses strtok)
 \begin{DoxySeeAlso}{See also}
 Initialize\+BT() 
 
-\doxylink{_h_c05_8h_a649f4d21cf63078c636631ef6269a882}{dump\+Blackbox()} 
+\doxylink{_h_c05_8c_a649f4d21cf63078c636631ef6269a882}{dump\+Blackbox()} 
 \end{DoxySeeAlso}
 \texorpdfstring{$<$}{<} Parsed joystick and button values
 

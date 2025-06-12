@@ -1,3 +1,75 @@
+/**
+ * @mainpage Quadcopter Flight Control System
+ *
+ * @section intro_sec Introduction
+ *
+ * This is the documentation for a quadcopter design by Aaron Lubisnky and Dane Carroll. This project was taken on and
+ * guided by Cal Poly's ME507 course (Graduate Mechanical Control Systems) and instructed by lecturer, Charlie Refvem.
+ *
+ * The drone has a custom designed and 3D printed frame.
+ * It has been designed to operate using a custom PCB including an onboard STM2F411CEU6 MCU and BNO055 IMU. Though,
+ * currently uses a Blackpill development board and Bosch BN055 development board due to in house PCB manufacturing failures.
+ * The arming sequence is tailored towards ReadyTosky ESCs and the bluetooth module (HC05) is intended to interact with
+ * a PC running a custom python script for drone control and plotting blackboc data.
+ *
+ * @section features_sec Key Features
+ *
+ * - PID control for roll, pitch, and yaw
+ * - BNO055 IMU integration
+ * - ESC motor control with safety limits
+ * - Flight data logging (blackbox)
+ *
+ * @section hardware_sec Hardware Requirements
+ *
+ * - STM32F4 Development Board
+ * - BNO055 IMU Module
+ * - HC05 Bluetooth Module
+ * - 4x Electronic Speed Controllers (ESCs)
+ * - 4x 3 Phase Brushless Motors
+ * - 4-channel Power Distribution Board
+ * - 3s/4s Battery
+ * - Status LEDs
+ *
+ * @section usage_sec Flight Preparation
+ *
+ * 1. Start program and observe LEDs.
+ * 2. Solid Red LED indicates that the BNO055 is calibrating. Maneuver quadcopter in figure-8 pattern until blinking stops LED is calibrated.
+ * 3. Use controller to begin arming sequence by pulling left joystick fully to the left. The Red LED should blink at 2Hz.
+ * 4. Connect ESCs to battery by switching both mechanical switches. The program will already be applying 100% duty cycle. Wait for audio prompts to cycle.
+ * 5. After 4 rapid ESC beeps followed by a single beep. Hold LT on Xbox controller for 5 seconds. This lowers PWM to to complete arming sequence.
+ * 6. Once LT is released, wait for another audio prompt (3 beeps, pause, beep). Pull LT fully to the right to begin operational mode.
+ * 2. Follow flying instructions until flight concludes. To conclude flight, any of the safety stops will suffice. see section below.
+ * 3. If quadcopter no longer in use, unplug battery from power distribution board.
+ *
+ * @section modules_sec Modules
+ *
+ * - @ref ESC.c "ESC Driver" - Motor control and PID implementation
+ * - @ref BNO055.c "BNO055 Driver" - IMU sensor interface
+ * - @ref HC05.c "Bluetooth Driver" = Bluetooth receive and transmit, data parsing
+ * * @section flight_instr Flight Instructions
+ *  For use only with gaming controller in operational mode
+ * - Left Trigger: decrement thrust
+ * - Right Trigger: increment thrust
+ * - Left Joystick (horizontal): Roll
+ * - Left Joystick (vertical): Pitch
+ * - Right Joystick (horizontal): decrement/increment Yaw
+ *
+ * * @section safety_sec Safety Stops
+ *
+ * - Option 1: Push right joystick fully up on controller
+ * - Option 2: Press ENTER on Python Terminal
+ * - Option 3: Flip mechanical switches on quadcopter
+ *
+ * All options will stop motors from spinning and dump 'Blackbox' data to be analyzed through Python Script communicating with the HC05.
+ *
+ * @author Aaron Lubinsky & Dane Carroll
+ * @version 1.4
+ * @date 2025
+ */
+
+
+
+
 /* USER CODE BEGIN Header */
 /**
   ******************************************************************************
@@ -91,14 +163,14 @@ int32_t Ki_pitch = 40;
 int32_t Kd_pitch = 60000;
 
 // Yaw Axis
-int32_t Kp_yaw  =0;
-int32_t Ki_yaw = 0;
-int32_t Kd_yaw = 0;
+int32_t Kp_yaw  =0; //Yaw is currently disable
+int32_t Ki_yaw = 0; //Yaw is currently disable
+int32_t Kd_yaw = 0; //Yaw is currently disable
 
 
 //BT
-uint8_t BT_RxBuf[BT_MSG_LEN];
-int     dumpFlag = 0;
+uint8_t BT_RxBuf[BT_MSG_LEN]; //This buffer is filled by DMA UART and processed by HC05 driver
+int     dumpFlag = 0;  //This flag is triggered by safety stop and tells program to transmit blackbox data
 
 //IMU
 
@@ -172,40 +244,38 @@ int main(void)
   while (1)
   {
 	 if (state == 0){
-		 //configure_HC05();
-		 BNO_Init();
-		 state = 1;
+		 BNO_Init(); //initialize BNO055
+		 HAL_UART_Receive_DMA(&huart2, BT_RxBuf, BT_MSG_LEN-1); //allow for UART DMA Callback
+		 state = 1; //Move to next state
 
-	 }else if (state == 1){
-		 HAL_UART_Receive_DMA(&huart2, BT_RxBuf, BT_MSG_LEN-1); //allow for DMA Callback
-
-		 		 stopFlag = true;
-		 if (roll_set < -10000){
-			 armESC();
-			 state = 2;
+	 }else if (state == 1){ //Arming
+		 if (roll_set < -10000){ //Wait for user input (done manually after mechanical switches enabled)
+			 armESC(); //begin arming sequence. Leave arming sequence after user input in arming function
+			 state = 2; //move to operational state
 		 }
-		 effort_set = 0;
+		 effort_set = 0; //Safety precaution: eliminates posibility of user mistake: holding accelerate after arming sequence but before start signal
 
 	 }else if(state == 2){ //State 2 is operation (flying) mode where the drone reads the BNO, updates motor PWM to the latest bluetooth DMA
-		  BNO_Read(&roll_true, &pitch_true, &yaw_true);
-		  update_Motors();
-		  if (dumpFlag == 1){
+		  BNO_Read(&roll_true, &pitch_true, &yaw_true); //Read BNO, log blackbox data
+		  update_Motors(); //PID and update signal
+		  if (dumpFlag == 1){ //if user stop detected anywhere
 		  			effort_set = 0;
-		  			HAL_Delay(1000);
-		  			update_Motors();
-		  			state = 3;
+		  			stopFlag = true;
+		  			update_Motors();//stop motors
+		  			state = 3; //move to dump state
 		  		 }
 
 
 	 }else if(state == 3){//This state is triggered by user input. It sends blackBox data then returns to state 2
-		 	dumpBlackbox();
-		 	dumpFlag = 0;
-		 	HAL_UART_Receive_DMA(&huart2, BT_RxBuf, BT_MSG_LEN-1);
-		 	state = 2;
+		 	dumpBlackbox(); //dump data to HC05
+		 	dumpFlag = 0; //reset dumpflag
+		 	HAL_UART_Receive_DMA(&huart2, BT_RxBuf, BT_MSG_LEN-1); //reenable UART DMA
+		 	while (roll_set < 10000){
+		 		//wait for user input
+		 	}
+		 	state = 2; //ESCs are armed, can return back to state 2
 		 	effort_set = 0;
-		 	update_Motors();
 		 	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_1, GPIO_PIN_SET);   // Set PA0 High (go signal)
-
 
  }
 

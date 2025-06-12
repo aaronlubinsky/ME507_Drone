@@ -1,0 +1,26 @@
+# Ignore build output
+/Debug/
+/Release/
+
+# Ignore temporary files
+*.o
+*.d
+*.lst
+*.map
+
+# Ignore system files
+*.swp
+*.tmp
+*.bak
+*.~*
+
+# Ignore Eclipse/CDT/STM32CubeIDE workspace files
+.settings/
+.metadata/
+*.launch
+
+# Ignore CubeMX-generated backup
+*.ioc_backup
+
+# Optional: ignore user-specific settings
+*.user

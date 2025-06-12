@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['this_20driver_0',['this driver',['../_b_n_o055_8c.html#autotoc_md1',1,'##### How to use this driver #####'],['../_e_s_c_8c.html#autotoc_md3',1,'##### How to use this driver #####'],['../_h_c05_8c.html#autotoc_md5',1,'##### How to use this driver #####']]],
-  ['to_20use_20this_20driver_1',['to use this driver',['../_b_n_o055_8c.html#autotoc_md1',1,'##### How to use this driver #####'],['../_e_s_c_8c.html#autotoc_md3',1,'##### How to use this driver #####'],['../_h_c05_8c.html#autotoc_md5',1,'##### How to use this driver #####']]],
-  ['true_2',['true',['../_b_n_o055_8h.html#a41f9c5fb8b08eb5dc3edce4dcb37fee7',1,'true:&#160;BNO055.h'],['../_e_s_c_8h.html#a41f9c5fb8b08eb5dc3edce4dcb37fee7',1,'true:&#160;ESC.h']]]
+  ['update_5fmotors_0',['update_Motors',['../_e_s_c_8c.html#adf18312a6633c434fac75e4bf7f91a15',1,'ESC.c']]],
+  ['usagefault_5fhandler_1',['UsageFault_Handler',['../stm32f4xx__it_8c.html#a1d98923de2ed6b7309b66f9ba2971647',1,'stm32f4xx_it.c']]],
+  ['usart1_5firqhandler_2',['USART1_IRQHandler',['../stm32f4xx__it_8c.html#a7139cd4baabbbcbab0c1fe6d7d4ae1cc',1,'stm32f4xx_it.c']]],
+  ['use_20this_20driver_3',['use this driver',['../_b_n_o055_8c.html#autotoc_md1',1,'##### How to use this driver #####'],['../_e_s_c_8c.html#autotoc_md3',1,'##### How to use this driver #####'],['../_h_c05_8c.html#autotoc_md5',1,'##### How to use this driver #####']]]
 ];

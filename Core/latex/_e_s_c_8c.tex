@@ -13,7 +13,10 @@ ESC (Electronic Speed Controller) driver for quadcopter motor control.
 \begin{DoxyCompactItemize}
 \item 
 \#define \mbox{\hyperlink{_e_s_c_8c_a1622abdaa5cd7ae05e6ae85331831c3f}{PID\+\_\+\+SCALE}}~100000
-\begin{DoxyCompactList}\small\item\em PID scaling factor for fixed-\/point arithmetic. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em PID scaling factor for fixed-\/point arithmetic. \end{DoxyCompactList}\item 
+\Hypertarget{_e_s_c_8c_afa61cde7f32faa25df06bca53aae1aae}\label{_e_s_c_8c_afa61cde7f32faa25df06bca53aae1aae} 
+\#define {\bfseries DERIVATIVE\+\_\+\+SAMPLES}~20
+\end{DoxyCompactItemize}
 \doxysubsubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -131,8 +134,17 @@ int32\+\_\+t {\bfseries yaw\+\_\+effort}
 int {\bfseries arm\+Compare} = 0
 \begin{DoxyCompactList}\small\item\em PWM compare value used during ESC arming sequence. \end{DoxyCompactList}\item 
 \Hypertarget{_e_s_c_8c_ae2bf097689bedf3b08e228b80a430380}\label{_e_s_c_8c_ae2bf097689bedf3b08e228b80a430380} 
-int {\bfseries max\+\_\+integral} = 100000
-\begin{DoxyCompactList}\small\item\em Maximum integral windup limit. \end{DoxyCompactList}\end{DoxyCompactItemize}
+int {\bfseries max\+\_\+integral} = 400000
+\begin{DoxyCompactList}\small\item\em Maximum integral windup limit. \end{DoxyCompactList}\item 
+\Hypertarget{_e_s_c_8c_afcc8285beff89a6f403685c5a7d3f941}\label{_e_s_c_8c_afcc8285beff89a6f403685c5a7d3f941} 
+int {\bfseries roll\+\_\+delta\+\_\+history} \mbox{[}DERIVATIVE\+\_\+\+SAMPLES\mbox{]} = \{0\}
+\item 
+\Hypertarget{_e_s_c_8c_a0f57c92ea4b5cfec6e89500a84ed320b}\label{_e_s_c_8c_a0f57c92ea4b5cfec6e89500a84ed320b} 
+int {\bfseries pitch\+\_\+delta\+\_\+history} \mbox{[}DERIVATIVE\+\_\+\+SAMPLES\mbox{]} = \{0\}
+\item 
+\Hypertarget{_e_s_c_8c_a22d451a8000ee10700c64a4bc1ef3da7}\label{_e_s_c_8c_a22d451a8000ee10700c64a4bc1ef3da7} 
+int {\bfseries yaw\+\_\+delta\+\_\+history} \mbox{[}DERIVATIVE\+\_\+\+SAMPLES\mbox{]} = \{0\}
+\end{DoxyCompactItemize}
 \textbf{ }\par
 \begin{DoxyCompactItemize}
 \item 
@@ -218,13 +230,11 @@ Used to maintain precision in PID calculations while using integer math
 \index{armESC@{armESC}!ESC.c@{ESC.c}}
 \doxysubsubsection{\texorpdfstring{armESC()}{armESC()}}
 {\footnotesize\ttfamily \label{_e_s_c_8c_a54963d29d4caf06cd558dd118520737f} 
-void arm\+ESC (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+void arm\+ESC (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
 
 
 
 Arms all ESC motors by sending initialization sequence. 
-
-Arms the ESCs with a minimum throttle signal.
 
 This function sends the proper PWM signals to arm all four ESC motors. It starts PWM generation on all channels and sends a specific pulse width (approximately 1000μs) to arm the ESCs. The function continues until the roll\+\_\+set value reaches a threshold, indicating the system is ready.
 
@@ -235,19 +245,17 @@ This function blocks execution until arming is complete
 Ensure motors are properly secured before calling this function
 \end{DoxyWarning}
 \begin{DoxySeeAlso}{See also}
-\doxylink{_e_s_c_8h_a37829b14100fdc7ade2b050b5f2e0199}{update\+\_\+\+Motors()} 
+\doxylink{_e_s_c_8c_adf18312a6633c434fac75e4bf7f91a15}{update\+\_\+\+Motors()} 
 \end{DoxySeeAlso}
 \Hypertarget{_e_s_c_8c_adf18312a6633c434fac75e4bf7f91a15}\index{ESC.c@{ESC.c}!update\_Motors@{update\_Motors}}
 \index{update\_Motors@{update\_Motors}!ESC.c@{ESC.c}}
 \doxysubsubsection{\texorpdfstring{update\_Motors()}{update\_Motors()}}
 {\footnotesize\ttfamily \label{_e_s_c_8c_adf18312a6633c434fac75e4bf7f91a15} 
-void update\+\_\+\+Motors (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+void update\+\_\+\+Motors (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
 
 
 
 Updates all motor speeds based on PID control calculations. 
-
-Updates the motor speeds based on control inputs.
 
 This function performs the main control loop operation\+:
 \begin{DoxyEnumerate}
@@ -276,7 +284,7 @@ Function should be called at regular intervals (typically 1k\+Hz)
 
 \end{DoxyWarning}
 \begin{DoxySeeAlso}{See also}
-\doxylink{_e_s_c_8h_a3d61e8556d773eec7ce6d53f546efc45}{arm\+ESC()} 
+\doxylink{_e_s_c_8c_a54963d29d4caf06cd558dd118520737f}{arm\+ESC()} 
 \end{DoxySeeAlso}
 
 

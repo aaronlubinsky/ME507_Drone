@@ -1,8 +1,9 @@
 var searchData=
 [
-  ['update_5fmotors_0',['update_Motors',['../_e_s_c_8h.html#a37829b14100fdc7ade2b050b5f2e0199',1,'update_Motors(void):&#160;ESC.c'],['../_e_s_c_8c.html#adf18312a6633c434fac75e4bf7f91a15',1,'update_Motors():&#160;ESC.c']]],
-  ['usagefault_5fhandler_1',['UsageFault_Handler',['../stm32f4xx__it_8h.html#a1d98923de2ed6b7309b66f9ba2971647',1,'UsageFault_Handler(void):&#160;stm32f4xx_it.c'],['../stm32f4xx__it_8c.html#a1d98923de2ed6b7309b66f9ba2971647',1,'UsageFault_Handler(void):&#160;stm32f4xx_it.c']]],
-  ['usart1_5firqhandler_2',['USART1_IRQHandler',['../stm32f4xx__it_8h.html#a7139cd4baabbbcbab0c1fe6d7d4ae1cc',1,'USART1_IRQHandler(void):&#160;stm32f4xx_it.c'],['../stm32f4xx__it_8c.html#a7139cd4baabbbcbab0c1fe6d7d4ae1cc',1,'USART1_IRQHandler(void):&#160;stm32f4xx_it.c']]],
-  ['usart2_5firqhandler_3',['USART2_IRQHandler',['../stm32f4xx__it_8h.html#a0ca6fd0e6f77921dd1123539857ba0a8',1,'USART2_IRQHandler(void):&#160;stm32f4xx_it.c'],['../stm32f4xx__it_8c.html#a0ca6fd0e6f77921dd1123539857ba0a8',1,'USART2_IRQHandler(void):&#160;stm32f4xx_it.c']]],
-  ['use_20this_20driver_4',['use this driver',['../_b_n_o055_8c.html#autotoc_md1',1,'##### How to use this driver #####'],['../_e_s_c_8c.html#autotoc_md3',1,'##### How to use this driver #####'],['../_h_c05_8c.html#autotoc_md5',1,'##### How to use this driver #####']]]
+  ['yaw_5fderivative_0',['yaw_derivative',['../_e_s_c_8c.html#a1362c89236de51d2c110ff5328269a90',1,'yaw_derivative:&#160;main.c'],['../main_8c.html#a1362c89236de51d2c110ff5328269a90',1,'yaw_derivative:&#160;main.c']]],
+  ['yaw_5feffort_1',['yaw_effort',['../_e_s_c_8c.html#ac4510abc73810610befb687e30df131f',1,'yaw_effort:&#160;main.c'],['../main_8c.html#ac4510abc73810610befb687e30df131f',1,'yaw_effort:&#160;main.c']]],
+  ['yaw_5ferror_2',['yaw_error',['../_e_s_c_8c.html#a768e2150ff38c386bcdf1c1ff19b1979',1,'yaw_error:&#160;main.c'],['../main_8c.html#a768e2150ff38c386bcdf1c1ff19b1979',1,'yaw_error:&#160;main.c']]],
+  ['yaw_5fintegral_3',['yaw_integral',['../_e_s_c_8c.html#aafe74ae7a645e5858f9a121e18b92903',1,'yaw_integral:&#160;main.c'],['../main_8c.html#aafe74ae7a645e5858f9a121e18b92903',1,'yaw_integral:&#160;main.c']]],
+  ['yaw_5fset_4',['yaw_set',['../_e_s_c_8c.html#aa423722cb5919dcaf8b9cac1977e7ed0',1,'yaw_set:&#160;main.c'],['../main_8c.html#aa423722cb5919dcaf8b9cac1977e7ed0',1,'yaw_set:&#160;main.c']]],
+  ['yaw_5ftrue_5',['yaw_true',['../_e_s_c_8c.html#a9c3df83708b032d87ebd4ebcbe19a309',1,'yaw_true:&#160;main.c'],['../_h_c05_8c.html#a9c3df83708b032d87ebd4ebcbe19a309',1,'yaw_true:&#160;main.c'],['../main_8c.html#a9c3df83708b032d87ebd4ebcbe19a309',1,'yaw_true:&#160;main.c']]]
 ];

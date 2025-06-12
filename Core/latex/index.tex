@@ -21,19 +21,19 @@ The drone has a custom designed and 3D printed frame. It has been designed to op
 \item 4-\/channel Power Distribution Board
 \item 3s/4s Battery
 \item Status LEDs
-\end{DoxyItemize}\hypertarget{index_usage_sec}{}\doxysection{\texorpdfstring{Getting Started}{Getting Started}}\label{index_usage_sec}
+\end{DoxyItemize}\hypertarget{index_usage_sec}{}\doxysection{\texorpdfstring{Flight Preparation}{Flight Preparation}}\label{index_usage_sec}
 
 \begin{DoxyEnumerate}
 \item Start program and observe LEDs.
-\item Solid Red LED indicates that the BNO055 is calibrating. Maneuver in figure-\/8 pattern until blinking stops LED is calibrated
+\item Solid Red LED indicates that the BNO055 is calibrating. Maneuver quadcopter in figure-\/8 pattern until blinking stops LED is calibrated.
 \item Use controller to begin arming sequence by pulling left joystick fully to the left. The Red LED should blink at 2Hz.
-\item Connect ESCs to battery. The program will already be applying 100\% duty cycle. Wait for audio prompts.
-\item Listen for a sequence on 4 rapid ESC beeps followed by a single beep. Hold LT on xbox controller for 5 seconds.
-\item Once LT is released, wait for another audio prompt. Pull LT fully to the right to begin ooperational mode.
+\item Connect ESCs to battery by switching both mechanical switches. The program will already be applying 100\% duty cycle. Wait for audio prompts to cycle.
+\item After 4 rapid ESC beeps followed by a single beep. Hold LT on Xbox controller for 5 seconds. This lowers PWM to to complete arming sequence.
+\item Once LT is released, wait for another audio prompt (3 beeps, pause, beep). Pull LT fully to the right to begin operational mode.
 \end{DoxyEnumerate}
 \begin{DoxyEnumerate}
-\item Follow flying instructions until flight concludes. Optionally, press ENTER on python terminal to retrieve blackbox data
-\item Unplug battery from power distribution board
+\item Follow flying instructions until flight concludes. To conclude flight, any of the safety stops will suffice. see section below.
+\item If quadcopter no longer in use, unplug battery from power distribution board.
 \end{DoxyEnumerate}\hypertarget{index_modules_sec}{}\doxysection{\texorpdfstring{Modules}{Modules}}\label{index_modules_sec}
 
 \begin{DoxyItemize}
@@ -49,13 +49,22 @@ For use only with gaming controller in operational mode
 \item Left Joystick (horizontal)\+: Roll
 \item Left Joystick (vertical)\+: Pitch
 \item Right Joystick (horizontal)\+: decrement/increment Yaw
+\item 
+\end{DoxyItemize}\hypertarget{index_safety_sec}{}\doxysection{\texorpdfstring{Safety Stops}{Safety Stops}}\label{index_safety_sec}
+
+\begin{DoxyItemize}
+\item Option 1\+: Push right joystick fully up on controller
+\item Option 2\+: Press ENTER on Python Terminal
+\item Option 3\+: Flip mechanical switches on quadcopter
 \end{DoxyItemize}
+
+All options will stop motors from spinning and dump \textquotesingle{}Blackbox\textquotesingle{} data to be analyzed through Python Script communicating with the HC05.
 
 \begin{DoxyAuthor}{Author}
 Aaron Lubinsky \& Dane Carroll 
 \end{DoxyAuthor}
 \begin{DoxyVersion}{Version}
-1.\+0 
+1.\+4 
 \end{DoxyVersion}
 \begin{DoxyDate}{Date}
 2025 

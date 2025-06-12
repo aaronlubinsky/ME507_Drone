@@ -17,24 +17,25 @@
 \DoxyCodeLine{00033\ \textcolor{preprocessor}{\#define\ BNO055\_OPR\_MODE\_ADDR\ \ 0x3D\ \ \ \ \ \ \ \ }}
 \DoxyCodeLine{00034\ \textcolor{preprocessor}{\#define\ BNO055\_EULER\_LSB\ \ \ \ \ \ 0x1A\ \ \ \ \ \ \ \ }}
 \DoxyCodeLine{00035\ \textcolor{preprocessor}{\#define\ BNO055\_CALIB\_STAT\ \ \ \ \ 0x35\ \ \ \ \ \ \ \ }}
-\DoxyCodeLine{00036\ \textcolor{preprocessor}{\#define\ MAX\_SAMPLES\ \ \ \ \ \ \ \ \ \ \ 5000\ \ \ \ \ \ \ \ }}
-\DoxyCodeLine{00037\ \textcolor{preprocessor}{\#define\ blackboxFreq\ \ \ \ \ \ \ \ \ \ 2\ \ \ \ \ \ \ \ \ \ \ }}
-\DoxyCodeLine{00038\ \textcolor{preprocessor}{\#define\ true\ 1\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }}
-\DoxyCodeLine{00039\ \textcolor{preprocessor}{\#define\ false\ 0\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }}
-\DoxyCodeLine{00040\ }
-\DoxyCodeLine{00044\ \textcolor{keyword}{extern}\ uint8\_t\ \mbox{\hyperlink{_b_n_o055_8h_a24394da6e7fd9425d68e049138dfcdc8}{ndof\_buf}};}
-\DoxyCodeLine{00045\ }
-\DoxyCodeLine{00050\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\{}
-\DoxyCodeLine{00051\ \ \ \ \ int32\_t\ \mbox{\hyperlink{struct_i_m_u_sample_a9c17142135f1d33cae76f52a170d3fbb}{pitch}};\ \ \ \ \ }
-\DoxyCodeLine{00052\ \ \ \ \ int32\_t\ \mbox{\hyperlink{struct_i_m_u_sample_a9f411daf2e58f08d0a4c0e29d5e7e616}{roll}};\ \ \ \ \ \ }
-\DoxyCodeLine{00053\ \ \ \ \ int32\_t\ \mbox{\hyperlink{struct_i_m_u_sample_a8184ee261b1578a83bfa61707dfb93d4}{pitchSet}};\ \ }
-\DoxyCodeLine{00054\ \ \ \ \ int32\_t\ \mbox{\hyperlink{struct_i_m_u_sample_a38256daebcf1f49269f912efebc24a0a}{rollSet}};\ \ \ }
-\DoxyCodeLine{00055\ \}\ \mbox{\hyperlink{struct_i_m_u_sample}{IMUSample}};}
-\DoxyCodeLine{00056\ }
-\DoxyCodeLine{00057\ \textcolor{keyword}{extern}\ \mbox{\hyperlink{struct_i_m_u_sample}{IMUSample}}\ \mbox{\hyperlink{_b_n_o055_8h_a6a8efb4992e24f1a844be2b330aad53b}{blackbox}}[\mbox{\hyperlink{_b_n_o055_8h_a78f316da3a87bf72cb1647786b64bf0e}{MAX\_SAMPLES}}];\ }
-\DoxyCodeLine{00058\ \textcolor{keyword}{extern}\ uint16\_t\ \mbox{\hyperlink{_b_n_o055_8h_ac8e20b2a06607543792ab55e4f74294b}{sample\_index}};\ \ \ \ \ \ \ \ \ \ \ }
-\DoxyCodeLine{00059\ \textcolor{keyword}{extern}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{_b_n_o055_8h_a617a47c70795bcff659815ad0efd2266}{counter}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
-\DoxyCodeLine{00060\ }
-\DoxyCodeLine{00061\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ INC\_BNO055\_H\_\ */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{00036\ \textcolor{preprocessor}{\#define\ BNO055\_OFFSET\_X\ \ \ \ \ \ \ 0x55\ \ \ \ \ \ \ \ }\textcolor{comment}{//offset\ x\ LSB}}
+\DoxyCodeLine{00037\ \textcolor{preprocessor}{\#define\ MAX\_SAMPLES\ \ \ \ \ \ \ \ \ \ \ 5000\ \ \ \ \ \ \ \ }}
+\DoxyCodeLine{00038\ \textcolor{preprocessor}{\#define\ blackboxFreq\ \ \ \ \ \ \ \ \ \ 2\ \ \ \ \ \ \ \ \ \ \ }}
+\DoxyCodeLine{00039\ \textcolor{preprocessor}{\#define\ true\ 1\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }}
+\DoxyCodeLine{00040\ \textcolor{preprocessor}{\#define\ false\ 0\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00045\ \textcolor{keyword}{extern}\ uint8\_t\ \mbox{\hyperlink{_b_n_o055_8h_a24394da6e7fd9425d68e049138dfcdc8}{ndof\_buf}};}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00051\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\{}
+\DoxyCodeLine{00052\ \ \ \ \ int32\_t\ \mbox{\hyperlink{struct_i_m_u_sample_a9c17142135f1d33cae76f52a170d3fbb}{pitch}};\ \ \ \ \ }
+\DoxyCodeLine{00053\ \ \ \ \ int32\_t\ \mbox{\hyperlink{struct_i_m_u_sample_a9f411daf2e58f08d0a4c0e29d5e7e616}{roll}};\ \ \ \ \ \ }
+\DoxyCodeLine{00054\ \ \ \ \ int32\_t\ \mbox{\hyperlink{struct_i_m_u_sample_a8184ee261b1578a83bfa61707dfb93d4}{pitchSet}};\ \ }
+\DoxyCodeLine{00055\ \ \ \ \ int32\_t\ \mbox{\hyperlink{struct_i_m_u_sample_a38256daebcf1f49269f912efebc24a0a}{rollSet}};\ \ \ }
+\DoxyCodeLine{00056\ \}\ \mbox{\hyperlink{struct_i_m_u_sample}{IMUSample}};}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00058\ \textcolor{keyword}{extern}\ \mbox{\hyperlink{struct_i_m_u_sample}{IMUSample}}\ \mbox{\hyperlink{_b_n_o055_8h_a6a8efb4992e24f1a844be2b330aad53b}{blackbox}}[\mbox{\hyperlink{_b_n_o055_8h_a78f316da3a87bf72cb1647786b64bf0e}{MAX\_SAMPLES}}];\ }
+\DoxyCodeLine{00059\ \textcolor{keyword}{extern}\ uint16\_t\ \mbox{\hyperlink{_b_n_o055_8h_ac8e20b2a06607543792ab55e4f74294b}{sample\_index}};\ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00060\ \textcolor{keyword}{extern}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{_b_n_o055_8h_a617a47c70795bcff659815ad0efd2266}{counter}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00062\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ INC\_BNO055\_H\_\ */}\textcolor{preprocessor}{}}
 
 \end{DoxyCode}

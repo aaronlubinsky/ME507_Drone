@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.14.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Mechancial Control Systems: Quadcopter (Spring 2025): Src/stm32f4xx_it.c File Reference</title>
+<title>Quadcopter: Src/stm32f4xx_it.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -27,7 +27,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="Gemini_Generated_Image_bgriexbgriexbgri.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Mechancial Control Systems: Quadcopter (Spring 2025)
+   <div id="projectname">Quadcopter
    </div>
   </td>
  </tr>
@@ -95,8 +95,8 @@ $(function(){initNavTree('stm32f4xx__it_8c.html','',''); });
 
 <p>Interrupt Service Routines.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="main_8h_source.html">main.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="stm32f4xx__it_8h_source.html">stm32f4xx_it.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;main.h&quot;</code><br />
+<code>#include &quot;stm32f4xx_it.h&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -133,9 +133,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>DMA1_Stream5_IRQHandl
 <tr class="memitem:a7139cd4baabbbcbab0c1fe6d7d4ae1cc" id="r_a7139cd4baabbbcbab0c1fe6d7d4ae1cc"><td class="memItemLeft" align="right" valign="top"><a id="a7139cd4baabbbcbab0c1fe6d7d4ae1cc" name="a7139cd4baabbbcbab0c1fe6d7d4ae1cc"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>USART1_IRQHandler</b> (void)</td></tr>
 <tr class="memdesc:a7139cd4baabbbcbab0c1fe6d7d4ae1cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function handles USART1 global interrupt. <br /></td></tr>
-<tr class="memitem:a0ca6fd0e6f77921dd1123539857ba0a8" id="r_a0ca6fd0e6f77921dd1123539857ba0a8"><td class="memItemLeft" align="right" valign="top"><a id="a0ca6fd0e6f77921dd1123539857ba0a8" name="a0ca6fd0e6f77921dd1123539857ba0a8"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>USART2_IRQHandler</b> (void)</td></tr>
-<tr class="memdesc:a0ca6fd0e6f77921dd1123539857ba0a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function handles USART2 global interrupt. <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -143,9 +140,6 @@ Variables</h2></td></tr>
 DMA_HandleTypeDef&#160;</td><td class="memItemRight" valign="bottom"><b>hdma_usart2_rx</b></td></tr>
 <tr class="memitem:a2cf715bef37f7e8ef385a30974a5f0d5" id="r_a2cf715bef37f7e8ef385a30974a5f0d5"><td class="memItemLeft" align="right" valign="top"><a id="a2cf715bef37f7e8ef385a30974a5f0d5" name="a2cf715bef37f7e8ef385a30974a5f0d5"></a>
 UART_HandleTypeDef&#160;</td><td class="memItemRight" valign="bottom"><b>huart1</b></td></tr>
-<tr class="memitem:aa9479c261d65eecedd3d9582f7f0f89c" id="r_aa9479c261d65eecedd3d9582f7f0f89c"><td class="memItemLeft" align="right" valign="top"><a id="aa9479c261d65eecedd3d9582f7f0f89c" name="aa9479c261d65eecedd3d9582f7f0f89c"></a>
-UART_HandleTypeDef&#160;</td><td class="memItemRight" valign="bottom"><b>huart2</b></td></tr>
-<tr class="memdesc:aa9479c261d65eecedd3d9582f7f0f89c"><td class="mdescLeft">&#160;</td><td class="mdescRight">UART2 handle for HC-05 communication. <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Interrupt Service Routines. </p>

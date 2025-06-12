@@ -99,7 +99,7 @@ int32\+\_\+t {\bfseries pitch\+\_\+effort}
 int32\+\_\+t {\bfseries yaw\+\_\+effort}
 \begin{DoxyCompactList}\small\item\em Yaw control output effort. \end{DoxyCompactList}\item 
 \Hypertarget{main_8c_a34dabc2467bce0d04c80b8f680944684}\label{main_8c_a34dabc2467bce0d04c80b8f680944684} 
-int {\bfseries stop\+Flag} = \mbox{\hyperlink{_b_n_o055_8h_a65e9886d74aaee76545e83dd09011727}{false}}
+int {\bfseries stop\+Flag} = false
 \item 
 \Hypertarget{main_8c_a76c604ed6a7014bf38104c8cd30efa69}\label{main_8c_a76c604ed6a7014bf38104c8cd30efa69} 
 int32\+\_\+t {\bfseries roll\+\_\+integral}
@@ -150,22 +150,22 @@ int32\+\_\+t {\bfseries last\+\_\+last\+\_\+yaw\+\_\+error}
 int32\+\_\+t {\bfseries K\+\_\+effort} = 50000
 \begin{DoxyCompactList}\small\item\em Effort scaling constant. \end{DoxyCompactList}\item 
 \Hypertarget{main_8c_aab3794e015ef02b4d40a16566641dc95}\label{main_8c_aab3794e015ef02b4d40a16566641dc95} 
-int32\+\_\+t {\bfseries Kp\+\_\+roll} = 0
+int32\+\_\+t {\bfseries Kp\+\_\+roll} = 450
 \begin{DoxyCompactList}\small\item\em Proportional gain for roll control. \end{DoxyCompactList}\item 
 \Hypertarget{main_8c_a50325de744074c89ef5e15938277467f}\label{main_8c_a50325de744074c89ef5e15938277467f} 
-int32\+\_\+t {\bfseries Ki\+\_\+roll} = 0
+int32\+\_\+t {\bfseries Ki\+\_\+roll} = 30
 \begin{DoxyCompactList}\small\item\em Integral gain for roll control. \end{DoxyCompactList}\item 
 \Hypertarget{main_8c_a22552c9e342616880bfc4c5b0e4ebdd9}\label{main_8c_a22552c9e342616880bfc4c5b0e4ebdd9} 
-int32\+\_\+t {\bfseries Kd\+\_\+roll} = 0
+int32\+\_\+t {\bfseries Kd\+\_\+roll} = 120000
 \begin{DoxyCompactList}\small\item\em Derivative gain for roll control. \end{DoxyCompactList}\item 
 \Hypertarget{main_8c_a2976336761f80f142e8c1a16560375af}\label{main_8c_a2976336761f80f142e8c1a16560375af} 
-int32\+\_\+t {\bfseries Kp\+\_\+pitch} = 200
+int32\+\_\+t {\bfseries Kp\+\_\+pitch} = 350
 \begin{DoxyCompactList}\small\item\em Proportional gain for pitch control. \end{DoxyCompactList}\item 
 \Hypertarget{main_8c_a465ee9ce8c9d02c6f1c349197778df02}\label{main_8c_a465ee9ce8c9d02c6f1c349197778df02} 
-int32\+\_\+t {\bfseries Ki\+\_\+pitch} = 100
+int32\+\_\+t {\bfseries Ki\+\_\+pitch} = 40
 \begin{DoxyCompactList}\small\item\em Integral gain for pitch control. \end{DoxyCompactList}\item 
 \Hypertarget{main_8c_aba2a84abeed08bbeec34a809da7da9f9}\label{main_8c_aba2a84abeed08bbeec34a809da7da9f9} 
-int32\+\_\+t {\bfseries Kd\+\_\+pitch} = 0
+int32\+\_\+t {\bfseries Kd\+\_\+pitch} = 60000
 \begin{DoxyCompactList}\small\item\em Derivative gain for pitch control. \end{DoxyCompactList}\item 
 \Hypertarget{main_8c_a58930b9fe46dee03eeda0aa638f3a3a7}\label{main_8c_a58930b9fe46dee03eeda0aa638f3a3a7} 
 int32\+\_\+t {\bfseries Kp\+\_\+yaw} =0

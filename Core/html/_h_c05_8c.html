@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.14.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Mechancial Control Systems: Quadcopter (Spring 2025): Src/HC05.c File Reference</title>
+<title>Quadcopter: Src/HC05.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -27,7 +27,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="Gemini_Generated_Image_bgriexbgriexbgri.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Mechancial Control Systems: Quadcopter (Spring 2025)
+   <div id="projectname">Quadcopter
    </div>
   </td>
  </tr>
@@ -95,13 +95,13 @@ $(function(){initNavTree('_h_c05_8c.html','',''); });
 
 <p>HC-05 Bluetooth module driver for wireless communication and control.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="_h_c05_8h_source.html">HC05.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;HC05.h&quot;</code><br />
 <code>#include &lt;stdio.h&gt;</code><br />
 <code>#include &lt;string.h&gt;</code><br />
 <code>#include &lt;stdlib.h&gt;</code><br />
 <code>#include &lt;stdint.h&gt;</code><br />
 <code>#include &quot;stm32f4xx_hal.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="_b_n_o055_8h_source.html">BNO055.h</a>&quot;</code><br />
+<code>#include &quot;BNO055.h&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -109,6 +109,10 @@ Functions</h2></td></tr>
 <tr class="memdesc:a83f5acf008b13325bde24f48268f13b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Processes incoming control input from Bluetooth connection.  <br /></td></tr>
 <tr class="memitem:a649f4d21cf63078c636631ef6269a882" id="r_a649f4d21cf63078c636631ef6269a882"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a649f4d21cf63078c636631ef6269a882">dumpBlackbox</a> (void)</td></tr>
 <tr class="memdesc:a649f4d21cf63078c636631ef6269a882"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transmits flight data blackbox over Bluetooth connection.  <br /></td></tr>
+<tr class="memitem:aeda0d62d97cb0991d7f226c525bcd16d" id="r_aeda0d62d97cb0991d7f226c525bcd16d"><td class="memItemLeft" align="right" valign="top"><a id="aeda0d62d97cb0991d7f226c525bcd16d" name="aeda0d62d97cb0991d7f226c525bcd16d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>sendATCommand</b> (const char *cmd)</td></tr>
+<tr class="memitem:abbc568724c9d998398ed07448c7cafab" id="r_abbc568724c9d998398ed07448c7cafab"><td class="memItemLeft" align="right" valign="top"><a id="abbc568724c9d998398ed07448c7cafab" name="abbc568724c9d998398ed07448c7cafab"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>configure_HC05</b> ()</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -201,7 +205,6 @@ Invalid input formats will increment error counter </dd></dl>
 </div><div class="memdoc">
 
 <p>Transmits flight data blackbox over Bluetooth connection. </p>
-<p>Outputs the blackbox flight data via UART.</p>
 <p>Sends all recorded flight data from the blackbox buffer via UART to the connected Bluetooth device. Data is transmitted in CSV format with one sample per line containing pitch, pitch setpoint, roll, and roll setpoint values.</p>
 <p>Output format per line: "pitch,pitchSet,roll,rollSet\r\n" All values are in millidegrees.</p>
 <dl class="section note"><dt>Note</dt><dd>Function transmits all samples up to current sample_index </dd>
@@ -216,7 +219,7 @@ Currently only transmits pitch and roll data (yaw commented out)</dd></dl>
 Ensure receiver can handle the data rate </dd>
 <dd>
 Function blocks until all data is transmitted</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="_h_c05_8h.html#a83f5acf008b13325bde24f48268f13b9" title="Parses input from the HC-05 Bluetooth module.">processInput()</a> </dd>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="#a83f5acf008b13325bde24f48268f13b9" title="Processes incoming control input from Bluetooth connection.">processInput()</a> </dd>
 <dd>
 InitializeBT() </dd></dl>
 <p>&lt; Message buffer for each data line</p>
@@ -263,7 +266,6 @@ InitializeBT() </dd></dl>
 </div><div class="memdoc">
 
 <p>Processes incoming control input from Bluetooth connection. </p>
-<p>Parses input from the HC-05 Bluetooth module.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">charBuf</td><td>Input string buffer containing control data </td></tr>
@@ -296,7 +298,7 @@ Invalid inputs increment badBTcount and are rejected</dd></dl>
 Function modifies input buffer (uses strtok)</dd></dl>
 <dl class="section see"><dt>See also</dt><dd>InitializeBT() </dd>
 <dd>
-<a class="el" href="_h_c05_8h.html#a649f4d21cf63078c636631ef6269a882" title="Outputs the blackbox flight data via UART.">dumpBlackbox()</a> </dd></dl>
+<a class="el" href="#a649f4d21cf63078c636631ef6269a882" title="Transmits flight data blackbox over Bluetooth connection.">dumpBlackbox()</a> </dd></dl>
 <p>&lt; Parsed joystick and button values</p>
 
 </div>

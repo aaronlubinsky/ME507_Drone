@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['started_0',['Getting Started',['../index.html#usage_sec',1,'']]],
-  ['system_1',['Quadcopter Flight Control System',['../index.html',1,'']]]
+  ['safety_20stops_0',['Safety Stops',['../index.html#safety_sec',1,'']]],
+  ['stops_1',['Safety Stops',['../index.html#safety_sec',1,'']]],
+  ['system_2',['Quadcopter Flight Control System',['../index.html',1,'']]]
 ];

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.14.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Mechancial Control Systems: Quadcopter (Spring 2025): Src/main.c File Reference</title>
+<title>Quadcopter: Src/main.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -27,7 +27,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="Gemini_Generated_Image_bgriexbgriexbgri.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Mechancial Control Systems: Quadcopter (Spring 2025)
+   <div id="projectname">Quadcopter
    </div>
   </td>
  </tr>
@@ -95,12 +95,12 @@ $(function(){initNavTree('main_8c.html','',''); });
 
 <p>Main program for quadcopter control. derived as FSM mastermind, implemented in pupre C.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="main_8h_source.html">main.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;main.h&quot;</code><br />
 <code>#include &lt;unistd.h&gt;</code><br />
 <code>#include &lt;string.h&gt;</code><br />
-<code>#include &quot;<a class="el" href="_b_n_o055_8h_source.html">BNO055.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="_h_c05_8h_source.html">HC05.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="_e_s_c_8h_source.html">ESC.h</a>&quot;</code><br />
+<code>#include &quot;BNO055.h&quot;</code><br />
+<code>#include &quot;HC05.h&quot;</code><br />
+<code>#include &quot;ESC.h&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
@@ -178,7 +178,7 @@ int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>pitch_effort</b></
 int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>yaw_effort</b></td></tr>
 <tr class="memdesc:ac4510abc73810610befb687e30df131f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Yaw control output effort. <br /></td></tr>
 <tr class="memitem:a34dabc2467bce0d04c80b8f680944684" id="r_a34dabc2467bce0d04c80b8f680944684"><td class="memItemLeft" align="right" valign="top"><a id="a34dabc2467bce0d04c80b8f680944684" name="a34dabc2467bce0d04c80b8f680944684"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>stopFlag</b> = <a class="el" href="_b_n_o055_8h.html#a65e9886d74aaee76545e83dd09011727">false</a></td></tr>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>stopFlag</b> = false</td></tr>
 <tr class="memitem:a76c604ed6a7014bf38104c8cd30efa69" id="r_a76c604ed6a7014bf38104c8cd30efa69"><td class="memItemLeft" align="right" valign="top"><a id="a76c604ed6a7014bf38104c8cd30efa69" name="a76c604ed6a7014bf38104c8cd30efa69"></a>
 int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>roll_integral</b></td></tr>
 <tr class="memdesc:a76c604ed6a7014bf38104c8cd30efa69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Roll integral term accumulator. <br /></td></tr>
@@ -225,22 +225,22 @@ int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>last_last_yaw_erro
 int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>K_effort</b> = 50000</td></tr>
 <tr class="memdesc:ae998977abd5b47ece5b189c7bfd3c63a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Effort scaling constant. <br /></td></tr>
 <tr class="memitem:aab3794e015ef02b4d40a16566641dc95" id="r_aab3794e015ef02b4d40a16566641dc95"><td class="memItemLeft" align="right" valign="top"><a id="aab3794e015ef02b4d40a16566641dc95" name="aab3794e015ef02b4d40a16566641dc95"></a>
-int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>Kp_roll</b> = 0</td></tr>
+int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>Kp_roll</b> = 450</td></tr>
 <tr class="memdesc:aab3794e015ef02b4d40a16566641dc95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Proportional gain for roll control. <br /></td></tr>
 <tr class="memitem:a50325de744074c89ef5e15938277467f" id="r_a50325de744074c89ef5e15938277467f"><td class="memItemLeft" align="right" valign="top"><a id="a50325de744074c89ef5e15938277467f" name="a50325de744074c89ef5e15938277467f"></a>
-int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>Ki_roll</b> = 0</td></tr>
+int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>Ki_roll</b> = 30</td></tr>
 <tr class="memdesc:a50325de744074c89ef5e15938277467f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Integral gain for roll control. <br /></td></tr>
 <tr class="memitem:a22552c9e342616880bfc4c5b0e4ebdd9" id="r_a22552c9e342616880bfc4c5b0e4ebdd9"><td class="memItemLeft" align="right" valign="top"><a id="a22552c9e342616880bfc4c5b0e4ebdd9" name="a22552c9e342616880bfc4c5b0e4ebdd9"></a>
-int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>Kd_roll</b> = 0</td></tr>
+int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>Kd_roll</b> = 120000</td></tr>
 <tr class="memdesc:a22552c9e342616880bfc4c5b0e4ebdd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Derivative gain for roll control. <br /></td></tr>
 <tr class="memitem:a2976336761f80f142e8c1a16560375af" id="r_a2976336761f80f142e8c1a16560375af"><td class="memItemLeft" align="right" valign="top"><a id="a2976336761f80f142e8c1a16560375af" name="a2976336761f80f142e8c1a16560375af"></a>
-int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>Kp_pitch</b> = 200</td></tr>
+int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>Kp_pitch</b> = 350</td></tr>
 <tr class="memdesc:a2976336761f80f142e8c1a16560375af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Proportional gain for pitch control. <br /></td></tr>
 <tr class="memitem:a465ee9ce8c9d02c6f1c349197778df02" id="r_a465ee9ce8c9d02c6f1c349197778df02"><td class="memItemLeft" align="right" valign="top"><a id="a465ee9ce8c9d02c6f1c349197778df02" name="a465ee9ce8c9d02c6f1c349197778df02"></a>
-int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>Ki_pitch</b> = 100</td></tr>
+int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>Ki_pitch</b> = 40</td></tr>
 <tr class="memdesc:a465ee9ce8c9d02c6f1c349197778df02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Integral gain for pitch control. <br /></td></tr>
 <tr class="memitem:aba2a84abeed08bbeec34a809da7da9f9" id="r_aba2a84abeed08bbeec34a809da7da9f9"><td class="memItemLeft" align="right" valign="top"><a id="aba2a84abeed08bbeec34a809da7da9f9" name="aba2a84abeed08bbeec34a809da7da9f9"></a>
-int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>Kd_pitch</b> = 0</td></tr>
+int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>Kd_pitch</b> = 60000</td></tr>
 <tr class="memdesc:aba2a84abeed08bbeec34a809da7da9f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Derivative gain for pitch control. <br /></td></tr>
 <tr class="memitem:a58930b9fe46dee03eeda0aa638f3a3a7" id="r_a58930b9fe46dee03eeda0aa638f3a3a7"><td class="memItemLeft" align="right" valign="top"><a id="a58930b9fe46dee03eeda0aa638f3a3a7" name="a58930b9fe46dee03eeda0aa638f3a3a7"></a>
 int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>Kp_yaw</b> =0</td></tr>

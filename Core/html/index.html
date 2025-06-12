@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.14.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Mechancial Control Systems: Quadcopter (Spring 2025): Quadcopter Flight Control System</title>
+<title>Quadcopter: Quadcopter Flight Control System</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -27,7 +27,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="Gemini_Generated_Image_bgriexbgriexbgri.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Mechancial Control Systems: Quadcopter (Spring 2025)
+   <div id="projectname">Quadcopter
    </div>
   </td>
  </tr>
@@ -117,18 +117,18 @@ Hardware Requirements</h1>
 <li>Status LEDs</li>
 </ul>
 <h1 class="doxsection"><a class="anchor" id="usage_sec"></a>
-Getting Started</h1>
+Flight Preparation</h1>
 <ol type="1">
 <li>Start program and observe LEDs.</li>
-<li>Solid Red LED indicates that the BNO055 is calibrating. Maneuver in figure-8 pattern until blinking stops LED is calibrated</li>
+<li>Solid Red LED indicates that the BNO055 is calibrating. Maneuver quadcopter in figure-8 pattern until blinking stops LED is calibrated.</li>
 <li>Use controller to begin arming sequence by pulling left joystick fully to the left. The Red LED should blink at 2Hz.</li>
-<li>Connect ESCs to battery. The program will already be applying 100% duty cycle. Wait for audio prompts.</li>
-<li>Listen for a sequence on 4 rapid ESC beeps followed by a single beep. Hold LT on xbox controller for 5 seconds.</li>
-<li>Once LT is released, wait for another audio prompt. Pull LT fully to the right to begin ooperational mode.</li>
+<li>Connect ESCs to battery by switching both mechanical switches. The program will already be applying 100% duty cycle. Wait for audio prompts to cycle.</li>
+<li>After 4 rapid ESC beeps followed by a single beep. Hold LT on Xbox controller for 5 seconds. This lowers PWM to to complete arming sequence.</li>
+<li>Once LT is released, wait for another audio prompt (3 beeps, pause, beep). Pull LT fully to the right to begin operational mode.</li>
 </ol>
 <ol type="1">
-<li>Follow flying instructions until flight concludes. Optionally, press ENTER on python terminal to retrieve blackbox data</li>
-<li>Unplug battery from power distribution board</li>
+<li>Follow flying instructions until flight concludes. To conclude flight, any of the safety stops will suffice. see section below.</li>
+<li>If quadcopter no longer in use, unplug battery from power distribution board.</li>
 </ol>
 <h1 class="doxsection"><a class="anchor" id="modules_sec"></a>
 Modules</h1>
@@ -146,9 +146,18 @@ Flight Instructions</h1>
 <li>Left Joystick (horizontal): Roll</li>
 <li>Left Joystick (vertical): Pitch</li>
 <li>Right Joystick (horizontal): decrement/increment Yaw</li>
+<li></li>
 </ul>
+<h1 class="doxsection"><a class="anchor" id="safety_sec"></a>
+Safety Stops</h1>
+<ul>
+<li>Option 1: Push right joystick fully up on controller</li>
+<li>Option 2: Press ENTER on Python Terminal</li>
+<li>Option 3: Flip mechanical switches on quadcopter</li>
+</ul>
+<p>All options will stop motors from spinning and dump 'Blackbox' data to be analyzed through Python Script communicating with the HC05.</p>
 <dl class="section author"><dt>Author</dt><dd>Aaron Lubinsky &amp; Dane Carroll </dd></dl>
-<dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>1.4 </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>2025 </dd></dl>
 </div></div><!-- PageDoc -->
 <a href="doxygen_crawl.html"></a>
