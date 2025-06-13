@@ -1,0 +1,45 @@
+\doxysubsubsubsubsubsubsubsubsubsubsubsubsubsubsubsubsubsubsubsection{MVE Functions }
+\hypertarget{group___c_m_s_i_s___core___mve_functions}{}\label{group___c_m_s_i_s___core___mve_functions}\index{MVE Functions@{MVE Functions}}
+
+
+Function that provides MVE type.  
+
+
+\doxysubsubsubsubsubsubsubsubsubsubsubsubsubsubsubsubsubsubsubsubsubsection*{Topics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{group___c_m_s_i_s___core___s_a_u_functions}{SAU Functions}}
+\begin{DoxyCompactList}\small\item\em Functions that configure the SAU. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactItemize}
+\item 
+\+\_\+\+\_\+\+STATIC\+\_\+\+INLINE uint32\+\_\+t \mbox{\hyperlink{group___c_m_s_i_s___core___n_v_i_c_functions_ga9de35f6ff713a3cac7674baf49e22b72}{SCB\+\_\+\+Get\+MVEType}} (void)
+\begin{DoxyCompactList}\small\item\em get MVE type \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsubsubsubsubsubsubsubsubsubsubsubsubsubsubsubsubsubsubsubsection{Detailed Description}
+Function that provides MVE type. 
+
+
+
+\label{doc-func-members}
+\Hypertarget{group___c_m_s_i_s___core___mve_functions_doc-func-members}
+\doxysubsubsubsubsubsubsubsubsubsubsubsubsubsubsubsubsubsubsubsubsection{Function Documentation}
+\Hypertarget{group___c_m_s_i_s___core___n_v_i_c_functions_ga9de35f6ff713a3cac7674baf49e22b72}\index{MVE Functions@{MVE Functions}!SCB\_GetMVEType@{SCB\_GetMVEType}}
+\index{SCB\_GetMVEType@{SCB\_GetMVEType}!MVE Functions@{MVE Functions}}
+\doxysubsubsubsubsubsubsubsubsubsubsubsubsubsubsubsubsubsubsubsubsubsection{\texorpdfstring{SCB\_GetMVEType()}{SCB\_GetMVEType()}}
+{\footnotesize\ttfamily \label{group___c_m_s_i_s___core___n_v_i_c_functions_ga9de35f6ff713a3cac7674baf49e22b72} 
+\+\_\+\+\_\+\+STATIC\+\_\+\+INLINE uint32\+\_\+t SCB\+\_\+\+Get\+MVEType (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+get MVE type 
+
+returns the MVE type \begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item {\bfseries{0}}\+: No Vector Extension (MVE)
+\item {\bfseries{1}}\+: Integer Vector Extension (MVE-\/I)
+\item {\bfseries{2}}\+: Floating-\/point Vector Extension (MVE-\/F) 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\input{group___c_m_s_i_s___core___s_a_u_functions}

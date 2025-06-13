@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.14.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Quadcopter: Src/HC05.c File Reference</title>
+<title>ME507_Drone: Src/HC05.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,9 +25,9 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
-  <td id="projectlogo"><img alt="Logo" src="Gemini_Generated_Image_bgriexbgriexbgri.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="Quadcopter Logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Quadcopter
+   <div id="projectname">ME507_Drone
    </div>
   </td>
  </tr>
@@ -95,13 +95,13 @@ $(function(){initNavTree('_h_c05_8c.html','',''); });
 
 <p>HC-05 Bluetooth module driver for wireless communication and control.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;HC05.h&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="_h_c05_8h_source.html">HC05.h</a>&quot;</code><br />
 <code>#include &lt;stdio.h&gt;</code><br />
 <code>#include &lt;string.h&gt;</code><br />
 <code>#include &lt;stdlib.h&gt;</code><br />
 <code>#include &lt;stdint.h&gt;</code><br />
 <code>#include &quot;stm32f4xx_hal.h&quot;</code><br />
-<code>#include &quot;BNO055.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="_b_n_o055_8h_source.html">BNO055.h</a>&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -174,7 +174,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>stopFlag</b></td></tr>
 <li>ENTER: Button for blackbox data dump</li>
 </ul>
 <hr  />
- <h1 class="doxsection"><a class="anchor" id="autotoc_md5"></a>
+ <h1 class="doxsection"><a class="anchor" id="autotoc_md7"></a>
 ##### How to use this driver #####</h1>
 <ol type="1">
 <li>Ensure UART2 is configured for HC-05 communication (typically 9600 baud)</li>
@@ -205,6 +205,7 @@ Invalid input formats will increment error counter </dd></dl>
 </div><div class="memdoc">
 
 <p>Transmits flight data blackbox over Bluetooth connection. </p>
+<p>Outputs the blackbox flight data via UART.</p>
 <p>Sends all recorded flight data from the blackbox buffer via UART to the connected Bluetooth device. Data is transmitted in CSV format with one sample per line containing pitch, pitch setpoint, roll, and roll setpoint values.</p>
 <p>Output format per line: "pitch,pitchSet,roll,rollSet\r\n" All values are in millidegrees.</p>
 <dl class="section note"><dt>Note</dt><dd>Function transmits all samples up to current sample_index </dd>
@@ -219,7 +220,7 @@ Currently only transmits pitch and roll data (yaw commented out)</dd></dl>
 Ensure receiver can handle the data rate </dd>
 <dd>
 Function blocks until all data is transmitted</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="#a83f5acf008b13325bde24f48268f13b9" title="Processes incoming control input from Bluetooth connection.">processInput()</a> </dd>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="_h_c05_8h.html#a83f5acf008b13325bde24f48268f13b9" title="Parses input from the HC-05 Bluetooth module.">processInput()</a> </dd>
 <dd>
 InitializeBT() </dd></dl>
 <p>&lt; Message buffer for each data line</p>
@@ -266,6 +267,7 @@ InitializeBT() </dd></dl>
 </div><div class="memdoc">
 
 <p>Processes incoming control input from Bluetooth connection. </p>
+<p>Parses input from the HC-05 Bluetooth module.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">charBuf</td><td>Input string buffer containing control data </td></tr>
@@ -298,7 +300,7 @@ Invalid inputs increment badBTcount and are rejected</dd></dl>
 Function modifies input buffer (uses strtok)</dd></dl>
 <dl class="section see"><dt>See also</dt><dd>InitializeBT() </dd>
 <dd>
-<a class="el" href="#a649f4d21cf63078c636631ef6269a882" title="Transmits flight data blackbox over Bluetooth connection.">dumpBlackbox()</a> </dd></dl>
+<a class="el" href="_h_c05_8h.html#a649f4d21cf63078c636631ef6269a882" title="Outputs the blackbox flight data via UART.">dumpBlackbox()</a> </dd></dl>
 <p>&lt; Parsed joystick and button values</p>
 
 </div>

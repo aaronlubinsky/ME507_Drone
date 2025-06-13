@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.14.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Quadcopter: Src/ESC.c File Reference</title>
+<title>ME507_Drone: Src/ESC.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,9 +25,9 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
-  <td id="projectlogo"><img alt="Logo" src="Gemini_Generated_Image_bgriexbgriexbgri.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="Quadcopter Logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Quadcopter
+   <div id="projectname">ME507_Drone
    </div>
   </td>
  </tr>
@@ -95,7 +95,7 @@ $(function(){initNavTree('_e_s_c_8c.html','',''); });
 
 <p>ESC (Electronic Speed Controller) driver for quadcopter motor control.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;ESC.h&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="_e_s_c_8h_source.html">ESC.h</a>&quot;</code><br />
 <code>#include &quot;stm32f4xx_hal.h&quot;</code><br />
 <code>#include &lt;stdint.h&gt;</code><br />
 <code>#include &lt;stdio.h&gt;</code><br />
@@ -262,7 +262,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>D</b> = 0</td></tr>
 <dl class="section date"><dt>Date</dt><dd>2025</dd></dl>
 <p>This driver implements PID-based motor control for a quadcopter ESC system. It provides functionality to arm ESCs and update motor speeds based on roll, pitch, and yaw control inputs using PID control algorithms.</p>
 <hr  />
- <h1 class="doxsection"><a class="anchor" id="autotoc_md3"></a>
+ <h1 class="doxsection"><a class="anchor" id="autotoc_md5"></a>
 ##### How to use this driver #####</h1>
 <ol type="1">
 <li>Call <a class="el" href="#a54963d29d4caf06cd558dd118520737f" title="Arms all ESC motors by sending initialization sequence.">armESC()</a> to initialize and arm all ESC motors</li>
@@ -299,17 +299,18 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>D</b> = 0</td></tr>
         <tr>
           <td class="memname">void armESC </td>
           <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Arms all ESC motors by sending initialization sequence. </p>
+<p>Arms the ESCs with a minimum throttle signal.</p>
 <p>This function sends the proper PWM signals to arm all four ESC motors. It starts PWM generation on all channels and sends a specific pulse width (approximately 1000μs) to arm the ESCs. The function continues until the roll_set value reaches a threshold, indicating the system is ready.</p>
 <dl class="section note"><dt>Note</dt><dd>This function blocks execution until arming is complete </dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>Ensure motors are properly secured before calling this function</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="#adf18312a6633c434fac75e4bf7f91a15" title="Updates all motor speeds based on PID control calculations.">update_Motors()</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="_e_s_c_8h.html#a37829b14100fdc7ade2b050b5f2e0199" title="Updates the motor speeds based on control inputs.">update_Motors()</a> </dd></dl>
 
 </div>
 </div>
@@ -322,13 +323,14 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>D</b> = 0</td></tr>
         <tr>
           <td class="memname">void update_Motors </td>
           <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Updates all motor speeds based on PID control calculations. </p>
+<p>Updates the motor speeds based on control inputs.</p>
 <p>This function performs the main control loop operation:</p><ol type="1">
 <li>Calculates PID errors for roll, pitch, and yaw axes</li>
 <li>Computes PID control efforts for each axis</li>
@@ -347,7 +349,7 @@ For safety, maximum throttle is limited to 1500 (≈50%) </dd>
 <dd>
 Function should be called at regular intervals (typically 1kHz)</dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd></dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="#a54963d29d4caf06cd558dd118520737f" title="Arms all ESC motors by sending initialization sequence.">armESC()</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="_e_s_c_8h.html#a3d61e8556d773eec7ce6d53f546efc45" title="Arms the ESCs with a minimum throttle signal.">armESC()</a> </dd></dl>
 
 </div>
 </div>

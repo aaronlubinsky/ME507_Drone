@@ -1,0 +1,99 @@
+\doxysubsubsection{HAL Private Constants }
+\hypertarget{group___h_a_l___private___constants}{}\label{group___h_a_l___private___constants}\index{HAL Private Constants@{HAL Private Constants}}
+\doxysubsubsubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group___h_a_l___private___constants_gadaedd4f6c52f98c7a4ba371ec551b6ce}{\+\_\+\+\_\+\+STM32\+F4xx\+\_\+\+HAL\+\_\+\+VERSION\+\_\+\+MAIN}}~(0x01U)
+\begin{DoxyCompactList}\small\item\em STM32\+F4xx HAL Driver version number V1.\+8.\+3. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___h_a_l___private___constants_ga9d5e3917a3f5a417be6c8423faf78f0e}{\+\_\+\+\_\+\+STM32\+F4xx\+\_\+\+HAL\+\_\+\+VERSION\+\_\+\+SUB1}}~(0x08U)
+\item 
+\#define \mbox{\hyperlink{group___h_a_l___private___constants_ga87b379595edcc7d72d78b2263ae08dee}{\+\_\+\+\_\+\+STM32\+F4xx\+\_\+\+HAL\+\_\+\+VERSION\+\_\+\+SUB2}}~(0x03U)
+\item 
+\#define \mbox{\hyperlink{group___h_a_l___private___constants_ga61fad66d665ed89f1227e459e480e28b}{\+\_\+\+\_\+\+STM32\+F4xx\+\_\+\+HAL\+\_\+\+VERSION\+\_\+\+RC}}~(0x00U)
+\item 
+\#define \mbox{\hyperlink{group___h_a_l___private___constants_ga2e012cfb937fbdfa71a0c0c83f2db5b3}{\+\_\+\+\_\+\+STM32\+F4xx\+\_\+\+HAL\+\_\+\+VERSION}}
+\item 
+\Hypertarget{group___h_a_l___private___constants_gaeeece10cca80f3c632d3d77c3f2917b6}\label{group___h_a_l___private___constants_gaeeece10cca80f3c632d3d77c3f2917b6} 
+\#define {\bfseries IDCODE\+\_\+\+DEVID\+\_\+\+MASK}~0x00000\+FFFU
+\item 
+\Hypertarget{group___h_a_l___private___constants_ga13f7abe3641989d4d063ad21962da8b0}\label{group___h_a_l___private___constants_ga13f7abe3641989d4d063ad21962da8b0} 
+\#define {\bfseries SYSCFG\+\_\+\+OFFSET}~(SYSCFG\+\_\+\+BASE -\/ \mbox{\hyperlink{group___peripheral__memory__map_ga9171f49478fa86d932f89e78e73b88b0}{PERIPH\+\_\+\+BASE}})
+\item 
+\Hypertarget{group___h_a_l___private___constants_ga7f801653c361f31380f21357f92dc9af}\label{group___h_a_l___private___constants_ga7f801653c361f31380f21357f92dc9af} 
+\#define {\bfseries MEMRMP\+\_\+\+OFFSET}~SYSCFG\+\_\+\+OFFSET
+\item 
+\Hypertarget{group___h_a_l___private___constants_gac8a0079a8d30ec8633adaed9e2cfa49d}\label{group___h_a_l___private___constants_gac8a0079a8d30ec8633adaed9e2cfa49d} 
+\#define {\bfseries UFB\+\_\+\+MODE\+\_\+\+BIT\+\_\+\+NUMBER}~SYSCFG\+\_\+\+MEMRMP\+\_\+\+UFB\+\_\+\+MODE\+\_\+\+Pos
+\item 
+\Hypertarget{group___h_a_l___private___constants_ga96bde9109ea6ea0a7887658669ff9221}\label{group___h_a_l___private___constants_ga96bde9109ea6ea0a7887658669ff9221} 
+\#define {\bfseries UFB\+\_\+\+MODE\+\_\+\+BB}~(uint32\+\_\+t)(\mbox{\hyperlink{group___peripheral__memory__map_gaed7efc100877000845c236ccdc9e144a}{PERIPH\+\_\+\+BB\+\_\+\+BASE}} + (MEMRMP\+\_\+\+OFFSET \texorpdfstring{$\ast$}{*} 32U) + (UFB\+\_\+\+MODE\+\_\+\+BIT\+\_\+\+NUMBER \texorpdfstring{$\ast$}{*} 4U))
+\item 
+\Hypertarget{group___h_a_l___private___constants_ga8e5fbe846e7478d522df749672b90084}\label{group___h_a_l___private___constants_ga8e5fbe846e7478d522df749672b90084} 
+\#define {\bfseries CMPCR\+\_\+\+OFFSET}~(SYSCFG\+\_\+\+OFFSET + 0x20U)
+\item 
+\Hypertarget{group___h_a_l___private___constants_ga9e34adb28e3eed088c55766f72d53183}\label{group___h_a_l___private___constants_ga9e34adb28e3eed088c55766f72d53183} 
+\#define {\bfseries CMP\+\_\+\+PD\+\_\+\+BIT\+\_\+\+NUMBER}~SYSCFG\+\_\+\+CMPCR\+\_\+\+CMP\+\_\+\+PD\+\_\+\+Pos
+\item 
+\Hypertarget{group___h_a_l___private___constants_gae4516ed27e02d84d9d20c7d711b87437}\label{group___h_a_l___private___constants_gae4516ed27e02d84d9d20c7d711b87437} 
+\#define {\bfseries CMPCR\+\_\+\+CMP\+\_\+\+PD\+\_\+\+BB}~(uint32\+\_\+t)(\mbox{\hyperlink{group___peripheral__memory__map_gaed7efc100877000845c236ccdc9e144a}{PERIPH\+\_\+\+BB\+\_\+\+BASE}} + (CMPCR\+\_\+\+OFFSET \texorpdfstring{$\ast$}{*} 32U) + (CMP\+\_\+\+PD\+\_\+\+BIT\+\_\+\+NUMBER \texorpdfstring{$\ast$}{*} 4U))
+\item 
+\Hypertarget{group___h_a_l___private___constants_ga41f6d93357082d3177da0e85b872b6cf}\label{group___h_a_l___private___constants_ga41f6d93357082d3177da0e85b872b6cf} 
+\#define {\bfseries MCHDLYCR\+\_\+\+OFFSET}~(SYSCFG\+\_\+\+OFFSET + 0x30U)
+\item 
+\Hypertarget{group___h_a_l___private___constants_gaf2471142b1e018bc470cf8d8c39ade4b}\label{group___h_a_l___private___constants_gaf2471142b1e018bc470cf8d8c39ade4b} 
+\#define {\bfseries BSCKSEL\+\_\+\+BIT\+\_\+\+NUMBER}~SYSCFG\+\_\+\+MCHDLYCR\+\_\+\+BSCKSEL\+\_\+\+Pos
+\item 
+\Hypertarget{group___h_a_l___private___constants_gaf57f0bab14ecc4fa67651617a3bed337}\label{group___h_a_l___private___constants_gaf57f0bab14ecc4fa67651617a3bed337} 
+\#define {\bfseries MCHDLYCR\+\_\+\+BSCKSEL\+\_\+\+BB}~(uint32\+\_\+t)(\mbox{\hyperlink{group___peripheral__memory__map_gaed7efc100877000845c236ccdc9e144a}{PERIPH\+\_\+\+BB\+\_\+\+BASE}} + (MCHDLYCR\+\_\+\+OFFSET \texorpdfstring{$\ast$}{*} 32U) + (BSCKSEL\+\_\+\+BIT\+\_\+\+NUMBER \texorpdfstring{$\ast$}{*} 4U))
+\end{DoxyCompactItemize}
+
+
+\doxysubsubsubsection{Detailed Description}
+
+
+\label{doc-define-members}
+\Hypertarget{group___h_a_l___private___constants_doc-define-members}
+\doxysubsubsubsection{Macro Definition Documentation}
+\Hypertarget{group___h_a_l___private___constants_ga2e012cfb937fbdfa71a0c0c83f2db5b3}\index{HAL Private Constants@{HAL Private Constants}!\_\_STM32F4xx\_HAL\_VERSION@{\_\_STM32F4xx\_HAL\_VERSION}}
+\index{\_\_STM32F4xx\_HAL\_VERSION@{\_\_STM32F4xx\_HAL\_VERSION}!HAL Private Constants@{HAL Private Constants}}
+\doxysubsubsubsubsection{\texorpdfstring{\_\_STM32F4xx\_HAL\_VERSION}{\_\_STM32F4xx\_HAL\_VERSION}}
+{\footnotesize\ttfamily \label{group___h_a_l___private___constants_ga2e012cfb937fbdfa71a0c0c83f2db5b3} 
+\#define \+\_\+\+\_\+\+STM32\+F4xx\+\_\+\+HAL\+\_\+\+VERSION}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ((\mbox{\hyperlink{group___h_a_l___private___constants_gadaedd4f6c52f98c7a4ba371ec551b6ce}{\_\_STM32F4xx\_HAL\_VERSION\_MAIN}}\ <<\ 24U)\(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ |(\mbox{\hyperlink{group___h_a_l___private___constants_ga9d5e3917a3f5a417be6c8423faf78f0e}{\_\_STM32F4xx\_HAL\_VERSION\_SUB1}}\ <<\ 16U)\(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ |(\mbox{\hyperlink{group___h_a_l___private___constants_ga87b379595edcc7d72d78b2263ae08dee}{\_\_STM32F4xx\_HAL\_VERSION\_SUB2}}\ <<\ 8U\ )\(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ |(\mbox{\hyperlink{group___h_a_l___private___constants_ga61fad66d665ed89f1227e459e480e28b}{\_\_STM32F4xx\_HAL\_VERSION\_RC}}))}
+
+\end{DoxyCode}
+\Hypertarget{group___h_a_l___private___constants_gadaedd4f6c52f98c7a4ba371ec551b6ce}\index{HAL Private Constants@{HAL Private Constants}!\_\_STM32F4xx\_HAL\_VERSION\_MAIN@{\_\_STM32F4xx\_HAL\_VERSION\_MAIN}}
+\index{\_\_STM32F4xx\_HAL\_VERSION\_MAIN@{\_\_STM32F4xx\_HAL\_VERSION\_MAIN}!HAL Private Constants@{HAL Private Constants}}
+\doxysubsubsubsubsection{\texorpdfstring{\_\_STM32F4xx\_HAL\_VERSION\_MAIN}{\_\_STM32F4xx\_HAL\_VERSION\_MAIN}}
+{\footnotesize\ttfamily \label{group___h_a_l___private___constants_gadaedd4f6c52f98c7a4ba371ec551b6ce} 
+\#define \+\_\+\+\_\+\+STM32\+F4xx\+\_\+\+HAL\+\_\+\+VERSION\+\_\+\+MAIN~(0x01U)}
+
+
+
+STM32\+F4xx HAL Driver version number V1.\+8.\+3. 
+
+\mbox{[}31\+:24\mbox{]} main version \Hypertarget{group___h_a_l___private___constants_ga61fad66d665ed89f1227e459e480e28b}\index{HAL Private Constants@{HAL Private Constants}!\_\_STM32F4xx\_HAL\_VERSION\_RC@{\_\_STM32F4xx\_HAL\_VERSION\_RC}}
+\index{\_\_STM32F4xx\_HAL\_VERSION\_RC@{\_\_STM32F4xx\_HAL\_VERSION\_RC}!HAL Private Constants@{HAL Private Constants}}
+\doxysubsubsubsubsection{\texorpdfstring{\_\_STM32F4xx\_HAL\_VERSION\_RC}{\_\_STM32F4xx\_HAL\_VERSION\_RC}}
+{\footnotesize\ttfamily \label{group___h_a_l___private___constants_ga61fad66d665ed89f1227e459e480e28b} 
+\#define \+\_\+\+\_\+\+STM32\+F4xx\+\_\+\+HAL\+\_\+\+VERSION\+\_\+\+RC~(0x00U)}
+
+\mbox{[}7\+:0\mbox{]} release candidate \Hypertarget{group___h_a_l___private___constants_ga9d5e3917a3f5a417be6c8423faf78f0e}\index{HAL Private Constants@{HAL Private Constants}!\_\_STM32F4xx\_HAL\_VERSION\_SUB1@{\_\_STM32F4xx\_HAL\_VERSION\_SUB1}}
+\index{\_\_STM32F4xx\_HAL\_VERSION\_SUB1@{\_\_STM32F4xx\_HAL\_VERSION\_SUB1}!HAL Private Constants@{HAL Private Constants}}
+\doxysubsubsubsubsection{\texorpdfstring{\_\_STM32F4xx\_HAL\_VERSION\_SUB1}{\_\_STM32F4xx\_HAL\_VERSION\_SUB1}}
+{\footnotesize\ttfamily \label{group___h_a_l___private___constants_ga9d5e3917a3f5a417be6c8423faf78f0e} 
+\#define \+\_\+\+\_\+\+STM32\+F4xx\+\_\+\+HAL\+\_\+\+VERSION\+\_\+\+SUB1~(0x08U)}
+
+\mbox{[}23\+:16\mbox{]} sub1 version \Hypertarget{group___h_a_l___private___constants_ga87b379595edcc7d72d78b2263ae08dee}\index{HAL Private Constants@{HAL Private Constants}!\_\_STM32F4xx\_HAL\_VERSION\_SUB2@{\_\_STM32F4xx\_HAL\_VERSION\_SUB2}}
+\index{\_\_STM32F4xx\_HAL\_VERSION\_SUB2@{\_\_STM32F4xx\_HAL\_VERSION\_SUB2}!HAL Private Constants@{HAL Private Constants}}
+\doxysubsubsubsubsection{\texorpdfstring{\_\_STM32F4xx\_HAL\_VERSION\_SUB2}{\_\_STM32F4xx\_HAL\_VERSION\_SUB2}}
+{\footnotesize\ttfamily \label{group___h_a_l___private___constants_ga87b379595edcc7d72d78b2263ae08dee} 
+\#define \+\_\+\+\_\+\+STM32\+F4xx\+\_\+\+HAL\+\_\+\+VERSION\+\_\+\+SUB2~(0x03U)}
+
+\mbox{[}15\+:8\mbox{]} sub2 version 

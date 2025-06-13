@@ -1,0 +1,63 @@
+\doxysubsubsubsection{HSE Configuration }
+\hypertarget{group___r_c_c___h_s_e___configuration}{}\label{group___r_c_c___h_s_e___configuration}\index{HSE Configuration@{HSE Configuration}}
+\doxysubsubsubsubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group___r_c_c___h_s_e___configuration_gaa3d98648399f15d02645ef84f6ca8e4b}{\+\_\+\+\_\+\+HAL\+\_\+\+RCC\+\_\+\+HSE\+\_\+\+CONFIG}}(\+\_\+\+\_\+\+STATE\+\_\+\+\_\+)
+\begin{DoxyCompactList}\small\item\em Macro to configure the External High Speed oscillator (HSE). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsubsubsubsection{Detailed Description}
+
+
+\label{doc-define-members}
+\Hypertarget{group___r_c_c___h_s_e___configuration_doc-define-members}
+\doxysubsubsubsubsection{Macro Definition Documentation}
+\Hypertarget{group___r_c_c___h_s_e___configuration_gaa3d98648399f15d02645ef84f6ca8e4b}\index{HSE Configuration@{HSE Configuration}!\_\_HAL\_RCC\_HSE\_CONFIG@{\_\_HAL\_RCC\_HSE\_CONFIG}}
+\index{\_\_HAL\_RCC\_HSE\_CONFIG@{\_\_HAL\_RCC\_HSE\_CONFIG}!HSE Configuration@{HSE Configuration}}
+\doxysubsubsubsubsubsection{\texorpdfstring{\_\_HAL\_RCC\_HSE\_CONFIG}{\_\_HAL\_RCC\_HSE\_CONFIG}}
+{\footnotesize\ttfamily \label{group___r_c_c___h_s_e___configuration_gaa3d98648399f15d02645ef84f6ca8e4b} 
+\#define \+\_\+\+\_\+\+HAL\+\_\+\+RCC\+\_\+\+HSE\+\_\+\+CONFIG(\begin{DoxyParamCaption}\item[{}]{\+\_\+\+\_\+\+STATE\+\_\+\+\_\+}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{do}\ \{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ if\ ((\_\_STATE\_\_)\ ==\ RCC\_HSE\_ON)\ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ SET\_BIT(RCC-\/>CR,\ RCC\_CR\_HSEON);\ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ ((\_\_STATE\_\_)\ ==\ RCC\_HSE\_BYPASS)\ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ SET\_BIT(RCC-\/>CR,\ RCC\_CR\_HSEBYP);\ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ SET\_BIT(RCC-\/>CR,\ RCC\_CR\_HSEON);\ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{else}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ CLEAR\_BIT(RCC-\/>CR,\ RCC\_CR\_HSEON);\ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ CLEAR\_BIT(RCC-\/>CR,\ RCC\_CR\_HSEBYP);\ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \}\ \textcolor{keywordflow}{while}(0U)}
+
+\end{DoxyCode}
+
+
+Macro to configure the External High Speed oscillator (HSE). 
+
+\begin{DoxyNote}{Note}
+Transition HSE Bypass to HSE On and HSE On to HSE Bypass are not supported by this macro. User should request a transition to HSE Off first and then HSE On or HSE Bypass. 
+
+After enabling the HSE (RCC\+\_\+\+HSE\+\_\+\+ON or RCC\+\_\+\+HSE\+\_\+\+Bypass), the application software should wait on HSERDY flag to be set indicating that HSE clock is stable and can be used to clock the PLL and/or system clock. 
+
+HSE state can not be changed if it is used directly or through the PLL as system clock. In this case, you have to select another source of the system clock then change the HSE state (ex. disable it). 
+
+The HSE is stopped by hardware when entering STOP and STANDBY modes. 
+
+This function reset the CSSON bit, so if the clock security system(\+CSS) was previously enabled you have to enable it again after calling this function. 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+\+\_\+\+STATE\+\_\+\+\_\+} & specifies the new state of the HSE. This parameter can be one of the following values\+: \begin{DoxyItemize}
+\item RCC\+\_\+\+HSE\+\_\+\+OFF\+: turn OFF the HSE oscillator, HSERDY flag goes low after 6 HSE oscillator clock cycles. \item RCC\+\_\+\+HSE\+\_\+\+ON\+: turn ON the HSE oscillator. \item RCC\+\_\+\+HSE\+\_\+\+BYPASS\+: HSE oscillator bypassed with external clock. \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}

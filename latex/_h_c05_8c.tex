@@ -1,0 +1,266 @@
+\doxysection{Core/\+Src/\+HC05.c File Reference}
+\hypertarget{_h_c05_8c}{}\label{_h_c05_8c}\index{Core/Src/HC05.c@{Core/Src/HC05.c}}
+
+
+HC-\/05 Bluetooth module driver for wireless communication and control.  
+
+
+{\ttfamily \#include "{}HC05.\+h"{}}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include "{}stm32f4xx\+\_\+hal.\+h"{}}\newline
+{\ttfamily \#include "{}BNO055.\+h"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_h_c05_8c_a83f5acf008b13325bde24f48268f13b9}{process\+Input}} (char \texorpdfstring{$\ast$}{*}char\+Buf, int32\+\_\+t \texorpdfstring{$\ast$}{*}roll, int32\+\_\+t \texorpdfstring{$\ast$}{*}pitch, int32\+\_\+t \texorpdfstring{$\ast$}{*}yaw, int32\+\_\+t \texorpdfstring{$\ast$}{*}effort, int \texorpdfstring{$\ast$}{*}dump\+Flag)
+\begin{DoxyCompactList}\small\item\em Processes incoming control input from Bluetooth connection. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_h_c05_8c_a649f4d21cf63078c636631ef6269a882}{dump\+Blackbox}} (void)
+\begin{DoxyCompactList}\small\item\em Transmits flight data blackbox over Bluetooth connection. \end{DoxyCompactList}\item 
+\Hypertarget{_h_c05_8c_aeda0d62d97cb0991d7f226c525bcd16d}\label{_h_c05_8c_aeda0d62d97cb0991d7f226c525bcd16d} 
+void {\bfseries send\+ATCommand} (const char \texorpdfstring{$\ast$}{*}cmd)
+\item 
+\Hypertarget{_h_c05_8c_abbc568724c9d998398ed07448c7cafab}\label{_h_c05_8c_abbc568724c9d998398ed07448c7cafab} 
+void {\bfseries configure\+\_\+\+HC05} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{_h_c05_8c_ae1d2b5fc4831ad642bf2e972fcf17bb1}\label{_h_c05_8c_ae1d2b5fc4831ad642bf2e972fcf17bb1} 
+int {\bfseries bad\+BTcount} = 0
+\begin{DoxyCompactList}\small\item\em Counter for invalid Bluetooth transmissions. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_h_c05_8c_af5f9e2337c98c67ad13c186fee510468}{effort\+Rate}} = 10
+\begin{DoxyCompactList}\small\item\em Rate of effort change per control input. \end{DoxyCompactList}\item 
+\Hypertarget{_h_c05_8c_aa9479c261d65eecedd3d9582f7f0f89c}\label{_h_c05_8c_aa9479c261d65eecedd3d9582f7f0f89c} 
+\mbox{\hyperlink{group___u_a_r_t___exported___types_ga5de4a49eb132735325e706f406c69d6e}{UART\+\_\+\+Handle\+Type\+Def}} {\bfseries huart2}
+\begin{DoxyCompactList}\small\item\em UART2 handle for HC-\/05 communication. \end{DoxyCompactList}\item 
+\Hypertarget{_h_c05_8c_aab3794e015ef02b4d40a16566641dc95}\label{_h_c05_8c_aab3794e015ef02b4d40a16566641dc95} 
+int32\+\_\+t {\bfseries Kp\+\_\+roll}
+\begin{DoxyCompactList}\small\item\em Proportional gain for roll control. \end{DoxyCompactList}\item 
+\Hypertarget{_h_c05_8c_a50325de744074c89ef5e15938277467f}\label{_h_c05_8c_a50325de744074c89ef5e15938277467f} 
+int32\+\_\+t {\bfseries Ki\+\_\+roll}
+\begin{DoxyCompactList}\small\item\em Integral gain for roll control. \end{DoxyCompactList}\item 
+\Hypertarget{_h_c05_8c_a22552c9e342616880bfc4c5b0e4ebdd9}\label{_h_c05_8c_a22552c9e342616880bfc4c5b0e4ebdd9} 
+int32\+\_\+t {\bfseries Kd\+\_\+roll}
+\begin{DoxyCompactList}\small\item\em Derivative gain for roll control. \end{DoxyCompactList}\item 
+\Hypertarget{_h_c05_8c_a2976336761f80f142e8c1a16560375af}\label{_h_c05_8c_a2976336761f80f142e8c1a16560375af} 
+int32\+\_\+t {\bfseries Kp\+\_\+pitch}
+\begin{DoxyCompactList}\small\item\em Proportional gain for pitch control. \end{DoxyCompactList}\item 
+\Hypertarget{_h_c05_8c_a465ee9ce8c9d02c6f1c349197778df02}\label{_h_c05_8c_a465ee9ce8c9d02c6f1c349197778df02} 
+int32\+\_\+t {\bfseries Ki\+\_\+pitch}
+\begin{DoxyCompactList}\small\item\em Integral gain for pitch control. \end{DoxyCompactList}\item 
+\Hypertarget{_h_c05_8c_aba2a84abeed08bbeec34a809da7da9f9}\label{_h_c05_8c_aba2a84abeed08bbeec34a809da7da9f9} 
+int32\+\_\+t {\bfseries Kd\+\_\+pitch}
+\begin{DoxyCompactList}\small\item\em Derivative gain for pitch control. \end{DoxyCompactList}\item 
+\Hypertarget{_h_c05_8c_a58930b9fe46dee03eeda0aa638f3a3a7}\label{_h_c05_8c_a58930b9fe46dee03eeda0aa638f3a3a7} 
+int32\+\_\+t {\bfseries Kp\+\_\+yaw}
+\begin{DoxyCompactList}\small\item\em Proportional gain for yaw control. \end{DoxyCompactList}\item 
+\Hypertarget{_h_c05_8c_a9658c8609ab512a1271825d412ab0d58}\label{_h_c05_8c_a9658c8609ab512a1271825d412ab0d58} 
+int32\+\_\+t {\bfseries Ki\+\_\+yaw}
+\begin{DoxyCompactList}\small\item\em Integral gain for yaw control. \end{DoxyCompactList}\item 
+\Hypertarget{_h_c05_8c_a37fa363923cda7b1579c0839dd91cafb}\label{_h_c05_8c_a37fa363923cda7b1579c0839dd91cafb} 
+int32\+\_\+t {\bfseries Kd\+\_\+yaw}
+\begin{DoxyCompactList}\small\item\em Derivative gain for yaw control. \end{DoxyCompactList}\item 
+int32\+\_\+t \mbox{\hyperlink{_h_c05_8c_ae955c88a2731a99e72a8d214c4f82323}{pitch\+\_\+true}}
+\begin{DoxyCompactList}\small\item\em Current pitch angle from IMU (millidegrees) \end{DoxyCompactList}\item 
+int32\+\_\+t \mbox{\hyperlink{_h_c05_8c_ae991616e2e1ca0f8a81bd57b96310be2}{roll\+\_\+true}}
+\begin{DoxyCompactList}\small\item\em Current roll angle from IMU (millidegrees) \end{DoxyCompactList}\item 
+int32\+\_\+t \mbox{\hyperlink{_h_c05_8c_a9c3df83708b032d87ebd4ebcbe19a309}{yaw\+\_\+true}}
+\begin{DoxyCompactList}\small\item\em Current yaw angle from IMU (millidegrees) \end{DoxyCompactList}\item 
+\Hypertarget{_h_c05_8c_a34dabc2467bce0d04c80b8f680944684}\label{_h_c05_8c_a34dabc2467bce0d04c80b8f680944684} 
+int {\bfseries stop\+Flag}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+HC-\/05 Bluetooth module driver for wireless communication and control. 
+
+\begin{DoxyAuthor}{Author}
+Aaron Lubinsky 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2025
+\end{DoxyDate}
+This driver provides Bluetooth communication interface using the HC-\/05 module for remote control of the quadcopter. It handles joystick input parsing, flight parameter adjustment, and flight data transmission.
+
+The driver expects comma-\/separated values in the format\+: \#\+LjoyX,LjoyY,RjoyX,LT,RT,ENTER
+
+Where\+:
+\begin{DoxyItemize}
+\item Ljoy\+X/\+LjoyY\+: Left joystick for roll/pitch control
+\item RjoyX\+: Right joystick X for yaw control
+\item LT/\+RT\+: Left/\+Right triggers for throttle control
+\item ENTER\+: Button for blackbox data dump
+\end{DoxyItemize}
+
+\DoxyHorRuler{0}
+ \hypertarget{_h_c05_8c_autotoc_md5}{}\doxysubsection{\texorpdfstring{\#\#\#\#\# How to use this driver \#\#\#\#\#}{\#\#\#\#\# How to use this driver \#\#\#\#\#}}\label{_h_c05_8c_autotoc_md5}
+
+\begin{DoxyEnumerate}
+\item Ensure UART2 is configured for HC-\/05 communication (typically 9600 baud)
+\item Pair HC-\/05 module with control device (phone/computer)
+\item Call \doxylink{_h_c05_8c_a83f5acf008b13325bde24f48268f13b9}{process\+Input()} with received data to parse control commands
+\item Call \doxylink{_h_c05_8c_a649f4d21cf63078c636631ef6269a882}{dump\+Blackbox()} to transmit flight data for analysis
+\end{DoxyEnumerate}
+
+\begin{DoxyNote}{Note}
+Input format must start with \textquotesingle{}\#\textquotesingle{} character for validation 
+
+All control values are scaled appropriately for flight control 
+\end{DoxyNote}
+\begin{DoxyWarning}{Warning}
+Ensure proper UART configuration before use 
+
+Invalid input formats will increment error counter 
+\end{DoxyWarning}
+
+
+\label{doc-func-members}
+\Hypertarget{_h_c05_8c_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{_h_c05_8c_a649f4d21cf63078c636631ef6269a882}\index{HC05.c@{HC05.c}!dumpBlackbox@{dumpBlackbox}}
+\index{dumpBlackbox@{dumpBlackbox}!HC05.c@{HC05.c}}
+\doxysubsubsection{\texorpdfstring{dumpBlackbox()}{dumpBlackbox()}}
+{\footnotesize\ttfamily \label{_h_c05_8c_a649f4d21cf63078c636631ef6269a882} 
+void dump\+Blackbox (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+Transmits flight data blackbox over Bluetooth connection. 
+
+Outputs the blackbox flight data via UART.
+
+Sends all recorded flight data from the blackbox buffer via UART to the connected Bluetooth device. Data is transmitted in CSV format with one sample per line containing pitch, pitch setpoint, roll, and roll setpoint values.
+
+Output format per line\+: "{}pitch,pitch\+Set,roll,roll\+Set\textbackslash{}r\textbackslash{}n"{} All values are in millidegrees.
+
+\begin{DoxyNote}{Note}
+Function transmits all samples up to current sample\+\_\+index 
+
+200ms delay added to allow receiver to process data 
+
+Data transmission is blocking (waits for completion) 
+
+Currently only transmits pitch and roll data (yaw commented out)
+\end{DoxyNote}
+\begin{DoxyWarning}{Warning}
+Large blackbox buffers may take significant time to transmit 
+
+Ensure receiver can handle the data rate 
+
+Function blocks until all data is transmitted
+\end{DoxyWarning}
+\begin{DoxySeeAlso}{See also}
+\doxylink{_h_c05_8h_a83f5acf008b13325bde24f48268f13b9}{process\+Input()} 
+
+Initialize\+BT() 
+\end{DoxySeeAlso}
+\texorpdfstring{$<$}{<} Message buffer for each data line\Hypertarget{_h_c05_8c_a83f5acf008b13325bde24f48268f13b9}\index{HC05.c@{HC05.c}!processInput@{processInput}}
+\index{processInput@{processInput}!HC05.c@{HC05.c}}
+\doxysubsubsection{\texorpdfstring{processInput()}{processInput()}}
+{\footnotesize\ttfamily \label{_h_c05_8c_a83f5acf008b13325bde24f48268f13b9} 
+void process\+Input (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{char\+Buf}{, }\item[{int32\+\_\+t \texorpdfstring{$\ast$}{*}}]{roll}{, }\item[{int32\+\_\+t \texorpdfstring{$\ast$}{*}}]{pitch}{, }\item[{int32\+\_\+t \texorpdfstring{$\ast$}{*}}]{yaw}{, }\item[{int32\+\_\+t \texorpdfstring{$\ast$}{*}}]{effort}{, }\item[{int \texorpdfstring{$\ast$}{*}}]{dump\+Flag}{}\end{DoxyParamCaption})}
+
+
+
+Processes incoming control input from Bluetooth connection. 
+
+Parses input from the HC-\/05 Bluetooth module.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{in}}  & {\em char\+Buf} & Input string buffer containing control data \\
+\hline
+\mbox{\texttt{out}}  & {\em roll} & Pointer to store calculated roll setpoint (millidegrees) \\
+\hline
+\mbox{\texttt{out}}  & {\em pitch} & Pointer to store calculated pitch setpoint (millidegrees) \\
+\hline
+\mbox{\texttt{out}}  & {\em yaw} & Pointer to store calculated yaw setpoint (millidegrees) \\
+\hline
+\mbox{\texttt{out}}  & {\em effort} & Pointer to store/update throttle effort value \\
+\hline
+\mbox{\texttt{out}}  & {\em dump\+Flag} & Pointer to store blackbox dump request flag\\
+\hline
+\end{DoxyParams}
+Parses comma-\/separated joystick and button data from the control device. Expected input format\+: "{}\#\+Ljoy\+X,\+Ljoy\+Y,\+Rjoy\+X,\+LT,\+RT,\+ENTER"{}
+
+Control mapping\+:
+\begin{DoxyItemize}
+\item Left joystick X/Y → Roll/\+Pitch commands (±20° range)
+\item Right joystick X → Yaw rate command (relative to current heading)
+\item Left/\+Right triggers → Throttle increase/decrease
+\item Enter button → Trigger blackbox data dump
+\end{DoxyItemize}
+
+\begin{DoxyNote}{Note}
+Input must start with \textquotesingle{}\#\textquotesingle{} character for validation 
+
+Roll/\+Pitch scaled from joystick ±1000 range to ±20° (±20000 millidegrees) 
+
+Yaw command is relative to current heading with wraparound 
+
+Effort is constrained between 0 and 1000, 0 is transformed to large negative number, ensuring no spin due to PID loop 
+
+Invalid inputs increment bad\+BTcount and are rejected
+\end{DoxyNote}
+\begin{DoxyWarning}{Warning}
+Pointers must be valid and point to allocated memory 
+
+Function modifies input buffer (uses strtok)
+\end{DoxyWarning}
+\begin{DoxySeeAlso}{See also}
+Initialize\+BT() 
+
+\doxylink{_h_c05_8h_a649f4d21cf63078c636631ef6269a882}{dump\+Blackbox()} 
+\end{DoxySeeAlso}
+\texorpdfstring{$<$}{<} Parsed joystick and button values
+
+\label{doc-var-members}
+\Hypertarget{_h_c05_8c_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{_h_c05_8c_af5f9e2337c98c67ad13c186fee510468}\index{HC05.c@{HC05.c}!effortRate@{effortRate}}
+\index{effortRate@{effortRate}!HC05.c@{HC05.c}}
+\doxysubsubsection{\texorpdfstring{effortRate}{effortRate}}
+{\footnotesize\ttfamily \label{_h_c05_8c_af5f9e2337c98c67ad13c186fee510468} 
+int effort\+Rate = 10}
+
+
+
+Rate of effort change per control input. 
+
+Rate of effort change. \Hypertarget{_h_c05_8c_ae955c88a2731a99e72a8d214c4f82323}\index{HC05.c@{HC05.c}!pitch\_true@{pitch\_true}}
+\index{pitch\_true@{pitch\_true}!HC05.c@{HC05.c}}
+\doxysubsubsection{\texorpdfstring{pitch\_true}{pitch\_true}}
+{\footnotesize\ttfamily \label{_h_c05_8c_ae955c88a2731a99e72a8d214c4f82323} 
+int32\+\_\+t pitch\+\_\+true\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Current pitch angle from IMU (millidegrees) 
+
+Current pitch angle from IMU (millidegrees) \Hypertarget{_h_c05_8c_ae991616e2e1ca0f8a81bd57b96310be2}\index{HC05.c@{HC05.c}!roll\_true@{roll\_true}}
+\index{roll\_true@{roll\_true}!HC05.c@{HC05.c}}
+\doxysubsubsection{\texorpdfstring{roll\_true}{roll\_true}}
+{\footnotesize\ttfamily \label{_h_c05_8c_ae991616e2e1ca0f8a81bd57b96310be2} 
+int32\+\_\+t roll\+\_\+true\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Current roll angle from IMU (millidegrees) 
+
+Current roll angle from IMU (millidegrees) \Hypertarget{_h_c05_8c_a9c3df83708b032d87ebd4ebcbe19a309}\index{HC05.c@{HC05.c}!yaw\_true@{yaw\_true}}
+\index{yaw\_true@{yaw\_true}!HC05.c@{HC05.c}}
+\doxysubsubsection{\texorpdfstring{yaw\_true}{yaw\_true}}
+{\footnotesize\ttfamily \label{_h_c05_8c_a9c3df83708b032d87ebd4ebcbe19a309} 
+int32\+\_\+t yaw\+\_\+true\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Current yaw angle from IMU (millidegrees) 
+
+Current yaw angle from IMU (millidegrees) 

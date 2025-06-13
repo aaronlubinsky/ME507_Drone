@@ -1,0 +1,38 @@
+\doxysection{Drivers/\+STM32\+F4xx\+\_\+\+HAL\+\_\+\+Driver/\+Inc/stm32f4xx\+\_\+ll\+\_\+bus.h File Reference}
+\hypertarget{stm32f4xx__ll__bus_8h}{}\label{stm32f4xx__ll__bus_8h}\index{Drivers/STM32F4xx\_HAL\_Driver/Inc/stm32f4xx\_ll\_bus.h@{Drivers/STM32F4xx\_HAL\_Driver/Inc/stm32f4xx\_ll\_bus.h}}
+
+
+Header file of BUS LL module.  
+
+
+{\ttfamily \#include "{}stm32f4xx.\+h"{}}\newline
+
+
+\doxysubsection{Detailed Description}
+Header file of BUS LL module. 
+
+\begin{DoxyAuthor}{Author}
+MCD Application Team 
+\end{DoxyAuthor}
+\begin{DoxyVerb}                    ##### RCC Limitations #####
+==============================================================================
+  [..]
+    A delay between an RCC peripheral clock enable and the effective peripheral
+    enabling should be taken into account in order to manage the peripheral read/write
+    from/to registers.
+    (+) This delay depends on the peripheral mapping.
+      (++) AHB & APB peripherals, 1 dummy read is necessary
+
+  [..]
+    Workarounds:
+    (#) For AHB & APB peripherals, a dummy read to the peripheral register has been
+        inserted in each LL_{BUS}_GRP{x}_EnableClock() function.
+\end{DoxyVerb}
+
+
+\begin{DoxyAttention}{Attention}
+
+\end{DoxyAttention}
+Copyright (c) 2017 STMicroelectronics. All rights reserved.
+
+This software is licensed under terms that can be found in the LICENSE file in the root directory of this software component. If no LICENSE file comes with this software, it is provided AS-\/\+IS. 

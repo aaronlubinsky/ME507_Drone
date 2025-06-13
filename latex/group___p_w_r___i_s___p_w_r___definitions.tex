@@ -1,0 +1,89 @@
+\doxysubsubsubsection{PWR Private macros to check input parameters }
+\hypertarget{group___p_w_r___i_s___p_w_r___definitions}{}\label{group___p_w_r___i_s___p_w_r___definitions}\index{PWR Private macros to check input parameters@{PWR Private macros to check input parameters}}
+\doxysubsubsubsubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group___p_w_r___i_s___p_w_r___definitions_gabac4485a57abc97aad91eaa0b65ae927}{IS\+\_\+\+PWR\+\_\+\+PVD\+\_\+\+LEVEL}}(LEVEL)
+\item 
+\#define \mbox{\hyperlink{group___p_w_r___i_s___p_w_r___definitions_ga8edfbbba20e58a9281408c23dc6ff7ef}{IS\+\_\+\+PWR\+\_\+\+PVD\+\_\+\+MODE}}(MODE)
+\item 
+\#define \mbox{\hyperlink{group___p_w_r___i_s___p_w_r___definitions_ga03c105070272141c0bab5f2b74469072}{IS\+\_\+\+PWR\+\_\+\+REGULATOR}}(REGULATOR)
+\item 
+\#define \mbox{\hyperlink{group___p_w_r___i_s___p_w_r___definitions_ga9b36a9c213a77d36340788b2e7e277ff}{IS\+\_\+\+PWR\+\_\+\+SLEEP\+\_\+\+ENTRY}}(ENTRY)
+\item 
+\#define \mbox{\hyperlink{group___p_w_r___i_s___p_w_r___definitions_ga4a94eb1f400dec6e486fbc229cbea8a0}{IS\+\_\+\+PWR\+\_\+\+STOP\+\_\+\+ENTRY}}(ENTRY)
+\end{DoxyCompactItemize}
+
+
+\doxysubsubsubsubsection{Detailed Description}
+
+
+\label{doc-define-members}
+\Hypertarget{group___p_w_r___i_s___p_w_r___definitions_doc-define-members}
+\doxysubsubsubsubsection{Macro Definition Documentation}
+\Hypertarget{group___p_w_r___i_s___p_w_r___definitions_gabac4485a57abc97aad91eaa0b65ae927}\index{PWR Private macros to check input parameters@{PWR Private macros to check input parameters}!IS\_PWR\_PVD\_LEVEL@{IS\_PWR\_PVD\_LEVEL}}
+\index{IS\_PWR\_PVD\_LEVEL@{IS\_PWR\_PVD\_LEVEL}!PWR Private macros to check input parameters@{PWR Private macros to check input parameters}}
+\doxysubsubsubsubsubsection{\texorpdfstring{IS\_PWR\_PVD\_LEVEL}{IS\_PWR\_PVD\_LEVEL}}
+{\footnotesize\ttfamily \label{group___p_w_r___i_s___p_w_r___definitions_gabac4485a57abc97aad91eaa0b65ae927} 
+\#define IS\+\_\+\+PWR\+\_\+\+PVD\+\_\+\+LEVEL(\begin{DoxyParamCaption}\item[{}]{LEVEL}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (((LEVEL)\ ==\ PWR\_PVDLEVEL\_0)\ ||\ ((LEVEL)\ ==\ PWR\_PVDLEVEL\_1)||\ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ((LEVEL)\ ==\ PWR\_PVDLEVEL\_2)\ ||\ ((LEVEL)\ ==\ PWR\_PVDLEVEL\_3)||\ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ((LEVEL)\ ==\ PWR\_PVDLEVEL\_4)\ ||\ ((LEVEL)\ ==\ PWR\_PVDLEVEL\_5)||\ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ((LEVEL)\ ==\ PWR\_PVDLEVEL\_6)\ ||\ ((LEVEL)\ ==\ PWR\_PVDLEVEL\_7))}
+
+\end{DoxyCode}
+\Hypertarget{group___p_w_r___i_s___p_w_r___definitions_ga8edfbbba20e58a9281408c23dc6ff7ef}\index{PWR Private macros to check input parameters@{PWR Private macros to check input parameters}!IS\_PWR\_PVD\_MODE@{IS\_PWR\_PVD\_MODE}}
+\index{IS\_PWR\_PVD\_MODE@{IS\_PWR\_PVD\_MODE}!PWR Private macros to check input parameters@{PWR Private macros to check input parameters}}
+\doxysubsubsubsubsubsection{\texorpdfstring{IS\_PWR\_PVD\_MODE}{IS\_PWR\_PVD\_MODE}}
+{\footnotesize\ttfamily \label{group___p_w_r___i_s___p_w_r___definitions_ga8edfbbba20e58a9281408c23dc6ff7ef} 
+\#define IS\+\_\+\+PWR\+\_\+\+PVD\+\_\+\+MODE(\begin{DoxyParamCaption}\item[{}]{MODE}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (((MODE)\ ==\ \mbox{\hyperlink{group___p_w_r___p_v_d___mode_ga102d7b8354419990a2a780f61cd020a6}{PWR\_PVD\_MODE\_IT\_RISING}})||\ ((MODE)\ ==\ \mbox{\hyperlink{group___p_w_r___p_v_d___mode_gab600a54f3a588de836cfe4b727ab8a53}{PWR\_PVD\_MODE\_IT\_FALLING}})\ ||\ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ((MODE)\ ==\ \mbox{\hyperlink{group___p_w_r___p_v_d___mode_gac531fbf14457e6595505354fad521b67}{PWR\_PVD\_MODE\_IT\_RISING\_FALLING}})\ ||\ ((MODE)\ ==\ \mbox{\hyperlink{group___p_w_r___p_v_d___mode_ga1a946b01887aa886de329a92c3ab0dd4}{PWR\_PVD\_MODE\_EVENT\_RISING}})\ ||\ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ((MODE)\ ==\ \mbox{\hyperlink{group___p_w_r___p_v_d___mode_gaaedbe45f1a1ea6c30af6ac51abae0cae}{PWR\_PVD\_MODE\_EVENT\_FALLING}})\ ||\ ((MODE)\ ==\ \mbox{\hyperlink{group___p_w_r___p_v_d___mode_ga7455387c8e9049f9f66b46423d4f4091}{PWR\_PVD\_MODE\_EVENT\_RISING\_FALLING}})\ ||\ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ((MODE)\ ==\ \mbox{\hyperlink{group___p_w_r___p_v_d___mode_ga3a4bf701a36a14a4edf4dc5a28153277}{PWR\_PVD\_MODE\_NORMAL}}))}
+
+\end{DoxyCode}
+\Hypertarget{group___p_w_r___i_s___p_w_r___definitions_ga03c105070272141c0bab5f2b74469072}\index{PWR Private macros to check input parameters@{PWR Private macros to check input parameters}!IS\_PWR\_REGULATOR@{IS\_PWR\_REGULATOR}}
+\index{IS\_PWR\_REGULATOR@{IS\_PWR\_REGULATOR}!PWR Private macros to check input parameters@{PWR Private macros to check input parameters}}
+\doxysubsubsubsubsubsection{\texorpdfstring{IS\_PWR\_REGULATOR}{IS\_PWR\_REGULATOR}}
+{\footnotesize\ttfamily \label{group___p_w_r___i_s___p_w_r___definitions_ga03c105070272141c0bab5f2b74469072} 
+\#define IS\+\_\+\+PWR\+\_\+\+REGULATOR(\begin{DoxyParamCaption}\item[{}]{REGULATOR}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (((REGULATOR)\ ==\ PWR\_MAINREGULATOR\_ON)\ ||\ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ((REGULATOR)\ ==\ PWR\_LOWPOWERREGULATOR\_ON))}
+
+\end{DoxyCode}
+\Hypertarget{group___p_w_r___i_s___p_w_r___definitions_ga9b36a9c213a77d36340788b2e7e277ff}\index{PWR Private macros to check input parameters@{PWR Private macros to check input parameters}!IS\_PWR\_SLEEP\_ENTRY@{IS\_PWR\_SLEEP\_ENTRY}}
+\index{IS\_PWR\_SLEEP\_ENTRY@{IS\_PWR\_SLEEP\_ENTRY}!PWR Private macros to check input parameters@{PWR Private macros to check input parameters}}
+\doxysubsubsubsubsubsection{\texorpdfstring{IS\_PWR\_SLEEP\_ENTRY}{IS\_PWR\_SLEEP\_ENTRY}}
+{\footnotesize\ttfamily \label{group___p_w_r___i_s___p_w_r___definitions_ga9b36a9c213a77d36340788b2e7e277ff} 
+\#define IS\+\_\+\+PWR\+\_\+\+SLEEP\+\_\+\+ENTRY(\begin{DoxyParamCaption}\item[{}]{ENTRY}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (((ENTRY)\ ==\ PWR\_SLEEPENTRY\_WFI)\ ||\ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ((ENTRY)\ ==\ PWR\_SLEEPENTRY\_WFE)\ ||\ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ((ENTRY)\ ==\ PWR\_SLEEPENTRY\_WFE\_NO\_EVT\_CLEAR))}
+
+\end{DoxyCode}
+\Hypertarget{group___p_w_r___i_s___p_w_r___definitions_ga4a94eb1f400dec6e486fbc229cbea8a0}\index{PWR Private macros to check input parameters@{PWR Private macros to check input parameters}!IS\_PWR\_STOP\_ENTRY@{IS\_PWR\_STOP\_ENTRY}}
+\index{IS\_PWR\_STOP\_ENTRY@{IS\_PWR\_STOP\_ENTRY}!PWR Private macros to check input parameters@{PWR Private macros to check input parameters}}
+\doxysubsubsubsubsubsection{\texorpdfstring{IS\_PWR\_STOP\_ENTRY}{IS\_PWR\_STOP\_ENTRY}}
+{\footnotesize\ttfamily \label{group___p_w_r___i_s___p_w_r___definitions_ga4a94eb1f400dec6e486fbc229cbea8a0} 
+\#define IS\+\_\+\+PWR\+\_\+\+STOP\+\_\+\+ENTRY(\begin{DoxyParamCaption}\item[{}]{ENTRY}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (((ENTRY)\ ==\ PWR\_STOPENTRY\_WFI)\ ||\ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ((ENTRY)\ ==\ PWR\_STOPENTRY\_WFE)\ ||\ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ((ENTRY)\ ==\ PWR\_STOPENTRY\_WFE\_NO\_EVT\_CLEAR))}
+
+\end{DoxyCode}

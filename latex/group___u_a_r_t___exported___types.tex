@@ -1,0 +1,124 @@
+\doxysubsubsection{UART Exported Types }
+\hypertarget{group___u_a_r_t___exported___types}{}\label{group___u_a_r_t___exported___types}\index{UART Exported Types@{UART Exported Types}}
+\doxysubsubsubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_u_a_r_t___init_type_def}{UART\+\_\+\+Init\+Type\+Def}}
+\begin{DoxyCompactList}\small\item\em UART Init Structure definition. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_____u_a_r_t___handle_type_def}{\+\_\+\+\_\+\+UART\+\_\+\+Handle\+Type\+Def}}
+\begin{DoxyCompactList}\small\item\em UART handle Structure definition. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef uint32\+\_\+t \mbox{\hyperlink{group___u_a_r_t___exported___types_ga9f272475ea543a68fd8cb19f03a9bce9}{HAL\+\_\+\+UART\+\_\+\+Rx\+Type\+Type\+Def}}
+\begin{DoxyCompactList}\small\item\em HAL UART Reception type definition. \end{DoxyCompactList}\item 
+typedef uint32\+\_\+t \mbox{\hyperlink{group___u_a_r_t___exported___types_gadddf3d5480235c945dc8eec58f961203}{HAL\+\_\+\+UART\+\_\+\+Rx\+Event\+Type\+Type\+Def}}
+\begin{DoxyCompactList}\small\item\em HAL UART Rx Event type definition. \end{DoxyCompactList}\item 
+\Hypertarget{group___u_a_r_t___exported___types_ga5de4a49eb132735325e706f406c69d6e}\label{group___u_a_r_t___exported___types_ga5de4a49eb132735325e706f406c69d6e} 
+typedef struct \mbox{\hyperlink{struct_____u_a_r_t___handle_type_def}{\+\_\+\+\_\+\+UART\+\_\+\+Handle\+Type\+Def}} {\bfseries UART\+\_\+\+Handle\+Type\+Def}
+\begin{DoxyCompactList}\small\item\em UART handle Structure definition. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{group___u_a_r_t___exported___types_gaf55d844a35379c204c90be5d1e8e50ba}{HAL\+\_\+\+UART\+\_\+\+State\+Type\+Def}} \{ \newline
+\mbox{\hyperlink{group___u_a_r_t___exported___types_ggaf55d844a35379c204c90be5d1e8e50baa9c7d889fce61ccc717228d099a61d113}{HAL\+\_\+\+UART\+\_\+\+STATE\+\_\+\+RESET}} = 0x00U
+, \mbox{\hyperlink{group___u_a_r_t___exported___types_ggaf55d844a35379c204c90be5d1e8e50baade763629c1bdb4f08e52ef79d6e0900e}{HAL\+\_\+\+UART\+\_\+\+STATE\+\_\+\+READY}} = 0x20U
+, \mbox{\hyperlink{group___u_a_r_t___exported___types_ggaf55d844a35379c204c90be5d1e8e50baad1eddce038ba828e8b4061a33a2d8801}{HAL\+\_\+\+UART\+\_\+\+STATE\+\_\+\+BUSY}} = 0x24U
+, \mbox{\hyperlink{group___u_a_r_t___exported___types_ggaf55d844a35379c204c90be5d1e8e50baadc97ca42e9b05a08cb98e6721e27e80c}{HAL\+\_\+\+UART\+\_\+\+STATE\+\_\+\+BUSY\+\_\+\+TX}} = 0x21U
+, \newline
+\mbox{\hyperlink{group___u_a_r_t___exported___types_ggaf55d844a35379c204c90be5d1e8e50baaf7929f7aebd6b450c25907904411680b}{HAL\+\_\+\+UART\+\_\+\+STATE\+\_\+\+BUSY\+\_\+\+RX}} = 0x22U
+, \mbox{\hyperlink{group___u_a_r_t___exported___types_ggaf55d844a35379c204c90be5d1e8e50baa2fdde93f9f55972b7133bf7c75dd2e8a}{HAL\+\_\+\+UART\+\_\+\+STATE\+\_\+\+BUSY\+\_\+\+TX\+\_\+\+RX}} = 0x23U
+, \mbox{\hyperlink{group___u_a_r_t___exported___types_ggaf55d844a35379c204c90be5d1e8e50baa90891eeb767df19780e620a15bec807d}{HAL\+\_\+\+UART\+\_\+\+STATE\+\_\+\+TIMEOUT}} = 0x\+A0U
+, \mbox{\hyperlink{group___u_a_r_t___exported___types_ggaf55d844a35379c204c90be5d1e8e50baa5d50bfe0750db02c4fd03d778c8c318c}{HAL\+\_\+\+UART\+\_\+\+STATE\+\_\+\+ERROR}} = 0x\+E0U
+ \}
+\begin{DoxyCompactList}\small\item\em HAL UART State structures definition. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsubsubsection{Detailed Description}
+
+
+\label{doc-typedef-members}
+\Hypertarget{group___u_a_r_t___exported___types_doc-typedef-members}
+\doxysubsubsubsection{Typedef Documentation}
+\Hypertarget{group___u_a_r_t___exported___types_gadddf3d5480235c945dc8eec58f961203}\index{UART Exported Types@{UART Exported Types}!HAL\_UART\_RxEventTypeTypeDef@{HAL\_UART\_RxEventTypeTypeDef}}
+\index{HAL\_UART\_RxEventTypeTypeDef@{HAL\_UART\_RxEventTypeTypeDef}!UART Exported Types@{UART Exported Types}}
+\doxysubsubsubsubsection{\texorpdfstring{HAL\_UART\_RxEventTypeTypeDef}{HAL\_UART\_RxEventTypeTypeDef}}
+{\footnotesize\ttfamily \label{group___u_a_r_t___exported___types_gadddf3d5480235c945dc8eec58f961203} 
+typedef uint32\+\_\+t \mbox{\hyperlink{group___u_a_r_t___exported___types_gadddf3d5480235c945dc8eec58f961203}{HAL\+\_\+\+UART\+\_\+\+Rx\+Event\+Type\+Type\+Def}}}
+
+
+
+HAL UART Rx Event type definition. 
+
+\begin{DoxyNote}{Note}
+HAL UART Rx Event type value aims to identify which type of Event has occurred leading to call of the Rx\+Event callback. This parameter can be a value of \doxylink{group___u_a_r_t___rx_event___type___values}{UART Rx\+Event type values} \+: HAL\+\_\+\+UART\+\_\+\+RXEVENT\+\_\+\+TC = 0x00U, HAL\+\_\+\+UART\+\_\+\+RXEVENT\+\_\+\+HT = 0x01U, HAL\+\_\+\+UART\+\_\+\+RXEVENT\+\_\+\+IDLE = 0x02U, 
+\end{DoxyNote}
+\Hypertarget{group___u_a_r_t___exported___types_ga9f272475ea543a68fd8cb19f03a9bce9}\index{UART Exported Types@{UART Exported Types}!HAL\_UART\_RxTypeTypeDef@{HAL\_UART\_RxTypeTypeDef}}
+\index{HAL\_UART\_RxTypeTypeDef@{HAL\_UART\_RxTypeTypeDef}!UART Exported Types@{UART Exported Types}}
+\doxysubsubsubsubsection{\texorpdfstring{HAL\_UART\_RxTypeTypeDef}{HAL\_UART\_RxTypeTypeDef}}
+{\footnotesize\ttfamily \label{group___u_a_r_t___exported___types_ga9f272475ea543a68fd8cb19f03a9bce9} 
+typedef uint32\+\_\+t \mbox{\hyperlink{group___u_a_r_t___exported___types_ga9f272475ea543a68fd8cb19f03a9bce9}{HAL\+\_\+\+UART\+\_\+\+Rx\+Type\+Type\+Def}}}
+
+
+
+HAL UART Reception type definition. 
+
+\begin{DoxyNote}{Note}
+HAL UART Reception type value aims to identify which type of Reception is ongoing. This parameter can be a value of \doxylink{group___u_a_r_t___reception___type___values}{UART Reception type values} \+: HAL\+\_\+\+UART\+\_\+\+RECEPTION\+\_\+\+STANDARD = 0x00U, HAL\+\_\+\+UART\+\_\+\+RECEPTION\+\_\+\+TOIDLE = 0x01U, 
+\end{DoxyNote}
+
+
+\label{doc-enum-members}
+\Hypertarget{group___u_a_r_t___exported___types_doc-enum-members}
+\doxysubsubsubsection{Enumeration Type Documentation}
+\Hypertarget{group___u_a_r_t___exported___types_gaf55d844a35379c204c90be5d1e8e50ba}\index{UART Exported Types@{UART Exported Types}!HAL\_UART\_StateTypeDef@{HAL\_UART\_StateTypeDef}}
+\index{HAL\_UART\_StateTypeDef@{HAL\_UART\_StateTypeDef}!UART Exported Types@{UART Exported Types}}
+\doxysubsubsubsubsection{\texorpdfstring{HAL\_UART\_StateTypeDef}{HAL\_UART\_StateTypeDef}}
+{\footnotesize\ttfamily \label{group___u_a_r_t___exported___types_gaf55d844a35379c204c90be5d1e8e50ba} 
+enum \mbox{\hyperlink{group___u_a_r_t___exported___types_gaf55d844a35379c204c90be5d1e8e50ba}{HAL\+\_\+\+UART\+\_\+\+State\+Type\+Def}}}
+
+
+
+HAL UART State structures definition. 
+
+\begin{DoxyNote}{Note}
+HAL UART State value is a combination of 2 different substates\+: g\+State and Rx\+State.
+\begin{DoxyItemize}
+\item g\+State contains UART state information related to global Handle management and also information related to Tx operations. g\+State value coding follow below described bitmap \+: b7-\/b6 Error information 00 \+: No Error 01 \+: (Not Used) 10 \+: Timeout 11 \+: Error b5 Peripheral initialization status 0 \+: Reset (Peripheral not initialized) 1 \+: Init done (Peripheral initialized. HAL UART Init function already called) b4-\/b3 (not used) xx \+: Should be set to 00 b2 Intrinsic process state 0 \+: Ready 1 \+: Busy (Peripheral busy with some configuration or internal operations) b1 (not used) x \+: Should be set to 0 b0 Tx state 0 \+: Ready (no Tx operation ongoing) 1 \+: Busy (Tx operation ongoing)
+\item Rx\+State contains information related to Rx operations. Rx\+State value coding follow below described bitmap \+: b7-\/b6 (not used) xx \+: Should be set to 00 b5 Peripheral initialization status 0 \+: Reset (Peripheral not initialized) 1 \+: Init done (Peripheral initialized) b4-\/b2 (not used) xxx \+: Should be set to 000 b1 Rx state 0 \+: Ready (no Rx operation ongoing) 1 \+: Busy (Rx operation ongoing) b0 (not used) x \+: Should be set to 0. 
+\end{DoxyItemize}
+\end{DoxyNote}
+\begin{DoxyEnumFields}[2]{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{HAL\_UART\_STATE\_RESET@{HAL\_UART\_STATE\_RESET}!UART Exported Types@{UART Exported Types}}\index{UART Exported Types@{UART Exported Types}!HAL\_UART\_STATE\_RESET@{HAL\_UART\_STATE\_RESET}}}\Hypertarget{group___u_a_r_t___exported___types_ggaf55d844a35379c204c90be5d1e8e50baa9c7d889fce61ccc717228d099a61d113}\label{group___u_a_r_t___exported___types_ggaf55d844a35379c204c90be5d1e8e50baa9c7d889fce61ccc717228d099a61d113} 
+HAL\+\_\+\+UART\+\_\+\+STATE\+\_\+\+RESET&Peripheral is not yet Initialized Value is allowed for g\+State and Rx\+State \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{HAL\_UART\_STATE\_READY@{HAL\_UART\_STATE\_READY}!UART Exported Types@{UART Exported Types}}\index{UART Exported Types@{UART Exported Types}!HAL\_UART\_STATE\_READY@{HAL\_UART\_STATE\_READY}}}\Hypertarget{group___u_a_r_t___exported___types_ggaf55d844a35379c204c90be5d1e8e50baade763629c1bdb4f08e52ef79d6e0900e}\label{group___u_a_r_t___exported___types_ggaf55d844a35379c204c90be5d1e8e50baade763629c1bdb4f08e52ef79d6e0900e} 
+HAL\+\_\+\+UART\+\_\+\+STATE\+\_\+\+READY&Peripheral Initialized and ready for use Value is allowed for g\+State and Rx\+State \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{HAL\_UART\_STATE\_BUSY@{HAL\_UART\_STATE\_BUSY}!UART Exported Types@{UART Exported Types}}\index{UART Exported Types@{UART Exported Types}!HAL\_UART\_STATE\_BUSY@{HAL\_UART\_STATE\_BUSY}}}\Hypertarget{group___u_a_r_t___exported___types_ggaf55d844a35379c204c90be5d1e8e50baad1eddce038ba828e8b4061a33a2d8801}\label{group___u_a_r_t___exported___types_ggaf55d844a35379c204c90be5d1e8e50baad1eddce038ba828e8b4061a33a2d8801} 
+HAL\+\_\+\+UART\+\_\+\+STATE\+\_\+\+BUSY&an internal process is ongoing Value is allowed for g\+State only \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{HAL\_UART\_STATE\_BUSY\_TX@{HAL\_UART\_STATE\_BUSY\_TX}!UART Exported Types@{UART Exported Types}}\index{UART Exported Types@{UART Exported Types}!HAL\_UART\_STATE\_BUSY\_TX@{HAL\_UART\_STATE\_BUSY\_TX}}}\Hypertarget{group___u_a_r_t___exported___types_ggaf55d844a35379c204c90be5d1e8e50baadc97ca42e9b05a08cb98e6721e27e80c}\label{group___u_a_r_t___exported___types_ggaf55d844a35379c204c90be5d1e8e50baadc97ca42e9b05a08cb98e6721e27e80c} 
+HAL\+\_\+\+UART\+\_\+\+STATE\+\_\+\+BUSY\+\_\+\+TX&Data Transmission process is ongoing Value is allowed for g\+State only \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{HAL\_UART\_STATE\_BUSY\_RX@{HAL\_UART\_STATE\_BUSY\_RX}!UART Exported Types@{UART Exported Types}}\index{UART Exported Types@{UART Exported Types}!HAL\_UART\_STATE\_BUSY\_RX@{HAL\_UART\_STATE\_BUSY\_RX}}}\Hypertarget{group___u_a_r_t___exported___types_ggaf55d844a35379c204c90be5d1e8e50baaf7929f7aebd6b450c25907904411680b}\label{group___u_a_r_t___exported___types_ggaf55d844a35379c204c90be5d1e8e50baaf7929f7aebd6b450c25907904411680b} 
+HAL\+\_\+\+UART\+\_\+\+STATE\+\_\+\+BUSY\+\_\+\+RX&Data Reception process is ongoing Value is allowed for Rx\+State only \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{HAL\_UART\_STATE\_BUSY\_TX\_RX@{HAL\_UART\_STATE\_BUSY\_TX\_RX}!UART Exported Types@{UART Exported Types}}\index{UART Exported Types@{UART Exported Types}!HAL\_UART\_STATE\_BUSY\_TX\_RX@{HAL\_UART\_STATE\_BUSY\_TX\_RX}}}\Hypertarget{group___u_a_r_t___exported___types_ggaf55d844a35379c204c90be5d1e8e50baa2fdde93f9f55972b7133bf7c75dd2e8a}\label{group___u_a_r_t___exported___types_ggaf55d844a35379c204c90be5d1e8e50baa2fdde93f9f55972b7133bf7c75dd2e8a} 
+HAL\+\_\+\+UART\+\_\+\+STATE\+\_\+\+BUSY\+\_\+\+TX\+\_\+\+RX&Data Transmission and Reception process is ongoing Not to be used for neither g\+State nor Rx\+State. Value is result of combination (Or) between g\+State and Rx\+State values \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{HAL\_UART\_STATE\_TIMEOUT@{HAL\_UART\_STATE\_TIMEOUT}!UART Exported Types@{UART Exported Types}}\index{UART Exported Types@{UART Exported Types}!HAL\_UART\_STATE\_TIMEOUT@{HAL\_UART\_STATE\_TIMEOUT}}}\Hypertarget{group___u_a_r_t___exported___types_ggaf55d844a35379c204c90be5d1e8e50baa90891eeb767df19780e620a15bec807d}\label{group___u_a_r_t___exported___types_ggaf55d844a35379c204c90be5d1e8e50baa90891eeb767df19780e620a15bec807d} 
+HAL\+\_\+\+UART\+\_\+\+STATE\+\_\+\+TIMEOUT&Timeout state Value is allowed for g\+State only \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{HAL\_UART\_STATE\_ERROR@{HAL\_UART\_STATE\_ERROR}!UART Exported Types@{UART Exported Types}}\index{UART Exported Types@{UART Exported Types}!HAL\_UART\_STATE\_ERROR@{HAL\_UART\_STATE\_ERROR}}}\Hypertarget{group___u_a_r_t___exported___types_ggaf55d844a35379c204c90be5d1e8e50baa5d50bfe0750db02c4fd03d778c8c318c}\label{group___u_a_r_t___exported___types_ggaf55d844a35379c204c90be5d1e8e50baa5d50bfe0750db02c4fd03d778c8c318c} 
+HAL\+\_\+\+UART\+\_\+\+STATE\+\_\+\+ERROR&Error Value is allowed for g\+State only \\
+\hline
+
+\end{DoxyEnumFields}

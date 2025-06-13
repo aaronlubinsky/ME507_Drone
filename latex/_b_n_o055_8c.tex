@@ -1,0 +1,204 @@
+\doxysection{Core/\+Src/\+BNO055.c File Reference}
+\hypertarget{_b_n_o055_8c}{}\label{_b_n_o055_8c}\index{Core/Src/BNO055.c@{Core/Src/BNO055.c}}
+
+
+BNO055 IMU (Inertial Measurement Unit) driver for attitude sensing.  
+
+
+{\ttfamily \#include "{}BNO055.\+h"{}}\newline
+{\ttfamily \#include "{}stm32f4xx\+\_\+hal.\+h"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_b_n_o055_8c_acfcacd8ad3833c1dfba254dec3063044}{BNO\+\_\+\+Init}} ()
+\begin{DoxyCompactList}\small\item\em Initializes the BNO055 IMU sensor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_b_n_o055_8c_aa4793269f7c346ae889fcb8a24130133}{BNO\+\_\+\+Read}} (int32\+\_\+t \texorpdfstring{$\ast$}{*}roll, int32\+\_\+t \texorpdfstring{$\ast$}{*}pitch, int32\+\_\+t \texorpdfstring{$\ast$}{*}yaw)
+\begin{DoxyCompactList}\small\item\em Reads current Euler angles from the BNO055 sensor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{_b_n_o055_8c_af7b2c26e44dadaaa798a5c3d82914ba7}\label{_b_n_o055_8c_af7b2c26e44dadaaa798a5c3d82914ba7} 
+\mbox{\hyperlink{struct_i2_c___handle_type_def}{I2\+C\+\_\+\+Handle\+Type\+Def}} {\bfseries hi2c1}
+\begin{DoxyCompactList}\small\item\em I2\+C1 handle for BNO055 communication. \end{DoxyCompactList}\item 
+\Hypertarget{_b_n_o055_8c_a2da65a4ed7e9c0b75aca343c56100616}\label{_b_n_o055_8c_a2da65a4ed7e9c0b75aca343c56100616} 
+int32\+\_\+t {\bfseries roll\+\_\+set}
+\begin{DoxyCompactList}\small\item\em Roll setpoint (desired roll angle) \end{DoxyCompactList}\item 
+\Hypertarget{_b_n_o055_8c_a6988819caa7dacf7f337f8a22ca410a5}\label{_b_n_o055_8c_a6988819caa7dacf7f337f8a22ca410a5} 
+int32\+\_\+t {\bfseries pitch\+\_\+set}
+\begin{DoxyCompactList}\small\item\em Roll setpoint (desired roll angle) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_i_m_u_sample}{IMUSample}} \mbox{\hyperlink{_b_n_o055_8c_a6a8efb4992e24f1a844be2b330aad53b}{blackbox}} \mbox{[}\mbox{\hyperlink{_b_n_o055_8h_a78f316da3a87bf72cb1647786b64bf0e}{MAX\+\_\+\+SAMPLES}}\mbox{]}
+\begin{DoxyCompactList}\small\item\em Flight data buffer for post-\/flight analysis. \end{DoxyCompactList}\item 
+uint16\+\_\+t \mbox{\hyperlink{_b_n_o055_8c_ac8e20b2a06607543792ab55e4f74294b}{sample\+\_\+index}} = 0
+\begin{DoxyCompactList}\small\item\em Current index in blackbox buffer. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_b_n_o055_8c_a617a47c70795bcff659815ad0efd2266}{counter}} = 0
+\begin{DoxyCompactList}\small\item\em Counter for blackbox data sampling. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+BNO055 IMU (Inertial Measurement Unit) driver for attitude sensing. 
+
+\begin{DoxyAuthor}{Author}
+Aaron Lubinsky 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2025
+\end{DoxyDate}
+This driver provides interface functions for the Bosch BNO055 9-\/axis absolute orientation sensor. It handles I2C communication, sensor initialization, calibration monitoring, and Euler angle data acquisition with integrated flight data logging.
+
+\begin{DoxyNote}{Note}
+The BNO055 combines a triaxial 14-\/bit accelerometer, a triaxial 16-\/bit gyroscope, a triaxial geomagnetic sensor, and a 32-\/bit cortex M0+ microcontroller running Bosch Sensortec sensor fusion software.
+\end{DoxyNote}
+\DoxyHorRuler{0}
+ \hypertarget{_b_n_o055_8c_autotoc_md1}{}\doxysubsection{\texorpdfstring{\#\#\#\#\# How to use this driver \#\#\#\#\#}{\#\#\#\#\# How to use this driver \#\#\#\#\#}}\label{_b_n_o055_8c_autotoc_md1}
+
+\begin{DoxyEnumerate}
+\item Ensure I2\+C1 peripheral is properly configured and initialized
+\item Connect BNO055 reset pin to GPIOB Pin 14
+\item Connect status LED to GPIOA Pin 0 for calibration indication
+\item Call \doxylink{_b_n_o055_8c_acfcacd8ad3833c1dfba254dec3063044}{BNO\+\_\+\+Init()} to initialize and calibrate the IMU
+\item Call \doxylink{_b_n_o055_8c_aa4793269f7c346ae889fcb8a24130133}{BNO\+\_\+\+Read()} periodically to get current orientation data
+\item Access blackbox\mbox{[}\mbox{]} array for flight data analysis
+\end{DoxyEnumerate}
+
+\begin{DoxyWarning}{Warning}
+Ensure proper I2C pull-\/up resistors are installed 
+
+Allow sufficient time for IMU calibration before flight 
+\end{DoxyWarning}
+
+
+\label{doc-func-members}
+\Hypertarget{_b_n_o055_8c_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{_b_n_o055_8c_acfcacd8ad3833c1dfba254dec3063044}\index{BNO055.c@{BNO055.c}!BNO\_Init@{BNO\_Init}}
+\index{BNO\_Init@{BNO\_Init}!BNO055.c@{BNO055.c}}
+\doxysubsubsection{\texorpdfstring{BNO\_Init()}{BNO\_Init()}}
+{\footnotesize\ttfamily \label{_b_n_o055_8c_acfcacd8ad3833c1dfba254dec3063044} 
+void BNO\+\_\+\+Init (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+Initializes the BNO055 IMU sensor. 
+
+\texorpdfstring{$<$}{<} Include for STM32 HAL types and definitions
+
+This function performs a complete initialization sequence\+:
+\begin{DoxyEnumerate}
+\item Verifies I2C communication with the BNO055
+\item Resets the sensor and I2C interface if needed
+\item Configures the sensor to NDOF (Nine Degrees of Freedom) mode
+\item Waits for full system calibration before returning
+\end{DoxyEnumerate}
+
+The function implements robust error handling with automatic retry logic. It toggles the hardware reset pin and reinitializes I2C if communication fails.
+
+\begin{DoxyNote}{Note}
+NDOF mode provides absolute orientation by fusing all 9 sensor axes 
+
+Calibration can take 30-\/60 seconds depending on movement patterns 
+
+Red LED (PA0) remains on during calibration process
+\end{DoxyNote}
+\begin{DoxyWarning}{Warning}
+This function blocks until calibration is complete 
+
+Ensure sensor is moved through various orientations for proper calibration
+\end{DoxyWarning}
+\begin{DoxySeeAlso}{See also}
+\doxylink{_b_n_o055_8h_aa4793269f7c346ae889fcb8a24130133}{BNO\+\_\+\+Read()} 
+\end{DoxySeeAlso}
+\texorpdfstring{$<$}{<} NDOF operation mode value
+
+\texorpdfstring{$<$}{<} Configuration mode value
+
+\texorpdfstring{$<$}{<} Flag for successful I2C communication
+
+\texorpdfstring{$<$}{<} Data read from chip ID register
+
+\texorpdfstring{$<$}{<} Calibration completion flag\Hypertarget{_b_n_o055_8c_aa4793269f7c346ae889fcb8a24130133}\index{BNO055.c@{BNO055.c}!BNO\_Read@{BNO\_Read}}
+\index{BNO\_Read@{BNO\_Read}!BNO055.c@{BNO055.c}}
+\doxysubsubsection{\texorpdfstring{BNO\_Read()}{BNO\_Read()}}
+{\footnotesize\ttfamily \label{_b_n_o055_8c_aa4793269f7c346ae889fcb8a24130133} 
+void BNO\+\_\+\+Read (\begin{DoxyParamCaption}\item[{int32\+\_\+t \texorpdfstring{$\ast$}{*}}]{roll}{, }\item[{int32\+\_\+t \texorpdfstring{$\ast$}{*}}]{pitch}{, }\item[{int32\+\_\+t \texorpdfstring{$\ast$}{*}}]{yaw}{}\end{DoxyParamCaption})}
+
+
+
+Reads current Euler angles from the BNO055 sensor. 
+
+Reads Euler angles from the BNO055 sensor.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{out}}  & {\em roll} & Pointer to store roll angle (in millidegrees) \\
+\hline
+\mbox{\texttt{out}}  & {\em pitch} & Pointer to store pitch angle (in millidegrees) \\
+\hline
+\mbox{\texttt{out}}  & {\em yaw} & Pointer to store yaw angle (in millidegrees)\\
+\hline
+\end{DoxyParams}
+This function reads 6 bytes of Euler angle data from the BNO055 and converts them to 32-\/bit signed integers in millidegrees. The raw 16-\/bit values are scaled by 1000/16 to convert from the BNO055\textquotesingle{}s native 1/16 degree resolution to millidegrees.
+
+Additionally, this function implements flight data logging by storing pitch and roll data in the blackbox buffer at a configurable rate.
+
+\begin{DoxyNote}{Note}
+Euler angles are returned in millidegrees (1/1000 of a degree) 
+
+Yaw range\+: 0° to 360° (0 to 360000 millidegrees) 
+
+Roll/\+Pitch range\+: -\/180° to +180° (-\/180000 to +180000 millidegrees) 
+
+Data logging frequency controlled by blackbox\+Freq variable
+\end{DoxyNote}
+\begin{DoxyWarning}{Warning}
+Pointers must be valid and point to allocated memory 
+
+Function should be called at regular intervals for smooth control
+\end{DoxyWarning}
+\begin{DoxySeeAlso}{See also}
+\doxylink{_b_n_o055_8h_a348c74c0f81f24bf3c32c2474bdda081}{BNO\+\_\+\+Init()} 
+\end{DoxySeeAlso}
+\texorpdfstring{$<$}{<} Raw Euler angle data buffer (6 bytes)
+
+\texorpdfstring{$<$}{<} Raw 16-\/bit yaw value
+
+\texorpdfstring{$<$}{<} Raw 16-\/bit pitch value
+
+\texorpdfstring{$<$}{<} Raw 16-\/bit roll value
+
+\label{doc-var-members}
+\Hypertarget{_b_n_o055_8c_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{_b_n_o055_8c_a6a8efb4992e24f1a844be2b330aad53b}\index{BNO055.c@{BNO055.c}!blackbox@{blackbox}}
+\index{blackbox@{blackbox}!BNO055.c@{BNO055.c}}
+\doxysubsubsection{\texorpdfstring{blackbox}{blackbox}}
+{\footnotesize\ttfamily \label{_b_n_o055_8c_a6a8efb4992e24f1a844be2b330aad53b} 
+\mbox{\hyperlink{struct_i_m_u_sample}{IMUSample}} blackbox\mbox{[}\mbox{\hyperlink{_b_n_o055_8h_a78f316da3a87bf72cb1647786b64bf0e}{MAX\+\_\+\+SAMPLES}}\mbox{]}}
+
+
+
+Flight data buffer for post-\/flight analysis. 
+
+Flight data buffer. \Hypertarget{_b_n_o055_8c_a617a47c70795bcff659815ad0efd2266}\index{BNO055.c@{BNO055.c}!counter@{counter}}
+\index{counter@{counter}!BNO055.c@{BNO055.c}}
+\doxysubsubsection{\texorpdfstring{counter}{counter}}
+{\footnotesize\ttfamily \label{_b_n_o055_8c_a617a47c70795bcff659815ad0efd2266} 
+int counter = 0}
+
+
+
+Counter for blackbox data sampling. 
+
+Sample counter or general use variable. \Hypertarget{_b_n_o055_8c_ac8e20b2a06607543792ab55e4f74294b}\index{BNO055.c@{BNO055.c}!sample\_index@{sample\_index}}
+\index{sample\_index@{sample\_index}!BNO055.c@{BNO055.c}}
+\doxysubsubsection{\texorpdfstring{sample\_index}{sample\_index}}
+{\footnotesize\ttfamily \label{_b_n_o055_8c_ac8e20b2a06607543792ab55e4f74294b} 
+uint16\+\_\+t sample\+\_\+index = 0}
+
+
+
+Current index in blackbox buffer. 
+
+Index for blackbox samples. 

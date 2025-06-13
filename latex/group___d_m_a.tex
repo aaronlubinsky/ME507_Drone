@@ -1,0 +1,581 @@
+\doxysubsection{DMA }
+\hypertarget{group___d_m_a}{}\label{group___d_m_a}\index{DMA@{DMA}}
+
+
+DMA HAL module driver.  
+
+
+\doxysubsubsubsection*{Topics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{group___d_m_a___exported___types}{DMA Exported Types}}
+\begin{DoxyCompactList}\small\item\em DMA Exported Types. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group___d_m_a___exported___constants}{DMA Exported Constants}}
+\begin{DoxyCompactList}\small\item\em DMA Exported constants. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group___d_m_a___exported___functions}{DMA Exported Functions}}
+\begin{DoxyCompactList}\small\item\em DMA Exported functions. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group___d_m_a___private___constants}{DMA Private Constants}}
+\begin{DoxyCompactList}\small\item\em DMA private defines and constants. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group___d_m_a___private___macros}{DMA Private Macros}}
+\begin{DoxyCompactList}\small\item\em DMA private macros. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group___d_m_a___private___functions}{DMA Private Functions}}
+\begin{DoxyCompactList}\small\item\em DMA private functions. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group___d_m_a_gaadcee34f0999c8eafd37de2f69daa0ac}{\+\_\+\+\_\+\+HAL\+\_\+\+DMA\+\_\+\+RESET\+\_\+\+HANDLE\+\_\+\+STATE}}(\+\_\+\+\_\+\+HANDLE\+\_\+\+\_\+)
+\begin{DoxyCompactList}\small\item\em Reset DMA handle state. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___d_m_a_ga8f0ff408d25904040b9d23ee7f6af080}{\+\_\+\+\_\+\+HAL\+\_\+\+DMA\+\_\+\+GET\+\_\+\+FS}}(\+\_\+\+\_\+\+HANDLE\+\_\+\+\_\+)
+\begin{DoxyCompactList}\small\item\em Return the current DMA Stream FIFO filled level. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___d_m_a_ga93900b3ef3f87ef924eb887279a434b4}{\+\_\+\+\_\+\+HAL\+\_\+\+DMA\+\_\+\+ENABLE}}(\+\_\+\+\_\+\+HANDLE\+\_\+\+\_\+)
+\begin{DoxyCompactList}\small\item\em Enable the specified DMA Stream. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___d_m_a_gafeef4c5e8c3f015cdecc0f37bbe063dc}{\+\_\+\+\_\+\+HAL\+\_\+\+DMA\+\_\+\+DISABLE}}(\+\_\+\+\_\+\+HANDLE\+\_\+\+\_\+)
+\begin{DoxyCompactList}\small\item\em Disable the specified DMA Stream. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___d_m_a_gae3feef5ea50ff13a6a5b98cb353c87b0}{\+\_\+\+\_\+\+HAL\+\_\+\+DMA\+\_\+\+GET\+\_\+\+TC\+\_\+\+FLAG\+\_\+\+INDEX}}(\+\_\+\+\_\+\+HANDLE\+\_\+\+\_\+)
+\begin{DoxyCompactList}\small\item\em Return the current DMA Stream transfer complete flag. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___d_m_a_ga0095f5f3166a82bedc67744ac94acfba}{\+\_\+\+\_\+\+HAL\+\_\+\+DMA\+\_\+\+GET\+\_\+\+HT\+\_\+\+FLAG\+\_\+\+INDEX}}(\+\_\+\+\_\+\+HANDLE\+\_\+\+\_\+)
+\begin{DoxyCompactList}\small\item\em Return the current DMA Stream half transfer complete flag. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___d_m_a_ga5e765bb3b1c5fc9f1b1abbbb764250bc}{\+\_\+\+\_\+\+HAL\+\_\+\+DMA\+\_\+\+GET\+\_\+\+TE\+\_\+\+FLAG\+\_\+\+INDEX}}(\+\_\+\+\_\+\+HANDLE\+\_\+\+\_\+)
+\begin{DoxyCompactList}\small\item\em Return the current DMA Stream transfer error flag. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___d_m_a_ga5878c3a1dbcf01e6840fffcf1f244088}{\+\_\+\+\_\+\+HAL\+\_\+\+DMA\+\_\+\+GET\+\_\+\+FE\+\_\+\+FLAG\+\_\+\+INDEX}}(\+\_\+\+\_\+\+HANDLE\+\_\+\+\_\+)
+\begin{DoxyCompactList}\small\item\em Return the current DMA Stream FIFO error flag. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___d_m_a_ga23d1f282af3b9aa7aa396dcad94865d8}{\+\_\+\+\_\+\+HAL\+\_\+\+DMA\+\_\+\+GET\+\_\+\+DME\+\_\+\+FLAG\+\_\+\+INDEX}}(\+\_\+\+\_\+\+HANDLE\+\_\+\+\_\+)
+\begin{DoxyCompactList}\small\item\em Return the current DMA Stream direct mode error flag. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___d_m_a_ga798d4b3b3fbd32b95540967bb35b35be}{\+\_\+\+\_\+\+HAL\+\_\+\+DMA\+\_\+\+GET\+\_\+\+FLAG}}(\+\_\+\+\_\+\+HANDLE\+\_\+\+\_\+,  \+\_\+\+\_\+\+FLAG\+\_\+\+\_\+)
+\begin{DoxyCompactList}\small\item\em Get the DMA Stream pending flags. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___d_m_a_gabc041fb1c85ea7a3af94e42470ef7f2a}{\+\_\+\+\_\+\+HAL\+\_\+\+DMA\+\_\+\+CLEAR\+\_\+\+FLAG}}(\+\_\+\+\_\+\+HANDLE\+\_\+\+\_\+,  \+\_\+\+\_\+\+FLAG\+\_\+\+\_\+)
+\begin{DoxyCompactList}\small\item\em Clear the DMA Stream pending flags. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___d_m_a_ga2124233229c04ca90b790cd8cddfa98b}{\+\_\+\+\_\+\+HAL\+\_\+\+DMA\+\_\+\+ENABLE\+\_\+\+IT}}(\+\_\+\+\_\+\+HANDLE\+\_\+\+\_\+,  \+\_\+\+\_\+\+INTERRUPT\+\_\+\+\_\+)
+\begin{DoxyCompactList}\small\item\em Enable the specified DMA Stream interrupts. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___d_m_a_ga2867eab09398df2daac55c3f327654da}{\+\_\+\+\_\+\+HAL\+\_\+\+DMA\+\_\+\+DISABLE\+\_\+\+IT}}(\+\_\+\+\_\+\+HANDLE\+\_\+\+\_\+,  \+\_\+\+\_\+\+INTERRUPT\+\_\+\+\_\+)
+\begin{DoxyCompactList}\small\item\em Disable the specified DMA Stream interrupts. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___d_m_a_ga206f24e6bee4600515b9b6b1ec79365b}{\+\_\+\+\_\+\+HAL\+\_\+\+DMA\+\_\+\+GET\+\_\+\+IT\+\_\+\+SOURCE}}(\+\_\+\+\_\+\+HANDLE\+\_\+\+\_\+,  \+\_\+\+\_\+\+INTERRUPT\+\_\+\+\_\+)
+\begin{DoxyCompactList}\small\item\em Check whether the specified DMA Stream interrupt is enabled or disabled. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___d_m_a_ga448a8f809df86ccffae200ffd33d0a82}{\+\_\+\+\_\+\+HAL\+\_\+\+DMA\+\_\+\+SET\+\_\+\+COUNTER}}(\+\_\+\+\_\+\+HANDLE\+\_\+\+\_\+,  \+\_\+\+\_\+\+COUNTER\+\_\+\+\_\+)
+\begin{DoxyCompactList}\small\item\em Writes the number of data units to be transferred on the DMA Stream. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___d_m_a_ga082d691311bac96641dc35a17cfe8e63}{\+\_\+\+\_\+\+HAL\+\_\+\+DMA\+\_\+\+GET\+\_\+\+COUNTER}}(\+\_\+\+\_\+\+HANDLE\+\_\+\+\_\+)
+\begin{DoxyCompactList}\small\item\em Returns the number of remaining data units in the current DMAy Streamx transfer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsubsection{Detailed Description}
+DMA HAL module driver. 
+
+
+
+\label{doc-define-members}
+\Hypertarget{group___d_m_a_doc-define-members}
+\doxysubsubsection{Macro Definition Documentation}
+\Hypertarget{group___d_m_a_gabc041fb1c85ea7a3af94e42470ef7f2a}\index{DMA@{DMA}!\_\_HAL\_DMA\_CLEAR\_FLAG@{\_\_HAL\_DMA\_CLEAR\_FLAG}}
+\index{\_\_HAL\_DMA\_CLEAR\_FLAG@{\_\_HAL\_DMA\_CLEAR\_FLAG}!DMA@{DMA}}
+\doxysubsubsubsection{\texorpdfstring{\_\_HAL\_DMA\_CLEAR\_FLAG}{\_\_HAL\_DMA\_CLEAR\_FLAG}}
+{\footnotesize\ttfamily \label{group___d_m_a_gabc041fb1c85ea7a3af94e42470ef7f2a} 
+\#define \+\_\+\+\_\+\+HAL\+\_\+\+DMA\+\_\+\+CLEAR\+\_\+\+FLAG(\begin{DoxyParamCaption}\item[{}]{\+\_\+\+\_\+\+HANDLE\+\_\+\+\_\+}{, }\item[{}]{\+\_\+\+\_\+\+FLAG\+\_\+\+\_\+}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(((uint32\_t)((\_\_HANDLE\_\_)-\/>Instance)\ >\ (uint32\_t)DMA2\_Stream3)?\ (DMA2-\/>HIFCR\ =\ (\_\_FLAG\_\_))\ :\(\backslash\)}
+\DoxyCodeLine{\ ((uint32\_t)((\_\_HANDLE\_\_)-\/>Instance)\ >\ (uint32\_t)DMA1\_Stream7)?\ (DMA2-\/>LIFCR\ =\ (\_\_FLAG\_\_))\ :\(\backslash\)}
+\DoxyCodeLine{\ ((uint32\_t)((\_\_HANDLE\_\_)-\/>Instance)\ >\ (uint32\_t)DMA1\_Stream3)?\ (DMA1-\/>HIFCR\ =\ (\_\_FLAG\_\_))\ :\ (DMA1-\/>LIFCR\ =\ (\_\_FLAG\_\_)))}
+
+\end{DoxyCode}
+
+
+Clear the DMA Stream pending flags. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+\+\_\+\+HANDLE\+\_\+\+\_\+} & DMA handle \\
+\hline
+{\em \+\_\+\+\_\+\+FLAG\+\_\+\+\_\+} & specifies the flag to clear. This parameter can be any combination of the following values\+: \begin{DoxyItemize}
+\item DMA\+\_\+\+FLAG\+\_\+\+TCIFx\+: Transfer complete flag. \item DMA\+\_\+\+FLAG\+\_\+\+HTIFx\+: Half transfer complete flag. \item DMA\+\_\+\+FLAG\+\_\+\+TEIFx\+: Transfer error flag. \item DMA\+\_\+\+FLAG\+\_\+\+DMEIFx\+: Direct mode error flag. \item DMA\+\_\+\+FLAG\+\_\+\+FEIFx\+: FIFO error flag. Where x can be 0\+\_\+4, 1\+\_\+5, 2\+\_\+6 or 3\+\_\+7 to select the DMA Stream flag. ~\newline
+ \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\Hypertarget{group___d_m_a_gafeef4c5e8c3f015cdecc0f37bbe063dc}\index{DMA@{DMA}!\_\_HAL\_DMA\_DISABLE@{\_\_HAL\_DMA\_DISABLE}}
+\index{\_\_HAL\_DMA\_DISABLE@{\_\_HAL\_DMA\_DISABLE}!DMA@{DMA}}
+\doxysubsubsubsection{\texorpdfstring{\_\_HAL\_DMA\_DISABLE}{\_\_HAL\_DMA\_DISABLE}}
+{\footnotesize\ttfamily \label{group___d_m_a_gafeef4c5e8c3f015cdecc0f37bbe063dc} 
+\#define \+\_\+\+\_\+\+HAL\+\_\+\+DMA\+\_\+\+DISABLE(\begin{DoxyParamCaption}\item[{}]{\+\_\+\+\_\+\+HANDLE\+\_\+\+\_\+}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{((\_\_HANDLE\_\_)-\/>Instance-\/>CR\ \&=\ \ \string~DMA\_SxCR\_EN)}
+
+\end{DoxyCode}
+
+
+Disable the specified DMA Stream. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+\+\_\+\+HANDLE\+\_\+\+\_\+} & DMA handle \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\Hypertarget{group___d_m_a_ga2867eab09398df2daac55c3f327654da}\index{DMA@{DMA}!\_\_HAL\_DMA\_DISABLE\_IT@{\_\_HAL\_DMA\_DISABLE\_IT}}
+\index{\_\_HAL\_DMA\_DISABLE\_IT@{\_\_HAL\_DMA\_DISABLE\_IT}!DMA@{DMA}}
+\doxysubsubsubsection{\texorpdfstring{\_\_HAL\_DMA\_DISABLE\_IT}{\_\_HAL\_DMA\_DISABLE\_IT}}
+{\footnotesize\ttfamily \label{group___d_m_a_ga2867eab09398df2daac55c3f327654da} 
+\#define \+\_\+\+\_\+\+HAL\+\_\+\+DMA\+\_\+\+DISABLE\+\_\+\+IT(\begin{DoxyParamCaption}\item[{}]{\+\_\+\+\_\+\+HANDLE\+\_\+\+\_\+}{, }\item[{}]{\+\_\+\+\_\+\+INTERRUPT\+\_\+\+\_\+}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(((\_\_INTERRUPT\_\_)\ !=\ DMA\_IT\_FE)?\ \(\backslash\)}
+\DoxyCodeLine{((\_\_HANDLE\_\_)-\/>Instance-\/>CR\ \&=\ \string~(\_\_INTERRUPT\_\_))\ :\ ((\_\_HANDLE\_\_)-\/>Instance-\/>FCR\ \&=\ \string~(\_\_INTERRUPT\_\_)))}
+
+\end{DoxyCode}
+
+
+Disable the specified DMA Stream interrupts. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+\+\_\+\+HANDLE\+\_\+\+\_\+} & DMA handle \\
+\hline
+{\em \+\_\+\+\_\+\+INTERRUPT\+\_\+\+\_\+} & specifies the DMA interrupt sources to be enabled or disabled. This parameter can be any combination of the following values\+: \begin{DoxyItemize}
+\item DMA\+\_\+\+IT\+\_\+\+TC\+: Transfer complete interrupt mask. \item DMA\+\_\+\+IT\+\_\+\+HT\+: Half transfer complete interrupt mask. \item DMA\+\_\+\+IT\+\_\+\+TE\+: Transfer error interrupt mask. \item DMA\+\_\+\+IT\+\_\+\+FE\+: FIFO error interrupt mask. \item DMA\+\_\+\+IT\+\_\+\+DME\+: Direct mode error interrupt. \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\Hypertarget{group___d_m_a_ga93900b3ef3f87ef924eb887279a434b4}\index{DMA@{DMA}!\_\_HAL\_DMA\_ENABLE@{\_\_HAL\_DMA\_ENABLE}}
+\index{\_\_HAL\_DMA\_ENABLE@{\_\_HAL\_DMA\_ENABLE}!DMA@{DMA}}
+\doxysubsubsubsection{\texorpdfstring{\_\_HAL\_DMA\_ENABLE}{\_\_HAL\_DMA\_ENABLE}}
+{\footnotesize\ttfamily \label{group___d_m_a_ga93900b3ef3f87ef924eb887279a434b4} 
+\#define \+\_\+\+\_\+\+HAL\+\_\+\+DMA\+\_\+\+ENABLE(\begin{DoxyParamCaption}\item[{}]{\+\_\+\+\_\+\+HANDLE\+\_\+\+\_\+}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{((\_\_HANDLE\_\_)-\/>Instance-\/>CR\ |=\ \ DMA\_SxCR\_EN)}
+
+\end{DoxyCode}
+
+
+Enable the specified DMA Stream. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+\+\_\+\+HANDLE\+\_\+\+\_\+} & DMA handle \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\Hypertarget{group___d_m_a_ga2124233229c04ca90b790cd8cddfa98b}\index{DMA@{DMA}!\_\_HAL\_DMA\_ENABLE\_IT@{\_\_HAL\_DMA\_ENABLE\_IT}}
+\index{\_\_HAL\_DMA\_ENABLE\_IT@{\_\_HAL\_DMA\_ENABLE\_IT}!DMA@{DMA}}
+\doxysubsubsubsection{\texorpdfstring{\_\_HAL\_DMA\_ENABLE\_IT}{\_\_HAL\_DMA\_ENABLE\_IT}}
+{\footnotesize\ttfamily \label{group___d_m_a_ga2124233229c04ca90b790cd8cddfa98b} 
+\#define \+\_\+\+\_\+\+HAL\+\_\+\+DMA\+\_\+\+ENABLE\+\_\+\+IT(\begin{DoxyParamCaption}\item[{}]{\+\_\+\+\_\+\+HANDLE\+\_\+\+\_\+}{, }\item[{}]{\+\_\+\+\_\+\+INTERRUPT\+\_\+\+\_\+}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(((\_\_INTERRUPT\_\_)\ !=\ DMA\_IT\_FE)?\ \(\backslash\)}
+\DoxyCodeLine{((\_\_HANDLE\_\_)-\/>Instance-\/>CR\ |=\ (\_\_INTERRUPT\_\_))\ :\ ((\_\_HANDLE\_\_)-\/>Instance-\/>FCR\ |=\ (\_\_INTERRUPT\_\_)))}
+
+\end{DoxyCode}
+
+
+Enable the specified DMA Stream interrupts. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+\+\_\+\+HANDLE\+\_\+\+\_\+} & DMA handle \\
+\hline
+{\em \+\_\+\+\_\+\+INTERRUPT\+\_\+\+\_\+} & specifies the DMA interrupt sources to be enabled or disabled. This parameter can be any combination of the following values\+: \begin{DoxyItemize}
+\item DMA\+\_\+\+IT\+\_\+\+TC\+: Transfer complete interrupt mask. \item DMA\+\_\+\+IT\+\_\+\+HT\+: Half transfer complete interrupt mask. \item DMA\+\_\+\+IT\+\_\+\+TE\+: Transfer error interrupt mask. \item DMA\+\_\+\+IT\+\_\+\+FE\+: FIFO error interrupt mask. \item DMA\+\_\+\+IT\+\_\+\+DME\+: Direct mode error interrupt. \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\Hypertarget{group___d_m_a_ga082d691311bac96641dc35a17cfe8e63}\index{DMA@{DMA}!\_\_HAL\_DMA\_GET\_COUNTER@{\_\_HAL\_DMA\_GET\_COUNTER}}
+\index{\_\_HAL\_DMA\_GET\_COUNTER@{\_\_HAL\_DMA\_GET\_COUNTER}!DMA@{DMA}}
+\doxysubsubsubsection{\texorpdfstring{\_\_HAL\_DMA\_GET\_COUNTER}{\_\_HAL\_DMA\_GET\_COUNTER}}
+{\footnotesize\ttfamily \label{group___d_m_a_ga082d691311bac96641dc35a17cfe8e63} 
+\#define \+\_\+\+\_\+\+HAL\+\_\+\+DMA\+\_\+\+GET\+\_\+\+COUNTER(\begin{DoxyParamCaption}\item[{}]{\+\_\+\+\_\+\+HANDLE\+\_\+\+\_\+}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{((\_\_HANDLE\_\_)-\/>Instance-\/>NDTR)}
+
+\end{DoxyCode}
+
+
+Returns the number of remaining data units in the current DMAy Streamx transfer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+\+\_\+\+HANDLE\+\_\+\+\_\+} & DMA handle\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & number of remaining data units in the current DMA Stream transfer. \\
+\hline
+\end{DoxyRetVals}
+\Hypertarget{group___d_m_a_ga23d1f282af3b9aa7aa396dcad94865d8}\index{DMA@{DMA}!\_\_HAL\_DMA\_GET\_DME\_FLAG\_INDEX@{\_\_HAL\_DMA\_GET\_DME\_FLAG\_INDEX}}
+\index{\_\_HAL\_DMA\_GET\_DME\_FLAG\_INDEX@{\_\_HAL\_DMA\_GET\_DME\_FLAG\_INDEX}!DMA@{DMA}}
+\doxysubsubsubsection{\texorpdfstring{\_\_HAL\_DMA\_GET\_DME\_FLAG\_INDEX}{\_\_HAL\_DMA\_GET\_DME\_FLAG\_INDEX}}
+{\footnotesize\ttfamily \label{group___d_m_a_ga23d1f282af3b9aa7aa396dcad94865d8} 
+\#define \+\_\+\+\_\+\+HAL\+\_\+\+DMA\+\_\+\+GET\+\_\+\+DME\+\_\+\+FLAG\+\_\+\+INDEX(\begin{DoxyParamCaption}\item[{}]{\+\_\+\+\_\+\+HANDLE\+\_\+\+\_\+}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(((uint32\_t)((\_\_HANDLE\_\_)-\/>Instance)\ ==\ ((uint32\_t)DMA1\_Stream0))?\ DMA\_FLAG\_DMEIF0\_4\ :\(\backslash\)}
+\DoxyCodeLine{\ ((uint32\_t)((\_\_HANDLE\_\_)-\/>Instance)\ ==\ ((uint32\_t)DMA2\_Stream0))?\ DMA\_FLAG\_DMEIF0\_4\ :\(\backslash\)}
+\DoxyCodeLine{\ ((uint32\_t)((\_\_HANDLE\_\_)-\/>Instance)\ ==\ ((uint32\_t)DMA1\_Stream4))?\ DMA\_FLAG\_DMEIF0\_4\ :\(\backslash\)}
+\DoxyCodeLine{\ ((uint32\_t)((\_\_HANDLE\_\_)-\/>Instance)\ ==\ ((uint32\_t)DMA2\_Stream4))?\ DMA\_FLAG\_DMEIF0\_4\ :\(\backslash\)}
+\DoxyCodeLine{\ ((uint32\_t)((\_\_HANDLE\_\_)-\/>Instance)\ ==\ ((uint32\_t)DMA1\_Stream1))?\ DMA\_FLAG\_DMEIF1\_5\ :\(\backslash\)}
+\DoxyCodeLine{\ ((uint32\_t)((\_\_HANDLE\_\_)-\/>Instance)\ ==\ ((uint32\_t)DMA2\_Stream1))?\ DMA\_FLAG\_DMEIF1\_5\ :\(\backslash\)}
+\DoxyCodeLine{\ ((uint32\_t)((\_\_HANDLE\_\_)-\/>Instance)\ ==\ ((uint32\_t)DMA1\_Stream5))?\ DMA\_FLAG\_DMEIF1\_5\ :\(\backslash\)}
+\DoxyCodeLine{\ ((uint32\_t)((\_\_HANDLE\_\_)-\/>Instance)\ ==\ ((uint32\_t)DMA2\_Stream5))?\ DMA\_FLAG\_DMEIF1\_5\ :\(\backslash\)}
+\DoxyCodeLine{\ ((uint32\_t)((\_\_HANDLE\_\_)-\/>Instance)\ ==\ ((uint32\_t)DMA1\_Stream2))?\ DMA\_FLAG\_DMEIF2\_6\ :\(\backslash\)}
+\DoxyCodeLine{\ ((uint32\_t)((\_\_HANDLE\_\_)-\/>Instance)\ ==\ ((uint32\_t)DMA2\_Stream2))?\ DMA\_FLAG\_DMEIF2\_6\ :\(\backslash\)}
+\DoxyCodeLine{\ ((uint32\_t)((\_\_HANDLE\_\_)-\/>Instance)\ ==\ ((uint32\_t)DMA1\_Stream6))?\ DMA\_FLAG\_DMEIF2\_6\ :\(\backslash\)}
+\DoxyCodeLine{\ ((uint32\_t)((\_\_HANDLE\_\_)-\/>Instance)\ ==\ ((uint32\_t)DMA2\_Stream6))?\ DMA\_FLAG\_DMEIF2\_6\ :\(\backslash\)}
+\DoxyCodeLine{\ \ \ DMA\_FLAG\_DMEIF3\_7)}
+
+\end{DoxyCode}
+
+
+Return the current DMA Stream direct mode error flag. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+\+\_\+\+HANDLE\+\_\+\+\_\+} & DMA handle \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & specified direct mode error flag index. \\
+\hline
+\end{DoxyRetVals}
+\Hypertarget{group___d_m_a_ga5878c3a1dbcf01e6840fffcf1f244088}\index{DMA@{DMA}!\_\_HAL\_DMA\_GET\_FE\_FLAG\_INDEX@{\_\_HAL\_DMA\_GET\_FE\_FLAG\_INDEX}}
+\index{\_\_HAL\_DMA\_GET\_FE\_FLAG\_INDEX@{\_\_HAL\_DMA\_GET\_FE\_FLAG\_INDEX}!DMA@{DMA}}
+\doxysubsubsubsection{\texorpdfstring{\_\_HAL\_DMA\_GET\_FE\_FLAG\_INDEX}{\_\_HAL\_DMA\_GET\_FE\_FLAG\_INDEX}}
+{\footnotesize\ttfamily \label{group___d_m_a_ga5878c3a1dbcf01e6840fffcf1f244088} 
+\#define \+\_\+\+\_\+\+HAL\+\_\+\+DMA\+\_\+\+GET\+\_\+\+FE\+\_\+\+FLAG\+\_\+\+INDEX(\begin{DoxyParamCaption}\item[{}]{\+\_\+\+\_\+\+HANDLE\+\_\+\+\_\+}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(((uint32\_t)((\_\_HANDLE\_\_)-\/>Instance)\ ==\ ((uint32\_t)DMA1\_Stream0))?\ DMA\_FLAG\_FEIF0\_4\ :\(\backslash\)}
+\DoxyCodeLine{\ ((uint32\_t)((\_\_HANDLE\_\_)-\/>Instance)\ ==\ ((uint32\_t)DMA2\_Stream0))?\ DMA\_FLAG\_FEIF0\_4\ :\(\backslash\)}
+\DoxyCodeLine{\ ((uint32\_t)((\_\_HANDLE\_\_)-\/>Instance)\ ==\ ((uint32\_t)DMA1\_Stream4))?\ DMA\_FLAG\_FEIF0\_4\ :\(\backslash\)}
+\DoxyCodeLine{\ ((uint32\_t)((\_\_HANDLE\_\_)-\/>Instance)\ ==\ ((uint32\_t)DMA2\_Stream4))?\ DMA\_FLAG\_FEIF0\_4\ :\(\backslash\)}
+\DoxyCodeLine{\ ((uint32\_t)((\_\_HANDLE\_\_)-\/>Instance)\ ==\ ((uint32\_t)DMA1\_Stream1))?\ DMA\_FLAG\_FEIF1\_5\ :\(\backslash\)}
+\DoxyCodeLine{\ ((uint32\_t)((\_\_HANDLE\_\_)-\/>Instance)\ ==\ ((uint32\_t)DMA2\_Stream1))?\ DMA\_FLAG\_FEIF1\_5\ :\(\backslash\)}
+\DoxyCodeLine{\ ((uint32\_t)((\_\_HANDLE\_\_)-\/>Instance)\ ==\ ((uint32\_t)DMA1\_Stream5))?\ DMA\_FLAG\_FEIF1\_5\ :\(\backslash\)}
+\DoxyCodeLine{\ ((uint32\_t)((\_\_HANDLE\_\_)-\/>Instance)\ ==\ ((uint32\_t)DMA2\_Stream5))?\ DMA\_FLAG\_FEIF1\_5\ :\(\backslash\)}
+\DoxyCodeLine{\ ((uint32\_t)((\_\_HANDLE\_\_)-\/>Instance)\ ==\ ((uint32\_t)DMA1\_Stream2))?\ DMA\_FLAG\_FEIF2\_6\ :\(\backslash\)}
+\DoxyCodeLine{\ ((uint32\_t)((\_\_HANDLE\_\_)-\/>Instance)\ ==\ ((uint32\_t)DMA2\_Stream2))?\ DMA\_FLAG\_FEIF2\_6\ :\(\backslash\)}
+\DoxyCodeLine{\ ((uint32\_t)((\_\_HANDLE\_\_)-\/>Instance)\ ==\ ((uint32\_t)DMA1\_Stream6))?\ DMA\_FLAG\_FEIF2\_6\ :\(\backslash\)}
+\DoxyCodeLine{\ ((uint32\_t)((\_\_HANDLE\_\_)-\/>Instance)\ ==\ ((uint32\_t)DMA2\_Stream6))?\ DMA\_FLAG\_FEIF2\_6\ :\(\backslash\)}
+\DoxyCodeLine{\ \ \ DMA\_FLAG\_FEIF3\_7)}
+
+\end{DoxyCode}
+
+
+Return the current DMA Stream FIFO error flag. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+\+\_\+\+HANDLE\+\_\+\+\_\+} & DMA handle \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & specified FIFO error flag index. \\
+\hline
+\end{DoxyRetVals}
+\Hypertarget{group___d_m_a_ga798d4b3b3fbd32b95540967bb35b35be}\index{DMA@{DMA}!\_\_HAL\_DMA\_GET\_FLAG@{\_\_HAL\_DMA\_GET\_FLAG}}
+\index{\_\_HAL\_DMA\_GET\_FLAG@{\_\_HAL\_DMA\_GET\_FLAG}!DMA@{DMA}}
+\doxysubsubsubsection{\texorpdfstring{\_\_HAL\_DMA\_GET\_FLAG}{\_\_HAL\_DMA\_GET\_FLAG}}
+{\footnotesize\ttfamily \label{group___d_m_a_ga798d4b3b3fbd32b95540967bb35b35be} 
+\#define \+\_\+\+\_\+\+HAL\+\_\+\+DMA\+\_\+\+GET\+\_\+\+FLAG(\begin{DoxyParamCaption}\item[{}]{\+\_\+\+\_\+\+HANDLE\+\_\+\+\_\+}{, }\item[{}]{\+\_\+\+\_\+\+FLAG\+\_\+\+\_\+}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(((uint32\_t)((\_\_HANDLE\_\_)-\/>Instance)\ >\ (uint32\_t)DMA2\_Stream3)?\ (DMA2-\/>HISR\ \&\ (\_\_FLAG\_\_))\ :\(\backslash\)}
+\DoxyCodeLine{\ ((uint32\_t)((\_\_HANDLE\_\_)-\/>Instance)\ >\ (uint32\_t)DMA1\_Stream7)?\ (DMA2-\/>LISR\ \&\ (\_\_FLAG\_\_))\ :\(\backslash\)}
+\DoxyCodeLine{\ ((uint32\_t)((\_\_HANDLE\_\_)-\/>Instance)\ >\ (uint32\_t)DMA1\_Stream3)?\ (DMA1-\/>HISR\ \&\ (\_\_FLAG\_\_))\ :\ (DMA1-\/>LISR\ \&\ (\_\_FLAG\_\_)))}
+
+\end{DoxyCode}
+
+
+Get the DMA Stream pending flags. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+\+\_\+\+HANDLE\+\_\+\+\_\+} & DMA handle \\
+\hline
+{\em \+\_\+\+\_\+\+FLAG\+\_\+\+\_\+} & Get the specified flag. This parameter can be any combination of the following values\+: \begin{DoxyItemize}
+\item DMA\+\_\+\+FLAG\+\_\+\+TCIFx\+: Transfer complete flag. \item DMA\+\_\+\+FLAG\+\_\+\+HTIFx\+: Half transfer complete flag. \item DMA\+\_\+\+FLAG\+\_\+\+TEIFx\+: Transfer error flag. \item DMA\+\_\+\+FLAG\+\_\+\+DMEIFx\+: Direct mode error flag. \item DMA\+\_\+\+FLAG\+\_\+\+FEIFx\+: FIFO error flag. Where x can be 0\+\_\+4, 1\+\_\+5, 2\+\_\+6 or 3\+\_\+7 to select the DMA Stream flag. ~\newline
+ \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & state of FLAG (SET or RESET). \\
+\hline
+\end{DoxyRetVals}
+\Hypertarget{group___d_m_a_ga8f0ff408d25904040b9d23ee7f6af080}\index{DMA@{DMA}!\_\_HAL\_DMA\_GET\_FS@{\_\_HAL\_DMA\_GET\_FS}}
+\index{\_\_HAL\_DMA\_GET\_FS@{\_\_HAL\_DMA\_GET\_FS}!DMA@{DMA}}
+\doxysubsubsubsection{\texorpdfstring{\_\_HAL\_DMA\_GET\_FS}{\_\_HAL\_DMA\_GET\_FS}}
+{\footnotesize\ttfamily \label{group___d_m_a_ga8f0ff408d25904040b9d23ee7f6af080} 
+\#define \+\_\+\+\_\+\+HAL\+\_\+\+DMA\+\_\+\+GET\+\_\+\+FS(\begin{DoxyParamCaption}\item[{}]{\+\_\+\+\_\+\+HANDLE\+\_\+\+\_\+}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(((\_\_HANDLE\_\_)-\/>Instance-\/>FCR\ \&\ (DMA\_SxFCR\_FS)))}
+
+\end{DoxyCode}
+
+
+Return the current DMA Stream FIFO filled level. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+\+\_\+\+HANDLE\+\_\+\+\_\+} & DMA handle \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & FIFO filling state.
+\begin{DoxyItemize}
+\item DMA\+\_\+\+FIFOStatus\+\_\+\+Less1\+Quarter\+Full\+: when FIFO is less than 1 quarter-\/full and not empty.
+\item DMA\+\_\+\+FIFOStatus\+\_\+1\+Quarter\+Full\+: if more than 1 quarter-\/full.
+\item DMA\+\_\+\+FIFOStatus\+\_\+\+Half\+Full\+: if more than 1 half-\/full.
+\item DMA\+\_\+\+FIFOStatus\+\_\+3\+Quarters\+Full\+: if more than 3 quarters-\/full.
+\item DMA\+\_\+\+FIFOStatus\+\_\+\+Empty\+: when FIFO is empty
+\item DMA\+\_\+\+FIFOStatus\+\_\+\+Full\+: when FIFO is full 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyRetVals}
+\Hypertarget{group___d_m_a_ga0095f5f3166a82bedc67744ac94acfba}\index{DMA@{DMA}!\_\_HAL\_DMA\_GET\_HT\_FLAG\_INDEX@{\_\_HAL\_DMA\_GET\_HT\_FLAG\_INDEX}}
+\index{\_\_HAL\_DMA\_GET\_HT\_FLAG\_INDEX@{\_\_HAL\_DMA\_GET\_HT\_FLAG\_INDEX}!DMA@{DMA}}
+\doxysubsubsubsection{\texorpdfstring{\_\_HAL\_DMA\_GET\_HT\_FLAG\_INDEX}{\_\_HAL\_DMA\_GET\_HT\_FLAG\_INDEX}}
+{\footnotesize\ttfamily \label{group___d_m_a_ga0095f5f3166a82bedc67744ac94acfba} 
+\#define \+\_\+\+\_\+\+HAL\+\_\+\+DMA\+\_\+\+GET\+\_\+\+HT\+\_\+\+FLAG\+\_\+\+INDEX(\begin{DoxyParamCaption}\item[{}]{\+\_\+\+\_\+\+HANDLE\+\_\+\+\_\+}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(((uint32\_t)((\_\_HANDLE\_\_)-\/>Instance)\ ==\ ((uint32\_t)DMA1\_Stream0))?\ DMA\_FLAG\_HTIF0\_4\ :\(\backslash\)}
+\DoxyCodeLine{\ ((uint32\_t)((\_\_HANDLE\_\_)-\/>Instance)\ ==\ ((uint32\_t)DMA2\_Stream0))?\ DMA\_FLAG\_HTIF0\_4\ :\(\backslash\)}
+\DoxyCodeLine{\ ((uint32\_t)((\_\_HANDLE\_\_)-\/>Instance)\ ==\ ((uint32\_t)DMA1\_Stream4))?\ DMA\_FLAG\_HTIF0\_4\ :\(\backslash\)}
+\DoxyCodeLine{\ ((uint32\_t)((\_\_HANDLE\_\_)-\/>Instance)\ ==\ ((uint32\_t)DMA2\_Stream4))?\ DMA\_FLAG\_HTIF0\_4\ :\(\backslash\)}
+\DoxyCodeLine{\ ((uint32\_t)((\_\_HANDLE\_\_)-\/>Instance)\ ==\ ((uint32\_t)DMA1\_Stream1))?\ DMA\_FLAG\_HTIF1\_5\ :\(\backslash\)}
+\DoxyCodeLine{\ ((uint32\_t)((\_\_HANDLE\_\_)-\/>Instance)\ ==\ ((uint32\_t)DMA2\_Stream1))?\ DMA\_FLAG\_HTIF1\_5\ :\(\backslash\)}
+\DoxyCodeLine{\ ((uint32\_t)((\_\_HANDLE\_\_)-\/>Instance)\ ==\ ((uint32\_t)DMA1\_Stream5))?\ DMA\_FLAG\_HTIF1\_5\ :\(\backslash\)}
+\DoxyCodeLine{\ ((uint32\_t)((\_\_HANDLE\_\_)-\/>Instance)\ ==\ ((uint32\_t)DMA2\_Stream5))?\ DMA\_FLAG\_HTIF1\_5\ :\(\backslash\)}
+\DoxyCodeLine{\ ((uint32\_t)((\_\_HANDLE\_\_)-\/>Instance)\ ==\ ((uint32\_t)DMA1\_Stream2))?\ DMA\_FLAG\_HTIF2\_6\ :\(\backslash\)}
+\DoxyCodeLine{\ ((uint32\_t)((\_\_HANDLE\_\_)-\/>Instance)\ ==\ ((uint32\_t)DMA2\_Stream2))?\ DMA\_FLAG\_HTIF2\_6\ :\(\backslash\)}
+\DoxyCodeLine{\ ((uint32\_t)((\_\_HANDLE\_\_)-\/>Instance)\ ==\ ((uint32\_t)DMA1\_Stream6))?\ DMA\_FLAG\_HTIF2\_6\ :\(\backslash\)}
+\DoxyCodeLine{\ ((uint32\_t)((\_\_HANDLE\_\_)-\/>Instance)\ ==\ ((uint32\_t)DMA2\_Stream6))?\ DMA\_FLAG\_HTIF2\_6\ :\(\backslash\)}
+\DoxyCodeLine{\ \ \ DMA\_FLAG\_HTIF3\_7)}
+
+\end{DoxyCode}
+
+
+Return the current DMA Stream half transfer complete flag. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+\+\_\+\+HANDLE\+\_\+\+\_\+} & DMA handle \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & specified half transfer complete flag index. \\
+\hline
+\end{DoxyRetVals}
+\Hypertarget{group___d_m_a_ga206f24e6bee4600515b9b6b1ec79365b}\index{DMA@{DMA}!\_\_HAL\_DMA\_GET\_IT\_SOURCE@{\_\_HAL\_DMA\_GET\_IT\_SOURCE}}
+\index{\_\_HAL\_DMA\_GET\_IT\_SOURCE@{\_\_HAL\_DMA\_GET\_IT\_SOURCE}!DMA@{DMA}}
+\doxysubsubsubsection{\texorpdfstring{\_\_HAL\_DMA\_GET\_IT\_SOURCE}{\_\_HAL\_DMA\_GET\_IT\_SOURCE}}
+{\footnotesize\ttfamily \label{group___d_m_a_ga206f24e6bee4600515b9b6b1ec79365b} 
+\#define \+\_\+\+\_\+\+HAL\+\_\+\+DMA\+\_\+\+GET\+\_\+\+IT\+\_\+\+SOURCE(\begin{DoxyParamCaption}\item[{}]{\+\_\+\+\_\+\+HANDLE\+\_\+\+\_\+}{, }\item[{}]{\+\_\+\+\_\+\+INTERRUPT\+\_\+\+\_\+}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (((\_\_INTERRUPT\_\_)\ !=\ DMA\_IT\_FE)?\ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ((\_\_HANDLE\_\_)-\/>Instance-\/>CR\ \&\ (\_\_INTERRUPT\_\_))\ :\ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ((\_\_HANDLE\_\_)-\/>Instance-\/>FCR\ \&\ (\_\_INTERRUPT\_\_)))}
+
+\end{DoxyCode}
+
+
+Check whether the specified DMA Stream interrupt is enabled or disabled. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+\+\_\+\+HANDLE\+\_\+\+\_\+} & DMA handle \\
+\hline
+{\em \+\_\+\+\_\+\+INTERRUPT\+\_\+\+\_\+} & specifies the DMA interrupt source to check. This parameter can be one of the following values\+: \begin{DoxyItemize}
+\item DMA\+\_\+\+IT\+\_\+\+TC\+: Transfer complete interrupt mask. \item DMA\+\_\+\+IT\+\_\+\+HT\+: Half transfer complete interrupt mask. \item DMA\+\_\+\+IT\+\_\+\+TE\+: Transfer error interrupt mask. \item DMA\+\_\+\+IT\+\_\+\+FE\+: FIFO error interrupt mask. \item DMA\+\_\+\+IT\+\_\+\+DME\+: Direct mode error interrupt. \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & state of DMA\+\_\+\+IT. \\
+\hline
+\end{DoxyRetVals}
+\Hypertarget{group___d_m_a_gae3feef5ea50ff13a6a5b98cb353c87b0}\index{DMA@{DMA}!\_\_HAL\_DMA\_GET\_TC\_FLAG\_INDEX@{\_\_HAL\_DMA\_GET\_TC\_FLAG\_INDEX}}
+\index{\_\_HAL\_DMA\_GET\_TC\_FLAG\_INDEX@{\_\_HAL\_DMA\_GET\_TC\_FLAG\_INDEX}!DMA@{DMA}}
+\doxysubsubsubsection{\texorpdfstring{\_\_HAL\_DMA\_GET\_TC\_FLAG\_INDEX}{\_\_HAL\_DMA\_GET\_TC\_FLAG\_INDEX}}
+{\footnotesize\ttfamily \label{group___d_m_a_gae3feef5ea50ff13a6a5b98cb353c87b0} 
+\#define \+\_\+\+\_\+\+HAL\+\_\+\+DMA\+\_\+\+GET\+\_\+\+TC\+\_\+\+FLAG\+\_\+\+INDEX(\begin{DoxyParamCaption}\item[{}]{\+\_\+\+\_\+\+HANDLE\+\_\+\+\_\+}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(((uint32\_t)((\_\_HANDLE\_\_)-\/>Instance)\ ==\ ((uint32\_t)DMA1\_Stream0))?\ DMA\_FLAG\_TCIF0\_4\ :\(\backslash\)}
+\DoxyCodeLine{\ ((uint32\_t)((\_\_HANDLE\_\_)-\/>Instance)\ ==\ ((uint32\_t)DMA2\_Stream0))?\ DMA\_FLAG\_TCIF0\_4\ :\(\backslash\)}
+\DoxyCodeLine{\ ((uint32\_t)((\_\_HANDLE\_\_)-\/>Instance)\ ==\ ((uint32\_t)DMA1\_Stream4))?\ DMA\_FLAG\_TCIF0\_4\ :\(\backslash\)}
+\DoxyCodeLine{\ ((uint32\_t)((\_\_HANDLE\_\_)-\/>Instance)\ ==\ ((uint32\_t)DMA2\_Stream4))?\ DMA\_FLAG\_TCIF0\_4\ :\(\backslash\)}
+\DoxyCodeLine{\ ((uint32\_t)((\_\_HANDLE\_\_)-\/>Instance)\ ==\ ((uint32\_t)DMA1\_Stream1))?\ DMA\_FLAG\_TCIF1\_5\ :\(\backslash\)}
+\DoxyCodeLine{\ ((uint32\_t)((\_\_HANDLE\_\_)-\/>Instance)\ ==\ ((uint32\_t)DMA2\_Stream1))?\ DMA\_FLAG\_TCIF1\_5\ :\(\backslash\)}
+\DoxyCodeLine{\ ((uint32\_t)((\_\_HANDLE\_\_)-\/>Instance)\ ==\ ((uint32\_t)DMA1\_Stream5))?\ DMA\_FLAG\_TCIF1\_5\ :\(\backslash\)}
+\DoxyCodeLine{\ ((uint32\_t)((\_\_HANDLE\_\_)-\/>Instance)\ ==\ ((uint32\_t)DMA2\_Stream5))?\ DMA\_FLAG\_TCIF1\_5\ :\(\backslash\)}
+\DoxyCodeLine{\ ((uint32\_t)((\_\_HANDLE\_\_)-\/>Instance)\ ==\ ((uint32\_t)DMA1\_Stream2))?\ DMA\_FLAG\_TCIF2\_6\ :\(\backslash\)}
+\DoxyCodeLine{\ ((uint32\_t)((\_\_HANDLE\_\_)-\/>Instance)\ ==\ ((uint32\_t)DMA2\_Stream2))?\ DMA\_FLAG\_TCIF2\_6\ :\(\backslash\)}
+\DoxyCodeLine{\ ((uint32\_t)((\_\_HANDLE\_\_)-\/>Instance)\ ==\ ((uint32\_t)DMA1\_Stream6))?\ DMA\_FLAG\_TCIF2\_6\ :\(\backslash\)}
+\DoxyCodeLine{\ ((uint32\_t)((\_\_HANDLE\_\_)-\/>Instance)\ ==\ ((uint32\_t)DMA2\_Stream6))?\ DMA\_FLAG\_TCIF2\_6\ :\(\backslash\)}
+\DoxyCodeLine{\ \ \ DMA\_FLAG\_TCIF3\_7)}
+
+\end{DoxyCode}
+
+
+Return the current DMA Stream transfer complete flag. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+\+\_\+\+HANDLE\+\_\+\+\_\+} & DMA handle \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & specified transfer complete flag index. \\
+\hline
+\end{DoxyRetVals}
+\Hypertarget{group___d_m_a_ga5e765bb3b1c5fc9f1b1abbbb764250bc}\index{DMA@{DMA}!\_\_HAL\_DMA\_GET\_TE\_FLAG\_INDEX@{\_\_HAL\_DMA\_GET\_TE\_FLAG\_INDEX}}
+\index{\_\_HAL\_DMA\_GET\_TE\_FLAG\_INDEX@{\_\_HAL\_DMA\_GET\_TE\_FLAG\_INDEX}!DMA@{DMA}}
+\doxysubsubsubsection{\texorpdfstring{\_\_HAL\_DMA\_GET\_TE\_FLAG\_INDEX}{\_\_HAL\_DMA\_GET\_TE\_FLAG\_INDEX}}
+{\footnotesize\ttfamily \label{group___d_m_a_ga5e765bb3b1c5fc9f1b1abbbb764250bc} 
+\#define \+\_\+\+\_\+\+HAL\+\_\+\+DMA\+\_\+\+GET\+\_\+\+TE\+\_\+\+FLAG\+\_\+\+INDEX(\begin{DoxyParamCaption}\item[{}]{\+\_\+\+\_\+\+HANDLE\+\_\+\+\_\+}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(((uint32\_t)((\_\_HANDLE\_\_)-\/>Instance)\ ==\ ((uint32\_t)DMA1\_Stream0))?\ DMA\_FLAG\_TEIF0\_4\ :\(\backslash\)}
+\DoxyCodeLine{\ ((uint32\_t)((\_\_HANDLE\_\_)-\/>Instance)\ ==\ ((uint32\_t)DMA2\_Stream0))?\ DMA\_FLAG\_TEIF0\_4\ :\(\backslash\)}
+\DoxyCodeLine{\ ((uint32\_t)((\_\_HANDLE\_\_)-\/>Instance)\ ==\ ((uint32\_t)DMA1\_Stream4))?\ DMA\_FLAG\_TEIF0\_4\ :\(\backslash\)}
+\DoxyCodeLine{\ ((uint32\_t)((\_\_HANDLE\_\_)-\/>Instance)\ ==\ ((uint32\_t)DMA2\_Stream4))?\ DMA\_FLAG\_TEIF0\_4\ :\(\backslash\)}
+\DoxyCodeLine{\ ((uint32\_t)((\_\_HANDLE\_\_)-\/>Instance)\ ==\ ((uint32\_t)DMA1\_Stream1))?\ DMA\_FLAG\_TEIF1\_5\ :\(\backslash\)}
+\DoxyCodeLine{\ ((uint32\_t)((\_\_HANDLE\_\_)-\/>Instance)\ ==\ ((uint32\_t)DMA2\_Stream1))?\ DMA\_FLAG\_TEIF1\_5\ :\(\backslash\)}
+\DoxyCodeLine{\ ((uint32\_t)((\_\_HANDLE\_\_)-\/>Instance)\ ==\ ((uint32\_t)DMA1\_Stream5))?\ DMA\_FLAG\_TEIF1\_5\ :\(\backslash\)}
+\DoxyCodeLine{\ ((uint32\_t)((\_\_HANDLE\_\_)-\/>Instance)\ ==\ ((uint32\_t)DMA2\_Stream5))?\ DMA\_FLAG\_TEIF1\_5\ :\(\backslash\)}
+\DoxyCodeLine{\ ((uint32\_t)((\_\_HANDLE\_\_)-\/>Instance)\ ==\ ((uint32\_t)DMA1\_Stream2))?\ DMA\_FLAG\_TEIF2\_6\ :\(\backslash\)}
+\DoxyCodeLine{\ ((uint32\_t)((\_\_HANDLE\_\_)-\/>Instance)\ ==\ ((uint32\_t)DMA2\_Stream2))?\ DMA\_FLAG\_TEIF2\_6\ :\(\backslash\)}
+\DoxyCodeLine{\ ((uint32\_t)((\_\_HANDLE\_\_)-\/>Instance)\ ==\ ((uint32\_t)DMA1\_Stream6))?\ DMA\_FLAG\_TEIF2\_6\ :\(\backslash\)}
+\DoxyCodeLine{\ ((uint32\_t)((\_\_HANDLE\_\_)-\/>Instance)\ ==\ ((uint32\_t)DMA2\_Stream6))?\ DMA\_FLAG\_TEIF2\_6\ :\(\backslash\)}
+\DoxyCodeLine{\ \ \ DMA\_FLAG\_TEIF3\_7)}
+
+\end{DoxyCode}
+
+
+Return the current DMA Stream transfer error flag. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+\+\_\+\+HANDLE\+\_\+\+\_\+} & DMA handle \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & specified transfer error flag index. \\
+\hline
+\end{DoxyRetVals}
+\Hypertarget{group___d_m_a_gaadcee34f0999c8eafd37de2f69daa0ac}\index{DMA@{DMA}!\_\_HAL\_DMA\_RESET\_HANDLE\_STATE@{\_\_HAL\_DMA\_RESET\_HANDLE\_STATE}}
+\index{\_\_HAL\_DMA\_RESET\_HANDLE\_STATE@{\_\_HAL\_DMA\_RESET\_HANDLE\_STATE}!DMA@{DMA}}
+\doxysubsubsubsection{\texorpdfstring{\_\_HAL\_DMA\_RESET\_HANDLE\_STATE}{\_\_HAL\_DMA\_RESET\_HANDLE\_STATE}}
+{\footnotesize\ttfamily \label{group___d_m_a_gaadcee34f0999c8eafd37de2f69daa0ac} 
+\#define \+\_\+\+\_\+\+HAL\+\_\+\+DMA\+\_\+\+RESET\+\_\+\+HANDLE\+\_\+\+STATE(\begin{DoxyParamCaption}\item[{}]{\+\_\+\+\_\+\+HANDLE\+\_\+\+\_\+}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{((\_\_HANDLE\_\_)-\/>State\ =\ \mbox{\hyperlink{group___d_m_a___exported___types_gga9c012af359987a240826f29073bbe463a9e7be73da32b8c837cde0318e0d5eed2}{HAL\_DMA\_STATE\_RESET}})}
+
+\end{DoxyCode}
+
+
+Reset DMA handle state. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+\+\_\+\+HANDLE\+\_\+\+\_\+} & specifies the DMA handle. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\Hypertarget{group___d_m_a_ga448a8f809df86ccffae200ffd33d0a82}\index{DMA@{DMA}!\_\_HAL\_DMA\_SET\_COUNTER@{\_\_HAL\_DMA\_SET\_COUNTER}}
+\index{\_\_HAL\_DMA\_SET\_COUNTER@{\_\_HAL\_DMA\_SET\_COUNTER}!DMA@{DMA}}
+\doxysubsubsubsection{\texorpdfstring{\_\_HAL\_DMA\_SET\_COUNTER}{\_\_HAL\_DMA\_SET\_COUNTER}}
+{\footnotesize\ttfamily \label{group___d_m_a_ga448a8f809df86ccffae200ffd33d0a82} 
+\#define \+\_\+\+\_\+\+HAL\+\_\+\+DMA\+\_\+\+SET\+\_\+\+COUNTER(\begin{DoxyParamCaption}\item[{}]{\+\_\+\+\_\+\+HANDLE\+\_\+\+\_\+}{, }\item[{}]{\+\_\+\+\_\+\+COUNTER\+\_\+\+\_\+}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{((\_\_HANDLE\_\_)-\/>Instance-\/>NDTR\ =\ (uint16\_t)(\_\_COUNTER\_\_))}
+
+\end{DoxyCode}
+
+
+Writes the number of data units to be transferred on the DMA Stream. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+\+\_\+\+HANDLE\+\_\+\+\_\+} & DMA handle \\
+\hline
+{\em \+\_\+\+\_\+\+COUNTER\+\_\+\+\_\+} & Number of data units to be transferred (from 0 to 65535) Number of data items depends only on the Peripheral data format.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+If Peripheral data format is Bytes\+: number of data units is equal to total number of bytes to be transferred.
+
+If Peripheral data format is Half-\/\+Word\+: number of data units is ~\newline
+ equal to total number of bytes to be transferred / 2.
+
+If Peripheral data format is Word\+: number of data units is equal to total number of bytes to be transferred / 4.
+\end{DoxyNote}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & number of remaining data units in the current DMAy Streamx transfer. \\
+\hline
+\end{DoxyRetVals}
+\input{group___d_m_a___exported___types}
+\input{group___d_m_a___exported___constants}
+\input{group___d_m_a___exported___functions}
+\input{group___d_m_a___private___constants}
+\input{group___d_m_a___private___macros}
+\input{group___d_m_a___private___functions}

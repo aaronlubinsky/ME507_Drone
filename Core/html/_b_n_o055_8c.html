@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.14.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Quadcopter: Src/BNO055.c File Reference</title>
+<title>ME507_Drone: Src/BNO055.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,9 +25,9 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
-  <td id="projectlogo"><img alt="Logo" src="Gemini_Generated_Image_bgriexbgriexbgri.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="Quadcopter Logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Quadcopter
+   <div id="projectname">ME507_Drone
    </div>
   </td>
  </tr>
@@ -95,7 +95,7 @@ $(function(){initNavTree('_b_n_o055_8c.html','',''); });
 
 <p>BNO055 IMU (Inertial Measurement Unit) driver for attitude sensing.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;BNO055.h&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="_b_n_o055_8h_source.html">BNO055.h</a>&quot;</code><br />
 <code>#include &quot;stm32f4xx_hal.h&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
@@ -116,15 +116,12 @@ int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>roll_set</b></td><
 <tr class="memitem:a6988819caa7dacf7f337f8a22ca410a5" id="r_a6988819caa7dacf7f337f8a22ca410a5"><td class="memItemLeft" align="right" valign="top"><a id="a6988819caa7dacf7f337f8a22ca410a5" name="a6988819caa7dacf7f337f8a22ca410a5"></a>
 int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>pitch_set</b></td></tr>
 <tr class="memdesc:a6988819caa7dacf7f337f8a22ca410a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Roll setpoint (desired roll angle) <br /></td></tr>
-<tr class="memitem:a6a8efb4992e24f1a844be2b330aad53b" id="r_a6a8efb4992e24f1a844be2b330aad53b"><td class="memItemLeft" align="right" valign="top"><a id="a6a8efb4992e24f1a844be2b330aad53b" name="a6a8efb4992e24f1a844be2b330aad53b"></a>
-IMUSample&#160;</td><td class="memItemRight" valign="bottom"><b>blackbox</b> [MAX_SAMPLES]</td></tr>
-<tr class="memdesc:a6a8efb4992e24f1a844be2b330aad53b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flight data buffer for post-flight analysis. <br /></td></tr>
-<tr class="memitem:ac8e20b2a06607543792ab55e4f74294b" id="r_ac8e20b2a06607543792ab55e4f74294b"><td class="memItemLeft" align="right" valign="top"><a id="ac8e20b2a06607543792ab55e4f74294b" name="ac8e20b2a06607543792ab55e4f74294b"></a>
-uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>sample_index</b> = 0</td></tr>
-<tr class="memdesc:ac8e20b2a06607543792ab55e4f74294b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current index in blackbox buffer. <br /></td></tr>
-<tr class="memitem:a617a47c70795bcff659815ad0efd2266" id="r_a617a47c70795bcff659815ad0efd2266"><td class="memItemLeft" align="right" valign="top"><a id="a617a47c70795bcff659815ad0efd2266" name="a617a47c70795bcff659815ad0efd2266"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>counter</b> = 0</td></tr>
-<tr class="memdesc:a617a47c70795bcff659815ad0efd2266"><td class="mdescLeft">&#160;</td><td class="mdescRight">Counter for blackbox data sampling. <br /></td></tr>
+<tr class="memitem:a6a8efb4992e24f1a844be2b330aad53b" id="r_a6a8efb4992e24f1a844be2b330aad53b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_i_m_u_sample.html">IMUSample</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6a8efb4992e24f1a844be2b330aad53b">blackbox</a> [<a class="el" href="_b_n_o055_8h.html#a78f316da3a87bf72cb1647786b64bf0e">MAX_SAMPLES</a>]</td></tr>
+<tr class="memdesc:a6a8efb4992e24f1a844be2b330aad53b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flight data buffer for post-flight analysis.  <br /></td></tr>
+<tr class="memitem:ac8e20b2a06607543792ab55e4f74294b" id="r_ac8e20b2a06607543792ab55e4f74294b"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac8e20b2a06607543792ab55e4f74294b">sample_index</a> = 0</td></tr>
+<tr class="memdesc:ac8e20b2a06607543792ab55e4f74294b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current index in blackbox buffer.  <br /></td></tr>
+<tr class="memitem:a617a47c70795bcff659815ad0efd2266" id="r_a617a47c70795bcff659815ad0efd2266"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a617a47c70795bcff659815ad0efd2266">counter</a> = 0</td></tr>
+<tr class="memdesc:a617a47c70795bcff659815ad0efd2266"><td class="mdescLeft">&#160;</td><td class="mdescRight">Counter for blackbox data sampling.  <br /></td></tr>
 <tr class="memitem:a0378b3d37277e2f8933570490909075d" id="r_a0378b3d37277e2f8933570490909075d"><td class="memItemLeft" align="right" valign="top"><a id="a0378b3d37277e2f8933570490909075d" name="a0378b3d37277e2f8933570490909075d"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>pitch_offset</b> = 18000</td></tr>
 <tr class="memitem:ae50ce52d54411e4fc3a93a6d1b364afc" id="r_ae50ce52d54411e4fc3a93a6d1b364afc"><td class="memItemLeft" align="right" valign="top"><a id="ae50ce52d54411e4fc3a93a6d1b364afc" name="ae50ce52d54411e4fc3a93a6d1b364afc"></a>
@@ -138,7 +135,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>roll_offset</b> = 0</t
 <p>This driver provides interface functions for the Bosch BNO055 9-axis absolute orientation sensor. It handles I2C communication, sensor initialization, calibration monitoring, and Euler angle data acquisition with integrated flight data logging.</p>
 <dl class="section note"><dt>Note</dt><dd>The BNO055 combines a triaxial 14-bit accelerometer, a triaxial 16-bit gyroscope, a triaxial geomagnetic sensor, and a 32-bit cortex M0+ microcontroller running Bosch Sensortec sensor fusion software.</dd></dl>
 <hr  />
- <h1 class="doxsection"><a class="anchor" id="autotoc_md1"></a>
+ <h1 class="doxsection"><a class="anchor" id="autotoc_md3"></a>
 ##### How to use this driver #####</h1>
 <ol type="1">
 <li>Ensure I2C1 peripheral is properly configured and initialized</li>
@@ -161,13 +158,14 @@ Allow sufficient time for IMU calibration before flight </dd></dl>
         <tr>
           <td class="memname">void BNO_Init </td>
           <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Initializes the BNO055 IMU sensor. </p>
+<p>&lt; Include for STM32 HAL types and definitions</p>
 <p>This function performs a complete initialization sequence:</p><ol type="1">
 <li>Verifies I2C communication with the BNO055</li>
 <li>Resets the sensor and I2C interface if needed</li>
@@ -183,7 +181,7 @@ Red LED (PA0) remains on during calibration process</dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>This function blocks until calibration is complete </dd>
 <dd>
 Ensure sensor is moved through various orientations for proper calibration</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="#aa4793269f7c346ae889fcb8a24130133" title="Reads current Euler angles from the BNO055 sensor.">BNO_Read()</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="_b_n_o055_8h.html#aa4793269f7c346ae889fcb8a24130133" title="Reads Euler angles from the BNO055 sensor.">BNO_Read()</a> </dd></dl>
 <p>&lt; NDOF operation mode value</p>
 <p>&lt; Configuration mode value</p>
 <p>&lt; Flag for successful I2C communication</p>
@@ -217,6 +215,7 @@ Ensure sensor is moved through various orientations for proper calibration</dd><
 </div><div class="memdoc">
 
 <p>Reads current Euler angles from the BNO055 sensor. </p>
+<p>Reads Euler angles from the BNO055 sensor.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">roll</td><td>Pointer to store roll angle (in millidegrees) </td></tr>
@@ -237,11 +236,63 @@ Data logging frequency controlled by blackboxFreq variable</dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>Pointers must be valid and point to allocated memory </dd>
 <dd>
 Function should be called at regular intervals for smooth control</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="#acfcacd8ad3833c1dfba254dec3063044" title="Initializes the BNO055 IMU sensor.">BNO_Init()</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="_b_n_o055_8h.html#a348c74c0f81f24bf3c32c2474bdda081" title="&lt; Include for STM32 HAL types and definitions">BNO_Init()</a> </dd></dl>
 <p>&lt; Raw Euler angle data buffer (6 bytes)</p>
 <p>&lt; Raw 16-bit yaw value</p>
 <p>&lt; Raw 16-bit pitch value</p>
 <p>&lt; Raw 16-bit roll value</p>
+
+</div>
+</div>
+<a name="doc-var-members" id="doc-var-members"></a><h2 id="header-doc-var-members" class="groupheader">Variable Documentation</h2>
+<a id="a6a8efb4992e24f1a844be2b330aad53b" name="a6a8efb4992e24f1a844be2b330aad53b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a8efb4992e24f1a844be2b330aad53b">&#9670;&#160;</a></span>blackbox</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_i_m_u_sample.html">IMUSample</a> blackbox[<a class="el" href="_b_n_o055_8h.html#a78f316da3a87bf72cb1647786b64bf0e">MAX_SAMPLES</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Flight data buffer for post-flight analysis. </p>
+<p>Flight data buffer. </p>
+
+</div>
+</div>
+<a id="a617a47c70795bcff659815ad0efd2266" name="a617a47c70795bcff659815ad0efd2266"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a617a47c70795bcff659815ad0efd2266">&#9670;&#160;</a></span>counter</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int counter = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Counter for blackbox data sampling. </p>
+<p>Sample counter or general use variable. </p>
+
+</div>
+</div>
+<a id="ac8e20b2a06607543792ab55e4f74294b" name="ac8e20b2a06607543792ab55e4f74294b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8e20b2a06607543792ab55e4f74294b">&#9670;&#160;</a></span>sample_index</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t sample_index = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Current index in blackbox buffer. </p>
+<p>Index for blackbox samples. </p>
 
 </div>
 </div>

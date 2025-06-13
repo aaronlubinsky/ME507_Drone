@@ -1,0 +1,167 @@
+\doxysection{MPU\+\_\+\+Type Struct Reference}
+\hypertarget{struct_m_p_u___type}{}\label{struct_m_p_u___type}\index{MPU\_Type@{MPU\_Type}}
+
+
+Structure type to access the Memory Protection Unit (MPU).  
+
+
+
+
+{\ttfamily \#include $<$core\+\_\+armv81mml.\+h$>$}
+
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\+\_\+\+\_\+\+IM uint32\+\_\+t \mbox{\hyperlink{group___c_m_s_i_s__core___debug_functions_ga0433efc1383674bc8e86cc0e830b462d}{TYPE}}
+\item 
+\+\_\+\+\_\+\+IOM uint32\+\_\+t \mbox{\hyperlink{group___c_m_s_i_s__core___debug_functions_ga4d81d6aa73a9287bafba2bcc5ffc6d18}{CTRL}}
+\item 
+\+\_\+\+\_\+\+IOM uint32\+\_\+t \mbox{\hyperlink{group___c_m_s_i_s__core___debug_functions_gaa800d44f4d3520cc891d7b8d711320c1}{RNR}}
+\item 
+\+\_\+\+\_\+\+IOM uint32\+\_\+t \mbox{\hyperlink{group___c_m_s_i_s__core___debug_functions_gac953770d38a7d322b971d93eb8a5b062}{RBAR}}
+\item 
+\+\_\+\+\_\+\+IOM uint32\+\_\+t \mbox{\hyperlink{group___c_m_s_i_s__core___debug_functions_ga3e1c3c971bab068b1d4c689db3221b40}{RLAR}}
+\item 
+\+\_\+\+\_\+\+IOM uint32\+\_\+t \mbox{\hyperlink{group___c_m_s_i_s__core___debug_functions_ga13d69b9bea12861383f3a62764b02f63}{RBAR\+\_\+\+A1}}
+\item 
+\+\_\+\+\_\+\+IOM uint32\+\_\+t \mbox{\hyperlink{group___c_m_s_i_s__core___debug_functions_ga290082b50ab1dd1649211adaa1801ee9}{RLAR\+\_\+\+A1}}
+\item 
+\+\_\+\+\_\+\+IOM uint32\+\_\+t \mbox{\hyperlink{group___c_m_s_i_s__core___debug_functions_ga57dc551614932150e684fcc60590c2c4}{RBAR\+\_\+\+A2}}
+\item 
+\+\_\+\+\_\+\+IOM uint32\+\_\+t \mbox{\hyperlink{group___c_m_s_i_s__core___debug_functions_ga983793154742e272a91dc54c4b453b4a}{RLAR\+\_\+\+A2}}
+\item 
+\+\_\+\+\_\+\+IOM uint32\+\_\+t \mbox{\hyperlink{group___c_m_s_i_s__core___debug_functions_ga345911aabecd1f7d93a1bff7738b0d86}{RBAR\+\_\+\+A3}}
+\item 
+\+\_\+\+\_\+\+IOM uint32\+\_\+t \mbox{\hyperlink{group___c_m_s_i_s__core___debug_functions_ga787a145b788c49d66c8b5e3350a291b7}{RLAR\+\_\+\+A3}}
+\item 
+uint32\+\_\+t {\bfseries RESERVED0} \mbox{[}1\mbox{]}
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\_\_IOM uint32\_t {\bfseries MAIR} \mbox{[}2\mbox{]}\\
+\>struct \{\\
+\>\>\_\_IOM uint32\_t \mbox{\hyperlink{group___c_m_s_i_s__core___debug_functions_ga3b47c220774ad7786bb42ea3622b0693}{MPU\_Type::MAIR0}}\\
+\>\>\_\_IOM uint32\_t \mbox{\hyperlink{group___c_m_s_i_s__core___debug_functions_gac2840c137a056aeb543bd2d618992a03}{MPU\_Type::MAIR1}}\\
+\>\} \\
+\}; \\
+
+\end{tabbing}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\_\_IOM uint32\_t {\bfseries MAIR} \mbox{[}2\mbox{]}\\
+\>struct \{\\
+\>\>\_\_IOM uint32\_t \mbox{\hyperlink{group___c_m_s_i_s__core___debug_functions_ga3b47c220774ad7786bb42ea3622b0693}{MPU\_Type::MAIR0}}\\
+\>\>\_\_IOM uint32\_t \mbox{\hyperlink{group___c_m_s_i_s__core___debug_functions_gac2840c137a056aeb543bd2d618992a03}{MPU\_Type::MAIR1}}\\
+\>\} \\
+\}; \\
+
+\end{tabbing}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\_\_IOM uint32\_t {\bfseries MAIR} \mbox{[}2\mbox{]}\\
+\>struct \{\\
+\>\>\_\_IOM uint32\_t \mbox{\hyperlink{group___c_m_s_i_s__core___debug_functions_ga3b47c220774ad7786bb42ea3622b0693}{MPU\_Type::MAIR0}}\\
+\>\>\_\_IOM uint32\_t \mbox{\hyperlink{group___c_m_s_i_s__core___debug_functions_gac2840c137a056aeb543bd2d618992a03}{MPU\_Type::MAIR1}}\\
+\>\} \\
+\}; \\
+
+\end{tabbing}\item 
+\+\_\+\+\_\+\+IOM uint32\+\_\+t \mbox{\hyperlink{group___c_m_s_i_s___core___sys_tick_functions_ga9236c629b7cf86f8bd2459c610fdf715}{RASR}}
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\_\_IOM uint32\_t {\bfseries MAIR} \mbox{[}2\mbox{]}\\
+\>struct \{\\
+\>\>\_\_IOM uint32\_t \mbox{\hyperlink{group___c_m_s_i_s__core___debug_functions_ga3b47c220774ad7786bb42ea3622b0693}{MPU\_Type::MAIR0}}\\
+\>\>\_\_IOM uint32\_t \mbox{\hyperlink{group___c_m_s_i_s__core___debug_functions_gac2840c137a056aeb543bd2d618992a03}{MPU\_Type::MAIR1}}\\
+\>\} \\
+\}; \\
+
+\end{tabbing}\item 
+\+\_\+\+\_\+\+IOM uint32\+\_\+t \mbox{\hyperlink{group___c_m_s_i_s__core___debug_functions_gab5a224ccd12ac55ddfe11d9eca42de48}{RASR\+\_\+\+A1}}
+\item 
+\+\_\+\+\_\+\+IOM uint32\+\_\+t \mbox{\hyperlink{group___c_m_s_i_s__core___debug_functions_gac60e0919871b66446a039838bcaaec3b}{RASR\+\_\+\+A2}}
+\item 
+\+\_\+\+\_\+\+IOM uint32\+\_\+t \mbox{\hyperlink{group___c_m_s_i_s__core___debug_functions_ga9c0b2d3e3e16bb4e7dfa069652d5a155}{RASR\+\_\+\+A3}}
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\_\_IOM uint32\_t {\bfseries MAIR} \mbox{[}2\mbox{]}\\
+\>struct \{\\
+\>\>\_\_IOM uint32\_t \mbox{\hyperlink{group___c_m_s_i_s__core___debug_functions_ga3b47c220774ad7786bb42ea3622b0693}{MPU\_Type::MAIR0}}\\
+\>\>\_\_IOM uint32\_t \mbox{\hyperlink{group___c_m_s_i_s__core___debug_functions_gac2840c137a056aeb543bd2d618992a03}{MPU\_Type::MAIR1}}\\
+\>\} \\
+\}; \\
+
+\end{tabbing}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\_\_IOM uint32\_t {\bfseries MAIR} \mbox{[}2\mbox{]}\\
+\>struct \{\\
+\>\>\_\_IOM uint32\_t \mbox{\hyperlink{group___c_m_s_i_s__core___debug_functions_ga3b47c220774ad7786bb42ea3622b0693}{MPU\_Type::MAIR0}}\\
+\>\>\_\_IOM uint32\_t \mbox{\hyperlink{group___c_m_s_i_s__core___debug_functions_gac2840c137a056aeb543bd2d618992a03}{MPU\_Type::MAIR1}}\\
+\>\} \\
+\}; \\
+
+\end{tabbing}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\_\_IOM uint32\_t {\bfseries MAIR} \mbox{[}2\mbox{]}\\
+\>struct \{\\
+\>\>\_\_IOM uint32\_t \mbox{\hyperlink{group___c_m_s_i_s__core___debug_functions_ga3b47c220774ad7786bb42ea3622b0693}{MPU\_Type::MAIR0}}\\
+\>\>\_\_IOM uint32\_t \mbox{\hyperlink{group___c_m_s_i_s__core___debug_functions_gac2840c137a056aeb543bd2d618992a03}{MPU\_Type::MAIR1}}\\
+\>\} \\
+\}; \\
+
+\end{tabbing}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\_\_IOM uint32\_t {\bfseries MAIR} \mbox{[}2\mbox{]}\\
+\>struct \{\\
+\>\>\_\_IOM uint32\_t \mbox{\hyperlink{group___c_m_s_i_s__core___debug_functions_ga3b47c220774ad7786bb42ea3622b0693}{MPU\_Type::MAIR0}}\\
+\>\>\_\_IOM uint32\_t \mbox{\hyperlink{group___c_m_s_i_s__core___debug_functions_gac2840c137a056aeb543bd2d618992a03}{MPU\_Type::MAIR1}}\\
+\>\} \\
+\}; \\
+
+\end{tabbing}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\_\_IOM uint32\_t {\bfseries MAIR} \mbox{[}2\mbox{]}\\
+\>struct \{\\
+\>\>\_\_IOM uint32\_t \mbox{\hyperlink{group___c_m_s_i_s__core___debug_functions_ga3b47c220774ad7786bb42ea3622b0693}{MPU\_Type::MAIR0}}\\
+\>\>\_\_IOM uint32\_t \mbox{\hyperlink{group___c_m_s_i_s__core___debug_functions_gac2840c137a056aeb543bd2d618992a03}{MPU\_Type::MAIR1}}\\
+\>\} \\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Structure type to access the Memory Protection Unit (MPU). 
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Drivers/\+CMSIS/\+Include/\mbox{\hyperlink{core__armv81mml_8h}{core\+\_\+armv81mml.\+h}}\item 
+Drivers/\+CMSIS/\+Include/\mbox{\hyperlink{core__armv8mbl_8h}{core\+\_\+armv8mbl.\+h}}\item 
+Drivers/\+CMSIS/\+Include/\mbox{\hyperlink{core__armv8mml_8h}{core\+\_\+armv8mml.\+h}}\item 
+Drivers/\+CMSIS/\+Include/\mbox{\hyperlink{core__cm0plus_8h}{core\+\_\+cm0plus.\+h}}\item 
+Drivers/\+CMSIS/\+Include/\mbox{\hyperlink{core__cm23_8h}{core\+\_\+cm23.\+h}}\item 
+Drivers/\+CMSIS/\+Include/\mbox{\hyperlink{core__cm3_8h}{core\+\_\+cm3.\+h}}\item 
+Drivers/\+CMSIS/\+Include/\mbox{\hyperlink{core__cm33_8h}{core\+\_\+cm33.\+h}}\item 
+Drivers/\+CMSIS/\+Include/\mbox{\hyperlink{core__cm35p_8h}{core\+\_\+cm35p.\+h}}\item 
+Drivers/\+CMSIS/\+Include/\mbox{\hyperlink{core__cm4_8h}{core\+\_\+cm4.\+h}}\item 
+Drivers/\+CMSIS/\+Include/\mbox{\hyperlink{core__cm55_8h}{core\+\_\+cm55.\+h}}\item 
+Drivers/\+CMSIS/\+Include/\mbox{\hyperlink{core__cm7_8h}{core\+\_\+cm7.\+h}}\item 
+Drivers/\+CMSIS/\+Include/\mbox{\hyperlink{core__cm85_8h}{core\+\_\+cm85.\+h}}\item 
+Drivers/\+CMSIS/\+Include/\mbox{\hyperlink{core__sc000_8h}{core\+\_\+sc000.\+h}}\item 
+Drivers/\+CMSIS/\+Include/\mbox{\hyperlink{core__sc300_8h}{core\+\_\+sc300.\+h}}\item 
+Drivers/\+CMSIS/\+Include/\mbox{\hyperlink{core__starmc1_8h}{core\+\_\+starmc1.\+h}}\end{DoxyCompactItemize}

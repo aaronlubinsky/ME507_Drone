@@ -1,0 +1,103 @@
+\doxysection{Core/\+Inc/main.h File Reference}
+\hypertarget{main_8h}{}\label{main_8h}\index{Core/Inc/main.h@{Core/Inc/main.h}}
+
+
+\+: Header for \doxylink{main_8c}{main.\+c} file. This file contains the common defines of the application.  
+
+
+{\ttfamily \#include "{}stm32f4xx\+\_\+hal.\+h"{}}\newline
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{main_8h_a455eef5085d28c7ce9c45c7f11d4830a}\label{main_8h_a455eef5085d28c7ce9c45c7f11d4830a} 
+\#define {\bfseries UART\+\_\+\+TX\+\_\+\+TO\+\_\+\+BT\+\_\+\+Pin}~GPIO\+\_\+\+PIN\+\_\+2
+\item 
+\Hypertarget{main_8h_afe83ea2a8a8880f6764b92ffeb6b59a8}\label{main_8h_afe83ea2a8a8880f6764b92ffeb6b59a8} 
+\#define {\bfseries UART\+\_\+\+TX\+\_\+\+TO\+\_\+\+BT\+\_\+\+GPIO\+\_\+\+Port}~GPIOA
+\item 
+\Hypertarget{main_8h_a7e168a2dcabafabbc9d2764979f6c423}\label{main_8h_a7e168a2dcabafabbc9d2764979f6c423} 
+\#define {\bfseries UART\+\_\+\+RX\+\_\+\+FROM\+\_\+\+BT\+\_\+\+Pin}~GPIO\+\_\+\+PIN\+\_\+3
+\item 
+\Hypertarget{main_8h_a3bece63539e173137f59022e8d622061}\label{main_8h_a3bece63539e173137f59022e8d622061} 
+\#define {\bfseries UART\+\_\+\+RX\+\_\+\+FROM\+\_\+\+BT\+\_\+\+GPIO\+\_\+\+Port}~GPIOA
+\item 
+\Hypertarget{main_8h_a7cc3a95865e0e1de34cebb151f2e5fb8}\label{main_8h_a7cc3a95865e0e1de34cebb151f2e5fb8} 
+\#define {\bfseries US\+\_\+\+ECHO\+\_\+\+Pin}~GPIO\+\_\+\+PIN\+\_\+12
+\item 
+\Hypertarget{main_8h_a67935777851de5307bacb4987029e2cb}\label{main_8h_a67935777851de5307bacb4987029e2cb} 
+\#define {\bfseries US\+\_\+\+ECHO\+\_\+\+GPIO\+\_\+\+Port}~GPIOB
+\item 
+\Hypertarget{main_8h_a7e34f157a10f9ee94978fd2442a0dad6}\label{main_8h_a7e34f157a10f9ee94978fd2442a0dad6} 
+\#define {\bfseries US\+\_\+\+TRIG\+\_\+\+Pin}~GPIO\+\_\+\+PIN\+\_\+13
+\item 
+\Hypertarget{main_8h_a6844a0ecfc045300d4b4573c2599d628}\label{main_8h_a6844a0ecfc045300d4b4573c2599d628} 
+\#define {\bfseries US\+\_\+\+TRIG\+\_\+\+GPIO\+\_\+\+Port}~GPIOB
+\item 
+\Hypertarget{main_8h_a0f2db2f4e2f4243c41a19ebfc26a39fa}\label{main_8h_a0f2db2f4e2f4243c41a19ebfc26a39fa} 
+\#define {\bfseries TX\+\_\+\+TO\+\_\+\+ST\+\_\+\+Pin}~GPIO\+\_\+\+PIN\+\_\+9
+\item 
+\Hypertarget{main_8h_aef97f5bae1bf9691b34c2ed714d815a4}\label{main_8h_aef97f5bae1bf9691b34c2ed714d815a4} 
+\#define {\bfseries TX\+\_\+\+TO\+\_\+\+ST\+\_\+\+GPIO\+\_\+\+Port}~GPIOA
+\item 
+\Hypertarget{main_8h_aa6691ed9ec6e50c1d169ac37777ab24f}\label{main_8h_aa6691ed9ec6e50c1d169ac37777ab24f} 
+\#define {\bfseries RX\+\_\+\+FROM\+\_\+\+ST\+\_\+\+Pin}~GPIO\+\_\+\+PIN\+\_\+10
+\item 
+\Hypertarget{main_8h_a3bf084107afb1972d07b92fc510aba08}\label{main_8h_a3bf084107afb1972d07b92fc510aba08} 
+\#define {\bfseries RX\+\_\+\+FROM\+\_\+\+ST\+\_\+\+GPIO\+\_\+\+Port}~GPIOA
+\item 
+\Hypertarget{main_8h_a5e783e9270dbc74afb74a14cda572b7d}\label{main_8h_a5e783e9270dbc74afb74a14cda572b7d} 
+\#define {\bfseries BNO\+\_\+\+SCL\+\_\+\+Pin}~GPIO\+\_\+\+PIN\+\_\+6
+\item 
+\Hypertarget{main_8h_a083e26fed47c7c0d1e032b7caf05562b}\label{main_8h_a083e26fed47c7c0d1e032b7caf05562b} 
+\#define {\bfseries BNO\+\_\+\+SCL\+\_\+\+GPIO\+\_\+\+Port}~GPIOB
+\item 
+\Hypertarget{main_8h_ab2b4883b285b1340ee28eb7b7da999a9}\label{main_8h_ab2b4883b285b1340ee28eb7b7da999a9} 
+\#define {\bfseries BNO\+\_\+\+SDA\+\_\+\+Pin}~GPIO\+\_\+\+PIN\+\_\+7
+\item 
+\Hypertarget{main_8h_abe0bd1cd30b493a0bb3e81a253ffd891}\label{main_8h_abe0bd1cd30b493a0bb3e81a253ffd891} 
+\#define {\bfseries BNO\+\_\+\+SDA\+\_\+\+GPIO\+\_\+\+Port}~GPIOB
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{main_8h_ae70bce6c39d0b570a7523b86738cec4b}{HAL\+\_\+\+TIM\+\_\+\+Msp\+Post\+Init}} (\mbox{\hyperlink{struct_t_i_m___handle_type_def}{TIM\+\_\+\+Handle\+Type\+Def}} \texorpdfstring{$\ast$}{*}htim)
+\item 
+void \mbox{\hyperlink{main_8h_a1730ffe1e560465665eb47d9264826f9}{Error\+\_\+\+Handler}} (void)
+\begin{DoxyCompactList}\small\item\em This function is executed in case of error occurrence. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\+: Header for \doxylink{main_8c}{main.\+c} file. This file contains the common defines of the application. 
+
+\begin{DoxyAttention}{Attention}
+
+\end{DoxyAttention}
+Copyright (c) 2025 STMicroelectronics. All rights reserved.
+
+This software is licensed under terms that can be found in the LICENSE file in the root directory of this software component. If no LICENSE file comes with this software, it is provided AS-\/\+IS. 
+
+\label{doc-func-members}
+\Hypertarget{main_8h_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{main_8h_a1730ffe1e560465665eb47d9264826f9}\index{main.h@{main.h}!Error\_Handler@{Error\_Handler}}
+\index{Error\_Handler@{Error\_Handler}!main.h@{main.h}}
+\doxysubsubsection{\texorpdfstring{Error\_Handler()}{Error\_Handler()}}
+{\footnotesize\ttfamily \label{main_8h_a1730ffe1e560465665eb47d9264826f9} 
+void Error\+\_\+\+Handler (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+This function is executed in case of error occurrence. 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\Hypertarget{main_8h_ae70bce6c39d0b570a7523b86738cec4b}\index{main.h@{main.h}!HAL\_TIM\_MspPostInit@{HAL\_TIM\_MspPostInit}}
+\index{HAL\_TIM\_MspPostInit@{HAL\_TIM\_MspPostInit}!main.h@{main.h}}
+\doxysubsubsection{\texorpdfstring{HAL\_TIM\_MspPostInit()}{HAL\_TIM\_MspPostInit()}}
+{\footnotesize\ttfamily \label{main_8h_ae70bce6c39d0b570a7523b86738cec4b} 
+void HAL\+\_\+\+TIM\+\_\+\+Msp\+Post\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_t_i_m___handle_type_def}{TIM\+\_\+\+Handle\+Type\+Def}} \texorpdfstring{$\ast$}{*}}]{htim}{}\end{DoxyParamCaption})}
+
+TIM3 GPIO Configuration PA6 -\/-\/-\/-\/-\/-\/\texorpdfstring{$>$}{>} TIM3\+\_\+\+CH1 PA7 -\/-\/-\/-\/-\/-\/\texorpdfstring{$>$}{>} TIM3\+\_\+\+CH2 PB0 -\/-\/-\/-\/-\/-\/\texorpdfstring{$>$}{>} TIM3\+\_\+\+CH3 PB1 -\/-\/-\/-\/-\/-\/\texorpdfstring{$>$}{>} TIM3\+\_\+\+CH4

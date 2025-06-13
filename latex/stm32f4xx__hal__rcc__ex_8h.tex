@@ -1,0 +1,53 @@
+\doxysection{Drivers/\+STM32\+F4xx\+\_\+\+HAL\+\_\+\+Driver/\+Inc/stm32f4xx\+\_\+hal\+\_\+rcc\+\_\+ex.h File Reference}
+\hypertarget{stm32f4xx__hal__rcc__ex_8h}{}\label{stm32f4xx__hal__rcc__ex_8h}\index{Drivers/STM32F4xx\_HAL\_Driver/Inc/stm32f4xx\_hal\_rcc\_ex.h@{Drivers/STM32F4xx\_HAL\_Driver/Inc/stm32f4xx\_hal\_rcc\_ex.h}}
+
+
+Header file of RCC HAL Extension module.  
+
+
+{\ttfamily \#include "{}stm32f4xx\+\_\+hal\+\_\+def.\+h"{}}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_r_c_c___p_l_l_init_type_def}{RCC\+\_\+\+PLLInit\+Type\+Def}}
+\begin{DoxyCompactList}\small\item\em RCC PLL configuration structure definition. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group___r_c_c_ex___exported___macros_ga56d9ad48b28e7aa4ad3aadca5b4fd431}{\+\_\+\+\_\+\+HAL\+\_\+\+RCC\+\_\+\+PLL\+\_\+\+CONFIG}}(\+\_\+\+\_\+\+RCC\+\_\+\+PLLSource\+\_\+\+\_\+,  \+\_\+\+\_\+\+PLLM\+\_\+\+\_\+,  \+\_\+\+\_\+\+PLLN\+\_\+\+\_\+,  \+\_\+\+\_\+\+PLLP\+\_\+\+\_\+,  \+\_\+\+\_\+\+PLLQ\+\_\+\+\_\+)
+\begin{DoxyCompactList}\small\item\em Macro to configure the main PLL clock source, multiplication and division factors. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___r_c_c_ex___exported___macros_ga5a2fa2687b621f6eda72457d09715298}{\+\_\+\+\_\+\+HAL\+\_\+\+RCC\+\_\+\+PLLI2\+S\+\_\+\+CONFIG}}(\+\_\+\+\_\+\+PLLI2\+SN\+\_\+\+\_\+,  \+\_\+\+\_\+\+PLLI2\+SR\+\_\+\+\_\+)
+\begin{DoxyCompactList}\small\item\em Macro to configure the PLLI2S clock multiplication and division factors . \end{DoxyCompactList}\item 
+\#define {\bfseries RCC\+\_\+\+CFGR\+\_\+\+OFFSET}~(RCC\+\_\+\+OFFSET + 0x08U)
+\item 
+\#define {\bfseries PLL\+\_\+\+TIMEOUT\+\_\+\+VALUE}~2U  /\texorpdfstring{$\ast$}{*} 2 ms \texorpdfstring{$\ast$}{*}/
+\item 
+\#define \mbox{\hyperlink{group___r_c_c_ex___i_s___r_c_c___definitions_ga12835741fbedd278ad1e91abebe00837}{IS\+\_\+\+RCC\+\_\+\+PLLN\+\_\+\+VALUE}}(VALUE)
+\item 
+\#define \mbox{\hyperlink{group___r_c_c_ex___i_s___r_c_c___definitions_gac30fb7f6fe9f22a7d6c5585909db5c3c}{IS\+\_\+\+RCC\+\_\+\+PLLI2\+SN\+\_\+\+VALUE}}(VALUE)
+\item 
+\#define \mbox{\hyperlink{group___r_c_c_ex___i_s___r_c_c___definitions_gaa2fece4b24f6219b423e1b092b7705c8}{IS\+\_\+\+RCC\+\_\+\+PLLI2\+SR\+\_\+\+VALUE}}(VALUE)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{stm32f4xx__hal__def_8h_a63c0679d1cb8b8c684fbb0632743478f}{HAL\+\_\+\+Status\+Type\+Def}} {\bfseries HAL\+\_\+\+RCCEx\+\_\+\+Periph\+CLKConfig} (RCC\+\_\+\+Periph\+CLKInit\+Type\+Def \texorpdfstring{$\ast$}{*}Periph\+Clk\+Init)
+\item 
+void {\bfseries HAL\+\_\+\+RCCEx\+\_\+\+Get\+Periph\+CLKConfig} (RCC\+\_\+\+Periph\+CLKInit\+Type\+Def \texorpdfstring{$\ast$}{*}Periph\+Clk\+Init)
+\item 
+uint32\+\_\+t {\bfseries HAL\+\_\+\+RCCEx\+\_\+\+Get\+Periph\+CLKFreq} (uint32\+\_\+t Periph\+Clk)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Header file of RCC HAL Extension module. 
+
+\begin{DoxyAuthor}{Author}
+MCD Application Team 
+\end{DoxyAuthor}
+\begin{DoxyAttention}{Attention}
+
+\end{DoxyAttention}
+Copyright (c) 2017 STMicroelectronics. All rights reserved.
+
+This software is licensed under terms that can be found in the LICENSE file in the root directory of this software component. If no LICENSE file comes with this software, it is provided AS-\/\+IS. 

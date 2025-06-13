@@ -1,2 +1,2 @@
-../Core/Src/BNO055.c:70:6:BNO_Init	6
-../Core/Src/BNO055.c:149:6:BNO_Read	6
+../Core/Src/BNO055.c:72:6:BNO_Init	7
+../Core/Src/BNO055.c:164:6:BNO_Read	6

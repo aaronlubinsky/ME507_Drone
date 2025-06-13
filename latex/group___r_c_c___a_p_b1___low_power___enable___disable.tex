@@ -1,0 +1,209 @@
+\doxysubsubsubsection{APB1 Peripheral Low Power Enable Disable }
+\hypertarget{group___r_c_c___a_p_b1___low_power___enable___disable}{}\label{group___r_c_c___a_p_b1___low_power___enable___disable}\index{APB1 Peripheral Low Power Enable Disable@{APB1 Peripheral Low Power Enable Disable}}
+
+
+Enable or disable the APB1 peripheral clock during Low Power (Sleep) mode.  
+
+
+\doxysubsubsubsubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group___r_c_c___a_p_b1___low_power___enable___disable_gae99e46f9e40655dc9b5c07b03fdc4a4e}{\+\_\+\+\_\+\+HAL\+\_\+\+RCC\+\_\+\+TIM5\+\_\+\+CLK\+\_\+\+SLEEP\+\_\+\+ENABLE}}()
+\item 
+\#define \mbox{\hyperlink{group___r_c_c___a_p_b1___low_power___enable___disable_gaa3978a2e193b921dc24976880dce7a26}{\+\_\+\+\_\+\+HAL\+\_\+\+RCC\+\_\+\+WWDG\+\_\+\+CLK\+\_\+\+SLEEP\+\_\+\+ENABLE}}()
+\item 
+\#define \mbox{\hyperlink{group___r_c_c___a_p_b1___low_power___enable___disable_ga8a281ca72aff1c9fa87755c3854cc316}{\+\_\+\+\_\+\+HAL\+\_\+\+RCC\+\_\+\+SPI2\+\_\+\+CLK\+\_\+\+SLEEP\+\_\+\+ENABLE}}()
+\item 
+\#define \mbox{\hyperlink{group___r_c_c___a_p_b1___low_power___enable___disable_ga12132da4a7f5c62f32cd9d91b1c99495}{\+\_\+\+\_\+\+HAL\+\_\+\+RCC\+\_\+\+USART2\+\_\+\+CLK\+\_\+\+SLEEP\+\_\+\+ENABLE}}()
+\item 
+\#define \mbox{\hyperlink{group___r_c_c___a_p_b1___low_power___enable___disable_ga894dbeada170b01faef303d35de84917}{\+\_\+\+\_\+\+HAL\+\_\+\+RCC\+\_\+\+I2\+C1\+\_\+\+CLK\+\_\+\+SLEEP\+\_\+\+ENABLE}}()
+\item 
+\#define \mbox{\hyperlink{group___r_c_c___a_p_b1___low_power___enable___disable_gac0167c77fa1c00add900bb1cf788e68c}{\+\_\+\+\_\+\+HAL\+\_\+\+RCC\+\_\+\+I2\+C2\+\_\+\+CLK\+\_\+\+SLEEP\+\_\+\+ENABLE}}()
+\item 
+\#define \mbox{\hyperlink{group___r_c_c___a_p_b1___low_power___enable___disable_gacad9c9770ee2525fccf6a15e4ee7a07a}{\+\_\+\+\_\+\+HAL\+\_\+\+RCC\+\_\+\+PWR\+\_\+\+CLK\+\_\+\+SLEEP\+\_\+\+ENABLE}}()
+\item 
+\#define \mbox{\hyperlink{group___r_c_c___a_p_b1___low_power___enable___disable_gaac91e3596950c8d33760debce6b0e416}{\+\_\+\+\_\+\+HAL\+\_\+\+RCC\+\_\+\+TIM5\+\_\+\+CLK\+\_\+\+SLEEP\+\_\+\+DISABLE}}()
+\item 
+\#define \mbox{\hyperlink{group___r_c_c___a_p_b1___low_power___enable___disable_gae61c24ac6b36e7edbabc5b050b38d63e}{\+\_\+\+\_\+\+HAL\+\_\+\+RCC\+\_\+\+WWDG\+\_\+\+CLK\+\_\+\+SLEEP\+\_\+\+DISABLE}}()
+\item 
+\#define \mbox{\hyperlink{group___r_c_c___a_p_b1___low_power___enable___disable_ga4fff9b3416d2940cac20962e6d5655ec}{\+\_\+\+\_\+\+HAL\+\_\+\+RCC\+\_\+\+SPI2\+\_\+\+CLK\+\_\+\+SLEEP\+\_\+\+DISABLE}}()
+\item 
+\#define \mbox{\hyperlink{group___r_c_c___a_p_b1___low_power___enable___disable_ga3ad038000c76cee2e7ca00d56ba64c17}{\+\_\+\+\_\+\+HAL\+\_\+\+RCC\+\_\+\+USART2\+\_\+\+CLK\+\_\+\+SLEEP\+\_\+\+DISABLE}}()
+\item 
+\#define \mbox{\hyperlink{group___r_c_c___a_p_b1___low_power___enable___disable_gac7dc1c5239cd70bee94eefa3d91cdd7a}{\+\_\+\+\_\+\+HAL\+\_\+\+RCC\+\_\+\+I2\+C1\+\_\+\+CLK\+\_\+\+SLEEP\+\_\+\+DISABLE}}()
+\item 
+\#define \mbox{\hyperlink{group___r_c_c___a_p_b1___low_power___enable___disable_ga46fe2d4331320cfe49b751b5488fc0cd}{\+\_\+\+\_\+\+HAL\+\_\+\+RCC\+\_\+\+I2\+C2\+\_\+\+CLK\+\_\+\+SLEEP\+\_\+\+DISABLE}}()
+\item 
+\#define \mbox{\hyperlink{group___r_c_c___a_p_b1___low_power___enable___disable_ga7b9889044ebfe2c9328d0f6733fda87d}{\+\_\+\+\_\+\+HAL\+\_\+\+RCC\+\_\+\+PWR\+\_\+\+CLK\+\_\+\+SLEEP\+\_\+\+DISABLE}}()
+\end{DoxyCompactItemize}
+
+
+\doxysubsubsubsubsection{Detailed Description}
+Enable or disable the APB1 peripheral clock during Low Power (Sleep) mode. 
+
+\begin{DoxyNote}{Note}
+Peripheral clock gating in SLEEP mode can be used to further reduce power consumption. 
+
+After wake-\/up from SLEEP mode, the peripheral clock is enabled again. 
+
+By default, all peripheral clocks are enabled during SLEEP mode. 
+\end{DoxyNote}
+
+
+\label{doc-define-members}
+\Hypertarget{group___r_c_c___a_p_b1___low_power___enable___disable_doc-define-members}
+\doxysubsubsubsubsection{Macro Definition Documentation}
+\Hypertarget{group___r_c_c___a_p_b1___low_power___enable___disable_gac7dc1c5239cd70bee94eefa3d91cdd7a}\index{APB1 Peripheral Low Power Enable Disable@{APB1 Peripheral Low Power Enable Disable}!\_\_HAL\_RCC\_I2C1\_CLK\_SLEEP\_DISABLE@{\_\_HAL\_RCC\_I2C1\_CLK\_SLEEP\_DISABLE}}
+\index{\_\_HAL\_RCC\_I2C1\_CLK\_SLEEP\_DISABLE@{\_\_HAL\_RCC\_I2C1\_CLK\_SLEEP\_DISABLE}!APB1 Peripheral Low Power Enable Disable@{APB1 Peripheral Low Power Enable Disable}}
+\doxysubsubsubsubsubsection{\texorpdfstring{\_\_HAL\_RCC\_I2C1\_CLK\_SLEEP\_DISABLE}{\_\_HAL\_RCC\_I2C1\_CLK\_SLEEP\_DISABLE}}
+{\footnotesize\ttfamily \label{group___r_c_c___a_p_b1___low_power___enable___disable_gac7dc1c5239cd70bee94eefa3d91cdd7a} 
+\#define \+\_\+\+\_\+\+HAL\+\_\+\+RCC\+\_\+\+I2\+C1\+\_\+\+CLK\+\_\+\+SLEEP\+\_\+\+DISABLE(\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(RCC-\/>APB1LPENR\ \&=\ \string~(RCC\_APB1LPENR\_I2C1LPEN))}
+
+\end{DoxyCode}
+\Hypertarget{group___r_c_c___a_p_b1___low_power___enable___disable_ga894dbeada170b01faef303d35de84917}\index{APB1 Peripheral Low Power Enable Disable@{APB1 Peripheral Low Power Enable Disable}!\_\_HAL\_RCC\_I2C1\_CLK\_SLEEP\_ENABLE@{\_\_HAL\_RCC\_I2C1\_CLK\_SLEEP\_ENABLE}}
+\index{\_\_HAL\_RCC\_I2C1\_CLK\_SLEEP\_ENABLE@{\_\_HAL\_RCC\_I2C1\_CLK\_SLEEP\_ENABLE}!APB1 Peripheral Low Power Enable Disable@{APB1 Peripheral Low Power Enable Disable}}
+\doxysubsubsubsubsubsection{\texorpdfstring{\_\_HAL\_RCC\_I2C1\_CLK\_SLEEP\_ENABLE}{\_\_HAL\_RCC\_I2C1\_CLK\_SLEEP\_ENABLE}}
+{\footnotesize\ttfamily \label{group___r_c_c___a_p_b1___low_power___enable___disable_ga894dbeada170b01faef303d35de84917} 
+\#define \+\_\+\+\_\+\+HAL\+\_\+\+RCC\+\_\+\+I2\+C1\+\_\+\+CLK\+\_\+\+SLEEP\+\_\+\+ENABLE(\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(RCC-\/>APB1LPENR\ |=\ (RCC\_APB1LPENR\_I2C1LPEN))}
+
+\end{DoxyCode}
+\Hypertarget{group___r_c_c___a_p_b1___low_power___enable___disable_ga46fe2d4331320cfe49b751b5488fc0cd}\index{APB1 Peripheral Low Power Enable Disable@{APB1 Peripheral Low Power Enable Disable}!\_\_HAL\_RCC\_I2C2\_CLK\_SLEEP\_DISABLE@{\_\_HAL\_RCC\_I2C2\_CLK\_SLEEP\_DISABLE}}
+\index{\_\_HAL\_RCC\_I2C2\_CLK\_SLEEP\_DISABLE@{\_\_HAL\_RCC\_I2C2\_CLK\_SLEEP\_DISABLE}!APB1 Peripheral Low Power Enable Disable@{APB1 Peripheral Low Power Enable Disable}}
+\doxysubsubsubsubsubsection{\texorpdfstring{\_\_HAL\_RCC\_I2C2\_CLK\_SLEEP\_DISABLE}{\_\_HAL\_RCC\_I2C2\_CLK\_SLEEP\_DISABLE}}
+{\footnotesize\ttfamily \label{group___r_c_c___a_p_b1___low_power___enable___disable_ga46fe2d4331320cfe49b751b5488fc0cd} 
+\#define \+\_\+\+\_\+\+HAL\+\_\+\+RCC\+\_\+\+I2\+C2\+\_\+\+CLK\+\_\+\+SLEEP\+\_\+\+DISABLE(\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(RCC-\/>APB1LPENR\ \&=\ \string~(RCC\_APB1LPENR\_I2C2LPEN))}
+
+\end{DoxyCode}
+\Hypertarget{group___r_c_c___a_p_b1___low_power___enable___disable_gac0167c77fa1c00add900bb1cf788e68c}\index{APB1 Peripheral Low Power Enable Disable@{APB1 Peripheral Low Power Enable Disable}!\_\_HAL\_RCC\_I2C2\_CLK\_SLEEP\_ENABLE@{\_\_HAL\_RCC\_I2C2\_CLK\_SLEEP\_ENABLE}}
+\index{\_\_HAL\_RCC\_I2C2\_CLK\_SLEEP\_ENABLE@{\_\_HAL\_RCC\_I2C2\_CLK\_SLEEP\_ENABLE}!APB1 Peripheral Low Power Enable Disable@{APB1 Peripheral Low Power Enable Disable}}
+\doxysubsubsubsubsubsection{\texorpdfstring{\_\_HAL\_RCC\_I2C2\_CLK\_SLEEP\_ENABLE}{\_\_HAL\_RCC\_I2C2\_CLK\_SLEEP\_ENABLE}}
+{\footnotesize\ttfamily \label{group___r_c_c___a_p_b1___low_power___enable___disable_gac0167c77fa1c00add900bb1cf788e68c} 
+\#define \+\_\+\+\_\+\+HAL\+\_\+\+RCC\+\_\+\+I2\+C2\+\_\+\+CLK\+\_\+\+SLEEP\+\_\+\+ENABLE(\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(RCC-\/>APB1LPENR\ |=\ (RCC\_APB1LPENR\_I2C2LPEN))}
+
+\end{DoxyCode}
+\Hypertarget{group___r_c_c___a_p_b1___low_power___enable___disable_ga7b9889044ebfe2c9328d0f6733fda87d}\index{APB1 Peripheral Low Power Enable Disable@{APB1 Peripheral Low Power Enable Disable}!\_\_HAL\_RCC\_PWR\_CLK\_SLEEP\_DISABLE@{\_\_HAL\_RCC\_PWR\_CLK\_SLEEP\_DISABLE}}
+\index{\_\_HAL\_RCC\_PWR\_CLK\_SLEEP\_DISABLE@{\_\_HAL\_RCC\_PWR\_CLK\_SLEEP\_DISABLE}!APB1 Peripheral Low Power Enable Disable@{APB1 Peripheral Low Power Enable Disable}}
+\doxysubsubsubsubsubsection{\texorpdfstring{\_\_HAL\_RCC\_PWR\_CLK\_SLEEP\_DISABLE}{\_\_HAL\_RCC\_PWR\_CLK\_SLEEP\_DISABLE}}
+{\footnotesize\ttfamily \label{group___r_c_c___a_p_b1___low_power___enable___disable_ga7b9889044ebfe2c9328d0f6733fda87d} 
+\#define \+\_\+\+\_\+\+HAL\+\_\+\+RCC\+\_\+\+PWR\+\_\+\+CLK\+\_\+\+SLEEP\+\_\+\+DISABLE(\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(RCC-\/>APB1LPENR\ \&=\ \string~(RCC\_APB1LPENR\_PWRLPEN))}
+
+\end{DoxyCode}
+\Hypertarget{group___r_c_c___a_p_b1___low_power___enable___disable_gacad9c9770ee2525fccf6a15e4ee7a07a}\index{APB1 Peripheral Low Power Enable Disable@{APB1 Peripheral Low Power Enable Disable}!\_\_HAL\_RCC\_PWR\_CLK\_SLEEP\_ENABLE@{\_\_HAL\_RCC\_PWR\_CLK\_SLEEP\_ENABLE}}
+\index{\_\_HAL\_RCC\_PWR\_CLK\_SLEEP\_ENABLE@{\_\_HAL\_RCC\_PWR\_CLK\_SLEEP\_ENABLE}!APB1 Peripheral Low Power Enable Disable@{APB1 Peripheral Low Power Enable Disable}}
+\doxysubsubsubsubsubsection{\texorpdfstring{\_\_HAL\_RCC\_PWR\_CLK\_SLEEP\_ENABLE}{\_\_HAL\_RCC\_PWR\_CLK\_SLEEP\_ENABLE}}
+{\footnotesize\ttfamily \label{group___r_c_c___a_p_b1___low_power___enable___disable_gacad9c9770ee2525fccf6a15e4ee7a07a} 
+\#define \+\_\+\+\_\+\+HAL\+\_\+\+RCC\+\_\+\+PWR\+\_\+\+CLK\+\_\+\+SLEEP\+\_\+\+ENABLE(\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(RCC-\/>APB1LPENR\ |=\ (RCC\_APB1LPENR\_PWRLPEN))}
+
+\end{DoxyCode}
+\Hypertarget{group___r_c_c___a_p_b1___low_power___enable___disable_ga4fff9b3416d2940cac20962e6d5655ec}\index{APB1 Peripheral Low Power Enable Disable@{APB1 Peripheral Low Power Enable Disable}!\_\_HAL\_RCC\_SPI2\_CLK\_SLEEP\_DISABLE@{\_\_HAL\_RCC\_SPI2\_CLK\_SLEEP\_DISABLE}}
+\index{\_\_HAL\_RCC\_SPI2\_CLK\_SLEEP\_DISABLE@{\_\_HAL\_RCC\_SPI2\_CLK\_SLEEP\_DISABLE}!APB1 Peripheral Low Power Enable Disable@{APB1 Peripheral Low Power Enable Disable}}
+\doxysubsubsubsubsubsection{\texorpdfstring{\_\_HAL\_RCC\_SPI2\_CLK\_SLEEP\_DISABLE}{\_\_HAL\_RCC\_SPI2\_CLK\_SLEEP\_DISABLE}}
+{\footnotesize\ttfamily \label{group___r_c_c___a_p_b1___low_power___enable___disable_ga4fff9b3416d2940cac20962e6d5655ec} 
+\#define \+\_\+\+\_\+\+HAL\+\_\+\+RCC\+\_\+\+SPI2\+\_\+\+CLK\+\_\+\+SLEEP\+\_\+\+DISABLE(\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(RCC-\/>APB1LPENR\ \&=\ \string~(RCC\_APB1LPENR\_SPI2LPEN))}
+
+\end{DoxyCode}
+\Hypertarget{group___r_c_c___a_p_b1___low_power___enable___disable_ga8a281ca72aff1c9fa87755c3854cc316}\index{APB1 Peripheral Low Power Enable Disable@{APB1 Peripheral Low Power Enable Disable}!\_\_HAL\_RCC\_SPI2\_CLK\_SLEEP\_ENABLE@{\_\_HAL\_RCC\_SPI2\_CLK\_SLEEP\_ENABLE}}
+\index{\_\_HAL\_RCC\_SPI2\_CLK\_SLEEP\_ENABLE@{\_\_HAL\_RCC\_SPI2\_CLK\_SLEEP\_ENABLE}!APB1 Peripheral Low Power Enable Disable@{APB1 Peripheral Low Power Enable Disable}}
+\doxysubsubsubsubsubsection{\texorpdfstring{\_\_HAL\_RCC\_SPI2\_CLK\_SLEEP\_ENABLE}{\_\_HAL\_RCC\_SPI2\_CLK\_SLEEP\_ENABLE}}
+{\footnotesize\ttfamily \label{group___r_c_c___a_p_b1___low_power___enable___disable_ga8a281ca72aff1c9fa87755c3854cc316} 
+\#define \+\_\+\+\_\+\+HAL\+\_\+\+RCC\+\_\+\+SPI2\+\_\+\+CLK\+\_\+\+SLEEP\+\_\+\+ENABLE(\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(RCC-\/>APB1LPENR\ |=\ (RCC\_APB1LPENR\_SPI2LPEN))}
+
+\end{DoxyCode}
+\Hypertarget{group___r_c_c___a_p_b1___low_power___enable___disable_gaac91e3596950c8d33760debce6b0e416}\index{APB1 Peripheral Low Power Enable Disable@{APB1 Peripheral Low Power Enable Disable}!\_\_HAL\_RCC\_TIM5\_CLK\_SLEEP\_DISABLE@{\_\_HAL\_RCC\_TIM5\_CLK\_SLEEP\_DISABLE}}
+\index{\_\_HAL\_RCC\_TIM5\_CLK\_SLEEP\_DISABLE@{\_\_HAL\_RCC\_TIM5\_CLK\_SLEEP\_DISABLE}!APB1 Peripheral Low Power Enable Disable@{APB1 Peripheral Low Power Enable Disable}}
+\doxysubsubsubsubsubsection{\texorpdfstring{\_\_HAL\_RCC\_TIM5\_CLK\_SLEEP\_DISABLE}{\_\_HAL\_RCC\_TIM5\_CLK\_SLEEP\_DISABLE}}
+{\footnotesize\ttfamily \label{group___r_c_c___a_p_b1___low_power___enable___disable_gaac91e3596950c8d33760debce6b0e416} 
+\#define \+\_\+\+\_\+\+HAL\+\_\+\+RCC\+\_\+\+TIM5\+\_\+\+CLK\+\_\+\+SLEEP\+\_\+\+DISABLE(\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(RCC-\/>APB1LPENR\ \&=\ \string~(RCC\_APB1LPENR\_TIM5LPEN))}
+
+\end{DoxyCode}
+\Hypertarget{group___r_c_c___a_p_b1___low_power___enable___disable_gae99e46f9e40655dc9b5c07b03fdc4a4e}\index{APB1 Peripheral Low Power Enable Disable@{APB1 Peripheral Low Power Enable Disable}!\_\_HAL\_RCC\_TIM5\_CLK\_SLEEP\_ENABLE@{\_\_HAL\_RCC\_TIM5\_CLK\_SLEEP\_ENABLE}}
+\index{\_\_HAL\_RCC\_TIM5\_CLK\_SLEEP\_ENABLE@{\_\_HAL\_RCC\_TIM5\_CLK\_SLEEP\_ENABLE}!APB1 Peripheral Low Power Enable Disable@{APB1 Peripheral Low Power Enable Disable}}
+\doxysubsubsubsubsubsection{\texorpdfstring{\_\_HAL\_RCC\_TIM5\_CLK\_SLEEP\_ENABLE}{\_\_HAL\_RCC\_TIM5\_CLK\_SLEEP\_ENABLE}}
+{\footnotesize\ttfamily \label{group___r_c_c___a_p_b1___low_power___enable___disable_gae99e46f9e40655dc9b5c07b03fdc4a4e} 
+\#define \+\_\+\+\_\+\+HAL\+\_\+\+RCC\+\_\+\+TIM5\+\_\+\+CLK\+\_\+\+SLEEP\+\_\+\+ENABLE(\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(RCC-\/>APB1LPENR\ |=\ (RCC\_APB1LPENR\_TIM5LPEN))}
+
+\end{DoxyCode}
+\Hypertarget{group___r_c_c___a_p_b1___low_power___enable___disable_ga3ad038000c76cee2e7ca00d56ba64c17}\index{APB1 Peripheral Low Power Enable Disable@{APB1 Peripheral Low Power Enable Disable}!\_\_HAL\_RCC\_USART2\_CLK\_SLEEP\_DISABLE@{\_\_HAL\_RCC\_USART2\_CLK\_SLEEP\_DISABLE}}
+\index{\_\_HAL\_RCC\_USART2\_CLK\_SLEEP\_DISABLE@{\_\_HAL\_RCC\_USART2\_CLK\_SLEEP\_DISABLE}!APB1 Peripheral Low Power Enable Disable@{APB1 Peripheral Low Power Enable Disable}}
+\doxysubsubsubsubsubsection{\texorpdfstring{\_\_HAL\_RCC\_USART2\_CLK\_SLEEP\_DISABLE}{\_\_HAL\_RCC\_USART2\_CLK\_SLEEP\_DISABLE}}
+{\footnotesize\ttfamily \label{group___r_c_c___a_p_b1___low_power___enable___disable_ga3ad038000c76cee2e7ca00d56ba64c17} 
+\#define \+\_\+\+\_\+\+HAL\+\_\+\+RCC\+\_\+\+USART2\+\_\+\+CLK\+\_\+\+SLEEP\+\_\+\+DISABLE(\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(RCC-\/>APB1LPENR\ \&=\ \string~(RCC\_APB1LPENR\_USART2LPEN))}
+
+\end{DoxyCode}
+\Hypertarget{group___r_c_c___a_p_b1___low_power___enable___disable_ga12132da4a7f5c62f32cd9d91b1c99495}\index{APB1 Peripheral Low Power Enable Disable@{APB1 Peripheral Low Power Enable Disable}!\_\_HAL\_RCC\_USART2\_CLK\_SLEEP\_ENABLE@{\_\_HAL\_RCC\_USART2\_CLK\_SLEEP\_ENABLE}}
+\index{\_\_HAL\_RCC\_USART2\_CLK\_SLEEP\_ENABLE@{\_\_HAL\_RCC\_USART2\_CLK\_SLEEP\_ENABLE}!APB1 Peripheral Low Power Enable Disable@{APB1 Peripheral Low Power Enable Disable}}
+\doxysubsubsubsubsubsection{\texorpdfstring{\_\_HAL\_RCC\_USART2\_CLK\_SLEEP\_ENABLE}{\_\_HAL\_RCC\_USART2\_CLK\_SLEEP\_ENABLE}}
+{\footnotesize\ttfamily \label{group___r_c_c___a_p_b1___low_power___enable___disable_ga12132da4a7f5c62f32cd9d91b1c99495} 
+\#define \+\_\+\+\_\+\+HAL\+\_\+\+RCC\+\_\+\+USART2\+\_\+\+CLK\+\_\+\+SLEEP\+\_\+\+ENABLE(\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(RCC-\/>APB1LPENR\ |=\ (RCC\_APB1LPENR\_USART2LPEN))}
+
+\end{DoxyCode}
+\Hypertarget{group___r_c_c___a_p_b1___low_power___enable___disable_gae61c24ac6b36e7edbabc5b050b38d63e}\index{APB1 Peripheral Low Power Enable Disable@{APB1 Peripheral Low Power Enable Disable}!\_\_HAL\_RCC\_WWDG\_CLK\_SLEEP\_DISABLE@{\_\_HAL\_RCC\_WWDG\_CLK\_SLEEP\_DISABLE}}
+\index{\_\_HAL\_RCC\_WWDG\_CLK\_SLEEP\_DISABLE@{\_\_HAL\_RCC\_WWDG\_CLK\_SLEEP\_DISABLE}!APB1 Peripheral Low Power Enable Disable@{APB1 Peripheral Low Power Enable Disable}}
+\doxysubsubsubsubsubsection{\texorpdfstring{\_\_HAL\_RCC\_WWDG\_CLK\_SLEEP\_DISABLE}{\_\_HAL\_RCC\_WWDG\_CLK\_SLEEP\_DISABLE}}
+{\footnotesize\ttfamily \label{group___r_c_c___a_p_b1___low_power___enable___disable_gae61c24ac6b36e7edbabc5b050b38d63e} 
+\#define \+\_\+\+\_\+\+HAL\+\_\+\+RCC\+\_\+\+WWDG\+\_\+\+CLK\+\_\+\+SLEEP\+\_\+\+DISABLE(\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(RCC-\/>APB1LPENR\ \&=\ \string~(RCC\_APB1LPENR\_WWDGLPEN))}
+
+\end{DoxyCode}
+\Hypertarget{group___r_c_c___a_p_b1___low_power___enable___disable_gaa3978a2e193b921dc24976880dce7a26}\index{APB1 Peripheral Low Power Enable Disable@{APB1 Peripheral Low Power Enable Disable}!\_\_HAL\_RCC\_WWDG\_CLK\_SLEEP\_ENABLE@{\_\_HAL\_RCC\_WWDG\_CLK\_SLEEP\_ENABLE}}
+\index{\_\_HAL\_RCC\_WWDG\_CLK\_SLEEP\_ENABLE@{\_\_HAL\_RCC\_WWDG\_CLK\_SLEEP\_ENABLE}!APB1 Peripheral Low Power Enable Disable@{APB1 Peripheral Low Power Enable Disable}}
+\doxysubsubsubsubsubsection{\texorpdfstring{\_\_HAL\_RCC\_WWDG\_CLK\_SLEEP\_ENABLE}{\_\_HAL\_RCC\_WWDG\_CLK\_SLEEP\_ENABLE}}
+{\footnotesize\ttfamily \label{group___r_c_c___a_p_b1___low_power___enable___disable_gaa3978a2e193b921dc24976880dce7a26} 
+\#define \+\_\+\+\_\+\+HAL\+\_\+\+RCC\+\_\+\+WWDG\+\_\+\+CLK\+\_\+\+SLEEP\+\_\+\+ENABLE(\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(RCC-\/>APB1LPENR\ |=\ (RCC\_APB1LPENR\_WWDGLPEN))}
+
+\end{DoxyCode}

@@ -1,0 +1,95 @@
+\doxysubsubsubsection{Get Clock source }
+\hypertarget{group___r_c_c___get___clock__source}{}\label{group___r_c_c___get___clock__source}\index{Get Clock source@{Get Clock source}}
+\doxysubsubsubsubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group___r_c_c___get___clock__source_ga32f72b8c5b7e97b415867c57f9fafed6}{\+\_\+\+\_\+\+HAL\+\_\+\+RCC\+\_\+\+SYSCLK\+\_\+\+CONFIG}}(\+\_\+\+\_\+\+RCC\+\_\+\+SYSCLKSOURCE\+\_\+\+\_\+)
+\begin{DoxyCompactList}\small\item\em Macro to configure the system clock source. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___r_c_c___get___clock__source_gac99c2453d9e77c8b457acc0210e754c2}{\+\_\+\+\_\+\+HAL\+\_\+\+RCC\+\_\+\+GET\+\_\+\+SYSCLK\+\_\+\+SOURCE}}()
+\begin{DoxyCompactList}\small\item\em Macro to get the clock source used as system clock. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___r_c_c___get___clock__source_ga3ea1390f8124e2b3b8d53e95541d6e53}{\+\_\+\+\_\+\+HAL\+\_\+\+RCC\+\_\+\+GET\+\_\+\+PLL\+\_\+\+OSCSOURCE}}()
+\begin{DoxyCompactList}\small\item\em Macro to get the oscillator used as PLL clock source. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsubsubsubsection{Detailed Description}
+
+
+\label{doc-define-members}
+\Hypertarget{group___r_c_c___get___clock__source_doc-define-members}
+\doxysubsubsubsubsection{Macro Definition Documentation}
+\Hypertarget{group___r_c_c___get___clock__source_ga3ea1390f8124e2b3b8d53e95541d6e53}\index{Get Clock source@{Get Clock source}!\_\_HAL\_RCC\_GET\_PLL\_OSCSOURCE@{\_\_HAL\_RCC\_GET\_PLL\_OSCSOURCE}}
+\index{\_\_HAL\_RCC\_GET\_PLL\_OSCSOURCE@{\_\_HAL\_RCC\_GET\_PLL\_OSCSOURCE}!Get Clock source@{Get Clock source}}
+\doxysubsubsubsubsubsection{\texorpdfstring{\_\_HAL\_RCC\_GET\_PLL\_OSCSOURCE}{\_\_HAL\_RCC\_GET\_PLL\_OSCSOURCE}}
+{\footnotesize\ttfamily \label{group___r_c_c___get___clock__source_ga3ea1390f8124e2b3b8d53e95541d6e53} 
+\#define \+\_\+\+\_\+\+HAL\+\_\+\+RCC\+\_\+\+GET\+\_\+\+PLL\+\_\+\+OSCSOURCE(\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{((uint32\_t)(RCC-\/>PLLCFGR\ \&\ RCC\_PLLCFGR\_PLLSRC))}
+
+\end{DoxyCode}
+
+
+Macro to get the oscillator used as PLL clock source. 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & oscillator used as PLL clock source. The returned value can be one of the following\+:
+\begin{DoxyItemize}
+\item RCC\+\_\+\+PLLSOURCE\+\_\+\+HSI\+: HSI oscillator is used as PLL clock source.
+\item RCC\+\_\+\+PLLSOURCE\+\_\+\+HSE\+: HSE oscillator is used as PLL clock source. 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyRetVals}
+\Hypertarget{group___r_c_c___get___clock__source_gac99c2453d9e77c8b457acc0210e754c2}\index{Get Clock source@{Get Clock source}!\_\_HAL\_RCC\_GET\_SYSCLK\_SOURCE@{\_\_HAL\_RCC\_GET\_SYSCLK\_SOURCE}}
+\index{\_\_HAL\_RCC\_GET\_SYSCLK\_SOURCE@{\_\_HAL\_RCC\_GET\_SYSCLK\_SOURCE}!Get Clock source@{Get Clock source}}
+\doxysubsubsubsubsubsection{\texorpdfstring{\_\_HAL\_RCC\_GET\_SYSCLK\_SOURCE}{\_\_HAL\_RCC\_GET\_SYSCLK\_SOURCE}}
+{\footnotesize\ttfamily \label{group___r_c_c___get___clock__source_gac99c2453d9e77c8b457acc0210e754c2} 
+\#define \+\_\+\+\_\+\+HAL\+\_\+\+RCC\+\_\+\+GET\+\_\+\+SYSCLK\+\_\+\+SOURCE(\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(RCC-\/>CFGR\ \&\ \mbox{\hyperlink{group___peripheral___registers___bits___definition_ga15bf2269500dc97e137315f44aa015c9}{RCC\_CFGR\_SWS}})}
+
+\end{DoxyCode}
+
+
+Macro to get the clock source used as system clock. 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & clock source used as system clock. The returned value can be one of the following\+:
+\begin{DoxyItemize}
+\item RCC\+\_\+\+SYSCLKSOURCE\+\_\+\+STATUS\+\_\+\+HSI\+: HSI used as system clock.
+\item RCC\+\_\+\+SYSCLKSOURCE\+\_\+\+STATUS\+\_\+\+HSE\+: HSE used as system clock.
+\item RCC\+\_\+\+SYSCLKSOURCE\+\_\+\+STATUS\+\_\+\+PLLCLK\+: PLL used as system clock.
+\item RCC\+\_\+\+SYSCLKSOURCE\+\_\+\+STATUS\+\_\+\+PLLRCLK\+: PLLR used as system clock. This parameter is available only for STM32\+F446xx devices. 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyRetVals}
+\Hypertarget{group___r_c_c___get___clock__source_ga32f72b8c5b7e97b415867c57f9fafed6}\index{Get Clock source@{Get Clock source}!\_\_HAL\_RCC\_SYSCLK\_CONFIG@{\_\_HAL\_RCC\_SYSCLK\_CONFIG}}
+\index{\_\_HAL\_RCC\_SYSCLK\_CONFIG@{\_\_HAL\_RCC\_SYSCLK\_CONFIG}!Get Clock source@{Get Clock source}}
+\doxysubsubsubsubsubsection{\texorpdfstring{\_\_HAL\_RCC\_SYSCLK\_CONFIG}{\_\_HAL\_RCC\_SYSCLK\_CONFIG}}
+{\footnotesize\ttfamily \label{group___r_c_c___get___clock__source_ga32f72b8c5b7e97b415867c57f9fafed6} 
+\#define \+\_\+\+\_\+\+HAL\+\_\+\+RCC\+\_\+\+SYSCLK\+\_\+\+CONFIG(\begin{DoxyParamCaption}\item[{}]{\+\_\+\+\_\+\+RCC\+\_\+\+SYSCLKSOURCE\+\_\+\+\_\+}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{MODIFY\_REG(RCC-\/>CFGR,\ \mbox{\hyperlink{group___peripheral___registers___bits___definition_ga0eea5e5f7743a7e8995b8beeb18355c1}{RCC\_CFGR\_SW}},\ (\_\_RCC\_SYSCLKSOURCE\_\_))}
+
+\end{DoxyCode}
+
+
+Macro to configure the system clock source. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+\+\_\+\+RCC\+\_\+\+SYSCLKSOURCE\+\_\+\+\_\+} & specifies the system clock source. This parameter can be one of the following values\+:
+\begin{DoxyItemize}
+\item RCC\+\_\+\+SYSCLKSOURCE\+\_\+\+HSI\+: HSI oscillator is used as system clock source.
+\item RCC\+\_\+\+SYSCLKSOURCE\+\_\+\+HSE\+: HSE oscillator is used as system clock source.
+\item RCC\+\_\+\+SYSCLKSOURCE\+\_\+\+PLLCLK\+: PLL output is used as system clock source.
+\item RCC\+\_\+\+SYSCLKSOURCE\+\_\+\+PLLRCLK\+: PLLR output is used as system clock source. This parameter is available only for STM32\+F446xx devices. 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}

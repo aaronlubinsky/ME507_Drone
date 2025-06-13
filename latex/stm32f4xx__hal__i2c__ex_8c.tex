@@ -1,0 +1,43 @@
+\doxysection{Drivers/\+STM32\+F4xx\+\_\+\+HAL\+\_\+\+Driver/\+Src/stm32f4xx\+\_\+hal\+\_\+i2c\+\_\+ex.c File Reference}
+\hypertarget{stm32f4xx__hal__i2c__ex_8c}{}\label{stm32f4xx__hal__i2c__ex_8c}\index{Drivers/STM32F4xx\_HAL\_Driver/Src/stm32f4xx\_hal\_i2c\_ex.c@{Drivers/STM32F4xx\_HAL\_Driver/Src/stm32f4xx\_hal\_i2c\_ex.c}}
+
+
+I2C Extension HAL module driver. This file provides firmware functions to manage the following functionalities of I2C extension peripheral\+:  
+
+
+{\ttfamily \#include "{}stm32f4xx\+\_\+hal.\+h"{}}\newline
+
+
+\doxysubsection{Detailed Description}
+I2C Extension HAL module driver. This file provides firmware functions to manage the following functionalities of I2C extension peripheral\+: 
+
+\begin{DoxyAuthor}{Author}
+MCD Application Team
+\begin{DoxyItemize}
+\item Extension features functions
+\end{DoxyItemize}
+\end{DoxyAuthor}
+\begin{DoxyAttention}{Attention}
+
+\end{DoxyAttention}
+Copyright (c) 2016 STMicroelectronics. All rights reserved.
+
+This software is licensed under terms that can be found in the LICENSE file in the root directory of this software component. If no LICENSE file comes with this software, it is provided AS-\/\+IS.
+
+\begin{DoxyVerb}==============================================================================
+             ##### I2C peripheral extension features  #####
+==============================================================================
+
+[..] Comparing to other previous devices, the I2C interface for STM32F427xx/437xx/
+     429xx/439xx devices contains the following additional features :
+
+     (+) Possibility to disable or enable Analog Noise Filter
+     (+) Use of a configured Digital Noise Filter
+
+                   ##### How to use this driver #####
+==============================================================================
+[..] This driver provides functions to configure Noise Filter
+  (#) Configure I2C Analog noise filter using the function HAL_I2C_AnalogFilter_Config()
+  (#) Configure I2C Digital noise filter using the function HAL_I2C_DigitalFilter_Config()
+\end{DoxyVerb}
+ 

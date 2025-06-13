@@ -1,0 +1,119 @@
+\doxysection{Drivers/\+STM32\+F4xx\+\_\+\+HAL\+\_\+\+Driver/\+Inc/stm32f4xx\+\_\+hal\+\_\+flash\+\_\+ex.h File Reference}
+\hypertarget{stm32f4xx__hal__flash__ex_8h}{}\label{stm32f4xx__hal__flash__ex_8h}\index{Drivers/STM32F4xx\_HAL\_Driver/Inc/stm32f4xx\_hal\_flash\_ex.h@{Drivers/STM32F4xx\_HAL\_Driver/Inc/stm32f4xx\_hal\_flash\_ex.h}}
+
+
+Header file of FLASH HAL Extension module.  
+
+
+{\ttfamily \#include "{}stm32f4xx\+\_\+hal\+\_\+def.\+h"{}}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_f_l_a_s_h___erase_init_type_def}{FLASH\+\_\+\+Erase\+Init\+Type\+Def}}
+\begin{DoxyCompactList}\small\item\em FLASH Erase structure definition. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_f_l_a_s_h___o_b_program_init_type_def}{FLASH\+\_\+\+OBProgram\+Init\+Type\+Def}}
+\begin{DoxyCompactList}\small\item\em FLASH Option Bytes Program structure definition. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group___f_l_a_s_h_ex___type___erase_gaee700cbbc746cf72fca3ebf07ee20c4e}{FLASH\+\_\+\+TYPEERASE\+\_\+\+SECTORS}}~0x00000000U
+\item 
+\#define \mbox{\hyperlink{group___f_l_a_s_h_ex___type___erase_ga9bc03534e69c625e1b4f0f05c3852243}{FLASH\+\_\+\+TYPEERASE\+\_\+\+MASSERASE}}~0x00000001U
+\item 
+\#define \mbox{\hyperlink{group___f_l_a_s_h_ex___voltage___range_ga5cadf49a63c968cde3b980e5139d398e}{FLASH\+\_\+\+VOLTAGE\+\_\+\+RANGE\+\_\+1}}~0x00000000U
+\item 
+\#define \mbox{\hyperlink{group___f_l_a_s_h_ex___voltage___range_gad047be2bc7aa9be946b5b0c6b3062ef3}{FLASH\+\_\+\+VOLTAGE\+\_\+\+RANGE\+\_\+2}}~0x00000001U
+\item 
+\#define \mbox{\hyperlink{group___f_l_a_s_h_ex___voltage___range_ga50950407a789684eec9216f49e0831a0}{FLASH\+\_\+\+VOLTAGE\+\_\+\+RANGE\+\_\+3}}~0x00000002U
+\item 
+\#define \mbox{\hyperlink{group___f_l_a_s_h_ex___voltage___range_gabf8037a482f18815c5a67f287223a658}{FLASH\+\_\+\+VOLTAGE\+\_\+\+RANGE\+\_\+4}}~0x00000003U
+\item 
+\#define \mbox{\hyperlink{group___f_l_a_s_h_ex___w_r_p___state_gaa34eb6205fe554f65a311ee974d5a4ab}{OB\+\_\+\+WRPSTATE\+\_\+\+DISABLE}}~0x00000000U
+\item 
+\#define \mbox{\hyperlink{group___f_l_a_s_h_ex___w_r_p___state_ga9fc463145ab57616baa36d95523186a1}{OB\+\_\+\+WRPSTATE\+\_\+\+ENABLE}}~0x00000001U
+\item 
+\#define \mbox{\hyperlink{group___f_l_a_s_h_ex___option___type_ga48712a166ea192ddcda0f2653679f9ec}{OPTIONBYTE\+\_\+\+WRP}}~0x00000001U
+\item 
+\#define \mbox{\hyperlink{group___f_l_a_s_h_ex___option___type_ga8f0bdb21ef13bae39d5d8b6619e2df06}{OPTIONBYTE\+\_\+\+RDP}}~0x00000002U
+\item 
+\#define \mbox{\hyperlink{group___f_l_a_s_h_ex___option___type_gac7d843e666e15c79688a1914e8ffe7a5}{OPTIONBYTE\+\_\+\+USER}}~0x00000004U
+\item 
+\#define \mbox{\hyperlink{group___f_l_a_s_h_ex___option___type_gaf4063216c8386467d187663190936c07}{OPTIONBYTE\+\_\+\+BOR}}~0x00000008U
+\item 
+\#define {\bfseries OB\+\_\+\+RDP\+\_\+\+LEVEL\+\_\+0}~((uint8\+\_\+t)0x\+AA)
+\item 
+\#define {\bfseries OB\+\_\+\+RDP\+\_\+\+LEVEL\+\_\+1}~((uint8\+\_\+t)0x55)
+\item 
+\#define \mbox{\hyperlink{group___f_l_a_s_h_ex___option___bytes___read___protection_ga2262afca565429ce2808d835c49e5ee6}{OB\+\_\+\+RDP\+\_\+\+LEVEL\+\_\+2}}~((uint8\+\_\+t)0x\+CC)
+\item 
+\#define \mbox{\hyperlink{group___f_l_a_s_h_ex___option___bytes___i_watchdog_ga5a357e232c955444c3f2ccb9a937ffce}{OB\+\_\+\+IWDG\+\_\+\+SW}}~((uint8\+\_\+t)0x20)
+\item 
+\#define \mbox{\hyperlink{group___f_l_a_s_h_ex___option___bytes___i_watchdog_gadfcbfa963d79c339ec8e2d5a7734e47a}{OB\+\_\+\+IWDG\+\_\+\+HW}}~((uint8\+\_\+t)0x00)
+\item 
+\#define \mbox{\hyperlink{group___f_l_a_s_h_ex___option___bytes__n_r_s_t___s_t_o_p_ga7344fe0ec25c5eb2d11db7c855325436}{OB\+\_\+\+STOP\+\_\+\+NO\+\_\+\+RST}}~((uint8\+\_\+t)0x40)
+\item 
+\#define \mbox{\hyperlink{group___f_l_a_s_h_ex___option___bytes__n_r_s_t___s_t_o_p_gaef92c03b1f279c532bfa13d3bb074b57}{OB\+\_\+\+STOP\+\_\+\+RST}}~((uint8\+\_\+t)0x00)
+\item 
+\#define \mbox{\hyperlink{group___f_l_a_s_h_ex___option___bytes__n_r_s_t___s_t_d_b_y_gad776ed7b3b9a98013aac9976eedb7e94}{OB\+\_\+\+STDBY\+\_\+\+NO\+\_\+\+RST}}~((uint8\+\_\+t)0x80)
+\item 
+\#define \mbox{\hyperlink{group___f_l_a_s_h_ex___option___bytes__n_r_s_t___s_t_d_b_y_ga69451a6f69247528f58735c9c83499ce}{OB\+\_\+\+STDBY\+\_\+\+RST}}~((uint8\+\_\+t)0x00)
+\item 
+\#define \mbox{\hyperlink{group___f_l_a_s_h_ex___b_o_r___reset___level_ga3132b8202c0a345e9dd33d136714b046}{OB\+\_\+\+BOR\+\_\+\+LEVEL3}}~((uint8\+\_\+t)0x00)
+\item 
+\#define \mbox{\hyperlink{group___f_l_a_s_h_ex___b_o_r___reset___level_gad678e849fcf817f6ed2d837538e8ebc2}{OB\+\_\+\+BOR\+\_\+\+LEVEL2}}~((uint8\+\_\+t)0x04)
+\item 
+\#define \mbox{\hyperlink{group___f_l_a_s_h_ex___b_o_r___reset___level_ga3a888b788e75f0bc1f9add85c9ccd9d6}{OB\+\_\+\+BOR\+\_\+\+LEVEL1}}~((uint8\+\_\+t)0x08)
+\item 
+\#define \mbox{\hyperlink{group___f_l_a_s_h_ex___b_o_r___reset___level_gaabc231cb1d05a94fe860f67bb5a37b12}{OB\+\_\+\+BOR\+\_\+\+OFF}}~((uint8\+\_\+t)0x0C)
+\item 
+\#define \mbox{\hyperlink{group___f_l_a_s_h_ex___i_s___f_l_a_s_h___definitions_gaf15a6822d2421a33b6857059348ab476}{IS\+\_\+\+FLASH\+\_\+\+TYPEERASE}}(VALUE)
+\item 
+\#define \mbox{\hyperlink{group___f_l_a_s_h_ex___i_s___f_l_a_s_h___definitions_gaa9682aea9d9ceebca83c48e53f9f6028}{IS\+\_\+\+VOLTAGERANGE}}(RANGE)
+\item 
+\#define \mbox{\hyperlink{group___f_l_a_s_h_ex___i_s___f_l_a_s_h___definitions_ga8164622401a6cacf006679166de93c21}{IS\+\_\+\+WRPSTATE}}(VALUE)
+\item 
+\#define \mbox{\hyperlink{group___f_l_a_s_h_ex___i_s___f_l_a_s_h___definitions_ga87cd48c2373f47668470a38892ed07e3}{IS\+\_\+\+OPTIONBYTE}}(VALUE)
+\item 
+\#define \mbox{\hyperlink{group___f_l_a_s_h_ex___i_s___f_l_a_s_h___definitions_ga8d602a97cd688390b3d1956d9970e712}{IS\+\_\+\+OB\+\_\+\+RDP\+\_\+\+LEVEL}}(LEVEL)
+\item 
+\#define \mbox{\hyperlink{group___f_l_a_s_h_ex___i_s___f_l_a_s_h___definitions_gaf2871652c08e76499d9449be6556f12c}{IS\+\_\+\+OB\+\_\+\+IWDG\+\_\+\+SOURCE}}(SOURCE)
+\item 
+\#define \mbox{\hyperlink{group___f_l_a_s_h_ex___i_s___f_l_a_s_h___definitions_ga131ae3434f300c8317dd6b3b349c7cab}{IS\+\_\+\+OB\+\_\+\+STOP\+\_\+\+SOURCE}}(SOURCE)
+\item 
+\#define \mbox{\hyperlink{group___f_l_a_s_h_ex___i_s___f_l_a_s_h___definitions_ga8a05393df3a5e89551b4e2e1e8c5b884}{IS\+\_\+\+OB\+\_\+\+STDBY\+\_\+\+SOURCE}}(SOURCE)
+\item 
+\#define \mbox{\hyperlink{group___f_l_a_s_h_ex___i_s___f_l_a_s_h___definitions_gac97ecd832fce5f4b4ff9ef7bc4493013}{IS\+\_\+\+OB\+\_\+\+BOR\+\_\+\+LEVEL}}(LEVEL)
+\item 
+\#define \mbox{\hyperlink{group___f_l_a_s_h_ex___i_s___f_l_a_s_h___definitions_gad0c8166ba15a0b8d458412a8bb74e2f0}{IS\+\_\+\+FLASH\+\_\+\+ADDRESS}}(ADDRESS)
+\item 
+\#define \mbox{\hyperlink{group___f_l_a_s_h_ex___i_s___f_l_a_s_h___definitions_ga5b85e63e0066bf7ca518cb3790ad67e0}{IS\+\_\+\+FLASH\+\_\+\+NBSECTORS}}(NBSECTORS)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{stm32f4xx__hal__def_8h_a63c0679d1cb8b8c684fbb0632743478f}{HAL\+\_\+\+Status\+Type\+Def}} {\bfseries HAL\+\_\+\+FLASHEx\+\_\+\+Erase} (\mbox{\hyperlink{struct_f_l_a_s_h___erase_init_type_def}{FLASH\+\_\+\+Erase\+Init\+Type\+Def}} \texorpdfstring{$\ast$}{*}p\+Erase\+Init, uint32\+\_\+t \texorpdfstring{$\ast$}{*}Sector\+Error)
+\item 
+\mbox{\hyperlink{stm32f4xx__hal__def_8h_a63c0679d1cb8b8c684fbb0632743478f}{HAL\+\_\+\+Status\+Type\+Def}} {\bfseries HAL\+\_\+\+FLASHEx\+\_\+\+Erase\+\_\+\+IT} (\mbox{\hyperlink{struct_f_l_a_s_h___erase_init_type_def}{FLASH\+\_\+\+Erase\+Init\+Type\+Def}} \texorpdfstring{$\ast$}{*}p\+Erase\+Init)
+\item 
+\mbox{\hyperlink{stm32f4xx__hal__def_8h_a63c0679d1cb8b8c684fbb0632743478f}{HAL\+\_\+\+Status\+Type\+Def}} {\bfseries HAL\+\_\+\+FLASHEx\+\_\+\+OBProgram} (\mbox{\hyperlink{struct_f_l_a_s_h___o_b_program_init_type_def}{FLASH\+\_\+\+OBProgram\+Init\+Type\+Def}} \texorpdfstring{$\ast$}{*}p\+OBInit)
+\item 
+void {\bfseries HAL\+\_\+\+FLASHEx\+\_\+\+OBGet\+Config} (\mbox{\hyperlink{struct_f_l_a_s_h___o_b_program_init_type_def}{FLASH\+\_\+\+OBProgram\+Init\+Type\+Def}} \texorpdfstring{$\ast$}{*}p\+OBInit)
+\item 
+void {\bfseries FLASH\+\_\+\+Erase\+\_\+\+Sector} (uint32\+\_\+t Sector, uint8\+\_\+t Voltage\+Range)
+\item 
+void {\bfseries FLASH\+\_\+\+Flush\+Caches} (void)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Header file of FLASH HAL Extension module. 
+
+\begin{DoxyAuthor}{Author}
+MCD Application Team 
+\end{DoxyAuthor}
+\begin{DoxyAttention}{Attention}
+
+\end{DoxyAttention}
+Copyright (c) 2017 STMicroelectronics. All rights reserved.
+
+This software is licensed under terms that can be found in the LICENSE file in the root directory of this software component. If no LICENSE file comes with this software, it is provided AS-\/\+IS. 

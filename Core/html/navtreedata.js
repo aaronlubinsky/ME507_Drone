@@ -24,9 +24,20 @@
 */
 var NAVTREE =
 [
-  [ "Quadcopter", "index.html", [
+  [ "ME507_Drone", "index.html", [
     [ "Quadcopter Flight Control System", "index.html", "index" ],
+    [ "Quadcopyrt", "md__r_e_a_d_m_e.html", [
+      [ "Quadcopter", "md__r_e_a_d_m_e.html#autotoc_md1", null ]
+    ] ],
     [ "Topics", "topics.html", "topics" ],
+    [ "Classes", "annotated.html", [
+      [ "Class List", "annotated.html", "annotated_dup" ],
+      [ "Class Index", "classes.html", null ],
+      [ "Class Members", "functions.html", [
+        [ "All", "functions.html", null ],
+        [ "Variables", "functions_vars.html", null ]
+      ] ]
+    ] ],
     [ "Files", "files.html", [
       [ "File List", "files.html", "files_dup" ],
       [ "File Members", "globals.html", [

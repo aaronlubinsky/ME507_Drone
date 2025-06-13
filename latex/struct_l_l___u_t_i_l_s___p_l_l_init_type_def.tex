@@ -1,0 +1,57 @@
+\doxysection{LL\+\_\+\+UTILS\+\_\+\+PLLInit\+Type\+Def Struct Reference}
+\hypertarget{struct_l_l___u_t_i_l_s___p_l_l_init_type_def}{}\label{struct_l_l___u_t_i_l_s___p_l_l_init_type_def}\index{LL\_UTILS\_PLLInitTypeDef@{LL\_UTILS\_PLLInitTypeDef}}
+
+
+UTILS PLL structure definition.  
+
+
+
+
+{\ttfamily \#include $<$stm32f4xx\+\_\+ll\+\_\+utils.\+h$>$}
+
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{struct_l_l___u_t_i_l_s___p_l_l_init_type_def_a129ade94ff1ceb47b364505f37a0e054}{PLLM}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{struct_l_l___u_t_i_l_s___p_l_l_init_type_def_aef85256f3086593ffa6ee4ec043ed150}{PLLN}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{struct_l_l___u_t_i_l_s___p_l_l_init_type_def_a0075fd05dc3f068a9d485ededb5badec}{PLLP}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+UTILS PLL structure definition. 
+
+\label{doc-variable-members}
+\Hypertarget{struct_l_l___u_t_i_l_s___p_l_l_init_type_def_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{struct_l_l___u_t_i_l_s___p_l_l_init_type_def_a129ade94ff1ceb47b364505f37a0e054}\index{LL\_UTILS\_PLLInitTypeDef@{LL\_UTILS\_PLLInitTypeDef}!PLLM@{PLLM}}
+\index{PLLM@{PLLM}!LL\_UTILS\_PLLInitTypeDef@{LL\_UTILS\_PLLInitTypeDef}}
+\doxysubsubsection{\texorpdfstring{PLLM}{PLLM}}
+{\footnotesize\ttfamily \label{struct_l_l___u_t_i_l_s___p_l_l_init_type_def_a129ade94ff1ceb47b364505f37a0e054} 
+uint32\+\_\+t LL\+\_\+\+UTILS\+\_\+\+PLLInit\+Type\+Def\+::\+PLLM}
+
+Division factor for PLL VCO input clock. This parameter can be a value of RCC\+\_\+\+LL\+\_\+\+EC\+\_\+\+PLLM\+\_\+\+DIV
+
+This feature can be modified afterwards using unitary function LL\+\_\+\+RCC\+\_\+\+PLL\+\_\+\+Config\+Domain\+\_\+\+SYS(). \Hypertarget{struct_l_l___u_t_i_l_s___p_l_l_init_type_def_aef85256f3086593ffa6ee4ec043ed150}\index{LL\_UTILS\_PLLInitTypeDef@{LL\_UTILS\_PLLInitTypeDef}!PLLN@{PLLN}}
+\index{PLLN@{PLLN}!LL\_UTILS\_PLLInitTypeDef@{LL\_UTILS\_PLLInitTypeDef}}
+\doxysubsubsection{\texorpdfstring{PLLN}{PLLN}}
+{\footnotesize\ttfamily \label{struct_l_l___u_t_i_l_s___p_l_l_init_type_def_aef85256f3086593ffa6ee4ec043ed150} 
+uint32\+\_\+t LL\+\_\+\+UTILS\+\_\+\+PLLInit\+Type\+Def\+::\+PLLN}
+
+Multiplication factor for PLL VCO output clock. This parameter must be a number between Min\+\_\+\+Data = RCC\+\_\+\+PLLN\+\_\+\+MIN\+\_\+\+VALUE and Max\+\_\+\+Data = RCC\+\_\+\+PLLN\+\_\+\+MIN\+\_\+\+VALUE
+
+This feature can be modified afterwards using unitary function LL\+\_\+\+RCC\+\_\+\+PLL\+\_\+\+Config\+Domain\+\_\+\+SYS(). \Hypertarget{struct_l_l___u_t_i_l_s___p_l_l_init_type_def_a0075fd05dc3f068a9d485ededb5badec}\index{LL\_UTILS\_PLLInitTypeDef@{LL\_UTILS\_PLLInitTypeDef}!PLLP@{PLLP}}
+\index{PLLP@{PLLP}!LL\_UTILS\_PLLInitTypeDef@{LL\_UTILS\_PLLInitTypeDef}}
+\doxysubsubsection{\texorpdfstring{PLLP}{PLLP}}
+{\footnotesize\ttfamily \label{struct_l_l___u_t_i_l_s___p_l_l_init_type_def_a0075fd05dc3f068a9d485ededb5badec} 
+uint32\+\_\+t LL\+\_\+\+UTILS\+\_\+\+PLLInit\+Type\+Def\+::\+PLLP}
+
+Division for the main system clock. This parameter can be a value of RCC\+\_\+\+LL\+\_\+\+EC\+\_\+\+PLLP\+\_\+\+DIV
+
+This feature can be modified afterwards using unitary function LL\+\_\+\+RCC\+\_\+\+PLL\+\_\+\+Config\+Domain\+\_\+\+SYS(). 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Drivers/\+STM32\+F4xx\+\_\+\+HAL\+\_\+\+Driver/\+Inc/\mbox{\hyperlink{stm32f4xx__ll__utils_8h}{stm32f4xx\+\_\+ll\+\_\+utils.\+h}}\end{DoxyCompactItemize}

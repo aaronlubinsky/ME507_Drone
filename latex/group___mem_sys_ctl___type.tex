@@ -1,0 +1,880 @@
+\doxysubsubsubsubsubsubsubsubsection{Memory System Control Registers (IMPLEMENTATION DEFINED) }
+\hypertarget{group___mem_sys_ctl___type}{}\label{group___mem_sys_ctl___type}\index{Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}}
+
+
+Type definitions for the Memory System Control Registers (MEMSYSCTL)  
+
+
+\doxysubsubsubsubsubsubsubsubsubsubsection*{Topics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{group___pwr_mod_ctl___type}{Power Mode Control Registers}}
+\begin{DoxyCompactList}\small\item\em Type definitions for the Power Mode Control Registers (PWRMODCTL) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsubsubsubsubsubsubsubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_mem_sys_ctl___type}{Mem\+Sys\+Ctl\+\_\+\+Type}}
+\begin{DoxyCompactList}\small\item\em Structure type to access the Memory System Control Registers (MEMSYSCTL). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_gad5be819ea314d07a1a8a22dc6561f2e4}{MEMSYSCTL\+\_\+\+MSCR\+\_\+\+CPWRDN\+\_\+\+Pos}}~17U
+\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga79edb7c4b9f707205cb186d67a75ae23}{MEMSYSCTL\+\_\+\+MSCR\+\_\+\+CPWRDN\+\_\+\+Msk}}~(0x1\+UL $<$$<$ \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_gad5be819ea314d07a1a8a22dc6561f2e4}{MEMSYSCTL\+\_\+\+MSCR\+\_\+\+CPWRDN\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga2dfd5544ea8358ca40cd0a55135b471e}{MEMSYSCTL\+\_\+\+MSCR\+\_\+\+DCCLEAN\+\_\+\+Pos}}~16U
+\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga86f193a5f600606a6c8a64f7860069bc}{MEMSYSCTL\+\_\+\+MSCR\+\_\+\+DCCLEAN\+\_\+\+Msk}}~(0x1\+UL $<$$<$ \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga2dfd5544ea8358ca40cd0a55135b471e}{MEMSYSCTL\+\_\+\+MSCR\+\_\+\+DCCLEAN\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga139979e66cefc212dd436d82f720c0f4}{MEMSYSCTL\+\_\+\+MSCR\+\_\+\+ICACTIVE\+\_\+\+Pos}}~13U
+\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga69b2fd0e1f9de304d9db5932e84ce8c1}{MEMSYSCTL\+\_\+\+MSCR\+\_\+\+ICACTIVE\+\_\+\+Msk}}~(0x1\+UL $<$$<$ \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga139979e66cefc212dd436d82f720c0f4}{MEMSYSCTL\+\_\+\+MSCR\+\_\+\+ICACTIVE\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga6cce2dcd61083c89d343db9935bd1598}{MEMSYSCTL\+\_\+\+MSCR\+\_\+\+DCACTIVE\+\_\+\+Pos}}~12U
+\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga4b6b82aa33b00ba0cbc7ab55f720f04b}{MEMSYSCTL\+\_\+\+MSCR\+\_\+\+DCACTIVE\+\_\+\+Msk}}~(0x1\+UL $<$$<$ \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga6cce2dcd61083c89d343db9935bd1598}{MEMSYSCTL\+\_\+\+MSCR\+\_\+\+DCACTIVE\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga4c74be9e35d5efd5ecb27efa63a02923}{MEMSYSCTL\+\_\+\+MSCR\+\_\+\+EVECCFAULT\+\_\+\+Pos}}~3U
+\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga719803c1c104cb7b0d37148e3c3d7175}{MEMSYSCTL\+\_\+\+MSCR\+\_\+\+EVECCFAULT\+\_\+\+Msk}}~(0x1\+UL $<$$<$ \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga4c74be9e35d5efd5ecb27efa63a02923}{MEMSYSCTL\+\_\+\+MSCR\+\_\+\+EVECCFAULT\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga258a3bf8f2d06cea3705b07db03f976b}{MEMSYSCTL\+\_\+\+MSCR\+\_\+\+FORCEWT\+\_\+\+Pos}}~2U
+\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_gaacfc5665a212cc43c70bc0c6b9322e81}{MEMSYSCTL\+\_\+\+MSCR\+\_\+\+FORCEWT\+\_\+\+Msk}}~(0x1\+UL $<$$<$ \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga258a3bf8f2d06cea3705b07db03f976b}{MEMSYSCTL\+\_\+\+MSCR\+\_\+\+FORCEWT\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_gabbdf1f89409c5d9b8c2ff4c2c5ce874e}{MEMSYSCTL\+\_\+\+MSCR\+\_\+\+ECCEN\+\_\+\+Pos}}~1U
+\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga86e13b9cc0e3f4fc3971643d118c0373}{MEMSYSCTL\+\_\+\+MSCR\+\_\+\+ECCEN\+\_\+\+Msk}}~(0x1\+UL $<$$<$ \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_gabbdf1f89409c5d9b8c2ff4c2c5ce874e}{MEMSYSCTL\+\_\+\+MSCR\+\_\+\+ECCEN\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga4e2faf9b3871f7ff24c67743c92d3572}{MEMSYSCTL\+\_\+\+PFCR\+\_\+\+ENABLE\+\_\+\+Pos}}~0U
+\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga6ea490292987b35e18f2a8033d7e70c7}{MEMSYSCTL\+\_\+\+PFCR\+\_\+\+ENABLE\+\_\+\+Msk}}~(0x1\+UL /\texorpdfstring{$\ast$}{*}$<$$<$ \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga4e2faf9b3871f7ff24c67743c92d3572}{MEMSYSCTL\+\_\+\+PFCR\+\_\+\+ENABLE\+\_\+\+Pos}}\texorpdfstring{$\ast$}{*}/)
+\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_gafc5a249edf213e88fb4d752f665fe25f}{MEMSYSCTL\+\_\+\+ITCMCR\+\_\+\+SZ\+\_\+\+Pos}}~3U
+\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga04318bc807edf3cb9556e92fa482c84b}{MEMSYSCTL\+\_\+\+ITCMCR\+\_\+\+SZ\+\_\+\+Msk}}~(0x\+FUL $<$$<$ \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_gafc5a249edf213e88fb4d752f665fe25f}{MEMSYSCTL\+\_\+\+ITCMCR\+\_\+\+SZ\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_gad32aae0739960aa88dca6fd9456854ab}{MEMSYSCTL\+\_\+\+ITCMCR\+\_\+\+EN\+\_\+\+Pos}}~0U
+\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_gafec8aafda75a967a2d3c5d58c4d46288}{MEMSYSCTL\+\_\+\+ITCMCR\+\_\+\+EN\+\_\+\+Msk}}~(0x1\+UL /\texorpdfstring{$\ast$}{*}$<$$<$ \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_gad32aae0739960aa88dca6fd9456854ab}{MEMSYSCTL\+\_\+\+ITCMCR\+\_\+\+EN\+\_\+\+Pos}}\texorpdfstring{$\ast$}{*}/)
+\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga65f1aaaeafff82a0a788c81ed17b3771}{MEMSYSCTL\+\_\+\+DTCMCR\+\_\+\+SZ\+\_\+\+Pos}}~3U
+\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga05579276f0dcea7921b5ef11ac4929df}{MEMSYSCTL\+\_\+\+DTCMCR\+\_\+\+SZ\+\_\+\+Msk}}~(0x\+FUL $<$$<$ \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga65f1aaaeafff82a0a788c81ed17b3771}{MEMSYSCTL\+\_\+\+DTCMCR\+\_\+\+SZ\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_gac2488bb0c08165d6cdce03589647c4f6}{MEMSYSCTL\+\_\+\+DTCMCR\+\_\+\+EN\+\_\+\+Pos}}~0U
+\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga305e7e3a543923ed7282d9128c829394}{MEMSYSCTL\+\_\+\+DTCMCR\+\_\+\+EN\+\_\+\+Msk}}~(0x1\+UL /\texorpdfstring{$\ast$}{*}$<$$<$ \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_gac2488bb0c08165d6cdce03589647c4f6}{MEMSYSCTL\+\_\+\+DTCMCR\+\_\+\+EN\+\_\+\+Pos}}\texorpdfstring{$\ast$}{*}/)
+\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga867352187f2aaa0992cc3d60c86b8e51}{MEMSYSCTL\+\_\+\+PAHBCR\+\_\+\+SZ\+\_\+\+Pos}}~1U
+\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_gacbbc1e6e548e918a638ec1971e6b71dc}{MEMSYSCTL\+\_\+\+PAHBCR\+\_\+\+SZ\+\_\+\+Msk}}~(0x7\+UL $<$$<$ \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga867352187f2aaa0992cc3d60c86b8e51}{MEMSYSCTL\+\_\+\+PAHBCR\+\_\+\+SZ\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga1ecaa54f33f736bb4e93030db1c83e02}{MEMSYSCTL\+\_\+\+PAHBCR\+\_\+\+EN\+\_\+\+Pos}}~0U
+\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_gaf8605c8523ca1b463cea7d488e147797}{MEMSYSCTL\+\_\+\+PAHBCR\+\_\+\+EN\+\_\+\+Msk}}~(0x1\+UL /\texorpdfstring{$\ast$}{*}$<$$<$ \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga1ecaa54f33f736bb4e93030db1c83e02}{MEMSYSCTL\+\_\+\+PAHBCR\+\_\+\+EN\+\_\+\+Pos}}\texorpdfstring{$\ast$}{*}/)
+\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga2a09789d77ee7c31bd138dc235c8550e}{MEMSYSCTL\+\_\+\+ITGU\+\_\+\+CTRL\+\_\+\+DEREN\+\_\+\+Pos}}~1U
+\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga182bb04e0960e78c056d51bef76f6cb7}{MEMSYSCTL\+\_\+\+ITGU\+\_\+\+CTRL\+\_\+\+DEREN\+\_\+\+Msk}}~(0x1\+UL $<$$<$ \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga2a09789d77ee7c31bd138dc235c8550e}{MEMSYSCTL\+\_\+\+ITGU\+\_\+\+CTRL\+\_\+\+DEREN\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_gab08d772bd6d2bdca22530cfc9201a7e6}{MEMSYSCTL\+\_\+\+ITGU\+\_\+\+CTRL\+\_\+\+DBFEN\+\_\+\+Pos}}~0U
+\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga46eb340e945a408918a6e96775334256}{MEMSYSCTL\+\_\+\+ITGU\+\_\+\+CTRL\+\_\+\+DBFEN\+\_\+\+Msk}}~(0x1\+UL /\texorpdfstring{$\ast$}{*}$<$$<$ \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_gab08d772bd6d2bdca22530cfc9201a7e6}{MEMSYSCTL\+\_\+\+ITGU\+\_\+\+CTRL\+\_\+\+DBFEN\+\_\+\+Pos}}\texorpdfstring{$\ast$}{*}/)
+\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga0f491892f1eeda8c65a47d80081c3969}{MEMSYSCTL\+\_\+\+ITGU\+\_\+\+CFG\+\_\+\+PRESENT\+\_\+\+Pos}}~31U
+\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga54780fc16ebdd1d722b2377addcdb15c}{MEMSYSCTL\+\_\+\+ITGU\+\_\+\+CFG\+\_\+\+PRESENT\+\_\+\+Msk}}~(0x1\+UL $<$$<$ \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga0f491892f1eeda8c65a47d80081c3969}{MEMSYSCTL\+\_\+\+ITGU\+\_\+\+CFG\+\_\+\+PRESENT\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga38fd7451023ebe46e401e9070cd87dfd}{MEMSYSCTL\+\_\+\+ITGU\+\_\+\+CFG\+\_\+\+NUMBLKS\+\_\+\+Pos}}~8U
+\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga05ced34cca684f6feb1b39a76e5c97f1}{MEMSYSCTL\+\_\+\+ITGU\+\_\+\+CFG\+\_\+\+NUMBLKS\+\_\+\+Msk}}~(0x\+FUL $<$$<$ \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga38fd7451023ebe46e401e9070cd87dfd}{MEMSYSCTL\+\_\+\+ITGU\+\_\+\+CFG\+\_\+\+NUMBLKS\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga4dd12ffd6ca5bb2b506566d62f8be5ed}{MEMSYSCTL\+\_\+\+ITGU\+\_\+\+CFG\+\_\+\+BLKSZ\+\_\+\+Pos}}~0U
+\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_gac37532e62cc50cce67baba7471a5348a}{MEMSYSCTL\+\_\+\+ITGU\+\_\+\+CFG\+\_\+\+BLKSZ\+\_\+\+Msk}}~(0x\+FUL /\texorpdfstring{$\ast$}{*}$<$$<$ \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga4dd12ffd6ca5bb2b506566d62f8be5ed}{MEMSYSCTL\+\_\+\+ITGU\+\_\+\+CFG\+\_\+\+BLKSZ\+\_\+\+Pos}}\texorpdfstring{$\ast$}{*}/)
+\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_gad889ab1ebe2e602d2e54a11e9731f7af}{MEMSYSCTL\+\_\+\+DTGU\+\_\+\+CTRL\+\_\+\+DEREN\+\_\+\+Pos}}~1U
+\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga33d0a0692dbb47783add11f26ab63169}{MEMSYSCTL\+\_\+\+DTGU\+\_\+\+CTRL\+\_\+\+DEREN\+\_\+\+Msk}}~(0x1\+UL $<$$<$ \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_gad889ab1ebe2e602d2e54a11e9731f7af}{MEMSYSCTL\+\_\+\+DTGU\+\_\+\+CTRL\+\_\+\+DEREN\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_gacf955e3b7a53648e58ae62cbb3b64fde}{MEMSYSCTL\+\_\+\+DTGU\+\_\+\+CTRL\+\_\+\+DBFEN\+\_\+\+Pos}}~0U
+\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga4a2b3156aae3b0ef67f7fd80bfe381df}{MEMSYSCTL\+\_\+\+DTGU\+\_\+\+CTRL\+\_\+\+DBFEN\+\_\+\+Msk}}~(0x1\+UL /\texorpdfstring{$\ast$}{*}$<$$<$ \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_gacf955e3b7a53648e58ae62cbb3b64fde}{MEMSYSCTL\+\_\+\+DTGU\+\_\+\+CTRL\+\_\+\+DBFEN\+\_\+\+Pos}}\texorpdfstring{$\ast$}{*}/)
+\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga20e3971de3c6166e4546533f73415c2a}{MEMSYSCTL\+\_\+\+DTGU\+\_\+\+CFG\+\_\+\+PRESENT\+\_\+\+Pos}}~31U
+\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_gacadafe2f1de8514bbde517804c651359}{MEMSYSCTL\+\_\+\+DTGU\+\_\+\+CFG\+\_\+\+PRESENT\+\_\+\+Msk}}~(0x1\+UL $<$$<$ \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga20e3971de3c6166e4546533f73415c2a}{MEMSYSCTL\+\_\+\+DTGU\+\_\+\+CFG\+\_\+\+PRESENT\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_gae8ce419d8110d1970536ee8629f81379}{MEMSYSCTL\+\_\+\+DTGU\+\_\+\+CFG\+\_\+\+NUMBLKS\+\_\+\+Pos}}~8U
+\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga5087414871190bb4533eccfed1d85b74}{MEMSYSCTL\+\_\+\+DTGU\+\_\+\+CFG\+\_\+\+NUMBLKS\+\_\+\+Msk}}~(0x\+FUL $<$$<$ \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_gae8ce419d8110d1970536ee8629f81379}{MEMSYSCTL\+\_\+\+DTGU\+\_\+\+CFG\+\_\+\+NUMBLKS\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_gaeb41506d5e7363d5bfaebcbf777ba09b}{MEMSYSCTL\+\_\+\+DTGU\+\_\+\+CFG\+\_\+\+BLKSZ\+\_\+\+Pos}}~0U
+\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_gaf6b6427f5010217fd0c506693a8d62b5}{MEMSYSCTL\+\_\+\+DTGU\+\_\+\+CFG\+\_\+\+BLKSZ\+\_\+\+Msk}}~(0x\+FUL /\texorpdfstring{$\ast$}{*}$<$$<$ \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_gaeb41506d5e7363d5bfaebcbf777ba09b}{MEMSYSCTL\+\_\+\+DTGU\+\_\+\+CFG\+\_\+\+BLKSZ\+\_\+\+Pos}}\texorpdfstring{$\ast$}{*}/)
+\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_gad5be819ea314d07a1a8a22dc6561f2e4}{MEMSYSCTL\+\_\+\+MSCR\+\_\+\+CPWRDN\+\_\+\+Pos}}~17U
+\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga79edb7c4b9f707205cb186d67a75ae23}{MEMSYSCTL\+\_\+\+MSCR\+\_\+\+CPWRDN\+\_\+\+Msk}}~(0x1\+UL $<$$<$ \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_gad5be819ea314d07a1a8a22dc6561f2e4}{MEMSYSCTL\+\_\+\+MSCR\+\_\+\+CPWRDN\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga2dfd5544ea8358ca40cd0a55135b471e}{MEMSYSCTL\+\_\+\+MSCR\+\_\+\+DCCLEAN\+\_\+\+Pos}}~16U
+\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga86f193a5f600606a6c8a64f7860069bc}{MEMSYSCTL\+\_\+\+MSCR\+\_\+\+DCCLEAN\+\_\+\+Msk}}~(0x1\+UL $<$$<$ \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga2dfd5544ea8358ca40cd0a55135b471e}{MEMSYSCTL\+\_\+\+MSCR\+\_\+\+DCCLEAN\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga139979e66cefc212dd436d82f720c0f4}{MEMSYSCTL\+\_\+\+MSCR\+\_\+\+ICACTIVE\+\_\+\+Pos}}~13U
+\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga69b2fd0e1f9de304d9db5932e84ce8c1}{MEMSYSCTL\+\_\+\+MSCR\+\_\+\+ICACTIVE\+\_\+\+Msk}}~(0x1\+UL $<$$<$ \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga139979e66cefc212dd436d82f720c0f4}{MEMSYSCTL\+\_\+\+MSCR\+\_\+\+ICACTIVE\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga6cce2dcd61083c89d343db9935bd1598}{MEMSYSCTL\+\_\+\+MSCR\+\_\+\+DCACTIVE\+\_\+\+Pos}}~12U
+\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga4b6b82aa33b00ba0cbc7ab55f720f04b}{MEMSYSCTL\+\_\+\+MSCR\+\_\+\+DCACTIVE\+\_\+\+Msk}}~(0x1\+UL $<$$<$ \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga6cce2dcd61083c89d343db9935bd1598}{MEMSYSCTL\+\_\+\+MSCR\+\_\+\+DCACTIVE\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga4c74be9e35d5efd5ecb27efa63a02923}{MEMSYSCTL\+\_\+\+MSCR\+\_\+\+EVECCFAULT\+\_\+\+Pos}}~3U
+\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga719803c1c104cb7b0d37148e3c3d7175}{MEMSYSCTL\+\_\+\+MSCR\+\_\+\+EVECCFAULT\+\_\+\+Msk}}~(0x1\+UL $<$$<$ \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga4c74be9e35d5efd5ecb27efa63a02923}{MEMSYSCTL\+\_\+\+MSCR\+\_\+\+EVECCFAULT\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga258a3bf8f2d06cea3705b07db03f976b}{MEMSYSCTL\+\_\+\+MSCR\+\_\+\+FORCEWT\+\_\+\+Pos}}~2U
+\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_gaacfc5665a212cc43c70bc0c6b9322e81}{MEMSYSCTL\+\_\+\+MSCR\+\_\+\+FORCEWT\+\_\+\+Msk}}~(0x1\+UL $<$$<$ \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga258a3bf8f2d06cea3705b07db03f976b}{MEMSYSCTL\+\_\+\+MSCR\+\_\+\+FORCEWT\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_gabbdf1f89409c5d9b8c2ff4c2c5ce874e}{MEMSYSCTL\+\_\+\+MSCR\+\_\+\+ECCEN\+\_\+\+Pos}}~1U
+\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga86e13b9cc0e3f4fc3971643d118c0373}{MEMSYSCTL\+\_\+\+MSCR\+\_\+\+ECCEN\+\_\+\+Msk}}~(0x1\+UL $<$$<$ \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_gabbdf1f89409c5d9b8c2ff4c2c5ce874e}{MEMSYSCTL\+\_\+\+MSCR\+\_\+\+ECCEN\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_gad9770e0012357e9584cb3d7703ef4689}{MEMSYSCTL\+\_\+\+PFCR\+\_\+\+DIS\+\_\+\+NLP\+\_\+\+Pos}}~7U
+\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga2c3438255efb22a45f5d4dede50f52e8}{MEMSYSCTL\+\_\+\+PFCR\+\_\+\+DIS\+\_\+\+NLP\+\_\+\+Msk}}~(0x1\+UL $<$$<$ \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_gad9770e0012357e9584cb3d7703ef4689}{MEMSYSCTL\+\_\+\+PFCR\+\_\+\+DIS\+\_\+\+NLP\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga4e2faf9b3871f7ff24c67743c92d3572}{MEMSYSCTL\+\_\+\+PFCR\+\_\+\+ENABLE\+\_\+\+Pos}}~0U
+\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga6ea490292987b35e18f2a8033d7e70c7}{MEMSYSCTL\+\_\+\+PFCR\+\_\+\+ENABLE\+\_\+\+Msk}}~(0x1\+UL /\texorpdfstring{$\ast$}{*}$<$$<$ \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga4e2faf9b3871f7ff24c67743c92d3572}{MEMSYSCTL\+\_\+\+PFCR\+\_\+\+ENABLE\+\_\+\+Pos}}\texorpdfstring{$\ast$}{*}/)
+\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_gafc5a249edf213e88fb4d752f665fe25f}{MEMSYSCTL\+\_\+\+ITCMCR\+\_\+\+SZ\+\_\+\+Pos}}~3U
+\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga04318bc807edf3cb9556e92fa482c84b}{MEMSYSCTL\+\_\+\+ITCMCR\+\_\+\+SZ\+\_\+\+Msk}}~(0x\+FUL $<$$<$ \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_gafc5a249edf213e88fb4d752f665fe25f}{MEMSYSCTL\+\_\+\+ITCMCR\+\_\+\+SZ\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_gad32aae0739960aa88dca6fd9456854ab}{MEMSYSCTL\+\_\+\+ITCMCR\+\_\+\+EN\+\_\+\+Pos}}~0U
+\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_gafec8aafda75a967a2d3c5d58c4d46288}{MEMSYSCTL\+\_\+\+ITCMCR\+\_\+\+EN\+\_\+\+Msk}}~(0x1\+UL /\texorpdfstring{$\ast$}{*}$<$$<$ \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_gad32aae0739960aa88dca6fd9456854ab}{MEMSYSCTL\+\_\+\+ITCMCR\+\_\+\+EN\+\_\+\+Pos}}\texorpdfstring{$\ast$}{*}/)
+\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga65f1aaaeafff82a0a788c81ed17b3771}{MEMSYSCTL\+\_\+\+DTCMCR\+\_\+\+SZ\+\_\+\+Pos}}~3U
+\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga05579276f0dcea7921b5ef11ac4929df}{MEMSYSCTL\+\_\+\+DTCMCR\+\_\+\+SZ\+\_\+\+Msk}}~(0x\+FUL $<$$<$ \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga65f1aaaeafff82a0a788c81ed17b3771}{MEMSYSCTL\+\_\+\+DTCMCR\+\_\+\+SZ\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_gac2488bb0c08165d6cdce03589647c4f6}{MEMSYSCTL\+\_\+\+DTCMCR\+\_\+\+EN\+\_\+\+Pos}}~0U
+\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga305e7e3a543923ed7282d9128c829394}{MEMSYSCTL\+\_\+\+DTCMCR\+\_\+\+EN\+\_\+\+Msk}}~(0x1\+UL /\texorpdfstring{$\ast$}{*}$<$$<$ \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_gac2488bb0c08165d6cdce03589647c4f6}{MEMSYSCTL\+\_\+\+DTCMCR\+\_\+\+EN\+\_\+\+Pos}}\texorpdfstring{$\ast$}{*}/)
+\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga867352187f2aaa0992cc3d60c86b8e51}{MEMSYSCTL\+\_\+\+PAHBCR\+\_\+\+SZ\+\_\+\+Pos}}~1U
+\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_gacbbc1e6e548e918a638ec1971e6b71dc}{MEMSYSCTL\+\_\+\+PAHBCR\+\_\+\+SZ\+\_\+\+Msk}}~(0x7\+UL $<$$<$ \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga867352187f2aaa0992cc3d60c86b8e51}{MEMSYSCTL\+\_\+\+PAHBCR\+\_\+\+SZ\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga1ecaa54f33f736bb4e93030db1c83e02}{MEMSYSCTL\+\_\+\+PAHBCR\+\_\+\+EN\+\_\+\+Pos}}~0U
+\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_gaf8605c8523ca1b463cea7d488e147797}{MEMSYSCTL\+\_\+\+PAHBCR\+\_\+\+EN\+\_\+\+Msk}}~(0x1\+UL /\texorpdfstring{$\ast$}{*}$<$$<$ \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga1ecaa54f33f736bb4e93030db1c83e02}{MEMSYSCTL\+\_\+\+PAHBCR\+\_\+\+EN\+\_\+\+Pos}}\texorpdfstring{$\ast$}{*}/)
+\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga2a09789d77ee7c31bd138dc235c8550e}{MEMSYSCTL\+\_\+\+ITGU\+\_\+\+CTRL\+\_\+\+DEREN\+\_\+\+Pos}}~1U
+\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga182bb04e0960e78c056d51bef76f6cb7}{MEMSYSCTL\+\_\+\+ITGU\+\_\+\+CTRL\+\_\+\+DEREN\+\_\+\+Msk}}~(0x1\+UL $<$$<$ \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga2a09789d77ee7c31bd138dc235c8550e}{MEMSYSCTL\+\_\+\+ITGU\+\_\+\+CTRL\+\_\+\+DEREN\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_gab08d772bd6d2bdca22530cfc9201a7e6}{MEMSYSCTL\+\_\+\+ITGU\+\_\+\+CTRL\+\_\+\+DBFEN\+\_\+\+Pos}}~0U
+\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga46eb340e945a408918a6e96775334256}{MEMSYSCTL\+\_\+\+ITGU\+\_\+\+CTRL\+\_\+\+DBFEN\+\_\+\+Msk}}~(0x1\+UL /\texorpdfstring{$\ast$}{*}$<$$<$ \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_gab08d772bd6d2bdca22530cfc9201a7e6}{MEMSYSCTL\+\_\+\+ITGU\+\_\+\+CTRL\+\_\+\+DBFEN\+\_\+\+Pos}}\texorpdfstring{$\ast$}{*}/)
+\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga0f491892f1eeda8c65a47d80081c3969}{MEMSYSCTL\+\_\+\+ITGU\+\_\+\+CFG\+\_\+\+PRESENT\+\_\+\+Pos}}~31U
+\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga54780fc16ebdd1d722b2377addcdb15c}{MEMSYSCTL\+\_\+\+ITGU\+\_\+\+CFG\+\_\+\+PRESENT\+\_\+\+Msk}}~(0x1\+UL $<$$<$ \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga0f491892f1eeda8c65a47d80081c3969}{MEMSYSCTL\+\_\+\+ITGU\+\_\+\+CFG\+\_\+\+PRESENT\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga38fd7451023ebe46e401e9070cd87dfd}{MEMSYSCTL\+\_\+\+ITGU\+\_\+\+CFG\+\_\+\+NUMBLKS\+\_\+\+Pos}}~8U
+\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga05ced34cca684f6feb1b39a76e5c97f1}{MEMSYSCTL\+\_\+\+ITGU\+\_\+\+CFG\+\_\+\+NUMBLKS\+\_\+\+Msk}}~(0x\+FUL $<$$<$ \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga38fd7451023ebe46e401e9070cd87dfd}{MEMSYSCTL\+\_\+\+ITGU\+\_\+\+CFG\+\_\+\+NUMBLKS\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga4dd12ffd6ca5bb2b506566d62f8be5ed}{MEMSYSCTL\+\_\+\+ITGU\+\_\+\+CFG\+\_\+\+BLKSZ\+\_\+\+Pos}}~0U
+\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_gac37532e62cc50cce67baba7471a5348a}{MEMSYSCTL\+\_\+\+ITGU\+\_\+\+CFG\+\_\+\+BLKSZ\+\_\+\+Msk}}~(0x\+FUL /\texorpdfstring{$\ast$}{*}$<$$<$ \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga4dd12ffd6ca5bb2b506566d62f8be5ed}{MEMSYSCTL\+\_\+\+ITGU\+\_\+\+CFG\+\_\+\+BLKSZ\+\_\+\+Pos}}\texorpdfstring{$\ast$}{*}/)
+\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_gad889ab1ebe2e602d2e54a11e9731f7af}{MEMSYSCTL\+\_\+\+DTGU\+\_\+\+CTRL\+\_\+\+DEREN\+\_\+\+Pos}}~1U
+\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga33d0a0692dbb47783add11f26ab63169}{MEMSYSCTL\+\_\+\+DTGU\+\_\+\+CTRL\+\_\+\+DEREN\+\_\+\+Msk}}~(0x1\+UL $<$$<$ \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_gad889ab1ebe2e602d2e54a11e9731f7af}{MEMSYSCTL\+\_\+\+DTGU\+\_\+\+CTRL\+\_\+\+DEREN\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_gacf955e3b7a53648e58ae62cbb3b64fde}{MEMSYSCTL\+\_\+\+DTGU\+\_\+\+CTRL\+\_\+\+DBFEN\+\_\+\+Pos}}~0U
+\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga4a2b3156aae3b0ef67f7fd80bfe381df}{MEMSYSCTL\+\_\+\+DTGU\+\_\+\+CTRL\+\_\+\+DBFEN\+\_\+\+Msk}}~(0x1\+UL /\texorpdfstring{$\ast$}{*}$<$$<$ \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_gacf955e3b7a53648e58ae62cbb3b64fde}{MEMSYSCTL\+\_\+\+DTGU\+\_\+\+CTRL\+\_\+\+DBFEN\+\_\+\+Pos}}\texorpdfstring{$\ast$}{*}/)
+\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga20e3971de3c6166e4546533f73415c2a}{MEMSYSCTL\+\_\+\+DTGU\+\_\+\+CFG\+\_\+\+PRESENT\+\_\+\+Pos}}~31U
+\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_gacadafe2f1de8514bbde517804c651359}{MEMSYSCTL\+\_\+\+DTGU\+\_\+\+CFG\+\_\+\+PRESENT\+\_\+\+Msk}}~(0x1\+UL $<$$<$ \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga20e3971de3c6166e4546533f73415c2a}{MEMSYSCTL\+\_\+\+DTGU\+\_\+\+CFG\+\_\+\+PRESENT\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_gae8ce419d8110d1970536ee8629f81379}{MEMSYSCTL\+\_\+\+DTGU\+\_\+\+CFG\+\_\+\+NUMBLKS\+\_\+\+Pos}}~8U
+\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga5087414871190bb4533eccfed1d85b74}{MEMSYSCTL\+\_\+\+DTGU\+\_\+\+CFG\+\_\+\+NUMBLKS\+\_\+\+Msk}}~(0x\+FUL $<$$<$ \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_gae8ce419d8110d1970536ee8629f81379}{MEMSYSCTL\+\_\+\+DTGU\+\_\+\+CFG\+\_\+\+NUMBLKS\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_gaeb41506d5e7363d5bfaebcbf777ba09b}{MEMSYSCTL\+\_\+\+DTGU\+\_\+\+CFG\+\_\+\+BLKSZ\+\_\+\+Pos}}~0U
+\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_gaf6b6427f5010217fd0c506693a8d62b5}{MEMSYSCTL\+\_\+\+DTGU\+\_\+\+CFG\+\_\+\+BLKSZ\+\_\+\+Msk}}~(0x\+FUL /\texorpdfstring{$\ast$}{*}$<$$<$ \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_gaeb41506d5e7363d5bfaebcbf777ba09b}{MEMSYSCTL\+\_\+\+DTGU\+\_\+\+CFG\+\_\+\+BLKSZ\+\_\+\+Pos}}\texorpdfstring{$\ast$}{*}/)
+\end{DoxyCompactItemize}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group___mem_sys_ctl___type_ga601aa3c6483f8ffaf27ca303bd62a1fa}{MEMSYSCTL\+\_\+\+MSCR\+\_\+\+TECCCHKDIS\+\_\+\+Pos}}~4U
+\item 
+\#define \mbox{\hyperlink{group___mem_sys_ctl___type_ga083f5198b8d74b33d8600c799f09695c}{MEMSYSCTL\+\_\+\+MSCR\+\_\+\+TECCCHKDIS\+\_\+\+Msk}}~(0x1\+UL $<$$<$ \mbox{\hyperlink{group___mem_sys_ctl___type_ga601aa3c6483f8ffaf27ca303bd62a1fa}{MEMSYSCTL\+\_\+\+MSCR\+\_\+\+TECCCHKDIS\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___mem_sys_ctl___type_gab2eea483cf56776fc2dbaf40e51ec425}{MEMSYSCTL\+\_\+\+PFCR\+\_\+\+MAX\+\_\+\+OS\+\_\+\+Pos}}~7U
+\item 
+\#define \mbox{\hyperlink{group___mem_sys_ctl___type_gafd79fa6673995113b63565a187a53c7e}{MEMSYSCTL\+\_\+\+PFCR\+\_\+\+MAX\+\_\+\+OS\+\_\+\+Msk}}~(0x7\+UL $<$$<$ \mbox{\hyperlink{group___mem_sys_ctl___type_gab2eea483cf56776fc2dbaf40e51ec425}{MEMSYSCTL\+\_\+\+PFCR\+\_\+\+MAX\+\_\+\+OS\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___mem_sys_ctl___type_gac8627f294b3d6f44f8bf55a8930d5e9f}{MEMSYSCTL\+\_\+\+PFCR\+\_\+\+MAX\+\_\+\+LA\+\_\+\+Pos}}~4U
+\item 
+\#define \mbox{\hyperlink{group___mem_sys_ctl___type_gab57ea85aa86fcff1d57404329a53d8c5}{MEMSYSCTL\+\_\+\+PFCR\+\_\+\+MAX\+\_\+\+LA\+\_\+\+Msk}}~(0x7\+UL $<$$<$ \mbox{\hyperlink{group___mem_sys_ctl___type_gac8627f294b3d6f44f8bf55a8930d5e9f}{MEMSYSCTL\+\_\+\+PFCR\+\_\+\+MAX\+\_\+\+LA\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___mem_sys_ctl___type_gac9684ef586a162f469cf8a1265cb4b5b}{MEMSYSCTL\+\_\+\+PFCR\+\_\+\+MIN\+\_\+\+LA\+\_\+\+Pos}}~1U
+\item 
+\#define \mbox{\hyperlink{group___mem_sys_ctl___type_gad8d69b6364af822e73b7ebdc4e2cd76c}{MEMSYSCTL\+\_\+\+PFCR\+\_\+\+MIN\+\_\+\+LA\+\_\+\+Msk}}~(0x7\+UL $<$$<$ \mbox{\hyperlink{group___mem_sys_ctl___type_gac9684ef586a162f469cf8a1265cb4b5b}{MEMSYSCTL\+\_\+\+PFCR\+\_\+\+MIN\+\_\+\+LA\+\_\+\+Pos}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsubsubsubsubsubsubsubsubsection{Detailed Description}
+Type definitions for the Memory System Control Registers (MEMSYSCTL) 
+
+
+
+\label{doc-define-members}
+\Hypertarget{group___mem_sys_ctl___type_doc-define-members}
+\doxysubsubsubsubsubsubsubsubsubsection{Macro Definition Documentation}
+\Hypertarget{group___c_m_s_i_s___s_c_b_ga305e7e3a543923ed7282d9128c829394}\index{Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}!MEMSYSCTL\_DTCMCR\_EN\_Msk@{MEMSYSCTL\_DTCMCR\_EN\_Msk}}
+\index{MEMSYSCTL\_DTCMCR\_EN\_Msk@{MEMSYSCTL\_DTCMCR\_EN\_Msk}!Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}}
+\doxysubsubsubsubsubsubsubsubsubsubsection{\texorpdfstring{MEMSYSCTL\_DTCMCR\_EN\_Msk}{MEMSYSCTL\_DTCMCR\_EN\_Msk}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{group___c_m_s_i_s___s_c_b_ga305e7e3a543923ed7282d9128c829394} 
+\#define MEMSYSCTL\+\_\+\+DTCMCR\+\_\+\+EN\+\_\+\+Msk~(0x1\+UL /\texorpdfstring{$\ast$}{*}$<$$<$ \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_gac2488bb0c08165d6cdce03589647c4f6}{MEMSYSCTL\+\_\+\+DTCMCR\+\_\+\+EN\+\_\+\+Pos}}\texorpdfstring{$\ast$}{*}/)}
+
+MEMSYSCTL DTCMCR\+: EN Mask \Hypertarget{group___c_m_s_i_s___s_c_b_ga305e7e3a543923ed7282d9128c829394}\index{Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}!MEMSYSCTL\_DTCMCR\_EN\_Msk@{MEMSYSCTL\_DTCMCR\_EN\_Msk}}
+\index{MEMSYSCTL\_DTCMCR\_EN\_Msk@{MEMSYSCTL\_DTCMCR\_EN\_Msk}!Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}}
+\doxysubsubsubsubsubsubsubsubsubsubsection{\texorpdfstring{MEMSYSCTL\_DTCMCR\_EN\_Msk}{MEMSYSCTL\_DTCMCR\_EN\_Msk}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{group___c_m_s_i_s___s_c_b_ga305e7e3a543923ed7282d9128c829394} 
+\#define MEMSYSCTL\+\_\+\+DTCMCR\+\_\+\+EN\+\_\+\+Msk~(0x1\+UL /\texorpdfstring{$\ast$}{*}$<$$<$ \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_gac2488bb0c08165d6cdce03589647c4f6}{MEMSYSCTL\+\_\+\+DTCMCR\+\_\+\+EN\+\_\+\+Pos}}\texorpdfstring{$\ast$}{*}/)}
+
+MEMSYSCTL DTCMCR\+: EN Mask \Hypertarget{group___c_m_s_i_s___s_c_b_gac2488bb0c08165d6cdce03589647c4f6}\index{Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}!MEMSYSCTL\_DTCMCR\_EN\_Pos@{MEMSYSCTL\_DTCMCR\_EN\_Pos}}
+\index{MEMSYSCTL\_DTCMCR\_EN\_Pos@{MEMSYSCTL\_DTCMCR\_EN\_Pos}!Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}}
+\doxysubsubsubsubsubsubsubsubsubsubsection{\texorpdfstring{MEMSYSCTL\_DTCMCR\_EN\_Pos}{MEMSYSCTL\_DTCMCR\_EN\_Pos}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{group___c_m_s_i_s___s_c_b_gac2488bb0c08165d6cdce03589647c4f6} 
+\#define MEMSYSCTL\+\_\+\+DTCMCR\+\_\+\+EN\+\_\+\+Pos~0U}
+
+MEMSYSCTL DTCMCR\+: EN Position \Hypertarget{group___c_m_s_i_s___s_c_b_gac2488bb0c08165d6cdce03589647c4f6}\index{Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}!MEMSYSCTL\_DTCMCR\_EN\_Pos@{MEMSYSCTL\_DTCMCR\_EN\_Pos}}
+\index{MEMSYSCTL\_DTCMCR\_EN\_Pos@{MEMSYSCTL\_DTCMCR\_EN\_Pos}!Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}}
+\doxysubsubsubsubsubsubsubsubsubsubsection{\texorpdfstring{MEMSYSCTL\_DTCMCR\_EN\_Pos}{MEMSYSCTL\_DTCMCR\_EN\_Pos}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{group___c_m_s_i_s___s_c_b_gac2488bb0c08165d6cdce03589647c4f6} 
+\#define MEMSYSCTL\+\_\+\+DTCMCR\+\_\+\+EN\+\_\+\+Pos~0U}
+
+MEMSYSCTL DTCMCR\+: EN Position \Hypertarget{group___c_m_s_i_s___s_c_b_ga05579276f0dcea7921b5ef11ac4929df}\index{Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}!MEMSYSCTL\_DTCMCR\_SZ\_Msk@{MEMSYSCTL\_DTCMCR\_SZ\_Msk}}
+\index{MEMSYSCTL\_DTCMCR\_SZ\_Msk@{MEMSYSCTL\_DTCMCR\_SZ\_Msk}!Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}}
+\doxysubsubsubsubsubsubsubsubsubsubsection{\texorpdfstring{MEMSYSCTL\_DTCMCR\_SZ\_Msk}{MEMSYSCTL\_DTCMCR\_SZ\_Msk}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{group___c_m_s_i_s___s_c_b_ga05579276f0dcea7921b5ef11ac4929df} 
+\#define MEMSYSCTL\+\_\+\+DTCMCR\+\_\+\+SZ\+\_\+\+Msk~(0x\+FUL $<$$<$ \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga65f1aaaeafff82a0a788c81ed17b3771}{MEMSYSCTL\+\_\+\+DTCMCR\+\_\+\+SZ\+\_\+\+Pos}})}
+
+MEMSYSCTL DTCMCR\+: SZ Mask \Hypertarget{group___c_m_s_i_s___s_c_b_ga05579276f0dcea7921b5ef11ac4929df}\index{Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}!MEMSYSCTL\_DTCMCR\_SZ\_Msk@{MEMSYSCTL\_DTCMCR\_SZ\_Msk}}
+\index{MEMSYSCTL\_DTCMCR\_SZ\_Msk@{MEMSYSCTL\_DTCMCR\_SZ\_Msk}!Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}}
+\doxysubsubsubsubsubsubsubsubsubsubsection{\texorpdfstring{MEMSYSCTL\_DTCMCR\_SZ\_Msk}{MEMSYSCTL\_DTCMCR\_SZ\_Msk}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{group___c_m_s_i_s___s_c_b_ga05579276f0dcea7921b5ef11ac4929df} 
+\#define MEMSYSCTL\+\_\+\+DTCMCR\+\_\+\+SZ\+\_\+\+Msk~(0x\+FUL $<$$<$ \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga65f1aaaeafff82a0a788c81ed17b3771}{MEMSYSCTL\+\_\+\+DTCMCR\+\_\+\+SZ\+\_\+\+Pos}})}
+
+MEMSYSCTL DTCMCR\+: SZ Mask \Hypertarget{group___c_m_s_i_s___s_c_b_ga65f1aaaeafff82a0a788c81ed17b3771}\index{Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}!MEMSYSCTL\_DTCMCR\_SZ\_Pos@{MEMSYSCTL\_DTCMCR\_SZ\_Pos}}
+\index{MEMSYSCTL\_DTCMCR\_SZ\_Pos@{MEMSYSCTL\_DTCMCR\_SZ\_Pos}!Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}}
+\doxysubsubsubsubsubsubsubsubsubsubsection{\texorpdfstring{MEMSYSCTL\_DTCMCR\_SZ\_Pos}{MEMSYSCTL\_DTCMCR\_SZ\_Pos}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{group___c_m_s_i_s___s_c_b_ga65f1aaaeafff82a0a788c81ed17b3771} 
+\#define MEMSYSCTL\+\_\+\+DTCMCR\+\_\+\+SZ\+\_\+\+Pos~3U}
+
+MEMSYSCTL DTCMCR\+: SZ Position \Hypertarget{group___c_m_s_i_s___s_c_b_ga65f1aaaeafff82a0a788c81ed17b3771}\index{Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}!MEMSYSCTL\_DTCMCR\_SZ\_Pos@{MEMSYSCTL\_DTCMCR\_SZ\_Pos}}
+\index{MEMSYSCTL\_DTCMCR\_SZ\_Pos@{MEMSYSCTL\_DTCMCR\_SZ\_Pos}!Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}}
+\doxysubsubsubsubsubsubsubsubsubsubsection{\texorpdfstring{MEMSYSCTL\_DTCMCR\_SZ\_Pos}{MEMSYSCTL\_DTCMCR\_SZ\_Pos}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{group___c_m_s_i_s___s_c_b_ga65f1aaaeafff82a0a788c81ed17b3771} 
+\#define MEMSYSCTL\+\_\+\+DTCMCR\+\_\+\+SZ\+\_\+\+Pos~3U}
+
+MEMSYSCTL DTCMCR\+: SZ Position \Hypertarget{group___c_m_s_i_s___s_c_b_gaf6b6427f5010217fd0c506693a8d62b5}\index{Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}!MEMSYSCTL\_DTGU\_CFG\_BLKSZ\_Msk@{MEMSYSCTL\_DTGU\_CFG\_BLKSZ\_Msk}}
+\index{MEMSYSCTL\_DTGU\_CFG\_BLKSZ\_Msk@{MEMSYSCTL\_DTGU\_CFG\_BLKSZ\_Msk}!Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}}
+\doxysubsubsubsubsubsubsubsubsubsubsection{\texorpdfstring{MEMSYSCTL\_DTGU\_CFG\_BLKSZ\_Msk}{MEMSYSCTL\_DTGU\_CFG\_BLKSZ\_Msk}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{group___c_m_s_i_s___s_c_b_gaf6b6427f5010217fd0c506693a8d62b5} 
+\#define MEMSYSCTL\+\_\+\+DTGU\+\_\+\+CFG\+\_\+\+BLKSZ\+\_\+\+Msk~(0x\+FUL /\texorpdfstring{$\ast$}{*}$<$$<$ \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_gaeb41506d5e7363d5bfaebcbf777ba09b}{MEMSYSCTL\+\_\+\+DTGU\+\_\+\+CFG\+\_\+\+BLKSZ\+\_\+\+Pos}}\texorpdfstring{$\ast$}{*}/)}
+
+MEMSYSCTL DTGU\+\_\+\+CFG\+: BLKSZ Mask \Hypertarget{group___c_m_s_i_s___s_c_b_gaf6b6427f5010217fd0c506693a8d62b5}\index{Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}!MEMSYSCTL\_DTGU\_CFG\_BLKSZ\_Msk@{MEMSYSCTL\_DTGU\_CFG\_BLKSZ\_Msk}}
+\index{MEMSYSCTL\_DTGU\_CFG\_BLKSZ\_Msk@{MEMSYSCTL\_DTGU\_CFG\_BLKSZ\_Msk}!Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}}
+\doxysubsubsubsubsubsubsubsubsubsubsection{\texorpdfstring{MEMSYSCTL\_DTGU\_CFG\_BLKSZ\_Msk}{MEMSYSCTL\_DTGU\_CFG\_BLKSZ\_Msk}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{group___c_m_s_i_s___s_c_b_gaf6b6427f5010217fd0c506693a8d62b5} 
+\#define MEMSYSCTL\+\_\+\+DTGU\+\_\+\+CFG\+\_\+\+BLKSZ\+\_\+\+Msk~(0x\+FUL /\texorpdfstring{$\ast$}{*}$<$$<$ \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_gaeb41506d5e7363d5bfaebcbf777ba09b}{MEMSYSCTL\+\_\+\+DTGU\+\_\+\+CFG\+\_\+\+BLKSZ\+\_\+\+Pos}}\texorpdfstring{$\ast$}{*}/)}
+
+MEMSYSCTL DTGU\+\_\+\+CFG\+: BLKSZ Mask \Hypertarget{group___c_m_s_i_s___s_c_b_gaeb41506d5e7363d5bfaebcbf777ba09b}\index{Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}!MEMSYSCTL\_DTGU\_CFG\_BLKSZ\_Pos@{MEMSYSCTL\_DTGU\_CFG\_BLKSZ\_Pos}}
+\index{MEMSYSCTL\_DTGU\_CFG\_BLKSZ\_Pos@{MEMSYSCTL\_DTGU\_CFG\_BLKSZ\_Pos}!Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}}
+\doxysubsubsubsubsubsubsubsubsubsubsection{\texorpdfstring{MEMSYSCTL\_DTGU\_CFG\_BLKSZ\_Pos}{MEMSYSCTL\_DTGU\_CFG\_BLKSZ\_Pos}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{group___c_m_s_i_s___s_c_b_gaeb41506d5e7363d5bfaebcbf777ba09b} 
+\#define MEMSYSCTL\+\_\+\+DTGU\+\_\+\+CFG\+\_\+\+BLKSZ\+\_\+\+Pos~0U}
+
+MEMSYSCTL DTGU\+\_\+\+CFG\+: BLKSZ Position \Hypertarget{group___c_m_s_i_s___s_c_b_gaeb41506d5e7363d5bfaebcbf777ba09b}\index{Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}!MEMSYSCTL\_DTGU\_CFG\_BLKSZ\_Pos@{MEMSYSCTL\_DTGU\_CFG\_BLKSZ\_Pos}}
+\index{MEMSYSCTL\_DTGU\_CFG\_BLKSZ\_Pos@{MEMSYSCTL\_DTGU\_CFG\_BLKSZ\_Pos}!Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}}
+\doxysubsubsubsubsubsubsubsubsubsubsection{\texorpdfstring{MEMSYSCTL\_DTGU\_CFG\_BLKSZ\_Pos}{MEMSYSCTL\_DTGU\_CFG\_BLKSZ\_Pos}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{group___c_m_s_i_s___s_c_b_gaeb41506d5e7363d5bfaebcbf777ba09b} 
+\#define MEMSYSCTL\+\_\+\+DTGU\+\_\+\+CFG\+\_\+\+BLKSZ\+\_\+\+Pos~0U}
+
+MEMSYSCTL DTGU\+\_\+\+CFG\+: BLKSZ Position \Hypertarget{group___c_m_s_i_s___s_c_b_ga5087414871190bb4533eccfed1d85b74}\index{Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}!MEMSYSCTL\_DTGU\_CFG\_NUMBLKS\_Msk@{MEMSYSCTL\_DTGU\_CFG\_NUMBLKS\_Msk}}
+\index{MEMSYSCTL\_DTGU\_CFG\_NUMBLKS\_Msk@{MEMSYSCTL\_DTGU\_CFG\_NUMBLKS\_Msk}!Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}}
+\doxysubsubsubsubsubsubsubsubsubsubsection{\texorpdfstring{MEMSYSCTL\_DTGU\_CFG\_NUMBLKS\_Msk}{MEMSYSCTL\_DTGU\_CFG\_NUMBLKS\_Msk}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{group___c_m_s_i_s___s_c_b_ga5087414871190bb4533eccfed1d85b74} 
+\#define MEMSYSCTL\+\_\+\+DTGU\+\_\+\+CFG\+\_\+\+NUMBLKS\+\_\+\+Msk~(0x\+FUL $<$$<$ \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_gae8ce419d8110d1970536ee8629f81379}{MEMSYSCTL\+\_\+\+DTGU\+\_\+\+CFG\+\_\+\+NUMBLKS\+\_\+\+Pos}})}
+
+MEMSYSCTL DTGU\+\_\+\+CFG\+: NUMBLKS Mask \Hypertarget{group___c_m_s_i_s___s_c_b_ga5087414871190bb4533eccfed1d85b74}\index{Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}!MEMSYSCTL\_DTGU\_CFG\_NUMBLKS\_Msk@{MEMSYSCTL\_DTGU\_CFG\_NUMBLKS\_Msk}}
+\index{MEMSYSCTL\_DTGU\_CFG\_NUMBLKS\_Msk@{MEMSYSCTL\_DTGU\_CFG\_NUMBLKS\_Msk}!Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}}
+\doxysubsubsubsubsubsubsubsubsubsubsection{\texorpdfstring{MEMSYSCTL\_DTGU\_CFG\_NUMBLKS\_Msk}{MEMSYSCTL\_DTGU\_CFG\_NUMBLKS\_Msk}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{group___c_m_s_i_s___s_c_b_ga5087414871190bb4533eccfed1d85b74} 
+\#define MEMSYSCTL\+\_\+\+DTGU\+\_\+\+CFG\+\_\+\+NUMBLKS\+\_\+\+Msk~(0x\+FUL $<$$<$ \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_gae8ce419d8110d1970536ee8629f81379}{MEMSYSCTL\+\_\+\+DTGU\+\_\+\+CFG\+\_\+\+NUMBLKS\+\_\+\+Pos}})}
+
+MEMSYSCTL DTGU\+\_\+\+CFG\+: NUMBLKS Mask \Hypertarget{group___c_m_s_i_s___s_c_b_gae8ce419d8110d1970536ee8629f81379}\index{Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}!MEMSYSCTL\_DTGU\_CFG\_NUMBLKS\_Pos@{MEMSYSCTL\_DTGU\_CFG\_NUMBLKS\_Pos}}
+\index{MEMSYSCTL\_DTGU\_CFG\_NUMBLKS\_Pos@{MEMSYSCTL\_DTGU\_CFG\_NUMBLKS\_Pos}!Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}}
+\doxysubsubsubsubsubsubsubsubsubsubsection{\texorpdfstring{MEMSYSCTL\_DTGU\_CFG\_NUMBLKS\_Pos}{MEMSYSCTL\_DTGU\_CFG\_NUMBLKS\_Pos}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{group___c_m_s_i_s___s_c_b_gae8ce419d8110d1970536ee8629f81379} 
+\#define MEMSYSCTL\+\_\+\+DTGU\+\_\+\+CFG\+\_\+\+NUMBLKS\+\_\+\+Pos~8U}
+
+MEMSYSCTL DTGU\+\_\+\+CFG\+: NUMBLKS Position \Hypertarget{group___c_m_s_i_s___s_c_b_gae8ce419d8110d1970536ee8629f81379}\index{Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}!MEMSYSCTL\_DTGU\_CFG\_NUMBLKS\_Pos@{MEMSYSCTL\_DTGU\_CFG\_NUMBLKS\_Pos}}
+\index{MEMSYSCTL\_DTGU\_CFG\_NUMBLKS\_Pos@{MEMSYSCTL\_DTGU\_CFG\_NUMBLKS\_Pos}!Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}}
+\doxysubsubsubsubsubsubsubsubsubsubsection{\texorpdfstring{MEMSYSCTL\_DTGU\_CFG\_NUMBLKS\_Pos}{MEMSYSCTL\_DTGU\_CFG\_NUMBLKS\_Pos}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{group___c_m_s_i_s___s_c_b_gae8ce419d8110d1970536ee8629f81379} 
+\#define MEMSYSCTL\+\_\+\+DTGU\+\_\+\+CFG\+\_\+\+NUMBLKS\+\_\+\+Pos~8U}
+
+MEMSYSCTL DTGU\+\_\+\+CFG\+: NUMBLKS Position \Hypertarget{group___c_m_s_i_s___s_c_b_gacadafe2f1de8514bbde517804c651359}\index{Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}!MEMSYSCTL\_DTGU\_CFG\_PRESENT\_Msk@{MEMSYSCTL\_DTGU\_CFG\_PRESENT\_Msk}}
+\index{MEMSYSCTL\_DTGU\_CFG\_PRESENT\_Msk@{MEMSYSCTL\_DTGU\_CFG\_PRESENT\_Msk}!Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}}
+\doxysubsubsubsubsubsubsubsubsubsubsection{\texorpdfstring{MEMSYSCTL\_DTGU\_CFG\_PRESENT\_Msk}{MEMSYSCTL\_DTGU\_CFG\_PRESENT\_Msk}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{group___c_m_s_i_s___s_c_b_gacadafe2f1de8514bbde517804c651359} 
+\#define MEMSYSCTL\+\_\+\+DTGU\+\_\+\+CFG\+\_\+\+PRESENT\+\_\+\+Msk~(0x1\+UL $<$$<$ \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga20e3971de3c6166e4546533f73415c2a}{MEMSYSCTL\+\_\+\+DTGU\+\_\+\+CFG\+\_\+\+PRESENT\+\_\+\+Pos}})}
+
+MEMSYSCTL DTGU\+\_\+\+CFG\+: PRESENT Mask \Hypertarget{group___c_m_s_i_s___s_c_b_gacadafe2f1de8514bbde517804c651359}\index{Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}!MEMSYSCTL\_DTGU\_CFG\_PRESENT\_Msk@{MEMSYSCTL\_DTGU\_CFG\_PRESENT\_Msk}}
+\index{MEMSYSCTL\_DTGU\_CFG\_PRESENT\_Msk@{MEMSYSCTL\_DTGU\_CFG\_PRESENT\_Msk}!Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}}
+\doxysubsubsubsubsubsubsubsubsubsubsection{\texorpdfstring{MEMSYSCTL\_DTGU\_CFG\_PRESENT\_Msk}{MEMSYSCTL\_DTGU\_CFG\_PRESENT\_Msk}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{group___c_m_s_i_s___s_c_b_gacadafe2f1de8514bbde517804c651359} 
+\#define MEMSYSCTL\+\_\+\+DTGU\+\_\+\+CFG\+\_\+\+PRESENT\+\_\+\+Msk~(0x1\+UL $<$$<$ \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga20e3971de3c6166e4546533f73415c2a}{MEMSYSCTL\+\_\+\+DTGU\+\_\+\+CFG\+\_\+\+PRESENT\+\_\+\+Pos}})}
+
+MEMSYSCTL DTGU\+\_\+\+CFG\+: PRESENT Mask \Hypertarget{group___c_m_s_i_s___s_c_b_ga20e3971de3c6166e4546533f73415c2a}\index{Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}!MEMSYSCTL\_DTGU\_CFG\_PRESENT\_Pos@{MEMSYSCTL\_DTGU\_CFG\_PRESENT\_Pos}}
+\index{MEMSYSCTL\_DTGU\_CFG\_PRESENT\_Pos@{MEMSYSCTL\_DTGU\_CFG\_PRESENT\_Pos}!Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}}
+\doxysubsubsubsubsubsubsubsubsubsubsection{\texorpdfstring{MEMSYSCTL\_DTGU\_CFG\_PRESENT\_Pos}{MEMSYSCTL\_DTGU\_CFG\_PRESENT\_Pos}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{group___c_m_s_i_s___s_c_b_ga20e3971de3c6166e4546533f73415c2a} 
+\#define MEMSYSCTL\+\_\+\+DTGU\+\_\+\+CFG\+\_\+\+PRESENT\+\_\+\+Pos~31U}
+
+MEMSYSCTL DTGU\+\_\+\+CFG\+: PRESENT Position \Hypertarget{group___c_m_s_i_s___s_c_b_ga20e3971de3c6166e4546533f73415c2a}\index{Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}!MEMSYSCTL\_DTGU\_CFG\_PRESENT\_Pos@{MEMSYSCTL\_DTGU\_CFG\_PRESENT\_Pos}}
+\index{MEMSYSCTL\_DTGU\_CFG\_PRESENT\_Pos@{MEMSYSCTL\_DTGU\_CFG\_PRESENT\_Pos}!Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}}
+\doxysubsubsubsubsubsubsubsubsubsubsection{\texorpdfstring{MEMSYSCTL\_DTGU\_CFG\_PRESENT\_Pos}{MEMSYSCTL\_DTGU\_CFG\_PRESENT\_Pos}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{group___c_m_s_i_s___s_c_b_ga20e3971de3c6166e4546533f73415c2a} 
+\#define MEMSYSCTL\+\_\+\+DTGU\+\_\+\+CFG\+\_\+\+PRESENT\+\_\+\+Pos~31U}
+
+MEMSYSCTL DTGU\+\_\+\+CFG\+: PRESENT Position \Hypertarget{group___c_m_s_i_s___s_c_b_ga4a2b3156aae3b0ef67f7fd80bfe381df}\index{Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}!MEMSYSCTL\_DTGU\_CTRL\_DBFEN\_Msk@{MEMSYSCTL\_DTGU\_CTRL\_DBFEN\_Msk}}
+\index{MEMSYSCTL\_DTGU\_CTRL\_DBFEN\_Msk@{MEMSYSCTL\_DTGU\_CTRL\_DBFEN\_Msk}!Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}}
+\doxysubsubsubsubsubsubsubsubsubsubsection{\texorpdfstring{MEMSYSCTL\_DTGU\_CTRL\_DBFEN\_Msk}{MEMSYSCTL\_DTGU\_CTRL\_DBFEN\_Msk}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{group___c_m_s_i_s___s_c_b_ga4a2b3156aae3b0ef67f7fd80bfe381df} 
+\#define MEMSYSCTL\+\_\+\+DTGU\+\_\+\+CTRL\+\_\+\+DBFEN\+\_\+\+Msk~(0x1\+UL /\texorpdfstring{$\ast$}{*}$<$$<$ \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_gacf955e3b7a53648e58ae62cbb3b64fde}{MEMSYSCTL\+\_\+\+DTGU\+\_\+\+CTRL\+\_\+\+DBFEN\+\_\+\+Pos}}\texorpdfstring{$\ast$}{*}/)}
+
+MEMSYSCTL DTGU\+\_\+\+CTRL\+: DBFEN Mask \Hypertarget{group___c_m_s_i_s___s_c_b_ga4a2b3156aae3b0ef67f7fd80bfe381df}\index{Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}!MEMSYSCTL\_DTGU\_CTRL\_DBFEN\_Msk@{MEMSYSCTL\_DTGU\_CTRL\_DBFEN\_Msk}}
+\index{MEMSYSCTL\_DTGU\_CTRL\_DBFEN\_Msk@{MEMSYSCTL\_DTGU\_CTRL\_DBFEN\_Msk}!Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}}
+\doxysubsubsubsubsubsubsubsubsubsubsection{\texorpdfstring{MEMSYSCTL\_DTGU\_CTRL\_DBFEN\_Msk}{MEMSYSCTL\_DTGU\_CTRL\_DBFEN\_Msk}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{group___c_m_s_i_s___s_c_b_ga4a2b3156aae3b0ef67f7fd80bfe381df} 
+\#define MEMSYSCTL\+\_\+\+DTGU\+\_\+\+CTRL\+\_\+\+DBFEN\+\_\+\+Msk~(0x1\+UL /\texorpdfstring{$\ast$}{*}$<$$<$ \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_gacf955e3b7a53648e58ae62cbb3b64fde}{MEMSYSCTL\+\_\+\+DTGU\+\_\+\+CTRL\+\_\+\+DBFEN\+\_\+\+Pos}}\texorpdfstring{$\ast$}{*}/)}
+
+MEMSYSCTL DTGU\+\_\+\+CTRL\+: DBFEN Mask \Hypertarget{group___c_m_s_i_s___s_c_b_gacf955e3b7a53648e58ae62cbb3b64fde}\index{Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}!MEMSYSCTL\_DTGU\_CTRL\_DBFEN\_Pos@{MEMSYSCTL\_DTGU\_CTRL\_DBFEN\_Pos}}
+\index{MEMSYSCTL\_DTGU\_CTRL\_DBFEN\_Pos@{MEMSYSCTL\_DTGU\_CTRL\_DBFEN\_Pos}!Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}}
+\doxysubsubsubsubsubsubsubsubsubsubsection{\texorpdfstring{MEMSYSCTL\_DTGU\_CTRL\_DBFEN\_Pos}{MEMSYSCTL\_DTGU\_CTRL\_DBFEN\_Pos}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{group___c_m_s_i_s___s_c_b_gacf955e3b7a53648e58ae62cbb3b64fde} 
+\#define MEMSYSCTL\+\_\+\+DTGU\+\_\+\+CTRL\+\_\+\+DBFEN\+\_\+\+Pos~0U}
+
+MEMSYSCTL DTGU\+\_\+\+CTRL\+: DBFEN Position \Hypertarget{group___c_m_s_i_s___s_c_b_gacf955e3b7a53648e58ae62cbb3b64fde}\index{Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}!MEMSYSCTL\_DTGU\_CTRL\_DBFEN\_Pos@{MEMSYSCTL\_DTGU\_CTRL\_DBFEN\_Pos}}
+\index{MEMSYSCTL\_DTGU\_CTRL\_DBFEN\_Pos@{MEMSYSCTL\_DTGU\_CTRL\_DBFEN\_Pos}!Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}}
+\doxysubsubsubsubsubsubsubsubsubsubsection{\texorpdfstring{MEMSYSCTL\_DTGU\_CTRL\_DBFEN\_Pos}{MEMSYSCTL\_DTGU\_CTRL\_DBFEN\_Pos}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{group___c_m_s_i_s___s_c_b_gacf955e3b7a53648e58ae62cbb3b64fde} 
+\#define MEMSYSCTL\+\_\+\+DTGU\+\_\+\+CTRL\+\_\+\+DBFEN\+\_\+\+Pos~0U}
+
+MEMSYSCTL DTGU\+\_\+\+CTRL\+: DBFEN Position \Hypertarget{group___c_m_s_i_s___s_c_b_ga33d0a0692dbb47783add11f26ab63169}\index{Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}!MEMSYSCTL\_DTGU\_CTRL\_DEREN\_Msk@{MEMSYSCTL\_DTGU\_CTRL\_DEREN\_Msk}}
+\index{MEMSYSCTL\_DTGU\_CTRL\_DEREN\_Msk@{MEMSYSCTL\_DTGU\_CTRL\_DEREN\_Msk}!Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}}
+\doxysubsubsubsubsubsubsubsubsubsubsection{\texorpdfstring{MEMSYSCTL\_DTGU\_CTRL\_DEREN\_Msk}{MEMSYSCTL\_DTGU\_CTRL\_DEREN\_Msk}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{group___c_m_s_i_s___s_c_b_ga33d0a0692dbb47783add11f26ab63169} 
+\#define MEMSYSCTL\+\_\+\+DTGU\+\_\+\+CTRL\+\_\+\+DEREN\+\_\+\+Msk~(0x1\+UL $<$$<$ \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_gad889ab1ebe2e602d2e54a11e9731f7af}{MEMSYSCTL\+\_\+\+DTGU\+\_\+\+CTRL\+\_\+\+DEREN\+\_\+\+Pos}})}
+
+MEMSYSCTL DTGU\+\_\+\+CTRL\+: DEREN Mask \Hypertarget{group___c_m_s_i_s___s_c_b_ga33d0a0692dbb47783add11f26ab63169}\index{Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}!MEMSYSCTL\_DTGU\_CTRL\_DEREN\_Msk@{MEMSYSCTL\_DTGU\_CTRL\_DEREN\_Msk}}
+\index{MEMSYSCTL\_DTGU\_CTRL\_DEREN\_Msk@{MEMSYSCTL\_DTGU\_CTRL\_DEREN\_Msk}!Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}}
+\doxysubsubsubsubsubsubsubsubsubsubsection{\texorpdfstring{MEMSYSCTL\_DTGU\_CTRL\_DEREN\_Msk}{MEMSYSCTL\_DTGU\_CTRL\_DEREN\_Msk}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{group___c_m_s_i_s___s_c_b_ga33d0a0692dbb47783add11f26ab63169} 
+\#define MEMSYSCTL\+\_\+\+DTGU\+\_\+\+CTRL\+\_\+\+DEREN\+\_\+\+Msk~(0x1\+UL $<$$<$ \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_gad889ab1ebe2e602d2e54a11e9731f7af}{MEMSYSCTL\+\_\+\+DTGU\+\_\+\+CTRL\+\_\+\+DEREN\+\_\+\+Pos}})}
+
+MEMSYSCTL DTGU\+\_\+\+CTRL\+: DEREN Mask \Hypertarget{group___c_m_s_i_s___s_c_b_gad889ab1ebe2e602d2e54a11e9731f7af}\index{Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}!MEMSYSCTL\_DTGU\_CTRL\_DEREN\_Pos@{MEMSYSCTL\_DTGU\_CTRL\_DEREN\_Pos}}
+\index{MEMSYSCTL\_DTGU\_CTRL\_DEREN\_Pos@{MEMSYSCTL\_DTGU\_CTRL\_DEREN\_Pos}!Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}}
+\doxysubsubsubsubsubsubsubsubsubsubsection{\texorpdfstring{MEMSYSCTL\_DTGU\_CTRL\_DEREN\_Pos}{MEMSYSCTL\_DTGU\_CTRL\_DEREN\_Pos}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{group___c_m_s_i_s___s_c_b_gad889ab1ebe2e602d2e54a11e9731f7af} 
+\#define MEMSYSCTL\+\_\+\+DTGU\+\_\+\+CTRL\+\_\+\+DEREN\+\_\+\+Pos~1U}
+
+MEMSYSCTL DTGU\+\_\+\+CTRL\+: DEREN Position \Hypertarget{group___c_m_s_i_s___s_c_b_gad889ab1ebe2e602d2e54a11e9731f7af}\index{Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}!MEMSYSCTL\_DTGU\_CTRL\_DEREN\_Pos@{MEMSYSCTL\_DTGU\_CTRL\_DEREN\_Pos}}
+\index{MEMSYSCTL\_DTGU\_CTRL\_DEREN\_Pos@{MEMSYSCTL\_DTGU\_CTRL\_DEREN\_Pos}!Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}}
+\doxysubsubsubsubsubsubsubsubsubsubsection{\texorpdfstring{MEMSYSCTL\_DTGU\_CTRL\_DEREN\_Pos}{MEMSYSCTL\_DTGU\_CTRL\_DEREN\_Pos}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{group___c_m_s_i_s___s_c_b_gad889ab1ebe2e602d2e54a11e9731f7af} 
+\#define MEMSYSCTL\+\_\+\+DTGU\+\_\+\+CTRL\+\_\+\+DEREN\+\_\+\+Pos~1U}
+
+MEMSYSCTL DTGU\+\_\+\+CTRL\+: DEREN Position \Hypertarget{group___c_m_s_i_s___s_c_b_gafec8aafda75a967a2d3c5d58c4d46288}\index{Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}!MEMSYSCTL\_ITCMCR\_EN\_Msk@{MEMSYSCTL\_ITCMCR\_EN\_Msk}}
+\index{MEMSYSCTL\_ITCMCR\_EN\_Msk@{MEMSYSCTL\_ITCMCR\_EN\_Msk}!Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}}
+\doxysubsubsubsubsubsubsubsubsubsubsection{\texorpdfstring{MEMSYSCTL\_ITCMCR\_EN\_Msk}{MEMSYSCTL\_ITCMCR\_EN\_Msk}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{group___c_m_s_i_s___s_c_b_gafec8aafda75a967a2d3c5d58c4d46288} 
+\#define MEMSYSCTL\+\_\+\+ITCMCR\+\_\+\+EN\+\_\+\+Msk~(0x1\+UL /\texorpdfstring{$\ast$}{*}$<$$<$ \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_gad32aae0739960aa88dca6fd9456854ab}{MEMSYSCTL\+\_\+\+ITCMCR\+\_\+\+EN\+\_\+\+Pos}}\texorpdfstring{$\ast$}{*}/)}
+
+MEMSYSCTL ITCMCR\+: EN Mask \Hypertarget{group___c_m_s_i_s___s_c_b_gafec8aafda75a967a2d3c5d58c4d46288}\index{Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}!MEMSYSCTL\_ITCMCR\_EN\_Msk@{MEMSYSCTL\_ITCMCR\_EN\_Msk}}
+\index{MEMSYSCTL\_ITCMCR\_EN\_Msk@{MEMSYSCTL\_ITCMCR\_EN\_Msk}!Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}}
+\doxysubsubsubsubsubsubsubsubsubsubsection{\texorpdfstring{MEMSYSCTL\_ITCMCR\_EN\_Msk}{MEMSYSCTL\_ITCMCR\_EN\_Msk}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{group___c_m_s_i_s___s_c_b_gafec8aafda75a967a2d3c5d58c4d46288} 
+\#define MEMSYSCTL\+\_\+\+ITCMCR\+\_\+\+EN\+\_\+\+Msk~(0x1\+UL /\texorpdfstring{$\ast$}{*}$<$$<$ \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_gad32aae0739960aa88dca6fd9456854ab}{MEMSYSCTL\+\_\+\+ITCMCR\+\_\+\+EN\+\_\+\+Pos}}\texorpdfstring{$\ast$}{*}/)}
+
+MEMSYSCTL ITCMCR\+: EN Mask \Hypertarget{group___c_m_s_i_s___s_c_b_gad32aae0739960aa88dca6fd9456854ab}\index{Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}!MEMSYSCTL\_ITCMCR\_EN\_Pos@{MEMSYSCTL\_ITCMCR\_EN\_Pos}}
+\index{MEMSYSCTL\_ITCMCR\_EN\_Pos@{MEMSYSCTL\_ITCMCR\_EN\_Pos}!Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}}
+\doxysubsubsubsubsubsubsubsubsubsubsection{\texorpdfstring{MEMSYSCTL\_ITCMCR\_EN\_Pos}{MEMSYSCTL\_ITCMCR\_EN\_Pos}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{group___c_m_s_i_s___s_c_b_gad32aae0739960aa88dca6fd9456854ab} 
+\#define MEMSYSCTL\+\_\+\+ITCMCR\+\_\+\+EN\+\_\+\+Pos~0U}
+
+MEMSYSCTL ITCMCR\+: EN Position \Hypertarget{group___c_m_s_i_s___s_c_b_gad32aae0739960aa88dca6fd9456854ab}\index{Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}!MEMSYSCTL\_ITCMCR\_EN\_Pos@{MEMSYSCTL\_ITCMCR\_EN\_Pos}}
+\index{MEMSYSCTL\_ITCMCR\_EN\_Pos@{MEMSYSCTL\_ITCMCR\_EN\_Pos}!Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}}
+\doxysubsubsubsubsubsubsubsubsubsubsection{\texorpdfstring{MEMSYSCTL\_ITCMCR\_EN\_Pos}{MEMSYSCTL\_ITCMCR\_EN\_Pos}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{group___c_m_s_i_s___s_c_b_gad32aae0739960aa88dca6fd9456854ab} 
+\#define MEMSYSCTL\+\_\+\+ITCMCR\+\_\+\+EN\+\_\+\+Pos~0U}
+
+MEMSYSCTL ITCMCR\+: EN Position \Hypertarget{group___c_m_s_i_s___s_c_b_ga04318bc807edf3cb9556e92fa482c84b}\index{Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}!MEMSYSCTL\_ITCMCR\_SZ\_Msk@{MEMSYSCTL\_ITCMCR\_SZ\_Msk}}
+\index{MEMSYSCTL\_ITCMCR\_SZ\_Msk@{MEMSYSCTL\_ITCMCR\_SZ\_Msk}!Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}}
+\doxysubsubsubsubsubsubsubsubsubsubsection{\texorpdfstring{MEMSYSCTL\_ITCMCR\_SZ\_Msk}{MEMSYSCTL\_ITCMCR\_SZ\_Msk}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{group___c_m_s_i_s___s_c_b_ga04318bc807edf3cb9556e92fa482c84b} 
+\#define MEMSYSCTL\+\_\+\+ITCMCR\+\_\+\+SZ\+\_\+\+Msk~(0x\+FUL $<$$<$ \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_gafc5a249edf213e88fb4d752f665fe25f}{MEMSYSCTL\+\_\+\+ITCMCR\+\_\+\+SZ\+\_\+\+Pos}})}
+
+MEMSYSCTL ITCMCR\+: SZ Mask \Hypertarget{group___c_m_s_i_s___s_c_b_ga04318bc807edf3cb9556e92fa482c84b}\index{Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}!MEMSYSCTL\_ITCMCR\_SZ\_Msk@{MEMSYSCTL\_ITCMCR\_SZ\_Msk}}
+\index{MEMSYSCTL\_ITCMCR\_SZ\_Msk@{MEMSYSCTL\_ITCMCR\_SZ\_Msk}!Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}}
+\doxysubsubsubsubsubsubsubsubsubsubsection{\texorpdfstring{MEMSYSCTL\_ITCMCR\_SZ\_Msk}{MEMSYSCTL\_ITCMCR\_SZ\_Msk}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{group___c_m_s_i_s___s_c_b_ga04318bc807edf3cb9556e92fa482c84b} 
+\#define MEMSYSCTL\+\_\+\+ITCMCR\+\_\+\+SZ\+\_\+\+Msk~(0x\+FUL $<$$<$ \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_gafc5a249edf213e88fb4d752f665fe25f}{MEMSYSCTL\+\_\+\+ITCMCR\+\_\+\+SZ\+\_\+\+Pos}})}
+
+MEMSYSCTL ITCMCR\+: SZ Mask \Hypertarget{group___c_m_s_i_s___s_c_b_gafc5a249edf213e88fb4d752f665fe25f}\index{Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}!MEMSYSCTL\_ITCMCR\_SZ\_Pos@{MEMSYSCTL\_ITCMCR\_SZ\_Pos}}
+\index{MEMSYSCTL\_ITCMCR\_SZ\_Pos@{MEMSYSCTL\_ITCMCR\_SZ\_Pos}!Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}}
+\doxysubsubsubsubsubsubsubsubsubsubsection{\texorpdfstring{MEMSYSCTL\_ITCMCR\_SZ\_Pos}{MEMSYSCTL\_ITCMCR\_SZ\_Pos}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{group___c_m_s_i_s___s_c_b_gafc5a249edf213e88fb4d752f665fe25f} 
+\#define MEMSYSCTL\+\_\+\+ITCMCR\+\_\+\+SZ\+\_\+\+Pos~3U}
+
+MEMSYSCTL ITCMCR\+: SZ Position \Hypertarget{group___c_m_s_i_s___s_c_b_gafc5a249edf213e88fb4d752f665fe25f}\index{Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}!MEMSYSCTL\_ITCMCR\_SZ\_Pos@{MEMSYSCTL\_ITCMCR\_SZ\_Pos}}
+\index{MEMSYSCTL\_ITCMCR\_SZ\_Pos@{MEMSYSCTL\_ITCMCR\_SZ\_Pos}!Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}}
+\doxysubsubsubsubsubsubsubsubsubsubsection{\texorpdfstring{MEMSYSCTL\_ITCMCR\_SZ\_Pos}{MEMSYSCTL\_ITCMCR\_SZ\_Pos}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{group___c_m_s_i_s___s_c_b_gafc5a249edf213e88fb4d752f665fe25f} 
+\#define MEMSYSCTL\+\_\+\+ITCMCR\+\_\+\+SZ\+\_\+\+Pos~3U}
+
+MEMSYSCTL ITCMCR\+: SZ Position \Hypertarget{group___c_m_s_i_s___s_c_b_gac37532e62cc50cce67baba7471a5348a}\index{Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}!MEMSYSCTL\_ITGU\_CFG\_BLKSZ\_Msk@{MEMSYSCTL\_ITGU\_CFG\_BLKSZ\_Msk}}
+\index{MEMSYSCTL\_ITGU\_CFG\_BLKSZ\_Msk@{MEMSYSCTL\_ITGU\_CFG\_BLKSZ\_Msk}!Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}}
+\doxysubsubsubsubsubsubsubsubsubsubsection{\texorpdfstring{MEMSYSCTL\_ITGU\_CFG\_BLKSZ\_Msk}{MEMSYSCTL\_ITGU\_CFG\_BLKSZ\_Msk}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{group___c_m_s_i_s___s_c_b_gac37532e62cc50cce67baba7471a5348a} 
+\#define MEMSYSCTL\+\_\+\+ITGU\+\_\+\+CFG\+\_\+\+BLKSZ\+\_\+\+Msk~(0x\+FUL /\texorpdfstring{$\ast$}{*}$<$$<$ \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga4dd12ffd6ca5bb2b506566d62f8be5ed}{MEMSYSCTL\+\_\+\+ITGU\+\_\+\+CFG\+\_\+\+BLKSZ\+\_\+\+Pos}}\texorpdfstring{$\ast$}{*}/)}
+
+MEMSYSCTL ITGU\+\_\+\+CFG\+: BLKSZ Mask \Hypertarget{group___c_m_s_i_s___s_c_b_gac37532e62cc50cce67baba7471a5348a}\index{Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}!MEMSYSCTL\_ITGU\_CFG\_BLKSZ\_Msk@{MEMSYSCTL\_ITGU\_CFG\_BLKSZ\_Msk}}
+\index{MEMSYSCTL\_ITGU\_CFG\_BLKSZ\_Msk@{MEMSYSCTL\_ITGU\_CFG\_BLKSZ\_Msk}!Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}}
+\doxysubsubsubsubsubsubsubsubsubsubsection{\texorpdfstring{MEMSYSCTL\_ITGU\_CFG\_BLKSZ\_Msk}{MEMSYSCTL\_ITGU\_CFG\_BLKSZ\_Msk}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{group___c_m_s_i_s___s_c_b_gac37532e62cc50cce67baba7471a5348a} 
+\#define MEMSYSCTL\+\_\+\+ITGU\+\_\+\+CFG\+\_\+\+BLKSZ\+\_\+\+Msk~(0x\+FUL /\texorpdfstring{$\ast$}{*}$<$$<$ \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga4dd12ffd6ca5bb2b506566d62f8be5ed}{MEMSYSCTL\+\_\+\+ITGU\+\_\+\+CFG\+\_\+\+BLKSZ\+\_\+\+Pos}}\texorpdfstring{$\ast$}{*}/)}
+
+MEMSYSCTL ITGU\+\_\+\+CFG\+: BLKSZ Mask \Hypertarget{group___c_m_s_i_s___s_c_b_ga4dd12ffd6ca5bb2b506566d62f8be5ed}\index{Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}!MEMSYSCTL\_ITGU\_CFG\_BLKSZ\_Pos@{MEMSYSCTL\_ITGU\_CFG\_BLKSZ\_Pos}}
+\index{MEMSYSCTL\_ITGU\_CFG\_BLKSZ\_Pos@{MEMSYSCTL\_ITGU\_CFG\_BLKSZ\_Pos}!Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}}
+\doxysubsubsubsubsubsubsubsubsubsubsection{\texorpdfstring{MEMSYSCTL\_ITGU\_CFG\_BLKSZ\_Pos}{MEMSYSCTL\_ITGU\_CFG\_BLKSZ\_Pos}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{group___c_m_s_i_s___s_c_b_ga4dd12ffd6ca5bb2b506566d62f8be5ed} 
+\#define MEMSYSCTL\+\_\+\+ITGU\+\_\+\+CFG\+\_\+\+BLKSZ\+\_\+\+Pos~0U}
+
+MEMSYSCTL ITGU\+\_\+\+CFG\+: BLKSZ Position \Hypertarget{group___c_m_s_i_s___s_c_b_ga4dd12ffd6ca5bb2b506566d62f8be5ed}\index{Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}!MEMSYSCTL\_ITGU\_CFG\_BLKSZ\_Pos@{MEMSYSCTL\_ITGU\_CFG\_BLKSZ\_Pos}}
+\index{MEMSYSCTL\_ITGU\_CFG\_BLKSZ\_Pos@{MEMSYSCTL\_ITGU\_CFG\_BLKSZ\_Pos}!Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}}
+\doxysubsubsubsubsubsubsubsubsubsubsection{\texorpdfstring{MEMSYSCTL\_ITGU\_CFG\_BLKSZ\_Pos}{MEMSYSCTL\_ITGU\_CFG\_BLKSZ\_Pos}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{group___c_m_s_i_s___s_c_b_ga4dd12ffd6ca5bb2b506566d62f8be5ed} 
+\#define MEMSYSCTL\+\_\+\+ITGU\+\_\+\+CFG\+\_\+\+BLKSZ\+\_\+\+Pos~0U}
+
+MEMSYSCTL ITGU\+\_\+\+CFG\+: BLKSZ Position \Hypertarget{group___c_m_s_i_s___s_c_b_ga05ced34cca684f6feb1b39a76e5c97f1}\index{Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}!MEMSYSCTL\_ITGU\_CFG\_NUMBLKS\_Msk@{MEMSYSCTL\_ITGU\_CFG\_NUMBLKS\_Msk}}
+\index{MEMSYSCTL\_ITGU\_CFG\_NUMBLKS\_Msk@{MEMSYSCTL\_ITGU\_CFG\_NUMBLKS\_Msk}!Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}}
+\doxysubsubsubsubsubsubsubsubsubsubsection{\texorpdfstring{MEMSYSCTL\_ITGU\_CFG\_NUMBLKS\_Msk}{MEMSYSCTL\_ITGU\_CFG\_NUMBLKS\_Msk}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{group___c_m_s_i_s___s_c_b_ga05ced34cca684f6feb1b39a76e5c97f1} 
+\#define MEMSYSCTL\+\_\+\+ITGU\+\_\+\+CFG\+\_\+\+NUMBLKS\+\_\+\+Msk~(0x\+FUL $<$$<$ \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga38fd7451023ebe46e401e9070cd87dfd}{MEMSYSCTL\+\_\+\+ITGU\+\_\+\+CFG\+\_\+\+NUMBLKS\+\_\+\+Pos}})}
+
+MEMSYSCTL ITGU\+\_\+\+CFG\+: NUMBLKS Mask \Hypertarget{group___c_m_s_i_s___s_c_b_ga05ced34cca684f6feb1b39a76e5c97f1}\index{Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}!MEMSYSCTL\_ITGU\_CFG\_NUMBLKS\_Msk@{MEMSYSCTL\_ITGU\_CFG\_NUMBLKS\_Msk}}
+\index{MEMSYSCTL\_ITGU\_CFG\_NUMBLKS\_Msk@{MEMSYSCTL\_ITGU\_CFG\_NUMBLKS\_Msk}!Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}}
+\doxysubsubsubsubsubsubsubsubsubsubsection{\texorpdfstring{MEMSYSCTL\_ITGU\_CFG\_NUMBLKS\_Msk}{MEMSYSCTL\_ITGU\_CFG\_NUMBLKS\_Msk}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{group___c_m_s_i_s___s_c_b_ga05ced34cca684f6feb1b39a76e5c97f1} 
+\#define MEMSYSCTL\+\_\+\+ITGU\+\_\+\+CFG\+\_\+\+NUMBLKS\+\_\+\+Msk~(0x\+FUL $<$$<$ \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga38fd7451023ebe46e401e9070cd87dfd}{MEMSYSCTL\+\_\+\+ITGU\+\_\+\+CFG\+\_\+\+NUMBLKS\+\_\+\+Pos}})}
+
+MEMSYSCTL ITGU\+\_\+\+CFG\+: NUMBLKS Mask \Hypertarget{group___c_m_s_i_s___s_c_b_ga38fd7451023ebe46e401e9070cd87dfd}\index{Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}!MEMSYSCTL\_ITGU\_CFG\_NUMBLKS\_Pos@{MEMSYSCTL\_ITGU\_CFG\_NUMBLKS\_Pos}}
+\index{MEMSYSCTL\_ITGU\_CFG\_NUMBLKS\_Pos@{MEMSYSCTL\_ITGU\_CFG\_NUMBLKS\_Pos}!Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}}
+\doxysubsubsubsubsubsubsubsubsubsubsection{\texorpdfstring{MEMSYSCTL\_ITGU\_CFG\_NUMBLKS\_Pos}{MEMSYSCTL\_ITGU\_CFG\_NUMBLKS\_Pos}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{group___c_m_s_i_s___s_c_b_ga38fd7451023ebe46e401e9070cd87dfd} 
+\#define MEMSYSCTL\+\_\+\+ITGU\+\_\+\+CFG\+\_\+\+NUMBLKS\+\_\+\+Pos~8U}
+
+MEMSYSCTL ITGU\+\_\+\+CFG\+: NUMBLKS Position \Hypertarget{group___c_m_s_i_s___s_c_b_ga38fd7451023ebe46e401e9070cd87dfd}\index{Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}!MEMSYSCTL\_ITGU\_CFG\_NUMBLKS\_Pos@{MEMSYSCTL\_ITGU\_CFG\_NUMBLKS\_Pos}}
+\index{MEMSYSCTL\_ITGU\_CFG\_NUMBLKS\_Pos@{MEMSYSCTL\_ITGU\_CFG\_NUMBLKS\_Pos}!Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}}
+\doxysubsubsubsubsubsubsubsubsubsubsection{\texorpdfstring{MEMSYSCTL\_ITGU\_CFG\_NUMBLKS\_Pos}{MEMSYSCTL\_ITGU\_CFG\_NUMBLKS\_Pos}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{group___c_m_s_i_s___s_c_b_ga38fd7451023ebe46e401e9070cd87dfd} 
+\#define MEMSYSCTL\+\_\+\+ITGU\+\_\+\+CFG\+\_\+\+NUMBLKS\+\_\+\+Pos~8U}
+
+MEMSYSCTL ITGU\+\_\+\+CFG\+: NUMBLKS Position \Hypertarget{group___c_m_s_i_s___s_c_b_ga54780fc16ebdd1d722b2377addcdb15c}\index{Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}!MEMSYSCTL\_ITGU\_CFG\_PRESENT\_Msk@{MEMSYSCTL\_ITGU\_CFG\_PRESENT\_Msk}}
+\index{MEMSYSCTL\_ITGU\_CFG\_PRESENT\_Msk@{MEMSYSCTL\_ITGU\_CFG\_PRESENT\_Msk}!Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}}
+\doxysubsubsubsubsubsubsubsubsubsubsection{\texorpdfstring{MEMSYSCTL\_ITGU\_CFG\_PRESENT\_Msk}{MEMSYSCTL\_ITGU\_CFG\_PRESENT\_Msk}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{group___c_m_s_i_s___s_c_b_ga54780fc16ebdd1d722b2377addcdb15c} 
+\#define MEMSYSCTL\+\_\+\+ITGU\+\_\+\+CFG\+\_\+\+PRESENT\+\_\+\+Msk~(0x1\+UL $<$$<$ \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga0f491892f1eeda8c65a47d80081c3969}{MEMSYSCTL\+\_\+\+ITGU\+\_\+\+CFG\+\_\+\+PRESENT\+\_\+\+Pos}})}
+
+MEMSYSCTL ITGU\+\_\+\+CFG\+: PRESENT Mask \Hypertarget{group___c_m_s_i_s___s_c_b_ga54780fc16ebdd1d722b2377addcdb15c}\index{Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}!MEMSYSCTL\_ITGU\_CFG\_PRESENT\_Msk@{MEMSYSCTL\_ITGU\_CFG\_PRESENT\_Msk}}
+\index{MEMSYSCTL\_ITGU\_CFG\_PRESENT\_Msk@{MEMSYSCTL\_ITGU\_CFG\_PRESENT\_Msk}!Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}}
+\doxysubsubsubsubsubsubsubsubsubsubsection{\texorpdfstring{MEMSYSCTL\_ITGU\_CFG\_PRESENT\_Msk}{MEMSYSCTL\_ITGU\_CFG\_PRESENT\_Msk}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{group___c_m_s_i_s___s_c_b_ga54780fc16ebdd1d722b2377addcdb15c} 
+\#define MEMSYSCTL\+\_\+\+ITGU\+\_\+\+CFG\+\_\+\+PRESENT\+\_\+\+Msk~(0x1\+UL $<$$<$ \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga0f491892f1eeda8c65a47d80081c3969}{MEMSYSCTL\+\_\+\+ITGU\+\_\+\+CFG\+\_\+\+PRESENT\+\_\+\+Pos}})}
+
+MEMSYSCTL ITGU\+\_\+\+CFG\+: PRESENT Mask \Hypertarget{group___c_m_s_i_s___s_c_b_ga0f491892f1eeda8c65a47d80081c3969}\index{Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}!MEMSYSCTL\_ITGU\_CFG\_PRESENT\_Pos@{MEMSYSCTL\_ITGU\_CFG\_PRESENT\_Pos}}
+\index{MEMSYSCTL\_ITGU\_CFG\_PRESENT\_Pos@{MEMSYSCTL\_ITGU\_CFG\_PRESENT\_Pos}!Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}}
+\doxysubsubsubsubsubsubsubsubsubsubsection{\texorpdfstring{MEMSYSCTL\_ITGU\_CFG\_PRESENT\_Pos}{MEMSYSCTL\_ITGU\_CFG\_PRESENT\_Pos}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{group___c_m_s_i_s___s_c_b_ga0f491892f1eeda8c65a47d80081c3969} 
+\#define MEMSYSCTL\+\_\+\+ITGU\+\_\+\+CFG\+\_\+\+PRESENT\+\_\+\+Pos~31U}
+
+MEMSYSCTL ITGU\+\_\+\+CFG\+: PRESENT Position \Hypertarget{group___c_m_s_i_s___s_c_b_ga0f491892f1eeda8c65a47d80081c3969}\index{Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}!MEMSYSCTL\_ITGU\_CFG\_PRESENT\_Pos@{MEMSYSCTL\_ITGU\_CFG\_PRESENT\_Pos}}
+\index{MEMSYSCTL\_ITGU\_CFG\_PRESENT\_Pos@{MEMSYSCTL\_ITGU\_CFG\_PRESENT\_Pos}!Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}}
+\doxysubsubsubsubsubsubsubsubsubsubsection{\texorpdfstring{MEMSYSCTL\_ITGU\_CFG\_PRESENT\_Pos}{MEMSYSCTL\_ITGU\_CFG\_PRESENT\_Pos}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{group___c_m_s_i_s___s_c_b_ga0f491892f1eeda8c65a47d80081c3969} 
+\#define MEMSYSCTL\+\_\+\+ITGU\+\_\+\+CFG\+\_\+\+PRESENT\+\_\+\+Pos~31U}
+
+MEMSYSCTL ITGU\+\_\+\+CFG\+: PRESENT Position \Hypertarget{group___c_m_s_i_s___s_c_b_ga46eb340e945a408918a6e96775334256}\index{Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}!MEMSYSCTL\_ITGU\_CTRL\_DBFEN\_Msk@{MEMSYSCTL\_ITGU\_CTRL\_DBFEN\_Msk}}
+\index{MEMSYSCTL\_ITGU\_CTRL\_DBFEN\_Msk@{MEMSYSCTL\_ITGU\_CTRL\_DBFEN\_Msk}!Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}}
+\doxysubsubsubsubsubsubsubsubsubsubsection{\texorpdfstring{MEMSYSCTL\_ITGU\_CTRL\_DBFEN\_Msk}{MEMSYSCTL\_ITGU\_CTRL\_DBFEN\_Msk}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{group___c_m_s_i_s___s_c_b_ga46eb340e945a408918a6e96775334256} 
+\#define MEMSYSCTL\+\_\+\+ITGU\+\_\+\+CTRL\+\_\+\+DBFEN\+\_\+\+Msk~(0x1\+UL /\texorpdfstring{$\ast$}{*}$<$$<$ \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_gab08d772bd6d2bdca22530cfc9201a7e6}{MEMSYSCTL\+\_\+\+ITGU\+\_\+\+CTRL\+\_\+\+DBFEN\+\_\+\+Pos}}\texorpdfstring{$\ast$}{*}/)}
+
+MEMSYSCTL ITGU\+\_\+\+CTRL\+: DBFEN Mask \Hypertarget{group___c_m_s_i_s___s_c_b_ga46eb340e945a408918a6e96775334256}\index{Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}!MEMSYSCTL\_ITGU\_CTRL\_DBFEN\_Msk@{MEMSYSCTL\_ITGU\_CTRL\_DBFEN\_Msk}}
+\index{MEMSYSCTL\_ITGU\_CTRL\_DBFEN\_Msk@{MEMSYSCTL\_ITGU\_CTRL\_DBFEN\_Msk}!Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}}
+\doxysubsubsubsubsubsubsubsubsubsubsection{\texorpdfstring{MEMSYSCTL\_ITGU\_CTRL\_DBFEN\_Msk}{MEMSYSCTL\_ITGU\_CTRL\_DBFEN\_Msk}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{group___c_m_s_i_s___s_c_b_ga46eb340e945a408918a6e96775334256} 
+\#define MEMSYSCTL\+\_\+\+ITGU\+\_\+\+CTRL\+\_\+\+DBFEN\+\_\+\+Msk~(0x1\+UL /\texorpdfstring{$\ast$}{*}$<$$<$ \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_gab08d772bd6d2bdca22530cfc9201a7e6}{MEMSYSCTL\+\_\+\+ITGU\+\_\+\+CTRL\+\_\+\+DBFEN\+\_\+\+Pos}}\texorpdfstring{$\ast$}{*}/)}
+
+MEMSYSCTL ITGU\+\_\+\+CTRL\+: DBFEN Mask \Hypertarget{group___c_m_s_i_s___s_c_b_gab08d772bd6d2bdca22530cfc9201a7e6}\index{Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}!MEMSYSCTL\_ITGU\_CTRL\_DBFEN\_Pos@{MEMSYSCTL\_ITGU\_CTRL\_DBFEN\_Pos}}
+\index{MEMSYSCTL\_ITGU\_CTRL\_DBFEN\_Pos@{MEMSYSCTL\_ITGU\_CTRL\_DBFEN\_Pos}!Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}}
+\doxysubsubsubsubsubsubsubsubsubsubsection{\texorpdfstring{MEMSYSCTL\_ITGU\_CTRL\_DBFEN\_Pos}{MEMSYSCTL\_ITGU\_CTRL\_DBFEN\_Pos}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{group___c_m_s_i_s___s_c_b_gab08d772bd6d2bdca22530cfc9201a7e6} 
+\#define MEMSYSCTL\+\_\+\+ITGU\+\_\+\+CTRL\+\_\+\+DBFEN\+\_\+\+Pos~0U}
+
+MEMSYSCTL ITGU\+\_\+\+CTRL\+: DBFEN Position \Hypertarget{group___c_m_s_i_s___s_c_b_gab08d772bd6d2bdca22530cfc9201a7e6}\index{Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}!MEMSYSCTL\_ITGU\_CTRL\_DBFEN\_Pos@{MEMSYSCTL\_ITGU\_CTRL\_DBFEN\_Pos}}
+\index{MEMSYSCTL\_ITGU\_CTRL\_DBFEN\_Pos@{MEMSYSCTL\_ITGU\_CTRL\_DBFEN\_Pos}!Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}}
+\doxysubsubsubsubsubsubsubsubsubsubsection{\texorpdfstring{MEMSYSCTL\_ITGU\_CTRL\_DBFEN\_Pos}{MEMSYSCTL\_ITGU\_CTRL\_DBFEN\_Pos}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{group___c_m_s_i_s___s_c_b_gab08d772bd6d2bdca22530cfc9201a7e6} 
+\#define MEMSYSCTL\+\_\+\+ITGU\+\_\+\+CTRL\+\_\+\+DBFEN\+\_\+\+Pos~0U}
+
+MEMSYSCTL ITGU\+\_\+\+CTRL\+: DBFEN Position \Hypertarget{group___c_m_s_i_s___s_c_b_ga182bb04e0960e78c056d51bef76f6cb7}\index{Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}!MEMSYSCTL\_ITGU\_CTRL\_DEREN\_Msk@{MEMSYSCTL\_ITGU\_CTRL\_DEREN\_Msk}}
+\index{MEMSYSCTL\_ITGU\_CTRL\_DEREN\_Msk@{MEMSYSCTL\_ITGU\_CTRL\_DEREN\_Msk}!Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}}
+\doxysubsubsubsubsubsubsubsubsubsubsection{\texorpdfstring{MEMSYSCTL\_ITGU\_CTRL\_DEREN\_Msk}{MEMSYSCTL\_ITGU\_CTRL\_DEREN\_Msk}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{group___c_m_s_i_s___s_c_b_ga182bb04e0960e78c056d51bef76f6cb7} 
+\#define MEMSYSCTL\+\_\+\+ITGU\+\_\+\+CTRL\+\_\+\+DEREN\+\_\+\+Msk~(0x1\+UL $<$$<$ \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga2a09789d77ee7c31bd138dc235c8550e}{MEMSYSCTL\+\_\+\+ITGU\+\_\+\+CTRL\+\_\+\+DEREN\+\_\+\+Pos}})}
+
+MEMSYSCTL ITGU\+\_\+\+CTRL\+: DEREN Mask \Hypertarget{group___c_m_s_i_s___s_c_b_ga182bb04e0960e78c056d51bef76f6cb7}\index{Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}!MEMSYSCTL\_ITGU\_CTRL\_DEREN\_Msk@{MEMSYSCTL\_ITGU\_CTRL\_DEREN\_Msk}}
+\index{MEMSYSCTL\_ITGU\_CTRL\_DEREN\_Msk@{MEMSYSCTL\_ITGU\_CTRL\_DEREN\_Msk}!Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}}
+\doxysubsubsubsubsubsubsubsubsubsubsection{\texorpdfstring{MEMSYSCTL\_ITGU\_CTRL\_DEREN\_Msk}{MEMSYSCTL\_ITGU\_CTRL\_DEREN\_Msk}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{group___c_m_s_i_s___s_c_b_ga182bb04e0960e78c056d51bef76f6cb7} 
+\#define MEMSYSCTL\+\_\+\+ITGU\+\_\+\+CTRL\+\_\+\+DEREN\+\_\+\+Msk~(0x1\+UL $<$$<$ \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga2a09789d77ee7c31bd138dc235c8550e}{MEMSYSCTL\+\_\+\+ITGU\+\_\+\+CTRL\+\_\+\+DEREN\+\_\+\+Pos}})}
+
+MEMSYSCTL ITGU\+\_\+\+CTRL\+: DEREN Mask \Hypertarget{group___c_m_s_i_s___s_c_b_ga2a09789d77ee7c31bd138dc235c8550e}\index{Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}!MEMSYSCTL\_ITGU\_CTRL\_DEREN\_Pos@{MEMSYSCTL\_ITGU\_CTRL\_DEREN\_Pos}}
+\index{MEMSYSCTL\_ITGU\_CTRL\_DEREN\_Pos@{MEMSYSCTL\_ITGU\_CTRL\_DEREN\_Pos}!Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}}
+\doxysubsubsubsubsubsubsubsubsubsubsection{\texorpdfstring{MEMSYSCTL\_ITGU\_CTRL\_DEREN\_Pos}{MEMSYSCTL\_ITGU\_CTRL\_DEREN\_Pos}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{group___c_m_s_i_s___s_c_b_ga2a09789d77ee7c31bd138dc235c8550e} 
+\#define MEMSYSCTL\+\_\+\+ITGU\+\_\+\+CTRL\+\_\+\+DEREN\+\_\+\+Pos~1U}
+
+MEMSYSCTL ITGU\+\_\+\+CTRL\+: DEREN Position \Hypertarget{group___c_m_s_i_s___s_c_b_ga2a09789d77ee7c31bd138dc235c8550e}\index{Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}!MEMSYSCTL\_ITGU\_CTRL\_DEREN\_Pos@{MEMSYSCTL\_ITGU\_CTRL\_DEREN\_Pos}}
+\index{MEMSYSCTL\_ITGU\_CTRL\_DEREN\_Pos@{MEMSYSCTL\_ITGU\_CTRL\_DEREN\_Pos}!Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}}
+\doxysubsubsubsubsubsubsubsubsubsubsection{\texorpdfstring{MEMSYSCTL\_ITGU\_CTRL\_DEREN\_Pos}{MEMSYSCTL\_ITGU\_CTRL\_DEREN\_Pos}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{group___c_m_s_i_s___s_c_b_ga2a09789d77ee7c31bd138dc235c8550e} 
+\#define MEMSYSCTL\+\_\+\+ITGU\+\_\+\+CTRL\+\_\+\+DEREN\+\_\+\+Pos~1U}
+
+MEMSYSCTL ITGU\+\_\+\+CTRL\+: DEREN Position \Hypertarget{group___c_m_s_i_s___s_c_b_ga79edb7c4b9f707205cb186d67a75ae23}\index{Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}!MEMSYSCTL\_MSCR\_CPWRDN\_Msk@{MEMSYSCTL\_MSCR\_CPWRDN\_Msk}}
+\index{MEMSYSCTL\_MSCR\_CPWRDN\_Msk@{MEMSYSCTL\_MSCR\_CPWRDN\_Msk}!Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}}
+\doxysubsubsubsubsubsubsubsubsubsubsection{\texorpdfstring{MEMSYSCTL\_MSCR\_CPWRDN\_Msk}{MEMSYSCTL\_MSCR\_CPWRDN\_Msk}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{group___c_m_s_i_s___s_c_b_ga79edb7c4b9f707205cb186d67a75ae23} 
+\#define MEMSYSCTL\+\_\+\+MSCR\+\_\+\+CPWRDN\+\_\+\+Msk~(0x1\+UL $<$$<$ \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_gad5be819ea314d07a1a8a22dc6561f2e4}{MEMSYSCTL\+\_\+\+MSCR\+\_\+\+CPWRDN\+\_\+\+Pos}})}
+
+MEMSYSCTL MSCR\+: CPWRDN Mask \Hypertarget{group___c_m_s_i_s___s_c_b_ga79edb7c4b9f707205cb186d67a75ae23}\index{Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}!MEMSYSCTL\_MSCR\_CPWRDN\_Msk@{MEMSYSCTL\_MSCR\_CPWRDN\_Msk}}
+\index{MEMSYSCTL\_MSCR\_CPWRDN\_Msk@{MEMSYSCTL\_MSCR\_CPWRDN\_Msk}!Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}}
+\doxysubsubsubsubsubsubsubsubsubsubsection{\texorpdfstring{MEMSYSCTL\_MSCR\_CPWRDN\_Msk}{MEMSYSCTL\_MSCR\_CPWRDN\_Msk}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{group___c_m_s_i_s___s_c_b_ga79edb7c4b9f707205cb186d67a75ae23} 
+\#define MEMSYSCTL\+\_\+\+MSCR\+\_\+\+CPWRDN\+\_\+\+Msk~(0x1\+UL $<$$<$ \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_gad5be819ea314d07a1a8a22dc6561f2e4}{MEMSYSCTL\+\_\+\+MSCR\+\_\+\+CPWRDN\+\_\+\+Pos}})}
+
+MEMSYSCTL MSCR\+: CPWRDN Mask \Hypertarget{group___c_m_s_i_s___s_c_b_gad5be819ea314d07a1a8a22dc6561f2e4}\index{Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}!MEMSYSCTL\_MSCR\_CPWRDN\_Pos@{MEMSYSCTL\_MSCR\_CPWRDN\_Pos}}
+\index{MEMSYSCTL\_MSCR\_CPWRDN\_Pos@{MEMSYSCTL\_MSCR\_CPWRDN\_Pos}!Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}}
+\doxysubsubsubsubsubsubsubsubsubsubsection{\texorpdfstring{MEMSYSCTL\_MSCR\_CPWRDN\_Pos}{MEMSYSCTL\_MSCR\_CPWRDN\_Pos}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{group___c_m_s_i_s___s_c_b_gad5be819ea314d07a1a8a22dc6561f2e4} 
+\#define MEMSYSCTL\+\_\+\+MSCR\+\_\+\+CPWRDN\+\_\+\+Pos~17U}
+
+MEMSYSCTL MSCR\+: CPWRDN Position \Hypertarget{group___c_m_s_i_s___s_c_b_gad5be819ea314d07a1a8a22dc6561f2e4}\index{Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}!MEMSYSCTL\_MSCR\_CPWRDN\_Pos@{MEMSYSCTL\_MSCR\_CPWRDN\_Pos}}
+\index{MEMSYSCTL\_MSCR\_CPWRDN\_Pos@{MEMSYSCTL\_MSCR\_CPWRDN\_Pos}!Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}}
+\doxysubsubsubsubsubsubsubsubsubsubsection{\texorpdfstring{MEMSYSCTL\_MSCR\_CPWRDN\_Pos}{MEMSYSCTL\_MSCR\_CPWRDN\_Pos}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{group___c_m_s_i_s___s_c_b_gad5be819ea314d07a1a8a22dc6561f2e4} 
+\#define MEMSYSCTL\+\_\+\+MSCR\+\_\+\+CPWRDN\+\_\+\+Pos~17U}
+
+MEMSYSCTL MSCR\+: CPWRDN Position \Hypertarget{group___c_m_s_i_s___s_c_b_ga4b6b82aa33b00ba0cbc7ab55f720f04b}\index{Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}!MEMSYSCTL\_MSCR\_DCACTIVE\_Msk@{MEMSYSCTL\_MSCR\_DCACTIVE\_Msk}}
+\index{MEMSYSCTL\_MSCR\_DCACTIVE\_Msk@{MEMSYSCTL\_MSCR\_DCACTIVE\_Msk}!Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}}
+\doxysubsubsubsubsubsubsubsubsubsubsection{\texorpdfstring{MEMSYSCTL\_MSCR\_DCACTIVE\_Msk}{MEMSYSCTL\_MSCR\_DCACTIVE\_Msk}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{group___c_m_s_i_s___s_c_b_ga4b6b82aa33b00ba0cbc7ab55f720f04b} 
+\#define MEMSYSCTL\+\_\+\+MSCR\+\_\+\+DCACTIVE\+\_\+\+Msk~(0x1\+UL $<$$<$ \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga6cce2dcd61083c89d343db9935bd1598}{MEMSYSCTL\+\_\+\+MSCR\+\_\+\+DCACTIVE\+\_\+\+Pos}})}
+
+MEMSYSCTL MSCR\+: DCACTIVE Mask \Hypertarget{group___c_m_s_i_s___s_c_b_ga4b6b82aa33b00ba0cbc7ab55f720f04b}\index{Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}!MEMSYSCTL\_MSCR\_DCACTIVE\_Msk@{MEMSYSCTL\_MSCR\_DCACTIVE\_Msk}}
+\index{MEMSYSCTL\_MSCR\_DCACTIVE\_Msk@{MEMSYSCTL\_MSCR\_DCACTIVE\_Msk}!Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}}
+\doxysubsubsubsubsubsubsubsubsubsubsection{\texorpdfstring{MEMSYSCTL\_MSCR\_DCACTIVE\_Msk}{MEMSYSCTL\_MSCR\_DCACTIVE\_Msk}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{group___c_m_s_i_s___s_c_b_ga4b6b82aa33b00ba0cbc7ab55f720f04b} 
+\#define MEMSYSCTL\+\_\+\+MSCR\+\_\+\+DCACTIVE\+\_\+\+Msk~(0x1\+UL $<$$<$ \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga6cce2dcd61083c89d343db9935bd1598}{MEMSYSCTL\+\_\+\+MSCR\+\_\+\+DCACTIVE\+\_\+\+Pos}})}
+
+MEMSYSCTL MSCR\+: DCACTIVE Mask \Hypertarget{group___c_m_s_i_s___s_c_b_ga6cce2dcd61083c89d343db9935bd1598}\index{Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}!MEMSYSCTL\_MSCR\_DCACTIVE\_Pos@{MEMSYSCTL\_MSCR\_DCACTIVE\_Pos}}
+\index{MEMSYSCTL\_MSCR\_DCACTIVE\_Pos@{MEMSYSCTL\_MSCR\_DCACTIVE\_Pos}!Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}}
+\doxysubsubsubsubsubsubsubsubsubsubsection{\texorpdfstring{MEMSYSCTL\_MSCR\_DCACTIVE\_Pos}{MEMSYSCTL\_MSCR\_DCACTIVE\_Pos}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{group___c_m_s_i_s___s_c_b_ga6cce2dcd61083c89d343db9935bd1598} 
+\#define MEMSYSCTL\+\_\+\+MSCR\+\_\+\+DCACTIVE\+\_\+\+Pos~12U}
+
+MEMSYSCTL MSCR\+: DCACTIVE Position \Hypertarget{group___c_m_s_i_s___s_c_b_ga6cce2dcd61083c89d343db9935bd1598}\index{Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}!MEMSYSCTL\_MSCR\_DCACTIVE\_Pos@{MEMSYSCTL\_MSCR\_DCACTIVE\_Pos}}
+\index{MEMSYSCTL\_MSCR\_DCACTIVE\_Pos@{MEMSYSCTL\_MSCR\_DCACTIVE\_Pos}!Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}}
+\doxysubsubsubsubsubsubsubsubsubsubsection{\texorpdfstring{MEMSYSCTL\_MSCR\_DCACTIVE\_Pos}{MEMSYSCTL\_MSCR\_DCACTIVE\_Pos}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{group___c_m_s_i_s___s_c_b_ga6cce2dcd61083c89d343db9935bd1598} 
+\#define MEMSYSCTL\+\_\+\+MSCR\+\_\+\+DCACTIVE\+\_\+\+Pos~12U}
+
+MEMSYSCTL MSCR\+: DCACTIVE Position \Hypertarget{group___c_m_s_i_s___s_c_b_ga86f193a5f600606a6c8a64f7860069bc}\index{Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}!MEMSYSCTL\_MSCR\_DCCLEAN\_Msk@{MEMSYSCTL\_MSCR\_DCCLEAN\_Msk}}
+\index{MEMSYSCTL\_MSCR\_DCCLEAN\_Msk@{MEMSYSCTL\_MSCR\_DCCLEAN\_Msk}!Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}}
+\doxysubsubsubsubsubsubsubsubsubsubsection{\texorpdfstring{MEMSYSCTL\_MSCR\_DCCLEAN\_Msk}{MEMSYSCTL\_MSCR\_DCCLEAN\_Msk}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{group___c_m_s_i_s___s_c_b_ga86f193a5f600606a6c8a64f7860069bc} 
+\#define MEMSYSCTL\+\_\+\+MSCR\+\_\+\+DCCLEAN\+\_\+\+Msk~(0x1\+UL $<$$<$ \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga2dfd5544ea8358ca40cd0a55135b471e}{MEMSYSCTL\+\_\+\+MSCR\+\_\+\+DCCLEAN\+\_\+\+Pos}})}
+
+MEMSYSCTL MSCR\+: DCCLEAN Mask \Hypertarget{group___c_m_s_i_s___s_c_b_ga86f193a5f600606a6c8a64f7860069bc}\index{Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}!MEMSYSCTL\_MSCR\_DCCLEAN\_Msk@{MEMSYSCTL\_MSCR\_DCCLEAN\_Msk}}
+\index{MEMSYSCTL\_MSCR\_DCCLEAN\_Msk@{MEMSYSCTL\_MSCR\_DCCLEAN\_Msk}!Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}}
+\doxysubsubsubsubsubsubsubsubsubsubsection{\texorpdfstring{MEMSYSCTL\_MSCR\_DCCLEAN\_Msk}{MEMSYSCTL\_MSCR\_DCCLEAN\_Msk}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{group___c_m_s_i_s___s_c_b_ga86f193a5f600606a6c8a64f7860069bc} 
+\#define MEMSYSCTL\+\_\+\+MSCR\+\_\+\+DCCLEAN\+\_\+\+Msk~(0x1\+UL $<$$<$ \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga2dfd5544ea8358ca40cd0a55135b471e}{MEMSYSCTL\+\_\+\+MSCR\+\_\+\+DCCLEAN\+\_\+\+Pos}})}
+
+MEMSYSCTL MSCR\+: DCCLEAN Mask \Hypertarget{group___c_m_s_i_s___s_c_b_ga2dfd5544ea8358ca40cd0a55135b471e}\index{Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}!MEMSYSCTL\_MSCR\_DCCLEAN\_Pos@{MEMSYSCTL\_MSCR\_DCCLEAN\_Pos}}
+\index{MEMSYSCTL\_MSCR\_DCCLEAN\_Pos@{MEMSYSCTL\_MSCR\_DCCLEAN\_Pos}!Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}}
+\doxysubsubsubsubsubsubsubsubsubsubsection{\texorpdfstring{MEMSYSCTL\_MSCR\_DCCLEAN\_Pos}{MEMSYSCTL\_MSCR\_DCCLEAN\_Pos}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{group___c_m_s_i_s___s_c_b_ga2dfd5544ea8358ca40cd0a55135b471e} 
+\#define MEMSYSCTL\+\_\+\+MSCR\+\_\+\+DCCLEAN\+\_\+\+Pos~16U}
+
+MEMSYSCTL MSCR\+: DCCLEAN Position \Hypertarget{group___c_m_s_i_s___s_c_b_ga2dfd5544ea8358ca40cd0a55135b471e}\index{Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}!MEMSYSCTL\_MSCR\_DCCLEAN\_Pos@{MEMSYSCTL\_MSCR\_DCCLEAN\_Pos}}
+\index{MEMSYSCTL\_MSCR\_DCCLEAN\_Pos@{MEMSYSCTL\_MSCR\_DCCLEAN\_Pos}!Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}}
+\doxysubsubsubsubsubsubsubsubsubsubsection{\texorpdfstring{MEMSYSCTL\_MSCR\_DCCLEAN\_Pos}{MEMSYSCTL\_MSCR\_DCCLEAN\_Pos}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{group___c_m_s_i_s___s_c_b_ga2dfd5544ea8358ca40cd0a55135b471e} 
+\#define MEMSYSCTL\+\_\+\+MSCR\+\_\+\+DCCLEAN\+\_\+\+Pos~16U}
+
+MEMSYSCTL MSCR\+: DCCLEAN Position \Hypertarget{group___c_m_s_i_s___s_c_b_ga86e13b9cc0e3f4fc3971643d118c0373}\index{Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}!MEMSYSCTL\_MSCR\_ECCEN\_Msk@{MEMSYSCTL\_MSCR\_ECCEN\_Msk}}
+\index{MEMSYSCTL\_MSCR\_ECCEN\_Msk@{MEMSYSCTL\_MSCR\_ECCEN\_Msk}!Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}}
+\doxysubsubsubsubsubsubsubsubsubsubsection{\texorpdfstring{MEMSYSCTL\_MSCR\_ECCEN\_Msk}{MEMSYSCTL\_MSCR\_ECCEN\_Msk}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{group___c_m_s_i_s___s_c_b_ga86e13b9cc0e3f4fc3971643d118c0373} 
+\#define MEMSYSCTL\+\_\+\+MSCR\+\_\+\+ECCEN\+\_\+\+Msk~(0x1\+UL $<$$<$ \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_gabbdf1f89409c5d9b8c2ff4c2c5ce874e}{MEMSYSCTL\+\_\+\+MSCR\+\_\+\+ECCEN\+\_\+\+Pos}})}
+
+MEMSYSCTL MSCR\+: ECCEN Mask \Hypertarget{group___c_m_s_i_s___s_c_b_ga86e13b9cc0e3f4fc3971643d118c0373}\index{Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}!MEMSYSCTL\_MSCR\_ECCEN\_Msk@{MEMSYSCTL\_MSCR\_ECCEN\_Msk}}
+\index{MEMSYSCTL\_MSCR\_ECCEN\_Msk@{MEMSYSCTL\_MSCR\_ECCEN\_Msk}!Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}}
+\doxysubsubsubsubsubsubsubsubsubsubsection{\texorpdfstring{MEMSYSCTL\_MSCR\_ECCEN\_Msk}{MEMSYSCTL\_MSCR\_ECCEN\_Msk}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{group___c_m_s_i_s___s_c_b_ga86e13b9cc0e3f4fc3971643d118c0373} 
+\#define MEMSYSCTL\+\_\+\+MSCR\+\_\+\+ECCEN\+\_\+\+Msk~(0x1\+UL $<$$<$ \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_gabbdf1f89409c5d9b8c2ff4c2c5ce874e}{MEMSYSCTL\+\_\+\+MSCR\+\_\+\+ECCEN\+\_\+\+Pos}})}
+
+MEMSYSCTL MSCR\+: ECCEN Mask \Hypertarget{group___c_m_s_i_s___s_c_b_gabbdf1f89409c5d9b8c2ff4c2c5ce874e}\index{Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}!MEMSYSCTL\_MSCR\_ECCEN\_Pos@{MEMSYSCTL\_MSCR\_ECCEN\_Pos}}
+\index{MEMSYSCTL\_MSCR\_ECCEN\_Pos@{MEMSYSCTL\_MSCR\_ECCEN\_Pos}!Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}}
+\doxysubsubsubsubsubsubsubsubsubsubsection{\texorpdfstring{MEMSYSCTL\_MSCR\_ECCEN\_Pos}{MEMSYSCTL\_MSCR\_ECCEN\_Pos}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{group___c_m_s_i_s___s_c_b_gabbdf1f89409c5d9b8c2ff4c2c5ce874e} 
+\#define MEMSYSCTL\+\_\+\+MSCR\+\_\+\+ECCEN\+\_\+\+Pos~1U}
+
+MEMSYSCTL MSCR\+: ECCEN Position \Hypertarget{group___c_m_s_i_s___s_c_b_gabbdf1f89409c5d9b8c2ff4c2c5ce874e}\index{Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}!MEMSYSCTL\_MSCR\_ECCEN\_Pos@{MEMSYSCTL\_MSCR\_ECCEN\_Pos}}
+\index{MEMSYSCTL\_MSCR\_ECCEN\_Pos@{MEMSYSCTL\_MSCR\_ECCEN\_Pos}!Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}}
+\doxysubsubsubsubsubsubsubsubsubsubsection{\texorpdfstring{MEMSYSCTL\_MSCR\_ECCEN\_Pos}{MEMSYSCTL\_MSCR\_ECCEN\_Pos}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{group___c_m_s_i_s___s_c_b_gabbdf1f89409c5d9b8c2ff4c2c5ce874e} 
+\#define MEMSYSCTL\+\_\+\+MSCR\+\_\+\+ECCEN\+\_\+\+Pos~1U}
+
+MEMSYSCTL MSCR\+: ECCEN Position \Hypertarget{group___c_m_s_i_s___s_c_b_ga719803c1c104cb7b0d37148e3c3d7175}\index{Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}!MEMSYSCTL\_MSCR\_EVECCFAULT\_Msk@{MEMSYSCTL\_MSCR\_EVECCFAULT\_Msk}}
+\index{MEMSYSCTL\_MSCR\_EVECCFAULT\_Msk@{MEMSYSCTL\_MSCR\_EVECCFAULT\_Msk}!Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}}
+\doxysubsubsubsubsubsubsubsubsubsubsection{\texorpdfstring{MEMSYSCTL\_MSCR\_EVECCFAULT\_Msk}{MEMSYSCTL\_MSCR\_EVECCFAULT\_Msk}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{group___c_m_s_i_s___s_c_b_ga719803c1c104cb7b0d37148e3c3d7175} 
+\#define MEMSYSCTL\+\_\+\+MSCR\+\_\+\+EVECCFAULT\+\_\+\+Msk~(0x1\+UL $<$$<$ \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga4c74be9e35d5efd5ecb27efa63a02923}{MEMSYSCTL\+\_\+\+MSCR\+\_\+\+EVECCFAULT\+\_\+\+Pos}})}
+
+MEMSYSCTL MSCR\+: EVECCFAULT Mask \Hypertarget{group___c_m_s_i_s___s_c_b_ga719803c1c104cb7b0d37148e3c3d7175}\index{Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}!MEMSYSCTL\_MSCR\_EVECCFAULT\_Msk@{MEMSYSCTL\_MSCR\_EVECCFAULT\_Msk}}
+\index{MEMSYSCTL\_MSCR\_EVECCFAULT\_Msk@{MEMSYSCTL\_MSCR\_EVECCFAULT\_Msk}!Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}}
+\doxysubsubsubsubsubsubsubsubsubsubsection{\texorpdfstring{MEMSYSCTL\_MSCR\_EVECCFAULT\_Msk}{MEMSYSCTL\_MSCR\_EVECCFAULT\_Msk}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{group___c_m_s_i_s___s_c_b_ga719803c1c104cb7b0d37148e3c3d7175} 
+\#define MEMSYSCTL\+\_\+\+MSCR\+\_\+\+EVECCFAULT\+\_\+\+Msk~(0x1\+UL $<$$<$ \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga4c74be9e35d5efd5ecb27efa63a02923}{MEMSYSCTL\+\_\+\+MSCR\+\_\+\+EVECCFAULT\+\_\+\+Pos}})}
+
+MEMSYSCTL MSCR\+: EVECCFAULT Mask \Hypertarget{group___c_m_s_i_s___s_c_b_ga4c74be9e35d5efd5ecb27efa63a02923}\index{Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}!MEMSYSCTL\_MSCR\_EVECCFAULT\_Pos@{MEMSYSCTL\_MSCR\_EVECCFAULT\_Pos}}
+\index{MEMSYSCTL\_MSCR\_EVECCFAULT\_Pos@{MEMSYSCTL\_MSCR\_EVECCFAULT\_Pos}!Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}}
+\doxysubsubsubsubsubsubsubsubsubsubsection{\texorpdfstring{MEMSYSCTL\_MSCR\_EVECCFAULT\_Pos}{MEMSYSCTL\_MSCR\_EVECCFAULT\_Pos}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{group___c_m_s_i_s___s_c_b_ga4c74be9e35d5efd5ecb27efa63a02923} 
+\#define MEMSYSCTL\+\_\+\+MSCR\+\_\+\+EVECCFAULT\+\_\+\+Pos~3U}
+
+MEMSYSCTL MSCR\+: EVECCFAULT Position \Hypertarget{group___c_m_s_i_s___s_c_b_ga4c74be9e35d5efd5ecb27efa63a02923}\index{Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}!MEMSYSCTL\_MSCR\_EVECCFAULT\_Pos@{MEMSYSCTL\_MSCR\_EVECCFAULT\_Pos}}
+\index{MEMSYSCTL\_MSCR\_EVECCFAULT\_Pos@{MEMSYSCTL\_MSCR\_EVECCFAULT\_Pos}!Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}}
+\doxysubsubsubsubsubsubsubsubsubsubsection{\texorpdfstring{MEMSYSCTL\_MSCR\_EVECCFAULT\_Pos}{MEMSYSCTL\_MSCR\_EVECCFAULT\_Pos}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{group___c_m_s_i_s___s_c_b_ga4c74be9e35d5efd5ecb27efa63a02923} 
+\#define MEMSYSCTL\+\_\+\+MSCR\+\_\+\+EVECCFAULT\+\_\+\+Pos~3U}
+
+MEMSYSCTL MSCR\+: EVECCFAULT Position \Hypertarget{group___c_m_s_i_s___s_c_b_gaacfc5665a212cc43c70bc0c6b9322e81}\index{Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}!MEMSYSCTL\_MSCR\_FORCEWT\_Msk@{MEMSYSCTL\_MSCR\_FORCEWT\_Msk}}
+\index{MEMSYSCTL\_MSCR\_FORCEWT\_Msk@{MEMSYSCTL\_MSCR\_FORCEWT\_Msk}!Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}}
+\doxysubsubsubsubsubsubsubsubsubsubsection{\texorpdfstring{MEMSYSCTL\_MSCR\_FORCEWT\_Msk}{MEMSYSCTL\_MSCR\_FORCEWT\_Msk}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{group___c_m_s_i_s___s_c_b_gaacfc5665a212cc43c70bc0c6b9322e81} 
+\#define MEMSYSCTL\+\_\+\+MSCR\+\_\+\+FORCEWT\+\_\+\+Msk~(0x1\+UL $<$$<$ \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga258a3bf8f2d06cea3705b07db03f976b}{MEMSYSCTL\+\_\+\+MSCR\+\_\+\+FORCEWT\+\_\+\+Pos}})}
+
+MEMSYSCTL MSCR\+: FORCEWT Mask \Hypertarget{group___c_m_s_i_s___s_c_b_gaacfc5665a212cc43c70bc0c6b9322e81}\index{Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}!MEMSYSCTL\_MSCR\_FORCEWT\_Msk@{MEMSYSCTL\_MSCR\_FORCEWT\_Msk}}
+\index{MEMSYSCTL\_MSCR\_FORCEWT\_Msk@{MEMSYSCTL\_MSCR\_FORCEWT\_Msk}!Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}}
+\doxysubsubsubsubsubsubsubsubsubsubsection{\texorpdfstring{MEMSYSCTL\_MSCR\_FORCEWT\_Msk}{MEMSYSCTL\_MSCR\_FORCEWT\_Msk}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{group___c_m_s_i_s___s_c_b_gaacfc5665a212cc43c70bc0c6b9322e81} 
+\#define MEMSYSCTL\+\_\+\+MSCR\+\_\+\+FORCEWT\+\_\+\+Msk~(0x1\+UL $<$$<$ \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga258a3bf8f2d06cea3705b07db03f976b}{MEMSYSCTL\+\_\+\+MSCR\+\_\+\+FORCEWT\+\_\+\+Pos}})}
+
+MEMSYSCTL MSCR\+: FORCEWT Mask \Hypertarget{group___c_m_s_i_s___s_c_b_ga258a3bf8f2d06cea3705b07db03f976b}\index{Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}!MEMSYSCTL\_MSCR\_FORCEWT\_Pos@{MEMSYSCTL\_MSCR\_FORCEWT\_Pos}}
+\index{MEMSYSCTL\_MSCR\_FORCEWT\_Pos@{MEMSYSCTL\_MSCR\_FORCEWT\_Pos}!Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}}
+\doxysubsubsubsubsubsubsubsubsubsubsection{\texorpdfstring{MEMSYSCTL\_MSCR\_FORCEWT\_Pos}{MEMSYSCTL\_MSCR\_FORCEWT\_Pos}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{group___c_m_s_i_s___s_c_b_ga258a3bf8f2d06cea3705b07db03f976b} 
+\#define MEMSYSCTL\+\_\+\+MSCR\+\_\+\+FORCEWT\+\_\+\+Pos~2U}
+
+MEMSYSCTL MSCR\+: FORCEWT Position \Hypertarget{group___c_m_s_i_s___s_c_b_ga258a3bf8f2d06cea3705b07db03f976b}\index{Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}!MEMSYSCTL\_MSCR\_FORCEWT\_Pos@{MEMSYSCTL\_MSCR\_FORCEWT\_Pos}}
+\index{MEMSYSCTL\_MSCR\_FORCEWT\_Pos@{MEMSYSCTL\_MSCR\_FORCEWT\_Pos}!Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}}
+\doxysubsubsubsubsubsubsubsubsubsubsection{\texorpdfstring{MEMSYSCTL\_MSCR\_FORCEWT\_Pos}{MEMSYSCTL\_MSCR\_FORCEWT\_Pos}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{group___c_m_s_i_s___s_c_b_ga258a3bf8f2d06cea3705b07db03f976b} 
+\#define MEMSYSCTL\+\_\+\+MSCR\+\_\+\+FORCEWT\+\_\+\+Pos~2U}
+
+MEMSYSCTL MSCR\+: FORCEWT Position \Hypertarget{group___c_m_s_i_s___s_c_b_ga69b2fd0e1f9de304d9db5932e84ce8c1}\index{Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}!MEMSYSCTL\_MSCR\_ICACTIVE\_Msk@{MEMSYSCTL\_MSCR\_ICACTIVE\_Msk}}
+\index{MEMSYSCTL\_MSCR\_ICACTIVE\_Msk@{MEMSYSCTL\_MSCR\_ICACTIVE\_Msk}!Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}}
+\doxysubsubsubsubsubsubsubsubsubsubsection{\texorpdfstring{MEMSYSCTL\_MSCR\_ICACTIVE\_Msk}{MEMSYSCTL\_MSCR\_ICACTIVE\_Msk}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{group___c_m_s_i_s___s_c_b_ga69b2fd0e1f9de304d9db5932e84ce8c1} 
+\#define MEMSYSCTL\+\_\+\+MSCR\+\_\+\+ICACTIVE\+\_\+\+Msk~(0x1\+UL $<$$<$ \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga139979e66cefc212dd436d82f720c0f4}{MEMSYSCTL\+\_\+\+MSCR\+\_\+\+ICACTIVE\+\_\+\+Pos}})}
+
+MEMSYSCTL MSCR\+: ICACTIVE Mask \Hypertarget{group___c_m_s_i_s___s_c_b_ga69b2fd0e1f9de304d9db5932e84ce8c1}\index{Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}!MEMSYSCTL\_MSCR\_ICACTIVE\_Msk@{MEMSYSCTL\_MSCR\_ICACTIVE\_Msk}}
+\index{MEMSYSCTL\_MSCR\_ICACTIVE\_Msk@{MEMSYSCTL\_MSCR\_ICACTIVE\_Msk}!Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}}
+\doxysubsubsubsubsubsubsubsubsubsubsection{\texorpdfstring{MEMSYSCTL\_MSCR\_ICACTIVE\_Msk}{MEMSYSCTL\_MSCR\_ICACTIVE\_Msk}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{group___c_m_s_i_s___s_c_b_ga69b2fd0e1f9de304d9db5932e84ce8c1} 
+\#define MEMSYSCTL\+\_\+\+MSCR\+\_\+\+ICACTIVE\+\_\+\+Msk~(0x1\+UL $<$$<$ \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga139979e66cefc212dd436d82f720c0f4}{MEMSYSCTL\+\_\+\+MSCR\+\_\+\+ICACTIVE\+\_\+\+Pos}})}
+
+MEMSYSCTL MSCR\+: ICACTIVE Mask \Hypertarget{group___c_m_s_i_s___s_c_b_ga139979e66cefc212dd436d82f720c0f4}\index{Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}!MEMSYSCTL\_MSCR\_ICACTIVE\_Pos@{MEMSYSCTL\_MSCR\_ICACTIVE\_Pos}}
+\index{MEMSYSCTL\_MSCR\_ICACTIVE\_Pos@{MEMSYSCTL\_MSCR\_ICACTIVE\_Pos}!Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}}
+\doxysubsubsubsubsubsubsubsubsubsubsection{\texorpdfstring{MEMSYSCTL\_MSCR\_ICACTIVE\_Pos}{MEMSYSCTL\_MSCR\_ICACTIVE\_Pos}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{group___c_m_s_i_s___s_c_b_ga139979e66cefc212dd436d82f720c0f4} 
+\#define MEMSYSCTL\+\_\+\+MSCR\+\_\+\+ICACTIVE\+\_\+\+Pos~13U}
+
+MEMSYSCTL MSCR\+: ICACTIVE Position \Hypertarget{group___c_m_s_i_s___s_c_b_ga139979e66cefc212dd436d82f720c0f4}\index{Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}!MEMSYSCTL\_MSCR\_ICACTIVE\_Pos@{MEMSYSCTL\_MSCR\_ICACTIVE\_Pos}}
+\index{MEMSYSCTL\_MSCR\_ICACTIVE\_Pos@{MEMSYSCTL\_MSCR\_ICACTIVE\_Pos}!Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}}
+\doxysubsubsubsubsubsubsubsubsubsubsection{\texorpdfstring{MEMSYSCTL\_MSCR\_ICACTIVE\_Pos}{MEMSYSCTL\_MSCR\_ICACTIVE\_Pos}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{group___c_m_s_i_s___s_c_b_ga139979e66cefc212dd436d82f720c0f4} 
+\#define MEMSYSCTL\+\_\+\+MSCR\+\_\+\+ICACTIVE\+\_\+\+Pos~13U}
+
+MEMSYSCTL MSCR\+: ICACTIVE Position \Hypertarget{group___mem_sys_ctl___type_ga083f5198b8d74b33d8600c799f09695c}\index{Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}!MEMSYSCTL\_MSCR\_TECCCHKDIS\_Msk@{MEMSYSCTL\_MSCR\_TECCCHKDIS\_Msk}}
+\index{MEMSYSCTL\_MSCR\_TECCCHKDIS\_Msk@{MEMSYSCTL\_MSCR\_TECCCHKDIS\_Msk}!Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}}
+\doxysubsubsubsubsubsubsubsubsubsubsection{\texorpdfstring{MEMSYSCTL\_MSCR\_TECCCHKDIS\_Msk}{MEMSYSCTL\_MSCR\_TECCCHKDIS\_Msk}}
+{\footnotesize\ttfamily \label{group___mem_sys_ctl___type_ga083f5198b8d74b33d8600c799f09695c} 
+\#define MEMSYSCTL\+\_\+\+MSCR\+\_\+\+TECCCHKDIS\+\_\+\+Msk~(0x1\+UL $<$$<$ \mbox{\hyperlink{group___mem_sys_ctl___type_ga601aa3c6483f8ffaf27ca303bd62a1fa}{MEMSYSCTL\+\_\+\+MSCR\+\_\+\+TECCCHKDIS\+\_\+\+Pos}})}
+
+MEMSYSCTL MSCR\+: TECCCHKDIS Mask \Hypertarget{group___mem_sys_ctl___type_ga601aa3c6483f8ffaf27ca303bd62a1fa}\index{Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}!MEMSYSCTL\_MSCR\_TECCCHKDIS\_Pos@{MEMSYSCTL\_MSCR\_TECCCHKDIS\_Pos}}
+\index{MEMSYSCTL\_MSCR\_TECCCHKDIS\_Pos@{MEMSYSCTL\_MSCR\_TECCCHKDIS\_Pos}!Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}}
+\doxysubsubsubsubsubsubsubsubsubsubsection{\texorpdfstring{MEMSYSCTL\_MSCR\_TECCCHKDIS\_Pos}{MEMSYSCTL\_MSCR\_TECCCHKDIS\_Pos}}
+{\footnotesize\ttfamily \label{group___mem_sys_ctl___type_ga601aa3c6483f8ffaf27ca303bd62a1fa} 
+\#define MEMSYSCTL\+\_\+\+MSCR\+\_\+\+TECCCHKDIS\+\_\+\+Pos~4U}
+
+MEMSYSCTL MSCR\+: TECCCHKDIS Position \Hypertarget{group___c_m_s_i_s___s_c_b_gaf8605c8523ca1b463cea7d488e147797}\index{Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}!MEMSYSCTL\_PAHBCR\_EN\_Msk@{MEMSYSCTL\_PAHBCR\_EN\_Msk}}
+\index{MEMSYSCTL\_PAHBCR\_EN\_Msk@{MEMSYSCTL\_PAHBCR\_EN\_Msk}!Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}}
+\doxysubsubsubsubsubsubsubsubsubsubsection{\texorpdfstring{MEMSYSCTL\_PAHBCR\_EN\_Msk}{MEMSYSCTL\_PAHBCR\_EN\_Msk}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{group___c_m_s_i_s___s_c_b_gaf8605c8523ca1b463cea7d488e147797} 
+\#define MEMSYSCTL\+\_\+\+PAHBCR\+\_\+\+EN\+\_\+\+Msk~(0x1\+UL /\texorpdfstring{$\ast$}{*}$<$$<$ \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga1ecaa54f33f736bb4e93030db1c83e02}{MEMSYSCTL\+\_\+\+PAHBCR\+\_\+\+EN\+\_\+\+Pos}}\texorpdfstring{$\ast$}{*}/)}
+
+MEMSYSCTL PAHBCR\+: EN Mask \Hypertarget{group___c_m_s_i_s___s_c_b_gaf8605c8523ca1b463cea7d488e147797}\index{Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}!MEMSYSCTL\_PAHBCR\_EN\_Msk@{MEMSYSCTL\_PAHBCR\_EN\_Msk}}
+\index{MEMSYSCTL\_PAHBCR\_EN\_Msk@{MEMSYSCTL\_PAHBCR\_EN\_Msk}!Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}}
+\doxysubsubsubsubsubsubsubsubsubsubsection{\texorpdfstring{MEMSYSCTL\_PAHBCR\_EN\_Msk}{MEMSYSCTL\_PAHBCR\_EN\_Msk}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{group___c_m_s_i_s___s_c_b_gaf8605c8523ca1b463cea7d488e147797} 
+\#define MEMSYSCTL\+\_\+\+PAHBCR\+\_\+\+EN\+\_\+\+Msk~(0x1\+UL /\texorpdfstring{$\ast$}{*}$<$$<$ \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga1ecaa54f33f736bb4e93030db1c83e02}{MEMSYSCTL\+\_\+\+PAHBCR\+\_\+\+EN\+\_\+\+Pos}}\texorpdfstring{$\ast$}{*}/)}
+
+MEMSYSCTL PAHBCR\+: EN Mask \Hypertarget{group___c_m_s_i_s___s_c_b_ga1ecaa54f33f736bb4e93030db1c83e02}\index{Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}!MEMSYSCTL\_PAHBCR\_EN\_Pos@{MEMSYSCTL\_PAHBCR\_EN\_Pos}}
+\index{MEMSYSCTL\_PAHBCR\_EN\_Pos@{MEMSYSCTL\_PAHBCR\_EN\_Pos}!Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}}
+\doxysubsubsubsubsubsubsubsubsubsubsection{\texorpdfstring{MEMSYSCTL\_PAHBCR\_EN\_Pos}{MEMSYSCTL\_PAHBCR\_EN\_Pos}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{group___c_m_s_i_s___s_c_b_ga1ecaa54f33f736bb4e93030db1c83e02} 
+\#define MEMSYSCTL\+\_\+\+PAHBCR\+\_\+\+EN\+\_\+\+Pos~0U}
+
+MEMSYSCTL PAHBCR\+: EN Position \Hypertarget{group___c_m_s_i_s___s_c_b_ga1ecaa54f33f736bb4e93030db1c83e02}\index{Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}!MEMSYSCTL\_PAHBCR\_EN\_Pos@{MEMSYSCTL\_PAHBCR\_EN\_Pos}}
+\index{MEMSYSCTL\_PAHBCR\_EN\_Pos@{MEMSYSCTL\_PAHBCR\_EN\_Pos}!Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}}
+\doxysubsubsubsubsubsubsubsubsubsubsection{\texorpdfstring{MEMSYSCTL\_PAHBCR\_EN\_Pos}{MEMSYSCTL\_PAHBCR\_EN\_Pos}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{group___c_m_s_i_s___s_c_b_ga1ecaa54f33f736bb4e93030db1c83e02} 
+\#define MEMSYSCTL\+\_\+\+PAHBCR\+\_\+\+EN\+\_\+\+Pos~0U}
+
+MEMSYSCTL PAHBCR\+: EN Position \Hypertarget{group___c_m_s_i_s___s_c_b_gacbbc1e6e548e918a638ec1971e6b71dc}\index{Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}!MEMSYSCTL\_PAHBCR\_SZ\_Msk@{MEMSYSCTL\_PAHBCR\_SZ\_Msk}}
+\index{MEMSYSCTL\_PAHBCR\_SZ\_Msk@{MEMSYSCTL\_PAHBCR\_SZ\_Msk}!Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}}
+\doxysubsubsubsubsubsubsubsubsubsubsection{\texorpdfstring{MEMSYSCTL\_PAHBCR\_SZ\_Msk}{MEMSYSCTL\_PAHBCR\_SZ\_Msk}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{group___c_m_s_i_s___s_c_b_gacbbc1e6e548e918a638ec1971e6b71dc} 
+\#define MEMSYSCTL\+\_\+\+PAHBCR\+\_\+\+SZ\+\_\+\+Msk~(0x7\+UL $<$$<$ \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga867352187f2aaa0992cc3d60c86b8e51}{MEMSYSCTL\+\_\+\+PAHBCR\+\_\+\+SZ\+\_\+\+Pos}})}
+
+MEMSYSCTL PAHBCR\+: SZ Mask \Hypertarget{group___c_m_s_i_s___s_c_b_gacbbc1e6e548e918a638ec1971e6b71dc}\index{Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}!MEMSYSCTL\_PAHBCR\_SZ\_Msk@{MEMSYSCTL\_PAHBCR\_SZ\_Msk}}
+\index{MEMSYSCTL\_PAHBCR\_SZ\_Msk@{MEMSYSCTL\_PAHBCR\_SZ\_Msk}!Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}}
+\doxysubsubsubsubsubsubsubsubsubsubsection{\texorpdfstring{MEMSYSCTL\_PAHBCR\_SZ\_Msk}{MEMSYSCTL\_PAHBCR\_SZ\_Msk}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{group___c_m_s_i_s___s_c_b_gacbbc1e6e548e918a638ec1971e6b71dc} 
+\#define MEMSYSCTL\+\_\+\+PAHBCR\+\_\+\+SZ\+\_\+\+Msk~(0x7\+UL $<$$<$ \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga867352187f2aaa0992cc3d60c86b8e51}{MEMSYSCTL\+\_\+\+PAHBCR\+\_\+\+SZ\+\_\+\+Pos}})}
+
+MEMSYSCTL PAHBCR\+: SZ Mask \Hypertarget{group___c_m_s_i_s___s_c_b_ga867352187f2aaa0992cc3d60c86b8e51}\index{Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}!MEMSYSCTL\_PAHBCR\_SZ\_Pos@{MEMSYSCTL\_PAHBCR\_SZ\_Pos}}
+\index{MEMSYSCTL\_PAHBCR\_SZ\_Pos@{MEMSYSCTL\_PAHBCR\_SZ\_Pos}!Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}}
+\doxysubsubsubsubsubsubsubsubsubsubsection{\texorpdfstring{MEMSYSCTL\_PAHBCR\_SZ\_Pos}{MEMSYSCTL\_PAHBCR\_SZ\_Pos}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{group___c_m_s_i_s___s_c_b_ga867352187f2aaa0992cc3d60c86b8e51} 
+\#define MEMSYSCTL\+\_\+\+PAHBCR\+\_\+\+SZ\+\_\+\+Pos~1U}
+
+MEMSYSCTL PAHBCR\+: SZ Position \Hypertarget{group___c_m_s_i_s___s_c_b_ga867352187f2aaa0992cc3d60c86b8e51}\index{Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}!MEMSYSCTL\_PAHBCR\_SZ\_Pos@{MEMSYSCTL\_PAHBCR\_SZ\_Pos}}
+\index{MEMSYSCTL\_PAHBCR\_SZ\_Pos@{MEMSYSCTL\_PAHBCR\_SZ\_Pos}!Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}}
+\doxysubsubsubsubsubsubsubsubsubsubsection{\texorpdfstring{MEMSYSCTL\_PAHBCR\_SZ\_Pos}{MEMSYSCTL\_PAHBCR\_SZ\_Pos}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{group___c_m_s_i_s___s_c_b_ga867352187f2aaa0992cc3d60c86b8e51} 
+\#define MEMSYSCTL\+\_\+\+PAHBCR\+\_\+\+SZ\+\_\+\+Pos~1U}
+
+MEMSYSCTL PAHBCR\+: SZ Position \Hypertarget{group___c_m_s_i_s___s_c_b_ga2c3438255efb22a45f5d4dede50f52e8}\index{Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}!MEMSYSCTL\_PFCR\_DIS\_NLP\_Msk@{MEMSYSCTL\_PFCR\_DIS\_NLP\_Msk}}
+\index{MEMSYSCTL\_PFCR\_DIS\_NLP\_Msk@{MEMSYSCTL\_PFCR\_DIS\_NLP\_Msk}!Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}}
+\doxysubsubsubsubsubsubsubsubsubsubsection{\texorpdfstring{MEMSYSCTL\_PFCR\_DIS\_NLP\_Msk}{MEMSYSCTL\_PFCR\_DIS\_NLP\_Msk}}
+{\footnotesize\ttfamily \label{group___c_m_s_i_s___s_c_b_ga2c3438255efb22a45f5d4dede50f52e8} 
+\#define MEMSYSCTL\+\_\+\+PFCR\+\_\+\+DIS\+\_\+\+NLP\+\_\+\+Msk~(0x1\+UL $<$$<$ \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_gad9770e0012357e9584cb3d7703ef4689}{MEMSYSCTL\+\_\+\+PFCR\+\_\+\+DIS\+\_\+\+NLP\+\_\+\+Pos}})}
+
+MEMSYSCTL PFCR\+: DIS\+\_\+\+NLP Mask \Hypertarget{group___c_m_s_i_s___s_c_b_gad9770e0012357e9584cb3d7703ef4689}\index{Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}!MEMSYSCTL\_PFCR\_DIS\_NLP\_Pos@{MEMSYSCTL\_PFCR\_DIS\_NLP\_Pos}}
+\index{MEMSYSCTL\_PFCR\_DIS\_NLP\_Pos@{MEMSYSCTL\_PFCR\_DIS\_NLP\_Pos}!Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}}
+\doxysubsubsubsubsubsubsubsubsubsubsection{\texorpdfstring{MEMSYSCTL\_PFCR\_DIS\_NLP\_Pos}{MEMSYSCTL\_PFCR\_DIS\_NLP\_Pos}}
+{\footnotesize\ttfamily \label{group___c_m_s_i_s___s_c_b_gad9770e0012357e9584cb3d7703ef4689} 
+\#define MEMSYSCTL\+\_\+\+PFCR\+\_\+\+DIS\+\_\+\+NLP\+\_\+\+Pos~7U}
+
+MEMSYSCTL PFCR\+: DIS\+\_\+\+NLP Position \Hypertarget{group___c_m_s_i_s___s_c_b_ga6ea490292987b35e18f2a8033d7e70c7}\index{Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}!MEMSYSCTL\_PFCR\_ENABLE\_Msk@{MEMSYSCTL\_PFCR\_ENABLE\_Msk}}
+\index{MEMSYSCTL\_PFCR\_ENABLE\_Msk@{MEMSYSCTL\_PFCR\_ENABLE\_Msk}!Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}}
+\doxysubsubsubsubsubsubsubsubsubsubsection{\texorpdfstring{MEMSYSCTL\_PFCR\_ENABLE\_Msk}{MEMSYSCTL\_PFCR\_ENABLE\_Msk}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{group___c_m_s_i_s___s_c_b_ga6ea490292987b35e18f2a8033d7e70c7} 
+\#define MEMSYSCTL\+\_\+\+PFCR\+\_\+\+ENABLE\+\_\+\+Msk~(0x1\+UL /\texorpdfstring{$\ast$}{*}$<$$<$ \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga4e2faf9b3871f7ff24c67743c92d3572}{MEMSYSCTL\+\_\+\+PFCR\+\_\+\+ENABLE\+\_\+\+Pos}}\texorpdfstring{$\ast$}{*}/)}
+
+MEMSYSCTL PFCR\+: ENABLE Mask \Hypertarget{group___c_m_s_i_s___s_c_b_ga6ea490292987b35e18f2a8033d7e70c7}\index{Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}!MEMSYSCTL\_PFCR\_ENABLE\_Msk@{MEMSYSCTL\_PFCR\_ENABLE\_Msk}}
+\index{MEMSYSCTL\_PFCR\_ENABLE\_Msk@{MEMSYSCTL\_PFCR\_ENABLE\_Msk}!Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}}
+\doxysubsubsubsubsubsubsubsubsubsubsection{\texorpdfstring{MEMSYSCTL\_PFCR\_ENABLE\_Msk}{MEMSYSCTL\_PFCR\_ENABLE\_Msk}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{group___c_m_s_i_s___s_c_b_ga6ea490292987b35e18f2a8033d7e70c7} 
+\#define MEMSYSCTL\+\_\+\+PFCR\+\_\+\+ENABLE\+\_\+\+Msk~(0x1\+UL /\texorpdfstring{$\ast$}{*}$<$$<$ \mbox{\hyperlink{group___c_m_s_i_s___s_c_b_ga4e2faf9b3871f7ff24c67743c92d3572}{MEMSYSCTL\+\_\+\+PFCR\+\_\+\+ENABLE\+\_\+\+Pos}}\texorpdfstring{$\ast$}{*}/)}
+
+MEMSYSCTL PFCR\+: ENABLE Mask \Hypertarget{group___c_m_s_i_s___s_c_b_ga4e2faf9b3871f7ff24c67743c92d3572}\index{Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}!MEMSYSCTL\_PFCR\_ENABLE\_Pos@{MEMSYSCTL\_PFCR\_ENABLE\_Pos}}
+\index{MEMSYSCTL\_PFCR\_ENABLE\_Pos@{MEMSYSCTL\_PFCR\_ENABLE\_Pos}!Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}}
+\doxysubsubsubsubsubsubsubsubsubsubsection{\texorpdfstring{MEMSYSCTL\_PFCR\_ENABLE\_Pos}{MEMSYSCTL\_PFCR\_ENABLE\_Pos}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{group___c_m_s_i_s___s_c_b_ga4e2faf9b3871f7ff24c67743c92d3572} 
+\#define MEMSYSCTL\+\_\+\+PFCR\+\_\+\+ENABLE\+\_\+\+Pos~0U}
+
+MEMSYSCTL PFCR\+: ENABLE Position \Hypertarget{group___c_m_s_i_s___s_c_b_ga4e2faf9b3871f7ff24c67743c92d3572}\index{Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}!MEMSYSCTL\_PFCR\_ENABLE\_Pos@{MEMSYSCTL\_PFCR\_ENABLE\_Pos}}
+\index{MEMSYSCTL\_PFCR\_ENABLE\_Pos@{MEMSYSCTL\_PFCR\_ENABLE\_Pos}!Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}}
+\doxysubsubsubsubsubsubsubsubsubsubsection{\texorpdfstring{MEMSYSCTL\_PFCR\_ENABLE\_Pos}{MEMSYSCTL\_PFCR\_ENABLE\_Pos}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{group___c_m_s_i_s___s_c_b_ga4e2faf9b3871f7ff24c67743c92d3572} 
+\#define MEMSYSCTL\+\_\+\+PFCR\+\_\+\+ENABLE\+\_\+\+Pos~0U}
+
+MEMSYSCTL PFCR\+: ENABLE Position \Hypertarget{group___mem_sys_ctl___type_gab57ea85aa86fcff1d57404329a53d8c5}\index{Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}!MEMSYSCTL\_PFCR\_MAX\_LA\_Msk@{MEMSYSCTL\_PFCR\_MAX\_LA\_Msk}}
+\index{MEMSYSCTL\_PFCR\_MAX\_LA\_Msk@{MEMSYSCTL\_PFCR\_MAX\_LA\_Msk}!Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}}
+\doxysubsubsubsubsubsubsubsubsubsubsection{\texorpdfstring{MEMSYSCTL\_PFCR\_MAX\_LA\_Msk}{MEMSYSCTL\_PFCR\_MAX\_LA\_Msk}}
+{\footnotesize\ttfamily \label{group___mem_sys_ctl___type_gab57ea85aa86fcff1d57404329a53d8c5} 
+\#define MEMSYSCTL\+\_\+\+PFCR\+\_\+\+MAX\+\_\+\+LA\+\_\+\+Msk~(0x7\+UL $<$$<$ \mbox{\hyperlink{group___mem_sys_ctl___type_gac8627f294b3d6f44f8bf55a8930d5e9f}{MEMSYSCTL\+\_\+\+PFCR\+\_\+\+MAX\+\_\+\+LA\+\_\+\+Pos}})}
+
+MEMSYSCTL PFCR\+: MAX\+\_\+\+LA Mask \Hypertarget{group___mem_sys_ctl___type_gac8627f294b3d6f44f8bf55a8930d5e9f}\index{Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}!MEMSYSCTL\_PFCR\_MAX\_LA\_Pos@{MEMSYSCTL\_PFCR\_MAX\_LA\_Pos}}
+\index{MEMSYSCTL\_PFCR\_MAX\_LA\_Pos@{MEMSYSCTL\_PFCR\_MAX\_LA\_Pos}!Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}}
+\doxysubsubsubsubsubsubsubsubsubsubsection{\texorpdfstring{MEMSYSCTL\_PFCR\_MAX\_LA\_Pos}{MEMSYSCTL\_PFCR\_MAX\_LA\_Pos}}
+{\footnotesize\ttfamily \label{group___mem_sys_ctl___type_gac8627f294b3d6f44f8bf55a8930d5e9f} 
+\#define MEMSYSCTL\+\_\+\+PFCR\+\_\+\+MAX\+\_\+\+LA\+\_\+\+Pos~4U}
+
+MEMSYSCTL PFCR\+: MAX\+\_\+\+LA Position \Hypertarget{group___mem_sys_ctl___type_gafd79fa6673995113b63565a187a53c7e}\index{Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}!MEMSYSCTL\_PFCR\_MAX\_OS\_Msk@{MEMSYSCTL\_PFCR\_MAX\_OS\_Msk}}
+\index{MEMSYSCTL\_PFCR\_MAX\_OS\_Msk@{MEMSYSCTL\_PFCR\_MAX\_OS\_Msk}!Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}}
+\doxysubsubsubsubsubsubsubsubsubsubsection{\texorpdfstring{MEMSYSCTL\_PFCR\_MAX\_OS\_Msk}{MEMSYSCTL\_PFCR\_MAX\_OS\_Msk}}
+{\footnotesize\ttfamily \label{group___mem_sys_ctl___type_gafd79fa6673995113b63565a187a53c7e} 
+\#define MEMSYSCTL\+\_\+\+PFCR\+\_\+\+MAX\+\_\+\+OS\+\_\+\+Msk~(0x7\+UL $<$$<$ \mbox{\hyperlink{group___mem_sys_ctl___type_gab2eea483cf56776fc2dbaf40e51ec425}{MEMSYSCTL\+\_\+\+PFCR\+\_\+\+MAX\+\_\+\+OS\+\_\+\+Pos}})}
+
+MEMSYSCTL PFCR\+: MAX\+\_\+\+OS Mask \Hypertarget{group___mem_sys_ctl___type_gab2eea483cf56776fc2dbaf40e51ec425}\index{Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}!MEMSYSCTL\_PFCR\_MAX\_OS\_Pos@{MEMSYSCTL\_PFCR\_MAX\_OS\_Pos}}
+\index{MEMSYSCTL\_PFCR\_MAX\_OS\_Pos@{MEMSYSCTL\_PFCR\_MAX\_OS\_Pos}!Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}}
+\doxysubsubsubsubsubsubsubsubsubsubsection{\texorpdfstring{MEMSYSCTL\_PFCR\_MAX\_OS\_Pos}{MEMSYSCTL\_PFCR\_MAX\_OS\_Pos}}
+{\footnotesize\ttfamily \label{group___mem_sys_ctl___type_gab2eea483cf56776fc2dbaf40e51ec425} 
+\#define MEMSYSCTL\+\_\+\+PFCR\+\_\+\+MAX\+\_\+\+OS\+\_\+\+Pos~7U}
+
+MEMSYSCTL PFCR\+: MAX\+\_\+\+OS Position \Hypertarget{group___mem_sys_ctl___type_gad8d69b6364af822e73b7ebdc4e2cd76c}\index{Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}!MEMSYSCTL\_PFCR\_MIN\_LA\_Msk@{MEMSYSCTL\_PFCR\_MIN\_LA\_Msk}}
+\index{MEMSYSCTL\_PFCR\_MIN\_LA\_Msk@{MEMSYSCTL\_PFCR\_MIN\_LA\_Msk}!Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}}
+\doxysubsubsubsubsubsubsubsubsubsubsection{\texorpdfstring{MEMSYSCTL\_PFCR\_MIN\_LA\_Msk}{MEMSYSCTL\_PFCR\_MIN\_LA\_Msk}}
+{\footnotesize\ttfamily \label{group___mem_sys_ctl___type_gad8d69b6364af822e73b7ebdc4e2cd76c} 
+\#define MEMSYSCTL\+\_\+\+PFCR\+\_\+\+MIN\+\_\+\+LA\+\_\+\+Msk~(0x7\+UL $<$$<$ \mbox{\hyperlink{group___mem_sys_ctl___type_gac9684ef586a162f469cf8a1265cb4b5b}{MEMSYSCTL\+\_\+\+PFCR\+\_\+\+MIN\+\_\+\+LA\+\_\+\+Pos}})}
+
+MEMSYSCTL PFCR\+: MIN\+\_\+\+LA Mask \Hypertarget{group___mem_sys_ctl___type_gac9684ef586a162f469cf8a1265cb4b5b}\index{Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}!MEMSYSCTL\_PFCR\_MIN\_LA\_Pos@{MEMSYSCTL\_PFCR\_MIN\_LA\_Pos}}
+\index{MEMSYSCTL\_PFCR\_MIN\_LA\_Pos@{MEMSYSCTL\_PFCR\_MIN\_LA\_Pos}!Memory System Control Registers (IMPLEMENTATION DEFINED)@{Memory System Control Registers (IMPLEMENTATION DEFINED)}}
+\doxysubsubsubsubsubsubsubsubsubsubsection{\texorpdfstring{MEMSYSCTL\_PFCR\_MIN\_LA\_Pos}{MEMSYSCTL\_PFCR\_MIN\_LA\_Pos}}
+{\footnotesize\ttfamily \label{group___mem_sys_ctl___type_gac9684ef586a162f469cf8a1265cb4b5b} 
+\#define MEMSYSCTL\+\_\+\+PFCR\+\_\+\+MIN\+\_\+\+LA\+\_\+\+Pos~1U}
+
+MEMSYSCTL PFCR\+: MIN\+\_\+\+LA Position \input{group___pwr_mod_ctl___type}

@@ -192,7 +192,7 @@ Aaron Lubinsky
 This driver implements PID-\/based motor control for a quadcopter ESC system. It provides functionality to arm ESCs and update motor speeds based on roll, pitch, and yaw control inputs using PID control algorithms.
 
 \DoxyHorRuler{0}
- \hypertarget{_e_s_c_8c_autotoc_md3}{}\doxysubsection{\texorpdfstring{\#\#\#\#\# How to use this driver \#\#\#\#\#}{\#\#\#\#\# How to use this driver \#\#\#\#\#}}\label{_e_s_c_8c_autotoc_md3}
+ \hypertarget{_e_s_c_8c_autotoc_md5}{}\doxysubsection{\texorpdfstring{\#\#\#\#\# How to use this driver \#\#\#\#\#}{\#\#\#\#\# How to use this driver \#\#\#\#\#}}\label{_e_s_c_8c_autotoc_md5}
 
 \begin{DoxyEnumerate}
 \item Call \doxylink{_e_s_c_8c_a54963d29d4caf06cd558dd118520737f}{arm\+ESC()} to initialize and arm all ESC motors
@@ -230,11 +230,13 @@ Used to maintain precision in PID calculations while using integer math
 \index{armESC@{armESC}!ESC.c@{ESC.c}}
 \doxysubsubsection{\texorpdfstring{armESC()}{armESC()}}
 {\footnotesize\ttfamily \label{_e_s_c_8c_a54963d29d4caf06cd558dd118520737f} 
-void arm\+ESC (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+void arm\+ESC (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
 
 
 
 Arms all ESC motors by sending initialization sequence. 
+
+Arms the ESCs with a minimum throttle signal.
 
 This function sends the proper PWM signals to arm all four ESC motors. It starts PWM generation on all channels and sends a specific pulse width (approximately 1000μs) to arm the ESCs. The function continues until the roll\+\_\+set value reaches a threshold, indicating the system is ready.
 
@@ -245,17 +247,19 @@ This function blocks execution until arming is complete
 Ensure motors are properly secured before calling this function
 \end{DoxyWarning}
 \begin{DoxySeeAlso}{See also}
-\doxylink{_e_s_c_8c_adf18312a6633c434fac75e4bf7f91a15}{update\+\_\+\+Motors()} 
+\doxylink{_e_s_c_8h_a37829b14100fdc7ade2b050b5f2e0199}{update\+\_\+\+Motors()} 
 \end{DoxySeeAlso}
 \Hypertarget{_e_s_c_8c_adf18312a6633c434fac75e4bf7f91a15}\index{ESC.c@{ESC.c}!update\_Motors@{update\_Motors}}
 \index{update\_Motors@{update\_Motors}!ESC.c@{ESC.c}}
 \doxysubsubsection{\texorpdfstring{update\_Motors()}{update\_Motors()}}
 {\footnotesize\ttfamily \label{_e_s_c_8c_adf18312a6633c434fac75e4bf7f91a15} 
-void update\+\_\+\+Motors (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+void update\+\_\+\+Motors (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
 
 
 
 Updates all motor speeds based on PID control calculations. 
+
+Updates the motor speeds based on control inputs.
 
 This function performs the main control loop operation\+:
 \begin{DoxyEnumerate}
@@ -284,7 +288,7 @@ Function should be called at regular intervals (typically 1k\+Hz)
 
 \end{DoxyWarning}
 \begin{DoxySeeAlso}{See also}
-\doxylink{_e_s_c_8c_a54963d29d4caf06cd558dd118520737f}{arm\+ESC()} 
+\doxylink{_e_s_c_8h_a3d61e8556d773eec7ce6d53f546efc45}{arm\+ESC()} 
 \end{DoxySeeAlso}
 
 

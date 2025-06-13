@@ -1,0 +1,764 @@
+\doxysection{Topics}
+Here is a list of all topics with brief descriptions\+:\begin{DoxyCompactList}
+\item \contentsline{section}{CMSIS Core Instruction Interface}{\pageref{group___c_m_s_i_s___core___instruction_interface}}{}
+\begin{DoxyCompactList}
+\item \contentsline{section}{CMSIS Core Register Access Functions}{\pageref{group___c_m_s_i_s___core___reg_acc_functions}}{}
+\begin{DoxyCompactList}
+\item \contentsline{section}{CMSIS SIMD Intrinsics}{\pageref{group___c_m_s_i_s___s_i_m_d__intrinsics}}{}
+\end{DoxyCompactList}
+\end{DoxyCompactList}
+\item \contentsline{section}{CMSIS Global Defines}{\pageref{group___c_m_s_i_s__glob__defs}}{}
+\item \contentsline{section}{Defines and Type Definitions}{\pageref{group___c_m_s_i_s__core__register}}{}
+\begin{DoxyCompactList}
+\item \contentsline{section}{Status and Control Registers}{\pageref{group___c_m_s_i_s___c_o_r_e}}{}
+\begin{DoxyCompactList}
+\item \contentsline{section}{Nested Vectored Interrupt Controller (NVIC)}{\pageref{group___c_m_s_i_s___n_v_i_c}}{}
+\begin{DoxyCompactList}
+\item \contentsline{section}{System Control Block (SCB)}{\pageref{group___c_m_s_i_s___s_c_b}}{}
+\begin{DoxyCompactList}
+\item \contentsline{section}{System Controls not in SCB (SCn\+SCB)}{\pageref{group___c_m_s_i_s___s_cn_s_c_b}}{}
+\begin{DoxyCompactList}
+\item \contentsline{section}{System Tick Timer (Sys\+Tick)}{\pageref{group___c_m_s_i_s___sys_tick}}{}
+\item \contentsline{section}{Instrumentation Trace Macrocell (ITM)}{\pageref{group___c_m_s_i_s___i_t_m}}{}
+\item \contentsline{section}{Data Watchpoint and Trace (DWT)}{\pageref{group___c_m_s_i_s___d_w_t}}{}
+\item \contentsline{section}{Trace Port Interface (TPI)}{\pageref{group___c_m_s_i_s___t_p_i}}{}
+\item \contentsline{section}{Memory Protection Unit (MPU)}{\pageref{group___c_m_s_i_s___m_p_u}}{}
+\item \contentsline{section}{Floating Point Unit (FPU)}{\pageref{group___c_m_s_i_s___f_p_u}}{}
+\item \contentsline{section}{Core Debug Registers (Core\+Debug)}{\pageref{group___c_m_s_i_s___core_debug}}{}
+\item \contentsline{section}{Debug Control Block}{\pageref{group___c_m_s_i_s___d_c_b}}{}
+\item \contentsline{section}{Debug Identification Block}{\pageref{group___c_m_s_i_s___d_i_b}}{}
+\item \contentsline{section}{Core register bit field macros}{\pageref{group___c_m_s_i_s__core__bitfield}}{}
+\item \contentsline{section}{Core Definitions}{\pageref{group___c_m_s_i_s__core__base}}{}
+\item \contentsline{section}{Backwards Compatibility Aliases}{\pageref{group___c_m_s_i_s__register__aliases}}{}
+\item \contentsline{section}{Functions and Instructions Reference}{\pageref{group___c_m_s_i_s___core___function_interface}}{}
+\item \contentsline{section}{Cache Functions}{\pageref{group___c_m_s_i_s___core___cache_functions}}{}
+\item \contentsline{section}{CMSIS Core Register Access Functions}{\pageref{group___c_m_s_i_s___core___reg_acc_functions}}{}
+\item \contentsline{section}{CMSIS SIMD Intrinsics}{\pageref{group___c_m_s_i_s___s_i_m_d__intrinsics}}{}
+\item \contentsline{section}{NVIC Functions}{\pageref{group___c_m_s_i_s___core___n_v_i_c_functions}}{}
+\item \contentsline{section}{FPU Functions}{\pageref{group___c_m_s_i_s___core___fpu_functions}}{}
+\item \contentsline{section}{MVE Functions}{\pageref{group___c_m_s_i_s___core___mve_functions}}{}
+\item \contentsline{section}{PAC Key functions}{\pageref{group___c_m_s_i_s___core___pac_key_functions}}{}
+\item \contentsline{section}{NVIC Functions}{\pageref{group___c_m_s_i_s___core___n_v_i_c_functions}}{}
+\item \contentsline{section}{FPU Functions}{\pageref{group___c_m_s_i_s___core___fpu_functions}}{}
+\item \contentsline{section}{MVE Functions}{\pageref{group___c_m_s_i_s___core___mve_functions}}{}
+\item \contentsline{section}{SAU Functions}{\pageref{group___c_m_s_i_s___core___s_a_u_functions}}{}
+\item \contentsline{section}{Memory System Control Registers (IMPLEMENTATION DEFINED)}{\pageref{group___mem_sys_ctl___type}}{}
+\item \contentsline{section}{Power Mode Control Registers}{\pageref{group___pwr_mod_ctl___type}}{}
+\item \contentsline{section}{External Wakeup Interrupt Controller Registers}{\pageref{group___e_w_i_c___type}}{}
+\item \contentsline{section}{Error Banking Registers (IMPLEMENTATION DEFINED)}{\pageref{group___err_bnk___type}}{}
+\item \contentsline{section}{Processor Configuration Information Registers (IMPLEMENTATION DEFINED)}{\pageref{group___prc_cfg_inf___type}}{}
+\item \contentsline{section}{Software Test Library Observation Registers}{\pageref{group___s_t_l___type}}{}
+\item \contentsline{section}{Trace Port Interface (TPI)}{\pageref{group___c_m_s_i_s___t_p_i}}{}
+\item \contentsline{section}{Memory Protection Unit (MPU)}{\pageref{group___c_m_s_i_s___m_p_u}}{}
+\item \contentsline{section}{Floating Point Unit (FPU)}{\pageref{group___c_m_s_i_s___f_p_u}}{}
+\item \contentsline{section}{Core Debug Registers (Core\+Debug)}{\pageref{group___c_m_s_i_s___core_debug}}{}
+\item \contentsline{section}{Debug Control Block}{\pageref{group___c_m_s_i_s___d_c_b}}{}
+\item \contentsline{section}{Debug Identification Block}{\pageref{group___c_m_s_i_s___d_i_b}}{}
+\item \contentsline{section}{Core register bit field macros}{\pageref{group___c_m_s_i_s__core__bitfield}}{}
+\end{DoxyCompactList}
+\item \contentsline{section}{Implementation Control Block register (ICB)}{\pageref{group___c_m_s_i_s___i_c_b}}{}
+\begin{DoxyCompactList}
+\item \contentsline{section}{System Tick Timer (Sys\+Tick)}{\pageref{group___c_m_s_i_s___sys_tick}}{}
+\item \contentsline{section}{Instrumentation Trace Macrocell (ITM)}{\pageref{group___c_m_s_i_s___i_t_m}}{}
+\item \contentsline{section}{Data Watchpoint and Trace (DWT)}{\pageref{group___c_m_s_i_s___d_w_t}}{}
+\item \contentsline{section}{Trace Port Interface (TPI)}{\pageref{group___c_m_s_i_s___t_p_i}}{}
+\item \contentsline{section}{Memory Protection Unit (MPU)}{\pageref{group___c_m_s_i_s___m_p_u}}{}
+\item \contentsline{section}{Floating Point Unit (FPU)}{\pageref{group___c_m_s_i_s___f_p_u}}{}
+\item \contentsline{section}{Core Debug Registers (Core\+Debug)}{\pageref{group___c_m_s_i_s___core_debug}}{}
+\item \contentsline{section}{Debug Control Block}{\pageref{group___c_m_s_i_s___d_c_b}}{}
+\item \contentsline{section}{Debug Identification Block}{\pageref{group___c_m_s_i_s___d_i_b}}{}
+\item \contentsline{section}{Core register bit field macros}{\pageref{group___c_m_s_i_s__core__bitfield}}{}
+\item \contentsline{section}{Core Definitions}{\pageref{group___c_m_s_i_s__core__base}}{}
+\item \contentsline{section}{Backwards Compatibility Aliases}{\pageref{group___c_m_s_i_s__register__aliases}}{}
+\item \contentsline{section}{Functions and Instructions Reference}{\pageref{group___c_m_s_i_s___core___function_interface}}{}
+\item \contentsline{section}{Cache Functions}{\pageref{group___c_m_s_i_s___core___cache_functions}}{}
+\item \contentsline{section}{CMSIS Core Register Access Functions}{\pageref{group___c_m_s_i_s___core___reg_acc_functions}}{}
+\item \contentsline{section}{CMSIS SIMD Intrinsics}{\pageref{group___c_m_s_i_s___s_i_m_d__intrinsics}}{}
+\item \contentsline{section}{NVIC Functions}{\pageref{group___c_m_s_i_s___core___n_v_i_c_functions}}{}
+\item \contentsline{section}{FPU Functions}{\pageref{group___c_m_s_i_s___core___fpu_functions}}{}
+\item \contentsline{section}{MVE Functions}{\pageref{group___c_m_s_i_s___core___mve_functions}}{}
+\item \contentsline{section}{PAC Key functions}{\pageref{group___c_m_s_i_s___core___pac_key_functions}}{}
+\item \contentsline{section}{NVIC Functions}{\pageref{group___c_m_s_i_s___core___n_v_i_c_functions}}{}
+\item \contentsline{section}{FPU Functions}{\pageref{group___c_m_s_i_s___core___fpu_functions}}{}
+\item \contentsline{section}{MVE Functions}{\pageref{group___c_m_s_i_s___core___mve_functions}}{}
+\item \contentsline{section}{SAU Functions}{\pageref{group___c_m_s_i_s___core___s_a_u_functions}}{}
+\item \contentsline{section}{Memory System Control Registers (IMPLEMENTATION DEFINED)}{\pageref{group___mem_sys_ctl___type}}{}
+\item \contentsline{section}{Power Mode Control Registers}{\pageref{group___pwr_mod_ctl___type}}{}
+\item \contentsline{section}{External Wakeup Interrupt Controller Registers}{\pageref{group___e_w_i_c___type}}{}
+\item \contentsline{section}{Error Banking Registers (IMPLEMENTATION DEFINED)}{\pageref{group___err_bnk___type}}{}
+\item \contentsline{section}{Processor Configuration Information Registers (IMPLEMENTATION DEFINED)}{\pageref{group___prc_cfg_inf___type}}{}
+\item \contentsline{section}{Software Test Library Observation Registers}{\pageref{group___s_t_l___type}}{}
+\item \contentsline{section}{Trace Port Interface (TPI)}{\pageref{group___c_m_s_i_s___t_p_i}}{}
+\item \contentsline{section}{Memory Protection Unit (MPU)}{\pageref{group___c_m_s_i_s___m_p_u}}{}
+\item \contentsline{section}{Floating Point Unit (FPU)}{\pageref{group___c_m_s_i_s___f_p_u}}{}
+\item \contentsline{section}{Core Debug Registers (Core\+Debug)}{\pageref{group___c_m_s_i_s___core_debug}}{}
+\item \contentsline{section}{Debug Control Block}{\pageref{group___c_m_s_i_s___d_c_b}}{}
+\item \contentsline{section}{Debug Identification Block}{\pageref{group___c_m_s_i_s___d_i_b}}{}
+\item \contentsline{section}{Core register bit field macros}{\pageref{group___c_m_s_i_s__core__bitfield}}{}
+\end{DoxyCompactList}
+\end{DoxyCompactList}
+\end{DoxyCompactList}
+\end{DoxyCompactList}
+\end{DoxyCompactList}
+\item \contentsline{section}{HAL CRYP Aliased Defines maintained for legacy purpose}{\pageref{group___h_a_l___a_e_s___aliased___defines}}{}
+\item \contentsline{section}{HAL ADC Aliased Defines maintained for legacy purpose}{\pageref{group___h_a_l___a_d_c___aliased___defines}}{}
+\item \contentsline{section}{HAL CEC Aliased Defines maintained for legacy purpose}{\pageref{group___h_a_l___c_e_c___aliased___defines}}{}
+\item \contentsline{section}{HAL COMP Aliased Defines maintained for legacy purpose}{\pageref{group___h_a_l___c_o_m_p___aliased___defines}}{}
+\item \contentsline{section}{HAL CORTEX Aliased Defines maintained for legacy purpose}{\pageref{group___h_a_l___c_o_r_t_e_x___aliased___defines}}{}
+\item \contentsline{section}{CRC API aliases}{\pageref{group___c_r_c___aliases}}{}
+\item \contentsline{section}{HAL CRC Aliased Defines maintained for legacy purpose}{\pageref{group___h_a_l___c_r_c___aliased___defines}}{}
+\item \contentsline{section}{HAL DAC Aliased Defines maintained for legacy purpose}{\pageref{group___h_a_l___d_a_c___aliased___defines}}{}
+\item \contentsline{section}{HAL DMA Aliased Defines maintained for legacy purpose}{\pageref{group___h_a_l___d_m_a___aliased___defines}}{}
+\item \contentsline{section}{HAL FLASH Aliased Defines maintained for legacy purpose}{\pageref{group___h_a_l___f_l_a_s_h___aliased___defines}}{}
+\item \contentsline{section}{HAL JPEG Aliased Macros maintained for legacy purpose}{\pageref{group___h_a_l___j_p_e_g___aliased___macros}}{}
+\item \contentsline{section}{HAL SYSCFG Aliased Defines maintained for legacy purpose}{\pageref{group___h_a_l___s_y_s_c_f_g___aliased___defines}}{}
+\item \contentsline{section}{LL FMC Aliased Defines maintained for compatibility purpose}{\pageref{group___l_l___f_m_c___aliased___defines}}{}
+\item \contentsline{section}{LL FSMC Aliased Defines maintained for legacy purpose}{\pageref{group___l_l___f_s_m_c___aliased___defines}}{}
+\item \contentsline{section}{HAL GPIO Aliased Macros maintained for legacy purpose}{\pageref{group___h_a_l___g_p_i_o___aliased___macros}}{}
+\item \contentsline{section}{HAL GTZC Aliased Defines maintained for legacy purpose}{\pageref{group___h_a_l___g_t_z_c___aliased___defines}}{}
+\item \contentsline{section}{HAL HRTIM Aliased Macros maintained for legacy purpose}{\pageref{group___h_a_l___h_r_t_i_m___aliased___macros}}{}
+\item \contentsline{section}{HAL I2C Aliased Defines maintained for legacy purpose}{\pageref{group___h_a_l___i2_c___aliased___defines}}{}
+\item \contentsline{section}{HAL IRDA Aliased Defines maintained for legacy purpose}{\pageref{group___h_a_l___i_r_d_a___aliased___defines}}{}
+\item \contentsline{section}{HAL IWDG Aliased Defines maintained for legacy purpose}{\pageref{group___h_a_l___i_w_d_g___aliased___defines}}{}
+\item \contentsline{section}{HAL LPTIM Aliased Defines maintained for legacy purpose}{\pageref{group___h_a_l___l_p_t_i_m___aliased___defines}}{}
+\item \contentsline{section}{HAL NAND Aliased Defines maintained for legacy purpose}{\pageref{group___h_a_l___n_a_n_d___aliased___defines}}{}
+\item \contentsline{section}{HAL NOR Aliased Defines maintained for legacy purpose}{\pageref{group___h_a_l___n_o_r___aliased___defines}}{}
+\item \contentsline{section}{HAL OPAMP Aliased Defines maintained for legacy purpose}{\pageref{group___h_a_l___o_p_a_m_p___aliased___defines}}{}
+\item \contentsline{section}{HAL I2S Aliased Defines maintained for legacy purpose}{\pageref{group___h_a_l___i2_s___aliased___defines}}{}
+\item \contentsline{section}{HAL PCCARD Aliased Defines maintained for legacy purpose}{\pageref{group___h_a_l___p_c_c_a_r_d___aliased___defines}}{}
+\item \contentsline{section}{HAL RTC Aliased Defines maintained for legacy purpose}{\pageref{group___h_a_l___r_t_c___aliased___defines}}{}
+\item \contentsline{section}{HAL SMARTCARD Aliased Defines maintained for legacy purpose}{\pageref{group___h_a_l___s_m_a_r_t_c_a_r_d___aliased___defines}}{}
+\item \contentsline{section}{HAL SMBUS Aliased Defines maintained for legacy purpose}{\pageref{group___h_a_l___s_m_b_u_s___aliased___defines}}{}
+\item \contentsline{section}{HAL SPI Aliased Defines maintained for legacy purpose}{\pageref{group___h_a_l___s_p_i___aliased___defines}}{}
+\item \contentsline{section}{HAL TIM Aliased Defines maintained for legacy purpose}{\pageref{group___h_a_l___t_i_m___aliased___defines}}{}
+\item \contentsline{section}{HAL TSC Aliased Defines maintained for legacy purpose}{\pageref{group___h_a_l___t_s_c___aliased___defines}}{}
+\item \contentsline{section}{HAL UART Aliased Defines maintained for legacy purpose}{\pageref{group___h_a_l___u_a_r_t___aliased___defines}}{}
+\item \contentsline{section}{HAL USART Aliased Defines maintained for legacy purpose}{\pageref{group___h_a_l___u_s_a_r_t___aliased___defines}}{}
+\item \contentsline{section}{HAL WWDG Aliased Defines maintained for legacy purpose}{\pageref{group___h_a_l___w_w_d_g___aliased___defines}}{}
+\item \contentsline{section}{HAL CAN Aliased Defines maintained for legacy purpose}{\pageref{group___h_a_l___c_a_n___aliased___defines}}{}
+\item \contentsline{section}{HAL ETH Aliased Defines maintained for legacy purpose}{\pageref{group___h_a_l___e_t_h___aliased___defines}}{}
+\item \contentsline{section}{HAL DCMI Aliased Defines maintained for legacy purpose}{\pageref{group___h_a_l___d_c_m_i___aliased___defines}}{}
+\item \contentsline{section}{HAL PPP Aliased Defines maintained for legacy purpose}{\pageref{group___h_a_l___p_p_p___aliased___defines}}{}
+\item \contentsline{section}{HAL CRYP Aliased Functions maintained for legacy purpose}{\pageref{group___h_a_l___c_r_y_p___aliased___functions}}{}
+\item \contentsline{section}{HAL DCACHE Aliased Functions maintained for legacy purpose}{\pageref{group___h_a_l___d_c_a_c_h_e___aliased___functions}}{}
+\item \contentsline{section}{HASH API alias}{\pageref{group___h_a_s_h__alias}}{}
+\item \contentsline{section}{HAL HASH Aliased Functions maintained for legacy purpose}{\pageref{group___h_a_l___h_a_s_h___aliased___functions}}{}
+\item \contentsline{section}{HAL Generic Aliased Functions maintained for legacy purpose}{\pageref{group___h_a_l___aliased___functions}}{}
+\item \contentsline{section}{HAL FLASH Aliased Functions maintained for legacy purpose}{\pageref{group___h_a_l___f_l_a_s_h___aliased___functions}}{}
+\item \contentsline{section}{HAL I2C Aliased Functions maintained for legacy purpose}{\pageref{group___h_a_l___i2_c___aliased___functions}}{}
+\item \contentsline{section}{HAL PWR Aliased maintained for legacy purpose}{\pageref{group___h_a_l___p_w_r___aliased}}{}
+\item \contentsline{section}{HAL RTC Aliased Functions maintained for legacy purpose}{\pageref{group___h_a_l___r_t_c___aliased___functions}}{}
+\item \contentsline{section}{HAL SMBUS Aliased Functions maintained for legacy purpose}{\pageref{group___h_a_l___s_m_b_u_s___aliased___functions}}{}
+\item \contentsline{section}{HAL SPI Aliased Functions maintained for legacy purpose}{\pageref{group___h_a_l___s_p_i___aliased___functions}}{}
+\item \contentsline{section}{HAL TIM Aliased Functions maintained for legacy purpose}{\pageref{group___h_a_l___t_i_m___aliased___functions}}{}
+\item \contentsline{section}{HAL UART Aliased Functions maintained for legacy purpose}{\pageref{group___h_a_l___u_a_r_t___aliased___functions}}{}
+\item \contentsline{section}{HAL LTDC Aliased Functions maintained for legacy purpose}{\pageref{group___h_a_l___l_t_d_c___aliased___functions}}{}
+\item \contentsline{section}{HAL PPP Aliased Functions maintained for legacy purpose}{\pageref{group___h_a_l___p_p_p___aliased___functions}}{}
+\item \contentsline{section}{HAL CRYP Aliased Macros maintained for legacy purpose}{\pageref{group___h_a_l___a_e_s___aliased___macros}}{}
+\item \contentsline{section}{HAL Generic Aliased Macros maintained for legacy purpose}{\pageref{group___h_a_l___aliased___macros}}{}
+\item \contentsline{section}{HAL ADC Aliased Macros maintained for legacy purpose}{\pageref{group___h_a_l___a_d_c___aliased___macros}}{}
+\item \contentsline{section}{HAL DAC Aliased Macros maintained for legacy purpose}{\pageref{group___h_a_l___d_a_c___aliased___macros}}{}
+\item \contentsline{section}{HAL DBGMCU Aliased Macros maintained for legacy purpose}{\pageref{group___h_a_l___d_b_g_m_c_u___aliased___macros}}{}
+\item \contentsline{section}{HAL COMP Aliased Macros maintained for legacy purpose}{\pageref{group___h_a_l___c_o_m_p___aliased___macros}}{}
+\item \contentsline{section}{HAL FLASH Aliased Macros maintained for legacy purpose}{\pageref{group___h_a_l___f_l_a_s_h___aliased___macros}}{}
+\item \contentsline{section}{HAL I2C Aliased Macros maintained for legacy purpose}{\pageref{group___h_a_l___i2_c___aliased___macros}}{}
+\item \contentsline{section}{HAL I2S Aliased Macros maintained for legacy purpose}{\pageref{group___h_a_l___i2_s___aliased___macros}}{}
+\item \contentsline{section}{HAL IRDA Aliased Macros maintained for legacy purpose}{\pageref{group___h_a_l___i_r_d_a___aliased___macros}}{}
+\item \contentsline{section}{HAL IWDG Aliased Macros maintained for legacy purpose}{\pageref{group___h_a_l___i_w_d_g___aliased___macros}}{}
+\item \contentsline{section}{HAL LPTIM Aliased Macros maintained for legacy purpose}{\pageref{group___h_a_l___l_p_t_i_m___aliased___macros}}{}
+\item \contentsline{section}{HAL OPAMP Aliased Macros maintained for legacy purpose}{\pageref{group___h_a_l___o_p_a_m_p___aliased___macros}}{}
+\item \contentsline{section}{HAL PWR Aliased Macros maintained for legacy purpose}{\pageref{group___h_a_l___p_w_r___aliased___macros}}{}
+\item \contentsline{section}{HAL RCC Aliased maintained for legacy purpose}{\pageref{group___h_a_l___r_c_c___aliased}}{}
+\item \contentsline{section}{HAL RNG Aliased Macros maintained for legacy purpose}{\pageref{group___h_a_l___r_n_g___aliased___macros}}{}
+\item \contentsline{section}{HAL RTC Aliased Macros maintained for legacy purpose}{\pageref{group___h_a_l___r_t_c___aliased___macros}}{}
+\item \contentsline{section}{HAL SD/\+MMC Aliased Macros maintained for legacy purpose}{\pageref{group___h_a_l___s_d___aliased___macros}}{}
+\item \contentsline{section}{HAL SMARTCARD Aliased Macros maintained for legacy purpose}{\pageref{group___h_a_l___s_m_a_r_t_c_a_r_d___aliased___macros}}{}
+\item \contentsline{section}{HAL SMBUS Aliased Macros maintained for legacy purpose}{\pageref{group___h_a_l___s_m_b_u_s___aliased___macros}}{}
+\item \contentsline{section}{HAL SPI Aliased Macros maintained for legacy purpose}{\pageref{group___h_a_l___s_p_i___aliased___macros}}{}
+\item \contentsline{section}{HAL UART Aliased Macros maintained for legacy purpose}{\pageref{group___h_a_l___u_a_r_t___aliased___macros}}{}
+\item \contentsline{section}{HAL USART Aliased Macros maintained for legacy purpose}{\pageref{group___h_a_l___u_s_a_r_t___aliased___macros}}{}
+\item \contentsline{section}{HAL USB Aliased Macros maintained for legacy purpose}{\pageref{group___h_a_l___u_s_b___aliased___macros}}{}
+\item \contentsline{section}{HAL TIM Aliased Macros maintained for legacy purpose}{\pageref{group___h_a_l___t_i_m___aliased___macros}}{}
+\item \contentsline{section}{HAL ETH Aliased Macros maintained for legacy purpose}{\pageref{group___h_a_l___e_t_h___aliased___macros}}{}
+\item \contentsline{section}{HAL LTDC Aliased Macros maintained for legacy purpose}{\pageref{group___h_a_l___l_t_d_c___aliased___macros}}{}
+\item \contentsline{section}{HAL SAI Aliased Macros maintained for legacy purpose}{\pageref{group___h_a_l___s_a_i___aliased___macros}}{}
+\item \contentsline{section}{HAL SPDIFRX Aliased Macros maintained for legacy purpose}{\pageref{group___h_a_l___s_p_d_i_f_r_x___aliased___macros}}{}
+\item \contentsline{section}{HAL HRTIM Aliased Functions maintained for legacy purpose}{\pageref{group___h_a_l___h_r_t_i_m___aliased___functions}}{}
+\item \contentsline{section}{HAL QSPI Aliased Macros maintained for legacy purpose}{\pageref{group___h_a_l___q_s_p_i___aliased___macros}}{}
+\item \contentsline{section}{HAL Generic Aliased Macros maintained for legacy purpose}{\pageref{group___h_a_l___generic___aliased___macros}}{}
+\item \contentsline{section}{HAL PPP Aliased Macros maintained for legacy purpose}{\pageref{group___h_a_l___p_p_p___aliased___macros}}{}
+\item \contentsline{section}{CMSIS}{\pageref{group___c_m_s_i_s}}{}
+\begin{DoxyCompactList}
+\item \contentsline{section}{Stm32f4xx\+\_\+system}{\pageref{group__stm32f4xx__system}}{}
+\begin{DoxyCompactList}
+\item \contentsline{section}{STM32\+F4xx\+\_\+\+System\+\_\+\+Private\+\_\+\+Includes}{\pageref{group___s_t_m32_f4xx___system___private___includes}}{}
+\item \contentsline{section}{STM32\+F4xx\+\_\+\+System\+\_\+\+Private\+\_\+\+Types\+Definitions}{\pageref{group___s_t_m32_f4xx___system___private___types_definitions}}{}
+\item \contentsline{section}{STM32\+F4xx\+\_\+\+System\+\_\+\+Private\+\_\+\+Defines}{\pageref{group___s_t_m32_f4xx___system___private___defines}}{}
+\item \contentsline{section}{STM32\+F4xx\+\_\+\+System\+\_\+\+Private\+\_\+\+Macros}{\pageref{group___s_t_m32_f4xx___system___private___macros}}{}
+\item \contentsline{section}{STM32\+F4xx\+\_\+\+System\+\_\+\+Private\+\_\+\+Variables}{\pageref{group___s_t_m32_f4xx___system___private___variables}}{}
+\item \contentsline{section}{STM32\+F4xx\+\_\+\+System\+\_\+\+Private\+\_\+\+Function\+Prototypes}{\pageref{group___s_t_m32_f4xx___system___private___function_prototypes}}{}
+\item \contentsline{section}{STM32\+F4xx\+\_\+\+System\+\_\+\+Private\+\_\+\+Functions}{\pageref{group___s_t_m32_f4xx___system___private___functions}}{}
+\item \contentsline{section}{STM32\+F4xx\+\_\+\+System\+\_\+\+Includes}{\pageref{group___s_t_m32_f4xx___system___includes}}{}
+\item \contentsline{section}{STM32\+F4xx\+\_\+\+System\+\_\+\+Exported\+\_\+types}{\pageref{group___s_t_m32_f4xx___system___exported__types}}{}
+\item \contentsline{section}{STM32\+F4xx\+\_\+\+System\+\_\+\+Exported\+\_\+\+Constants}{\pageref{group___s_t_m32_f4xx___system___exported___constants}}{}
+\item \contentsline{section}{STM32\+F4xx\+\_\+\+System\+\_\+\+Exported\+\_\+\+Macros}{\pageref{group___s_t_m32_f4xx___system___exported___macros}}{}
+\item \contentsline{section}{STM32\+F4xx\+\_\+\+System\+\_\+\+Exported\+\_\+\+Functions}{\pageref{group___s_t_m32_f4xx___system___exported___functions}}{}
+\end{DoxyCompactList}
+\item \contentsline{section}{Stm32f4xx}{\pageref{group__stm32f4xx}}{}
+\begin{DoxyCompactList}
+\item \contentsline{section}{Library\+\_\+configuration\+\_\+section}{\pageref{group___library__configuration__section}}{}
+\item \contentsline{section}{Device\+\_\+\+Included}{\pageref{group___device___included}}{}
+\item \contentsline{section}{Exported\+\_\+types}{\pageref{group___exported__types}}{}
+\item \contentsline{section}{Exported\+\_\+macro}{\pageref{group___exported__macro}}{}
+\end{DoxyCompactList}
+\end{DoxyCompactList}
+\item \contentsline{section}{CMSIS\+\_\+\+Device}{\pageref{group___c_m_s_i_s___device}}{}
+\begin{DoxyCompactList}
+\item \contentsline{section}{Stm32f411xe}{\pageref{group__stm32f411xe}}{}
+\begin{DoxyCompactList}
+\item \contentsline{section}{Configuration\+\_\+section\+\_\+for\+\_\+\+CMSIS}{\pageref{group___configuration__section__for___c_m_s_i_s}}{}
+\item \contentsline{section}{Peripheral\+\_\+interrupt\+\_\+number\+\_\+definition}{\pageref{group___peripheral__interrupt__number__definition}}{}
+\item \contentsline{section}{Peripheral\+\_\+registers\+\_\+structures}{\pageref{group___peripheral__registers__structures}}{}
+\item \contentsline{section}{Peripheral\+\_\+memory\+\_\+map}{\pageref{group___peripheral__memory__map}}{}
+\item \contentsline{section}{Peripheral\+\_\+declaration}{\pageref{group___peripheral__declaration}}{}
+\item \contentsline{section}{Exported\+\_\+constants}{\pageref{group___exported__constants}}{}
+\begin{DoxyCompactList}
+\item \contentsline{section}{Hardware\+\_\+\+Constant\+\_\+\+Definition}{\pageref{group___hardware___constant___definition}}{}
+\item \contentsline{section}{Peripheral\+\_\+\+Registers\+\_\+\+Bits\+\_\+\+Definition}{\pageref{group___peripheral___registers___bits___definition}}{}
+\end{DoxyCompactList}
+\item \contentsline{section}{Exported\+\_\+macros}{\pageref{group___exported__macros}}{}
+\end{DoxyCompactList}
+\end{DoxyCompactList}
+\item \contentsline{section}{STM32\+F4xx\+\_\+\+HAL\+\_\+\+Driver}{\pageref{group___s_t_m32_f4xx___h_a_l___driver}}{}
+\begin{DoxyCompactList}
+\item \contentsline{section}{EXTI}{\pageref{group___e_x_t_i}}{}
+\begin{DoxyCompactList}
+\item \contentsline{section}{EXTI Exported Types}{\pageref{group___e_x_t_i___exported___types}}{}
+\item \contentsline{section}{EXTI Exported Constants}{\pageref{group___e_x_t_i___exported___constants}}{}
+\begin{DoxyCompactList}
+\item \contentsline{section}{EXTI Line}{\pageref{group___e_x_t_i___line}}{}
+\item \contentsline{section}{EXTI Mode}{\pageref{group___e_x_t_i___mode}}{}
+\item \contentsline{section}{EXTI Trigger}{\pageref{group___e_x_t_i___trigger}}{}
+\item \contentsline{section}{EXTI GPIOSel}{\pageref{group___e_x_t_i___g_p_i_o_sel}}{}
+\end{DoxyCompactList}
+\item \contentsline{section}{EXTI Exported Macros}{\pageref{group___e_x_t_i___exported___macros}}{}
+\item \contentsline{section}{EXTI Private Constants}{\pageref{group___e_x_t_i___private___constants}}{}
+\item \contentsline{section}{EXTI Private Macros}{\pageref{group___e_x_t_i___private___macros}}{}
+\item \contentsline{section}{EXTI Exported Functions}{\pageref{group___e_x_t_i___exported___functions}}{}
+\begin{DoxyCompactList}
+\item \contentsline{section}{Configuration functions}{\pageref{group___e_x_t_i___exported___functions___group1}}{}
+\item \contentsline{section}{IO operation functions}{\pageref{group___e_x_t_i___exported___functions___group2}}{}
+\end{DoxyCompactList}
+\end{DoxyCompactList}
+\item \contentsline{section}{GPIOEx}{\pageref{group___g_p_i_o_ex}}{}
+\begin{DoxyCompactList}
+\item \contentsline{section}{GPIO Exported Constants}{\pageref{group___g_p_i_o_ex___exported___constants}}{}
+\begin{DoxyCompactList}
+\item \contentsline{section}{GPIO Alternate Function Selection}{\pageref{group___g_p_i_o___alternate__function__selection}}{}
+\end{DoxyCompactList}
+\item \contentsline{section}{GPIO Exported Macros}{\pageref{group___g_p_i_o_ex___exported___macros}}{}
+\item \contentsline{section}{GPIO Exported Functions}{\pageref{group___g_p_i_o_ex___exported___functions}}{}
+\item \contentsline{section}{GPIO Private Constants}{\pageref{group___g_p_i_o_ex___private___constants}}{}
+\item \contentsline{section}{GPIO Private Macros}{\pageref{group___g_p_i_o_ex___private___macros}}{}
+\begin{DoxyCompactList}
+\item \contentsline{section}{GPIO Get Port Index}{\pageref{group___g_p_i_o_ex___get___port___index}}{}
+\item \contentsline{section}{GPIO Check Alternate Function}{\pageref{group___g_p_i_o_ex___i_s___alternat__function__selection}}{}
+\end{DoxyCompactList}
+\item \contentsline{section}{GPIO Private Functions}{\pageref{group___g_p_i_o_ex___private___functions}}{}
+\end{DoxyCompactList}
+\item \contentsline{section}{HAL}{\pageref{group___h_a_l}}{}
+\begin{DoxyCompactList}
+\item \contentsline{section}{HAL Exported Constants}{\pageref{group___h_a_l___exported___constants}}{}
+\begin{DoxyCompactList}
+\item \contentsline{section}{Tick Frequency}{\pageref{group___h_a_l___t_i_c_k___f_r_e_q}}{}
+\end{DoxyCompactList}
+\item \contentsline{section}{HAL Exported Macros}{\pageref{group___h_a_l___exported___macros}}{}
+\item \contentsline{section}{HAL Private Macros}{\pageref{group___h_a_l___private___macros}}{}
+\item \contentsline{section}{HAL Private Variables}{\pageref{group___h_a_l___private___variables}}{}
+\item \contentsline{section}{HAL Private Constants}{\pageref{group___h_a_l___private___constants}}{}
+\item \contentsline{section}{HAL Exported Functions}{\pageref{group___h_a_l___exported___functions}}{}
+\begin{DoxyCompactList}
+\item \contentsline{section}{Initialization and de-\/initialization Functions}{\pageref{group___h_a_l___exported___functions___group1}}{}
+\item \contentsline{section}{HAL Control functions}{\pageref{group___h_a_l___exported___functions___group2}}{}
+\end{DoxyCompactList}
+\item \contentsline{section}{HAL\+\_\+\+Exported\+\_\+\+Variables}{\pageref{group___h_a_l___exported___variables}}{}
+\end{DoxyCompactList}
+\item \contentsline{section}{CORTEX}{\pageref{group___c_o_r_t_e_x}}{}
+\begin{DoxyCompactList}
+\item \contentsline{section}{Cortex Exported Types}{\pageref{group___c_o_r_t_e_x___exported___types}}{}
+\item \contentsline{section}{CORTEX Exported Constants}{\pageref{group___c_o_r_t_e_x___exported___constants}}{}
+\begin{DoxyCompactList}
+\item \contentsline{section}{CORTEX Preemption Priority Group}{\pageref{group___c_o_r_t_e_x___preemption___priority___group}}{}
+\item \contentsline{section}{CORTEX \+\_\+\+Sys\+Tick clock source}{\pageref{group___c_o_r_t_e_x___sys_tick__clock__source}}{}
+\end{DoxyCompactList}
+\item \contentsline{section}{CORTEX Private Macros}{\pageref{group___c_o_r_t_e_x___private___macros}}{}
+\item \contentsline{section}{CORTEX\+\_\+\+Exported\+\_\+\+Functions}{\pageref{group___c_o_r_t_e_x___exported___functions}}{}
+\begin{DoxyCompactList}
+\item \contentsline{section}{CORTEX\+\_\+\+Exported\+\_\+\+Functions\+\_\+\+Group1}{\pageref{group___c_o_r_t_e_x___exported___functions___group1}}{}
+\item \contentsline{section}{CORTEX\+\_\+\+Exported\+\_\+\+Functions\+\_\+\+Group2}{\pageref{group___c_o_r_t_e_x___exported___functions___group2}}{}
+\end{DoxyCompactList}
+\end{DoxyCompactList}
+\item \contentsline{section}{DMA}{\pageref{group___d_m_a}}{}
+\begin{DoxyCompactList}
+\item \contentsline{section}{DMA Exported Types}{\pageref{group___d_m_a___exported___types}}{}
+\item \contentsline{section}{DMA Exported Constants}{\pageref{group___d_m_a___exported___constants}}{}
+\begin{DoxyCompactList}
+\item \contentsline{section}{DMA Error Code}{\pageref{group___d_m_a___error___code}}{}
+\item \contentsline{section}{DMA Channel selection}{\pageref{group___d_m_a___channel__selection}}{}
+\item \contentsline{section}{DMA Data transfer direction}{\pageref{group___d_m_a___data__transfer__direction}}{}
+\item \contentsline{section}{DMA Peripheral incremented mode}{\pageref{group___d_m_a___peripheral__incremented__mode}}{}
+\item \contentsline{section}{DMA Memory incremented mode}{\pageref{group___d_m_a___memory__incremented__mode}}{}
+\item \contentsline{section}{DMA Peripheral data size}{\pageref{group___d_m_a___peripheral__data__size}}{}
+\item \contentsline{section}{DMA Memory data size}{\pageref{group___d_m_a___memory__data__size}}{}
+\item \contentsline{section}{DMA mode}{\pageref{group___d_m_a__mode}}{}
+\item \contentsline{section}{DMA Priority level}{\pageref{group___d_m_a___priority__level}}{}
+\item \contentsline{section}{DMA FIFO direct mode}{\pageref{group___d_m_a___f_i_f_o__direct__mode}}{}
+\item \contentsline{section}{DMA FIFO threshold level}{\pageref{group___d_m_a___f_i_f_o__threshold__level}}{}
+\item \contentsline{section}{DMA Memory burst}{\pageref{group___d_m_a___memory__burst}}{}
+\item \contentsline{section}{DMA Peripheral burst}{\pageref{group___d_m_a___peripheral__burst}}{}
+\item \contentsline{section}{DMA interrupt enable definitions}{\pageref{group___d_m_a__interrupt__enable__definitions}}{}
+\item \contentsline{section}{DMA flag definitions}{\pageref{group___d_m_a__flag__definitions}}{}
+\end{DoxyCompactList}
+\item \contentsline{section}{DMA Exported Functions}{\pageref{group___d_m_a___exported___functions}}{}
+\begin{DoxyCompactList}
+\item \contentsline{section}{Initialization and de-\/initialization functions}{\pageref{group___d_m_a___exported___functions___group1}}{}
+\item \contentsline{section}{I/O operation functions}{\pageref{group___d_m_a___exported___functions___group2}}{}
+\item \contentsline{section}{Peripheral State functions}{\pageref{group___d_m_a___exported___functions___group3}}{}
+\end{DoxyCompactList}
+\item \contentsline{section}{DMA Private Constants}{\pageref{group___d_m_a___private___constants}}{}
+\item \contentsline{section}{DMA Private Macros}{\pageref{group___d_m_a___private___macros}}{}
+\item \contentsline{section}{DMA Private Functions}{\pageref{group___d_m_a___private___functions}}{}
+\end{DoxyCompactList}
+\item \contentsline{section}{DMAEx}{\pageref{group___d_m_a_ex}}{}
+\begin{DoxyCompactList}
+\item \contentsline{section}{DMAEx Exported Types}{\pageref{group___d_m_a_ex___exported___types}}{}
+\item \contentsline{section}{DMAEx Exported Functions}{\pageref{group___d_m_a_ex___exported___functions}}{}
+\begin{DoxyCompactList}
+\item \contentsline{section}{Extended features functions}{\pageref{group___d_m_a_ex___exported___functions___group1}}{}
+\end{DoxyCompactList}
+\item \contentsline{section}{DMAEx Private Functions}{\pageref{group___d_m_a_ex___private___functions}}{}
+\end{DoxyCompactList}
+\item \contentsline{section}{FLASH}{\pageref{group___f_l_a_s_h}}{}
+\begin{DoxyCompactList}
+\item \contentsline{section}{FLASH Exported Types}{\pageref{group___f_l_a_s_h___exported___types}}{}
+\item \contentsline{section}{FLASH Exported Constants}{\pageref{group___f_l_a_s_h___exported___constants}}{}
+\begin{DoxyCompactList}
+\item \contentsline{section}{FLASH Error Code}{\pageref{group___f_l_a_s_h___error___code}}{}
+\item \contentsline{section}{FLASH Type Program}{\pageref{group___f_l_a_s_h___type___program}}{}
+\item \contentsline{section}{FLASH Flag definition}{\pageref{group___f_l_a_s_h___flag__definition}}{}
+\item \contentsline{section}{FLASH Interrupt definition}{\pageref{group___f_l_a_s_h___interrupt__definition}}{}
+\item \contentsline{section}{FLASH Program Parallelism}{\pageref{group___f_l_a_s_h___program___parallelism}}{}
+\item \contentsline{section}{FLASH Keys}{\pageref{group___f_l_a_s_h___keys}}{}
+\end{DoxyCompactList}
+\item \contentsline{section}{FLASH Exported Macros}{\pageref{group___f_l_a_s_h___exported___macros}}{}
+\item \contentsline{section}{FLASH Private Variables}{\pageref{group___f_l_a_s_h___private___variables}}{}
+\item \contentsline{section}{FLASH Private Constants}{\pageref{group___f_l_a_s_h___private___constants}}{}
+\item \contentsline{section}{FLASH Private Macros}{\pageref{group___f_l_a_s_h___private___macros}}{}
+\begin{DoxyCompactList}
+\item \contentsline{section}{FLASH Private macros to check input parameters}{\pageref{group___f_l_a_s_h___i_s___f_l_a_s_h___definitions}}{}
+\end{DoxyCompactList}
+\item \contentsline{section}{FLASH Private Functions}{\pageref{group___f_l_a_s_h___private___functions}}{}
+\item \contentsline{section}{FLASH\+\_\+\+Exported\+\_\+\+Functions}{\pageref{group___f_l_a_s_h___exported___functions}}{}
+\begin{DoxyCompactList}
+\item \contentsline{section}{FLASH\+\_\+\+Exported\+\_\+\+Functions\+\_\+\+Group1}{\pageref{group___f_l_a_s_h___exported___functions___group1}}{}
+\item \contentsline{section}{FLASH\+\_\+\+Exported\+\_\+\+Functions\+\_\+\+Group2}{\pageref{group___f_l_a_s_h___exported___functions___group2}}{}
+\item \contentsline{section}{FLASH\+\_\+\+Exported\+\_\+\+Functions\+\_\+\+Group3}{\pageref{group___f_l_a_s_h___exported___functions___group3}}{}
+\end{DoxyCompactList}
+\end{DoxyCompactList}
+\item \contentsline{section}{FLASHEx}{\pageref{group___f_l_a_s_h_ex}}{}
+\begin{DoxyCompactList}
+\item \contentsline{section}{FLASH Exported Types}{\pageref{group___f_l_a_s_h_ex___exported___types}}{}
+\item \contentsline{section}{FLASH Exported Constants}{\pageref{group___f_l_a_s_h_ex___exported___constants}}{}
+\begin{DoxyCompactList}
+\item \contentsline{section}{FLASH Type Erase}{\pageref{group___f_l_a_s_h_ex___type___erase}}{}
+\item \contentsline{section}{FLASH Voltage Range}{\pageref{group___f_l_a_s_h_ex___voltage___range}}{}
+\item \contentsline{section}{FLASH WRP State}{\pageref{group___f_l_a_s_h_ex___w_r_p___state}}{}
+\item \contentsline{section}{FLASH Option Type}{\pageref{group___f_l_a_s_h_ex___option___type}}{}
+\item \contentsline{section}{FLASH Option Bytes Read Protection}{\pageref{group___f_l_a_s_h_ex___option___bytes___read___protection}}{}
+\item \contentsline{section}{FLASH Option Bytes IWatchdog}{\pageref{group___f_l_a_s_h_ex___option___bytes___i_watchdog}}{}
+\item \contentsline{section}{FLASH Option Bytes n\+RST\+\_\+\+STOP}{\pageref{group___f_l_a_s_h_ex___option___bytes__n_r_s_t___s_t_o_p}}{}
+\item \contentsline{section}{FLASH Option Bytes n\+RST\+\_\+\+STDBY}{\pageref{group___f_l_a_s_h_ex___option___bytes__n_r_s_t___s_t_d_b_y}}{}
+\item \contentsline{section}{FLASH BOR Reset Level}{\pageref{group___f_l_a_s_h_ex___b_o_r___reset___level}}{}
+\item \contentsline{section}{FLASH Advanced Option Type}{\pageref{group___f_l_a_s_h_ex___advanced___option___type}}{}
+\item \contentsline{section}{FLASH Latency}{\pageref{group___f_l_a_s_h___latency}}{}
+\item \contentsline{section}{FLASH Banks}{\pageref{group___f_l_a_s_h_ex___banks}}{}
+\item \contentsline{section}{FLASH Mass Erase bit}{\pageref{group___f_l_a_s_h_ex___mass_erase__bit}}{}
+\item \contentsline{section}{FLASH Sectors}{\pageref{group___f_l_a_s_h_ex___sectors}}{}
+\item \contentsline{section}{FLASH Option Bytes Write Protection}{\pageref{group___f_l_a_s_h_ex___option___bytes___write___protection}}{}
+\item \contentsline{section}{FLASH Option Bytes PC Read\+Write Protection}{\pageref{group___f_l_a_s_h_ex___option___bytes___p_c___read_write___protection}}{}
+\item \contentsline{section}{FLASH Dual Boot}{\pageref{group___f_l_a_s_h_ex___dual___boot}}{}
+\item \contentsline{section}{FLASH Selection Protection Mode}{\pageref{group___f_l_a_s_h_ex___selection___protection___mode}}{}
+\end{DoxyCompactList}
+\item \contentsline{section}{FLASH Private Constants}{\pageref{group___f_l_a_s_h_ex___private___constants}}{}
+\item \contentsline{section}{FLASH Private Macros}{\pageref{group___f_l_a_s_h_ex___private___macros}}{}
+\begin{DoxyCompactList}
+\item \contentsline{section}{FLASH Private macros to check input parameters}{\pageref{group___f_l_a_s_h_ex___i_s___f_l_a_s_h___definitions}}{}
+\end{DoxyCompactList}
+\item \contentsline{section}{FLASH Private Functions}{\pageref{group___f_l_a_s_h_ex___private___functions}}{}
+\item \contentsline{section}{FLASHEx\+\_\+\+Exported\+\_\+\+Functions}{\pageref{group___f_l_a_s_h_ex___exported___functions}}{}
+\begin{DoxyCompactList}
+\item \contentsline{section}{FLASHEx\+\_\+\+Exported\+\_\+\+Functions\+\_\+\+Group1}{\pageref{group___f_l_a_s_h_ex___exported___functions___group1}}{}
+\end{DoxyCompactList}
+\end{DoxyCompactList}
+\item \contentsline{section}{FLASH RAMFUNC}{\pageref{group___f_l_a_s_h___r_a_m_f_u_n_c}}{}
+\item \contentsline{section}{GPIO}{\pageref{group___g_p_i_o}}{}
+\begin{DoxyCompactList}
+\item \contentsline{section}{GPIO Exported Types}{\pageref{group___g_p_i_o___exported___types}}{}
+\item \contentsline{section}{GPIO Exported Constants}{\pageref{group___g_p_i_o___exported___constants}}{}
+\begin{DoxyCompactList}
+\item \contentsline{section}{GPIO pins define}{\pageref{group___g_p_i_o__pins__define}}{}
+\item \contentsline{section}{GPIO mode define}{\pageref{group___g_p_i_o__mode__define}}{}
+\item \contentsline{section}{GPIO speed define}{\pageref{group___g_p_i_o__speed__define}}{}
+\item \contentsline{section}{GPIO pull define}{\pageref{group___g_p_i_o__pull__define}}{}
+\end{DoxyCompactList}
+\item \contentsline{section}{GPIO Exported Macros}{\pageref{group___g_p_i_o___exported___macros}}{}
+\item \contentsline{section}{GPIO Private Constants}{\pageref{group___g_p_i_o___private___constants}}{}
+\item \contentsline{section}{GPIO Private Macros}{\pageref{group___g_p_i_o___private___macros}}{}
+\item \contentsline{section}{GPIO Private Functions}{\pageref{group___g_p_i_o___private___functions}}{}
+\item \contentsline{section}{GPIO\+\_\+\+Exported\+\_\+\+Functions}{\pageref{group___g_p_i_o___exported___functions}}{}
+\begin{DoxyCompactList}
+\item \contentsline{section}{GPIO\+\_\+\+Exported\+\_\+\+Functions\+\_\+\+Group1}{\pageref{group___g_p_i_o___exported___functions___group1}}{}
+\item \contentsline{section}{GPIO\+\_\+\+Exported\+\_\+\+Functions\+\_\+\+Group2}{\pageref{group___g_p_i_o___exported___functions___group2}}{}
+\end{DoxyCompactList}
+\end{DoxyCompactList}
+\item \contentsline{section}{I2C}{\pageref{group___i2_c}}{}
+\begin{DoxyCompactList}
+\item \contentsline{section}{I2C Exported Types}{\pageref{group___i2_c___exported___types}}{}
+\begin{DoxyCompactList}
+\item \contentsline{section}{I2C Configuration Structure definition}{\pageref{group___i2_c___configuration___structure__definition}}{}
+\item \contentsline{section}{HAL state structure definition}{\pageref{group___h_a_l__state__structure__definition}}{}
+\item \contentsline{section}{HAL mode structure definition}{\pageref{group___h_a_l__mode__structure__definition}}{}
+\item \contentsline{section}{I2C Error Code definition}{\pageref{group___i2_c___error___code__definition}}{}
+\item \contentsline{section}{I2C handle Structure definition}{\pageref{group___i2_c__handle___structure__definition}}{}
+\end{DoxyCompactList}
+\item \contentsline{section}{I2C Exported Constants}{\pageref{group___i2_c___exported___constants}}{}
+\begin{DoxyCompactList}
+\item \contentsline{section}{I2C duty cycle in fast mode}{\pageref{group___i2_c__duty__cycle__in__fast__mode}}{}
+\item \contentsline{section}{I2C addressing mode}{\pageref{group___i2_c__addressing__mode}}{}
+\item \contentsline{section}{I2C dual addressing mode}{\pageref{group___i2_c__dual__addressing__mode}}{}
+\item \contentsline{section}{I2C general call addressing mode}{\pageref{group___i2_c__general__call__addressing__mode}}{}
+\item \contentsline{section}{I2C nostretch mode}{\pageref{group___i2_c__nostretch__mode}}{}
+\item \contentsline{section}{I2C Memory Address Size}{\pageref{group___i2_c___memory___address___size}}{}
+\item \contentsline{section}{I2C Xfer\+Direction definition}{\pageref{group___i2_c___xfer_direction__definition}}{}
+\item \contentsline{section}{I2C Xfer\+Options definition}{\pageref{group___i2_c___xfer_options__definition}}{}
+\item \contentsline{section}{I2C Interrupt configuration definition}{\pageref{group___i2_c___interrupt__configuration__definition}}{}
+\item \contentsline{section}{I2C Flag definition}{\pageref{group___i2_c___flag__definition}}{}
+\end{DoxyCompactList}
+\item \contentsline{section}{I2C Exported Macros}{\pageref{group___i2_c___exported___macros}}{}
+\item \contentsline{section}{I2C Private Constants}{\pageref{group___i2_c___private___constants}}{}
+\item \contentsline{section}{I2C Private Macros}{\pageref{group___i2_c___private___macros}}{}
+\begin{DoxyCompactList}
+\item \contentsline{section}{I2C Private macros to check input parameters}{\pageref{group___i2_c___i_s___r_t_c___definitions}}{}
+\end{DoxyCompactList}
+\item \contentsline{section}{I2C Private Functions}{\pageref{group___i2_c___private___functions}}{}
+\item \contentsline{section}{I2\+C\+\_\+\+Exported\+\_\+\+Functions}{\pageref{group___i2_c___exported___functions}}{}
+\begin{DoxyCompactList}
+\item \contentsline{section}{Initialization and de-\/initialization functions}{\pageref{group___i2_c___exported___functions___group1}}{}
+\item \contentsline{section}{Input and Output operation functions}{\pageref{group___i2_c___exported___functions___group2}}{}
+\item \contentsline{section}{IRQ Handler and Callbacks}{\pageref{group___i2_c___i_r_q___handler__and___callbacks}}{}
+\item \contentsline{section}{Peripheral State, Mode and Error functions}{\pageref{group___i2_c___exported___functions___group3}}{}
+\end{DoxyCompactList}
+\end{DoxyCompactList}
+\item \contentsline{section}{I2\+CEx}{\pageref{group___i2_c_ex}}{}
+\item \contentsline{section}{PWR}{\pageref{group___p_w_r}}{}
+\begin{DoxyCompactList}
+\item \contentsline{section}{PWR Exported Types}{\pageref{group___p_w_r___exported___types}}{}
+\item \contentsline{section}{PWR Exported Constants}{\pageref{group___p_w_r___exported___constants}}{}
+\begin{DoxyCompactList}
+\item \contentsline{section}{PWR Wake\+Up Pins}{\pageref{group___p_w_r___wake_up___pins}}{}
+\item \contentsline{section}{PWR PVD detection level}{\pageref{group___p_w_r___p_v_d__detection__level}}{}
+\item \contentsline{section}{PWR PVD Mode}{\pageref{group___p_w_r___p_v_d___mode}}{}
+\item \contentsline{section}{PWR Regulator state in SLEEP/\+STOP mode}{\pageref{group___p_w_r___regulator__state__in___s_t_o_p__mode}}{}
+\item \contentsline{section}{PWR SLEEP mode entry}{\pageref{group___p_w_r___s_l_e_e_p__mode__entry}}{}
+\item \contentsline{section}{PWR STOP mode entry}{\pageref{group___p_w_r___s_t_o_p__mode__entry}}{}
+\item \contentsline{section}{PWR Flag}{\pageref{group___p_w_r___flag}}{}
+\end{DoxyCompactList}
+\item \contentsline{section}{PWR Exported Macro}{\pageref{group___p_w_r___exported___macro}}{}
+\item \contentsline{section}{PWR Private Constants}{\pageref{group___p_w_r___private___constants}}{}
+\begin{DoxyCompactList}
+\item \contentsline{section}{PWR PVD EXTI Line}{\pageref{group___p_w_r___p_v_d___e_x_t_i___line}}{}
+\item \contentsline{section}{PWR Register alias address}{\pageref{group___p_w_r__register__alias__address}}{}
+\item \contentsline{section}{PWR CR Register alias address}{\pageref{group___p_w_r___c_r__register__alias}}{}
+\item \contentsline{section}{PWR CSR Register alias address}{\pageref{group___p_w_r___c_s_r__register__alias}}{}
+\end{DoxyCompactList}
+\item \contentsline{section}{PWR Private Macros}{\pageref{group___p_w_r___private___macros}}{}
+\begin{DoxyCompactList}
+\item \contentsline{section}{PWR Private macros to check input parameters}{\pageref{group___p_w_r___i_s___p_w_r___definitions}}{}
+\end{DoxyCompactList}
+\item \contentsline{section}{PWR Exported Functions}{\pageref{group___p_w_r___exported___functions}}{}
+\begin{DoxyCompactList}
+\item \contentsline{section}{Initialization and de-\/initialization functions}{\pageref{group___p_w_r___exported___functions___group1}}{}
+\item \contentsline{section}{Peripheral Control functions}{\pageref{group___p_w_r___exported___functions___group2}}{}
+\end{DoxyCompactList}
+\end{DoxyCompactList}
+\item \contentsline{section}{PWREx}{\pageref{group___p_w_r_ex}}{}
+\begin{DoxyCompactList}
+\item \contentsline{section}{PWREx Exported Constants}{\pageref{group___p_w_r_ex___exported___constants}}{}
+\begin{DoxyCompactList}
+\item \contentsline{section}{PWREx Regulator Voltage Scale}{\pageref{group___p_w_r_ex___regulator___voltage___scale}}{}
+\end{DoxyCompactList}
+\item \contentsline{section}{PWREx Private Constants}{\pageref{group___p_w_r_ex___private___constants}}{}
+\begin{DoxyCompactList}
+\item \contentsline{section}{PWREx Register alias address}{\pageref{group___p_w_r_ex__register__alias__address}}{}
+\item \contentsline{section}{PWRx CSR Register alias address}{\pageref{group___p_w_r_ex___c_s_r__register__alias}}{}
+\end{DoxyCompactList}
+\item \contentsline{section}{PWREx Private Macros}{\pageref{group___p_w_r_ex___private___macros}}{}
+\begin{DoxyCompactList}
+\item \contentsline{section}{PWREx Private macros to check input parameters}{\pageref{group___p_w_r_ex___i_s___p_w_r___definitions}}{}
+\end{DoxyCompactList}
+\item \contentsline{section}{PWREx Exported Functions}{\pageref{group___p_w_r_ex___exported___functions}}{}
+\begin{DoxyCompactList}
+\item \contentsline{section}{PWREx\+\_\+\+Exported\+\_\+\+Functions\+\_\+\+Group1}{\pageref{group___p_w_r_ex___exported___functions___group1}}{}
+\end{DoxyCompactList}
+\end{DoxyCompactList}
+\item \contentsline{section}{RCC}{\pageref{group___r_c_c}}{}
+\begin{DoxyCompactList}
+\item \contentsline{section}{RCC Exported Types}{\pageref{group___r_c_c___exported___types}}{}
+\item \contentsline{section}{RCC Exported Constants}{\pageref{group___r_c_c___exported___constants}}{}
+\begin{DoxyCompactList}
+\item \contentsline{section}{Oscillator Type}{\pageref{group___r_c_c___oscillator___type}}{}
+\item \contentsline{section}{HSE Config}{\pageref{group___r_c_c___h_s_e___config}}{}
+\item \contentsline{section}{LSE Config}{\pageref{group___r_c_c___l_s_e___config}}{}
+\item \contentsline{section}{HSI Config}{\pageref{group___r_c_c___h_s_i___config}}{}
+\item \contentsline{section}{LSI Config}{\pageref{group___r_c_c___l_s_i___config}}{}
+\item \contentsline{section}{PLL Config}{\pageref{group___r_c_c___p_l_l___config}}{}
+\item \contentsline{section}{PLLP Clock Divider}{\pageref{group___r_c_c___p_l_l_p___clock___divider}}{}
+\item \contentsline{section}{PLL Clock Source}{\pageref{group___r_c_c___p_l_l___clock___source}}{}
+\item \contentsline{section}{System Clock Type}{\pageref{group___r_c_c___system___clock___type}}{}
+\item \contentsline{section}{System Clock Source}{\pageref{group___r_c_c___system___clock___source}}{}
+\item \contentsline{section}{System Clock Source Status}{\pageref{group___r_c_c___system___clock___source___status}}{}
+\item \contentsline{section}{AHB Clock Source}{\pageref{group___r_c_c___a_h_b___clock___source}}{}
+\item \contentsline{section}{APB1/\+APB2 Clock Source}{\pageref{group___r_c_c___a_p_b1___a_p_b2___clock___source}}{}
+\item \contentsline{section}{RTC Clock Source}{\pageref{group___r_c_c___r_t_c___clock___source}}{}
+\item \contentsline{section}{MCO Index}{\pageref{group___r_c_c___m_c_o___index}}{}
+\item \contentsline{section}{MCO1 Clock Source}{\pageref{group___r_c_c___m_c_o1___clock___source}}{}
+\item \contentsline{section}{MCOx Clock Prescaler}{\pageref{group___r_c_c___m_c_ox___clock___prescaler}}{}
+\item \contentsline{section}{Interrupts}{\pageref{group___r_c_c___interrupt}}{}
+\item \contentsline{section}{Flags}{\pageref{group___r_c_c___flag}}{}
+\end{DoxyCompactList}
+\item \contentsline{section}{RCC Exported Macros}{\pageref{group___r_c_c___exported___macros}}{}
+\begin{DoxyCompactList}
+\item \contentsline{section}{AHB1 Peripheral Clock Enable Disable}{\pageref{group___r_c_c___a_h_b1___clock___enable___disable}}{}
+\item \contentsline{section}{AHB1 Peripheral Clock Enable Disable Status}{\pageref{group___r_c_c___a_h_b1___peripheral___clock___enable___disable___status}}{}
+\item \contentsline{section}{APB1 Peripheral Clock Enable Disable}{\pageref{group___r_c_c___a_p_b1___clock___enable___disable}}{}
+\item \contentsline{section}{APB1 Peripheral Clock Enable Disable Status}{\pageref{group___r_c_c___a_p_b1___peripheral___clock___enable___disable___status}}{}
+\item \contentsline{section}{APB2 Peripheral Clock Enable Disable}{\pageref{group___r_c_c___a_p_b2___clock___enable___disable}}{}
+\item \contentsline{section}{APB2 Peripheral Clock Enable Disable Status}{\pageref{group___r_c_c___a_p_b2___peripheral___clock___enable___disable___status}}{}
+\item \contentsline{section}{AHB1 Force Release Reset}{\pageref{group___r_c_c___a_h_b1___force___release___reset}}{}
+\item \contentsline{section}{APB1 Force Release Reset}{\pageref{group___r_c_c___a_p_b1___force___release___reset}}{}
+\item \contentsline{section}{APB2 Force Release Reset}{\pageref{group___r_c_c___a_p_b2___force___release___reset}}{}
+\item \contentsline{section}{AHB1 Peripheral Low Power Enable Disable}{\pageref{group___r_c_c___a_h_b1___low_power___enable___disable}}{}
+\item \contentsline{section}{APB1 Peripheral Low Power Enable Disable}{\pageref{group___r_c_c___a_p_b1___low_power___enable___disable}}{}
+\item \contentsline{section}{APB2 Peripheral Low Power Enable Disable}{\pageref{group___r_c_c___a_p_b2___low_power___enable___disable}}{}
+\item \contentsline{section}{HSI Configuration}{\pageref{group___r_c_c___h_s_i___configuration}}{}
+\item \contentsline{section}{LSI Configuration}{\pageref{group___r_c_c___l_s_i___configuration}}{}
+\item \contentsline{section}{HSE Configuration}{\pageref{group___r_c_c___h_s_e___configuration}}{}
+\item \contentsline{section}{LSE Configuration}{\pageref{group___r_c_c___l_s_e___configuration}}{}
+\item \contentsline{section}{RTC Clock Configuration}{\pageref{group___r_c_c___internal___r_t_c___clock___configuration}}{}
+\item \contentsline{section}{PLL Configuration}{\pageref{group___r_c_c___p_l_l___configuration}}{}
+\item \contentsline{section}{Get Clock source}{\pageref{group___r_c_c___get___clock__source}}{}
+\item \contentsline{section}{RCC Extended MCOx Clock Config}{\pageref{group___r_c_c_ex___m_c_ox___clock___config}}{}
+\item \contentsline{section}{Flags Interrupts Management}{\pageref{group___r_c_c___flags___interrupts___management}}{}
+\end{DoxyCompactList}
+\item \contentsline{section}{RCC Private Constants}{\pageref{group___r_c_c___private___constants}}{}
+\begin{DoxyCompactList}
+\item \contentsline{section}{RCC Bit\+Address Alias\+Region}{\pageref{group___r_c_c___bit_address___alias_region}}{}
+\end{DoxyCompactList}
+\item \contentsline{section}{RCC Private Macros}{\pageref{group___r_c_c___private___macros}}{}
+\begin{DoxyCompactList}
+\item \contentsline{section}{RCC Private macros to check input parameters}{\pageref{group___r_c_c___i_s___r_c_c___definitions}}{}
+\end{DoxyCompactList}
+\item \contentsline{section}{RCC\+\_\+\+Exported\+\_\+\+Functions}{\pageref{group___r_c_c___exported___functions}}{}
+\begin{DoxyCompactList}
+\item \contentsline{section}{RCC\+\_\+\+Exported\+\_\+\+Functions\+\_\+\+Group1}{\pageref{group___r_c_c___exported___functions___group1}}{}
+\item \contentsline{section}{RCC\+\_\+\+Exported\+\_\+\+Functions\+\_\+\+Group2}{\pageref{group___r_c_c___exported___functions___group2}}{}
+\end{DoxyCompactList}
+\end{DoxyCompactList}
+\item \contentsline{section}{RCCEx}{\pageref{group___r_c_c_ex}}{}
+\begin{DoxyCompactList}
+\item \contentsline{section}{RCCEx Exported Types}{\pageref{group___r_c_c_ex___exported___types}}{}
+\item \contentsline{section}{RCCEx Exported Constants}{\pageref{group___r_c_c_ex___exported___constants}}{}
+\begin{DoxyCompactList}
+\item \contentsline{section}{RCC Periph Clock Selection}{\pageref{group___r_c_c_ex___periph___clock___selection}}{}
+\item \contentsline{section}{RCC PLLSAI DIVR}{\pageref{group___r_c_c_ex___p_l_l_s_a_i___d_i_v_r}}{}
+\item \contentsline{section}{RCC PLLI2\+SP Clock Divider}{\pageref{group___r_c_c_ex___p_l_l_i2_s_p___clock___divider}}{}
+\item \contentsline{section}{RCC PLLSAIP Clock Divider}{\pageref{group___r_c_c_ex___p_l_l_s_a_i_p___clock___divider}}{}
+\end{DoxyCompactList}
+\item \contentsline{section}{RCCEx Exported Macros}{\pageref{group___r_c_c_ex___exported___macros}}{}
+\item \contentsline{section}{RCCEx Private Constants}{\pageref{group___r_c_c_ex___private___constants}}{}
+\begin{DoxyCompactList}
+\item \contentsline{section}{RCC Bit\+Address Alias\+Region}{\pageref{group___r_c_c_ex___bit_address___alias_region}}{}
+\end{DoxyCompactList}
+\item \contentsline{section}{RCCEx Private Macros}{\pageref{group___r_c_c_ex___private___macros}}{}
+\begin{DoxyCompactList}
+\item \contentsline{section}{RCC Private macros to check input parameters}{\pageref{group___r_c_c_ex___i_s___r_c_c___definitions}}{}
+\end{DoxyCompactList}
+\item \contentsline{section}{RCCEx\+\_\+\+Exported\+\_\+\+Functions}{\pageref{group___r_c_c_ex___exported___functions}}{}
+\begin{DoxyCompactList}
+\item \contentsline{section}{RCCEx\+\_\+\+Exported\+\_\+\+Functions\+\_\+\+Group1}{\pageref{group___r_c_c_ex___exported___functions___group1}}{}
+\end{DoxyCompactList}
+\end{DoxyCompactList}
+\item \contentsline{section}{TIM}{\pageref{group___t_i_m}}{}
+\begin{DoxyCompactList}
+\item \contentsline{section}{TIM Exported Types}{\pageref{group___t_i_m___exported___types}}{}
+\item \contentsline{section}{TIM Exported Constants}{\pageref{group___t_i_m___exported___constants}}{}
+\begin{DoxyCompactList}
+\item \contentsline{section}{TIM Clear Input Source}{\pageref{group___t_i_m___clear_input___source}}{}
+\item \contentsline{section}{TIM DMA Base Address}{\pageref{group___t_i_m___d_m_a___base__address}}{}
+\item \contentsline{section}{TIM Event Source}{\pageref{group___t_i_m___event___source}}{}
+\item \contentsline{section}{TIM Input Channel polarity}{\pageref{group___t_i_m___input___channel___polarity}}{}
+\item \contentsline{section}{TIM ETR Polarity}{\pageref{group___t_i_m___e_t_r___polarity}}{}
+\item \contentsline{section}{TIM ETR Prescaler}{\pageref{group___t_i_m___e_t_r___prescaler}}{}
+\item \contentsline{section}{TIM Counter Mode}{\pageref{group___t_i_m___counter___mode}}{}
+\item \contentsline{section}{TIM Clock Division}{\pageref{group___t_i_m___clock_division}}{}
+\item \contentsline{section}{TIM Output Compare State}{\pageref{group___t_i_m___output___compare___state}}{}
+\item \contentsline{section}{TIM Auto-\/\+Reload Preload}{\pageref{group___t_i_m___auto_reload_preload}}{}
+\item \contentsline{section}{TIM Output Fast State}{\pageref{group___t_i_m___output___fast___state}}{}
+\item \contentsline{section}{TIM Complementary Output Compare State}{\pageref{group___t_i_m___output___compare___n___state}}{}
+\item \contentsline{section}{TIM Output Compare Polarity}{\pageref{group___t_i_m___output___compare___polarity}}{}
+\item \contentsline{section}{TIM Complementary Output Compare Polarity}{\pageref{group___t_i_m___output___compare___n___polarity}}{}
+\item \contentsline{section}{TIM Output Compare Idle State}{\pageref{group___t_i_m___output___compare___idle___state}}{}
+\item \contentsline{section}{TIM Complementary Output Compare Idle State}{\pageref{group___t_i_m___output___compare___n___idle___state}}{}
+\item \contentsline{section}{TIM Input Capture Polarity}{\pageref{group___t_i_m___input___capture___polarity}}{}
+\item \contentsline{section}{TIM Encoder Input Polarity}{\pageref{group___t_i_m___encoder___input___polarity}}{}
+\item \contentsline{section}{TIM Input Capture Selection}{\pageref{group___t_i_m___input___capture___selection}}{}
+\item \contentsline{section}{TIM Input Capture Prescaler}{\pageref{group___t_i_m___input___capture___prescaler}}{}
+\item \contentsline{section}{TIM One Pulse Mode}{\pageref{group___t_i_m___one___pulse___mode}}{}
+\item \contentsline{section}{TIM Encoder Mode}{\pageref{group___t_i_m___encoder___mode}}{}
+\item \contentsline{section}{TIM interrupt Definition}{\pageref{group___t_i_m___interrupt__definition}}{}
+\item \contentsline{section}{TIM Commutation Source}{\pageref{group___t_i_m___commutation___source}}{}
+\item \contentsline{section}{TIM DMA Sources}{\pageref{group___t_i_m___d_m_a__sources}}{}
+\item \contentsline{section}{CCx DMA request selection}{\pageref{group___t_i_m___c_c___d_m_a___request}}{}
+\item \contentsline{section}{TIM Flag Definition}{\pageref{group___t_i_m___flag__definition}}{}
+\item \contentsline{section}{TIM Channel}{\pageref{group___t_i_m___channel}}{}
+\item \contentsline{section}{TIM Clock Source}{\pageref{group___t_i_m___clock___source}}{}
+\item \contentsline{section}{TIM Clock Polarity}{\pageref{group___t_i_m___clock___polarity}}{}
+\item \contentsline{section}{TIM Clock Prescaler}{\pageref{group___t_i_m___clock___prescaler}}{}
+\item \contentsline{section}{TIM Clear Input Polarity}{\pageref{group___t_i_m___clear_input___polarity}}{}
+\item \contentsline{section}{TIM Clear Input Prescaler}{\pageref{group___t_i_m___clear_input___prescaler}}{}
+\item \contentsline{section}{TIM OSSR Off\+State Selection for Run mode state}{\pageref{group___t_i_m___o_s_s_r___off___state___selection__for___run__mode__state}}{}
+\item \contentsline{section}{TIM OSSI Off\+State Selection for Idle mode state}{\pageref{group___t_i_m___o_s_s_i___off___state___selection__for___idle__mode__state}}{}
+\item \contentsline{section}{TIM Lock level}{\pageref{group___t_i_m___lock__level}}{}
+\item \contentsline{section}{TIM Break Input Enable}{\pageref{group___t_i_m___break___input__enable__disable}}{}
+\item \contentsline{section}{TIM Break Input Polarity}{\pageref{group___t_i_m___break___polarity}}{}
+\item \contentsline{section}{TIM Automatic Output Enable}{\pageref{group___t_i_m___a_o_e___bit___set___reset}}{}
+\item \contentsline{section}{TIM Master Mode Selection}{\pageref{group___t_i_m___master___mode___selection}}{}
+\item \contentsline{section}{TIM Master/\+Slave Mode}{\pageref{group___t_i_m___master___slave___mode}}{}
+\item \contentsline{section}{TIM Slave mode}{\pageref{group___t_i_m___slave___mode}}{}
+\item \contentsline{section}{TIM Output Compare and PWM Modes}{\pageref{group___t_i_m___output___compare__and___p_w_m__modes}}{}
+\item \contentsline{section}{TIM Trigger Selection}{\pageref{group___t_i_m___trigger___selection}}{}
+\item \contentsline{section}{TIM Trigger Polarity}{\pageref{group___t_i_m___trigger___polarity}}{}
+\item \contentsline{section}{TIM Trigger Prescaler}{\pageref{group___t_i_m___trigger___prescaler}}{}
+\item \contentsline{section}{TIM TI1 Input Selection}{\pageref{group___t_i_m___t_i1___selection}}{}
+\item \contentsline{section}{TIM DMA Burst Length}{\pageref{group___t_i_m___d_m_a___burst___length}}{}
+\item \contentsline{section}{TIM DMA Handle Index}{\pageref{group___d_m_a___handle__index}}{}
+\item \contentsline{section}{TIM Capture/\+Compare Channel State}{\pageref{group___channel___c_c___state}}{}
+\end{DoxyCompactList}
+\item \contentsline{section}{TIM Exported Macros}{\pageref{group___t_i_m___exported___macros}}{}
+\item \contentsline{section}{TIM Private Constants}{\pageref{group___t_i_m___private___constants}}{}
+\item \contentsline{section}{TIM Private Macros}{\pageref{group___t_i_m___private___macros}}{}
+\item \contentsline{section}{TIM Private Functions}{\pageref{group___t_i_m___private___functions}}{}
+\item \contentsline{section}{TIM Exported Functions}{\pageref{group___t_i_m___exported___functions}}{}
+\begin{DoxyCompactList}
+\item \contentsline{section}{TIM Peripheral Control functions}{\pageref{group___t_i_m___exported___functions___group8}}{}
+\item \contentsline{section}{TIM Callbacks functions}{\pageref{group___t_i_m___exported___functions___group9}}{}
+\item \contentsline{section}{TIM Peripheral State functions}{\pageref{group___t_i_m___exported___functions___group10}}{}
+\item \contentsline{section}{TIM Time Base functions}{\pageref{group___t_i_m___exported___functions___group1}}{}
+\item \contentsline{section}{TIM Output Compare functions}{\pageref{group___t_i_m___exported___functions___group2}}{}
+\item \contentsline{section}{TIM PWM functions}{\pageref{group___t_i_m___exported___functions___group3}}{}
+\item \contentsline{section}{TIM Input Capture functions}{\pageref{group___t_i_m___exported___functions___group4}}{}
+\item \contentsline{section}{TIM One Pulse functions}{\pageref{group___t_i_m___exported___functions___group5}}{}
+\item \contentsline{section}{TIM Encoder functions}{\pageref{group___t_i_m___exported___functions___group6}}{}
+\item \contentsline{section}{TIM IRQ handler management}{\pageref{group___t_i_m___exported___functions___group7}}{}
+\end{DoxyCompactList}
+\end{DoxyCompactList}
+\item \contentsline{section}{TIMEx}{\pageref{group___t_i_m_ex}}{}
+\begin{DoxyCompactList}
+\item \contentsline{section}{TIM Extended Exported Types}{\pageref{group___t_i_m_ex___exported___types}}{}
+\item \contentsline{section}{TIM Extended Exported Constants}{\pageref{group___t_i_m_ex___exported___constants}}{}
+\begin{DoxyCompactList}
+\item \contentsline{section}{TIM Extended Remapping}{\pageref{group___t_i_m_ex___remap}}{}
+\end{DoxyCompactList}
+\item \contentsline{section}{TIM Extended Exported Macros}{\pageref{group___t_i_m_ex___exported___macros}}{}
+\item \contentsline{section}{TIM Extended Private Macros}{\pageref{group___t_i_m_ex___private___macros}}{}
+\item \contentsline{section}{TIM Extended Exported Functions}{\pageref{group___t_i_m_ex___exported___functions}}{}
+\begin{DoxyCompactList}
+\item \contentsline{section}{Extended Timer Hall Sensor functions}{\pageref{group___t_i_m_ex___exported___functions___group1}}{}
+\item \contentsline{section}{Extended Timer Complementary Output Compare functions}{\pageref{group___t_i_m_ex___exported___functions___group2}}{}
+\item \contentsline{section}{Extended Timer Complementary PWM functions}{\pageref{group___t_i_m_ex___exported___functions___group3}}{}
+\item \contentsline{section}{Extended Timer Complementary One Pulse functions}{\pageref{group___t_i_m_ex___exported___functions___group4}}{}
+\item \contentsline{section}{Extended Peripheral Control functions}{\pageref{group___t_i_m_ex___exported___functions___group5}}{}
+\item \contentsline{section}{Extended Callbacks functions}{\pageref{group___t_i_m_ex___exported___functions___group6}}{}
+\item \contentsline{section}{Extended Peripheral State functions}{\pageref{group___t_i_m_ex___exported___functions___group7}}{}
+\end{DoxyCompactList}
+\item \contentsline{section}{TIM Extended Private Functions}{\pageref{group___t_i_m_ex___private___functions}}{}
+\end{DoxyCompactList}
+\item \contentsline{section}{UART}{\pageref{group___u_a_r_t}}{}
+\begin{DoxyCompactList}
+\item \contentsline{section}{UART Exported Types}{\pageref{group___u_a_r_t___exported___types}}{}
+\item \contentsline{section}{UART Exported Constants}{\pageref{group___u_a_r_t___exported___constants}}{}
+\begin{DoxyCompactList}
+\item \contentsline{section}{UART Error Code}{\pageref{group___u_a_r_t___error___code}}{}
+\item \contentsline{section}{UART Word Length}{\pageref{group___u_a_r_t___word___length}}{}
+\item \contentsline{section}{UART Number of Stop Bits}{\pageref{group___u_a_r_t___stop___bits}}{}
+\item \contentsline{section}{UART Parity}{\pageref{group___u_a_r_t___parity}}{}
+\item \contentsline{section}{UART Hardware Flow Control}{\pageref{group___u_a_r_t___hardware___flow___control}}{}
+\item \contentsline{section}{UART Transfer Mode}{\pageref{group___u_a_r_t___mode}}{}
+\item \contentsline{section}{UART State}{\pageref{group___u_a_r_t___state}}{}
+\item \contentsline{section}{UART Over Sampling}{\pageref{group___u_a_r_t___over___sampling}}{}
+\item \contentsline{section}{UART LIN Break Detection Length}{\pageref{group___u_a_r_t___l_i_n___break___detection___length}}{}
+\item \contentsline{section}{UART Wakeup Functions}{\pageref{group___u_a_r_t___wake_up__functions}}{}
+\item \contentsline{section}{UART FLags}{\pageref{group___u_a_r_t___flags}}{}
+\item \contentsline{section}{UART Interrupt Definitions}{\pageref{group___u_a_r_t___interrupt__definition}}{}
+\item \contentsline{section}{UART Reception type values}{\pageref{group___u_a_r_t___reception___type___values}}{}
+\item \contentsline{section}{UART Rx\+Event type values}{\pageref{group___u_a_r_t___rx_event___type___values}}{}
+\end{DoxyCompactList}
+\item \contentsline{section}{UART Exported Macros}{\pageref{group___u_a_r_t___exported___macros}}{}
+\item \contentsline{section}{UART Private Constants}{\pageref{group___u_a_r_t___private___constants}}{}
+\item \contentsline{section}{UART Private Macros}{\pageref{group___u_a_r_t___private___macros}}{}
+\item \contentsline{section}{UART Private Functions}{\pageref{group___u_a_r_t___private___functions}}{}
+\item \contentsline{section}{UART\+\_\+\+Exported\+\_\+\+Functions}{\pageref{group___u_a_r_t___exported___functions}}{}
+\begin{DoxyCompactList}
+\item \contentsline{section}{Initialization and de-\/initialization functions}{\pageref{group___u_a_r_t___exported___functions___group1}}{}
+\item \contentsline{section}{IO operation functions}{\pageref{group___u_a_r_t___exported___functions___group2}}{}
+\item \contentsline{section}{UART\+\_\+\+Exported\+\_\+\+Functions\+\_\+\+Group3}{\pageref{group___u_a_r_t___exported___functions___group3}}{}
+\item \contentsline{section}{UART\+\_\+\+Exported\+\_\+\+Functions\+\_\+\+Group4}{\pageref{group___u_a_r_t___exported___functions___group4}}{}
+\end{DoxyCompactList}
+\end{DoxyCompactList}
+\end{DoxyCompactList}
+\item \contentsline{section}{STM32\+F4xx\+\_\+\+LL\+\_\+\+Driver}{\pageref{group___s_t_m32_f4xx___l_l___driver}}{}
+\begin{DoxyCompactList}
+\item \contentsline{section}{CORTEX}{\pageref{group___c_o_r_t_e_x___l_l}}{}
+\begin{DoxyCompactList}
+\item \contentsline{section}{CORTEX Exported Constants}{\pageref{group___c_o_r_t_e_x___l_l___exported___constants}}{}
+\begin{DoxyCompactList}
+\item \contentsline{section}{SYSTICK Clock Source}{\pageref{group___c_o_r_t_e_x___l_l___e_c___c_l_k_s_o_u_r_c_e___h_c_l_k}}{}
+\item \contentsline{section}{Handler Fault type}{\pageref{group___c_o_r_t_e_x___l_l___e_c___f_a_u_l_t}}{}
+\end{DoxyCompactList}
+\item \contentsline{section}{CORTEX Exported Functions}{\pageref{group___c_o_r_t_e_x___l_l___exported___functions}}{}
+\begin{DoxyCompactList}
+\item \contentsline{section}{SYSTICK}{\pageref{group___c_o_r_t_e_x___l_l___e_f___s_y_s_t_i_c_k}}{}
+\item \contentsline{section}{LOW POWER MODE}{\pageref{group___c_o_r_t_e_x___l_l___e_f___l_o_w___p_o_w_e_r___m_o_d_e}}{}
+\item \contentsline{section}{HANDLER}{\pageref{group___c_o_r_t_e_x___l_l___e_f___h_a_n_d_l_e_r}}{}
+\item \contentsline{section}{MCU INFO}{\pageref{group___c_o_r_t_e_x___l_l___e_f___m_c_u___i_n_f_o}}{}
+\end{DoxyCompactList}
+\end{DoxyCompactList}
+\item \contentsline{section}{UTILS}{\pageref{group___u_t_i_l_s___l_l}}{}
+\begin{DoxyCompactList}
+\item \contentsline{section}{UTILS Private Constants}{\pageref{group___u_t_i_l_s___l_l___private___constants}}{}
+\item \contentsline{section}{UTILS Private Macros}{\pageref{group___u_t_i_l_s___l_l___private___macros}}{}
+\item \contentsline{section}{UTILS Exported structures}{\pageref{group___u_t_i_l_s___l_l___e_s___i_n_i_t}}{}
+\item \contentsline{section}{UTILS Exported Constants}{\pageref{group___u_t_i_l_s___l_l___exported___constants}}{}
+\begin{DoxyCompactList}
+\item \contentsline{section}{HSE Bypass activation}{\pageref{group___u_t_i_l_s___e_c___h_s_e___b_y_p_a_s_s}}{}
+\item \contentsline{section}{PACKAGE TYPE}{\pageref{group___u_t_i_l_s___e_c___p_a_c_k_a_g_e_t_y_p_e}}{}
+\end{DoxyCompactList}
+\item \contentsline{section}{UTILS Exported Functions}{\pageref{group___u_t_i_l_s___l_l___exported___functions}}{}
+\begin{DoxyCompactList}
+\item \contentsline{section}{DEVICE ELECTRONIC SIGNATURE}{\pageref{group___u_t_i_l_s___e_f___d_e_v_i_c_e___e_l_e_c_t_r_o_n_i_c___s_i_g_n_a_t_u_r_e}}{}
+\item \contentsline{section}{DELAY}{\pageref{group___u_t_i_l_s___l_l___e_f___d_e_l_a_y}}{}
+\item \contentsline{section}{SYSTEM}{\pageref{group___u_t_i_l_s___e_f___s_y_s_t_e_m}}{}
+\end{DoxyCompactList}
+\end{DoxyCompactList}
+\end{DoxyCompactList}
+\end{DoxyCompactList}

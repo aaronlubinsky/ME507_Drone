@@ -1,0 +1,91 @@
+\doxysubsubsubsection{HAL state structure definition }
+\hypertarget{group___h_a_l__state__structure__definition}{}\label{group___h_a_l__state__structure__definition}\index{HAL state structure definition@{HAL state structure definition}}
+
+
+HAL State structure definition.  
+
+
+\doxysubsubsubsubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{group___h_a_l__state__structure__definition_gaef355af8eab251ae2a19ee164ad81c37}{HAL\+\_\+\+I2\+C\+\_\+\+State\+Type\+Def}} \{ \newline
+\mbox{\hyperlink{group___h_a_l__state__structure__definition_ggaef355af8eab251ae2a19ee164ad81c37a91ba08634e08d7287940f1bc5a37eeff}{HAL\+\_\+\+I2\+C\+\_\+\+STATE\+\_\+\+RESET}} = 0x00U
+, \mbox{\hyperlink{group___h_a_l__state__structure__definition_ggaef355af8eab251ae2a19ee164ad81c37af859ce60c5e462b0bfde3a5010bc72d1}{HAL\+\_\+\+I2\+C\+\_\+\+STATE\+\_\+\+READY}} = 0x20U
+, \mbox{\hyperlink{group___h_a_l__state__structure__definition_ggaef355af8eab251ae2a19ee164ad81c37a0c503d6c0388f0d872b368557e278b5a}{HAL\+\_\+\+I2\+C\+\_\+\+STATE\+\_\+\+BUSY}} = 0x24U
+, \mbox{\hyperlink{group___h_a_l__state__structure__definition_ggaef355af8eab251ae2a19ee164ad81c37acb3a9e3d4d1076e0f4e65f91ca0161bc}{HAL\+\_\+\+I2\+C\+\_\+\+STATE\+\_\+\+BUSY\+\_\+\+TX}} = 0x21U
+, \newline
+\mbox{\hyperlink{group___h_a_l__state__structure__definition_ggaef355af8eab251ae2a19ee164ad81c37a4ea4ecc2dc3cb64c4877c123d9d73170}{HAL\+\_\+\+I2\+C\+\_\+\+STATE\+\_\+\+BUSY\+\_\+\+RX}} = 0x22U
+, \mbox{\hyperlink{group___h_a_l__state__structure__definition_ggaef355af8eab251ae2a19ee164ad81c37a13518f06f54c7515100e86bb8d6e0779}{HAL\+\_\+\+I2\+C\+\_\+\+STATE\+\_\+\+LISTEN}} = 0x28U
+, \mbox{\hyperlink{group___h_a_l__state__structure__definition_ggaef355af8eab251ae2a19ee164ad81c37a14d22553a60819b276582e08459f30b0}{HAL\+\_\+\+I2\+C\+\_\+\+STATE\+\_\+\+BUSY\+\_\+\+TX\+\_\+\+LISTEN}} = 0x29U
+, \mbox{\hyperlink{group___h_a_l__state__structure__definition_ggaef355af8eab251ae2a19ee164ad81c37a8aec2547eedf1c9924f8efed33e3b5c5}{HAL\+\_\+\+I2\+C\+\_\+\+STATE\+\_\+\+BUSY\+\_\+\+RX\+\_\+\+LISTEN}} = 0x2\+AU
+, \newline
+\mbox{\hyperlink{group___h_a_l__state__structure__definition_ggaef355af8eab251ae2a19ee164ad81c37a2c6f6d1fef0847f9da51153b5c295249}{HAL\+\_\+\+I2\+C\+\_\+\+STATE\+\_\+\+ABORT}} = 0x60U
+, \mbox{\hyperlink{group___h_a_l__state__structure__definition_ggaef355af8eab251ae2a19ee164ad81c37a378abf24301fe7a23620fd78ff3f168b}{HAL\+\_\+\+I2\+C\+\_\+\+STATE\+\_\+\+TIMEOUT}} = 0x\+A0U
+, \mbox{\hyperlink{group___h_a_l__state__structure__definition_ggaef355af8eab251ae2a19ee164ad81c37afe3c9b304462901099426a0d414be2a2}{HAL\+\_\+\+I2\+C\+\_\+\+STATE\+\_\+\+ERROR}} = 0x\+E0U
+ \}
+\end{DoxyCompactItemize}
+
+
+\doxysubsubsubsubsection{Detailed Description}
+HAL State structure definition. 
+
+\begin{DoxyNote}{Note}
+HAL I2C State value coding follow below described bitmap \+: b7-\/b6 Error information 00 \+: No Error 01 \+: Abort (Abort user request on going) 10 \+: Timeout 11 \+: Error b5 Peripheral initialization status 0 \+: Reset (Peripheral not initialized) 1 \+: Init done (Peripheral initialized and ready to use. HAL I2C Init function called) b4 (not used) x \+: Should be set to 0 b3 0 \+: Ready or Busy (No Listen mode ongoing) 1 \+: Listen (Peripheral in Address Listen Mode) b2 Intrinsic process state 0 \+: Ready 1 \+: Busy (Peripheral busy with some configuration or internal operations) b1 Rx state 0 \+: Ready (no Rx operation ongoing) 1 \+: Busy (Rx operation ongoing) b0 Tx state 0 \+: Ready (no Tx operation ongoing) 1 \+: Busy (Tx operation ongoing) 
+\end{DoxyNote}
+
+
+\label{doc-enum-members}
+\Hypertarget{group___h_a_l__state__structure__definition_doc-enum-members}
+\doxysubsubsubsubsection{Enumeration Type Documentation}
+\Hypertarget{group___h_a_l__state__structure__definition_gaef355af8eab251ae2a19ee164ad81c37}\index{HAL state structure definition@{HAL state structure definition}!HAL\_I2C\_StateTypeDef@{HAL\_I2C\_StateTypeDef}}
+\index{HAL\_I2C\_StateTypeDef@{HAL\_I2C\_StateTypeDef}!HAL state structure definition@{HAL state structure definition}}
+\doxysubsubsubsubsubsection{\texorpdfstring{HAL\_I2C\_StateTypeDef}{HAL\_I2C\_StateTypeDef}}
+{\footnotesize\ttfamily \label{group___h_a_l__state__structure__definition_gaef355af8eab251ae2a19ee164ad81c37} 
+enum \mbox{\hyperlink{group___h_a_l__state__structure__definition_gaef355af8eab251ae2a19ee164ad81c37}{HAL\+\_\+\+I2\+C\+\_\+\+State\+Type\+Def}}}
+
+\begin{DoxyEnumFields}[2]{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{HAL\_I2C\_STATE\_RESET@{HAL\_I2C\_STATE\_RESET}!HAL state structure definition@{HAL state structure definition}}\index{HAL state structure definition@{HAL state structure definition}!HAL\_I2C\_STATE\_RESET@{HAL\_I2C\_STATE\_RESET}}}\Hypertarget{group___h_a_l__state__structure__definition_ggaef355af8eab251ae2a19ee164ad81c37a91ba08634e08d7287940f1bc5a37eeff}\label{group___h_a_l__state__structure__definition_ggaef355af8eab251ae2a19ee164ad81c37a91ba08634e08d7287940f1bc5a37eeff} 
+HAL\+\_\+\+I2\+C\+\_\+\+STATE\+\_\+\+RESET&Peripheral is not yet Initialized \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{HAL\_I2C\_STATE\_READY@{HAL\_I2C\_STATE\_READY}!HAL state structure definition@{HAL state structure definition}}\index{HAL state structure definition@{HAL state structure definition}!HAL\_I2C\_STATE\_READY@{HAL\_I2C\_STATE\_READY}}}\Hypertarget{group___h_a_l__state__structure__definition_ggaef355af8eab251ae2a19ee164ad81c37af859ce60c5e462b0bfde3a5010bc72d1}\label{group___h_a_l__state__structure__definition_ggaef355af8eab251ae2a19ee164ad81c37af859ce60c5e462b0bfde3a5010bc72d1} 
+HAL\+\_\+\+I2\+C\+\_\+\+STATE\+\_\+\+READY&Peripheral Initialized and ready for use \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{HAL\_I2C\_STATE\_BUSY@{HAL\_I2C\_STATE\_BUSY}!HAL state structure definition@{HAL state structure definition}}\index{HAL state structure definition@{HAL state structure definition}!HAL\_I2C\_STATE\_BUSY@{HAL\_I2C\_STATE\_BUSY}}}\Hypertarget{group___h_a_l__state__structure__definition_ggaef355af8eab251ae2a19ee164ad81c37a0c503d6c0388f0d872b368557e278b5a}\label{group___h_a_l__state__structure__definition_ggaef355af8eab251ae2a19ee164ad81c37a0c503d6c0388f0d872b368557e278b5a} 
+HAL\+\_\+\+I2\+C\+\_\+\+STATE\+\_\+\+BUSY&An internal process is ongoing \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{HAL\_I2C\_STATE\_BUSY\_TX@{HAL\_I2C\_STATE\_BUSY\_TX}!HAL state structure definition@{HAL state structure definition}}\index{HAL state structure definition@{HAL state structure definition}!HAL\_I2C\_STATE\_BUSY\_TX@{HAL\_I2C\_STATE\_BUSY\_TX}}}\Hypertarget{group___h_a_l__state__structure__definition_ggaef355af8eab251ae2a19ee164ad81c37acb3a9e3d4d1076e0f4e65f91ca0161bc}\label{group___h_a_l__state__structure__definition_ggaef355af8eab251ae2a19ee164ad81c37acb3a9e3d4d1076e0f4e65f91ca0161bc} 
+HAL\+\_\+\+I2\+C\+\_\+\+STATE\+\_\+\+BUSY\+\_\+\+TX&Data Transmission process is ongoing \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{HAL\_I2C\_STATE\_BUSY\_RX@{HAL\_I2C\_STATE\_BUSY\_RX}!HAL state structure definition@{HAL state structure definition}}\index{HAL state structure definition@{HAL state structure definition}!HAL\_I2C\_STATE\_BUSY\_RX@{HAL\_I2C\_STATE\_BUSY\_RX}}}\Hypertarget{group___h_a_l__state__structure__definition_ggaef355af8eab251ae2a19ee164ad81c37a4ea4ecc2dc3cb64c4877c123d9d73170}\label{group___h_a_l__state__structure__definition_ggaef355af8eab251ae2a19ee164ad81c37a4ea4ecc2dc3cb64c4877c123d9d73170} 
+HAL\+\_\+\+I2\+C\+\_\+\+STATE\+\_\+\+BUSY\+\_\+\+RX&Data Reception process is ongoing \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{HAL\_I2C\_STATE\_LISTEN@{HAL\_I2C\_STATE\_LISTEN}!HAL state structure definition@{HAL state structure definition}}\index{HAL state structure definition@{HAL state structure definition}!HAL\_I2C\_STATE\_LISTEN@{HAL\_I2C\_STATE\_LISTEN}}}\Hypertarget{group___h_a_l__state__structure__definition_ggaef355af8eab251ae2a19ee164ad81c37a13518f06f54c7515100e86bb8d6e0779}\label{group___h_a_l__state__structure__definition_ggaef355af8eab251ae2a19ee164ad81c37a13518f06f54c7515100e86bb8d6e0779} 
+HAL\+\_\+\+I2\+C\+\_\+\+STATE\+\_\+\+LISTEN&Address Listen Mode is ongoing \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{HAL\_I2C\_STATE\_BUSY\_TX\_LISTEN@{HAL\_I2C\_STATE\_BUSY\_TX\_LISTEN}!HAL state structure definition@{HAL state structure definition}}\index{HAL state structure definition@{HAL state structure definition}!HAL\_I2C\_STATE\_BUSY\_TX\_LISTEN@{HAL\_I2C\_STATE\_BUSY\_TX\_LISTEN}}}\Hypertarget{group___h_a_l__state__structure__definition_ggaef355af8eab251ae2a19ee164ad81c37a14d22553a60819b276582e08459f30b0}\label{group___h_a_l__state__structure__definition_ggaef355af8eab251ae2a19ee164ad81c37a14d22553a60819b276582e08459f30b0} 
+HAL\+\_\+\+I2\+C\+\_\+\+STATE\+\_\+\+BUSY\+\_\+\+TX\+\_\+\+LISTEN&Address Listen Mode and Data Transmission process is ongoing \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{HAL\_I2C\_STATE\_BUSY\_RX\_LISTEN@{HAL\_I2C\_STATE\_BUSY\_RX\_LISTEN}!HAL state structure definition@{HAL state structure definition}}\index{HAL state structure definition@{HAL state structure definition}!HAL\_I2C\_STATE\_BUSY\_RX\_LISTEN@{HAL\_I2C\_STATE\_BUSY\_RX\_LISTEN}}}\Hypertarget{group___h_a_l__state__structure__definition_ggaef355af8eab251ae2a19ee164ad81c37a8aec2547eedf1c9924f8efed33e3b5c5}\label{group___h_a_l__state__structure__definition_ggaef355af8eab251ae2a19ee164ad81c37a8aec2547eedf1c9924f8efed33e3b5c5} 
+HAL\+\_\+\+I2\+C\+\_\+\+STATE\+\_\+\+BUSY\+\_\+\+RX\+\_\+\+LISTEN&Address Listen Mode and Data Reception process is ongoing \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{HAL\_I2C\_STATE\_ABORT@{HAL\_I2C\_STATE\_ABORT}!HAL state structure definition@{HAL state structure definition}}\index{HAL state structure definition@{HAL state structure definition}!HAL\_I2C\_STATE\_ABORT@{HAL\_I2C\_STATE\_ABORT}}}\Hypertarget{group___h_a_l__state__structure__definition_ggaef355af8eab251ae2a19ee164ad81c37a2c6f6d1fef0847f9da51153b5c295249}\label{group___h_a_l__state__structure__definition_ggaef355af8eab251ae2a19ee164ad81c37a2c6f6d1fef0847f9da51153b5c295249} 
+HAL\+\_\+\+I2\+C\+\_\+\+STATE\+\_\+\+ABORT&Abort user request ongoing \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{HAL\_I2C\_STATE\_TIMEOUT@{HAL\_I2C\_STATE\_TIMEOUT}!HAL state structure definition@{HAL state structure definition}}\index{HAL state structure definition@{HAL state structure definition}!HAL\_I2C\_STATE\_TIMEOUT@{HAL\_I2C\_STATE\_TIMEOUT}}}\Hypertarget{group___h_a_l__state__structure__definition_ggaef355af8eab251ae2a19ee164ad81c37a378abf24301fe7a23620fd78ff3f168b}\label{group___h_a_l__state__structure__definition_ggaef355af8eab251ae2a19ee164ad81c37a378abf24301fe7a23620fd78ff3f168b} 
+HAL\+\_\+\+I2\+C\+\_\+\+STATE\+\_\+\+TIMEOUT&Timeout state \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{HAL\_I2C\_STATE\_ERROR@{HAL\_I2C\_STATE\_ERROR}!HAL state structure definition@{HAL state structure definition}}\index{HAL state structure definition@{HAL state structure definition}!HAL\_I2C\_STATE\_ERROR@{HAL\_I2C\_STATE\_ERROR}}}\Hypertarget{group___h_a_l__state__structure__definition_ggaef355af8eab251ae2a19ee164ad81c37afe3c9b304462901099426a0d414be2a2}\label{group___h_a_l__state__structure__definition_ggaef355af8eab251ae2a19ee164ad81c37afe3c9b304462901099426a0d414be2a2} 
+HAL\+\_\+\+I2\+C\+\_\+\+STATE\+\_\+\+ERROR&Error \\
+\hline
+
+\end{DoxyEnumFields}

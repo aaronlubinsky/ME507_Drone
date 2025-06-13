@@ -1,0 +1,111 @@
+\doxysubsubsection{RCCEx Exported Macros }
+\hypertarget{group___r_c_c_ex___exported___macros}{}\label{group___r_c_c_ex___exported___macros}\index{RCCEx Exported Macros@{RCCEx Exported Macros}}
+\doxysubsubsubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group___r_c_c_ex___exported___macros_ga56d9ad48b28e7aa4ad3aadca5b4fd431}{\+\_\+\+\_\+\+HAL\+\_\+\+RCC\+\_\+\+PLL\+\_\+\+CONFIG}}(\+\_\+\+\_\+\+RCC\+\_\+\+PLLSource\+\_\+\+\_\+,  \+\_\+\+\_\+\+PLLM\+\_\+\+\_\+,  \+\_\+\+\_\+\+PLLN\+\_\+\+\_\+,  \+\_\+\+\_\+\+PLLP\+\_\+\+\_\+,  \+\_\+\+\_\+\+PLLQ\+\_\+\+\_\+)
+\begin{DoxyCompactList}\small\item\em Macro to configure the main PLL clock source, multiplication and division factors. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___r_c_c_ex___exported___macros_ga5a2fa2687b621f6eda72457d09715298}{\+\_\+\+\_\+\+HAL\+\_\+\+RCC\+\_\+\+PLLI2\+S\+\_\+\+CONFIG}}(\+\_\+\+\_\+\+PLLI2\+SN\+\_\+\+\_\+,  \+\_\+\+\_\+\+PLLI2\+SR\+\_\+\+\_\+)
+\begin{DoxyCompactList}\small\item\em Macro to configure the PLLI2S clock multiplication and division factors . \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsubsubsection{Detailed Description}
+
+
+\label{doc-define-members}
+\Hypertarget{group___r_c_c_ex___exported___macros_doc-define-members}
+\doxysubsubsubsection{Macro Definition Documentation}
+\Hypertarget{group___r_c_c_ex___exported___macros_ga56d9ad48b28e7aa4ad3aadca5b4fd431}\index{RCCEx Exported Macros@{RCCEx Exported Macros}!\_\_HAL\_RCC\_PLL\_CONFIG@{\_\_HAL\_RCC\_PLL\_CONFIG}}
+\index{\_\_HAL\_RCC\_PLL\_CONFIG@{\_\_HAL\_RCC\_PLL\_CONFIG}!RCCEx Exported Macros@{RCCEx Exported Macros}}
+\doxysubsubsubsubsection{\texorpdfstring{\_\_HAL\_RCC\_PLL\_CONFIG}{\_\_HAL\_RCC\_PLL\_CONFIG}}
+{\footnotesize\ttfamily \label{group___r_c_c_ex___exported___macros_ga56d9ad48b28e7aa4ad3aadca5b4fd431} 
+\#define \+\_\+\+\_\+\+HAL\+\_\+\+RCC\+\_\+\+PLL\+\_\+\+CONFIG(\begin{DoxyParamCaption}\item[{}]{\+\_\+\+\_\+\+RCC\+\_\+\+PLLSource\+\_\+\+\_\+}{, }\item[{}]{\+\_\+\+\_\+\+PLLM\+\_\+\+\_\+}{, }\item[{}]{\+\_\+\+\_\+\+PLLN\+\_\+\+\_\+}{, }\item[{}]{\+\_\+\+\_\+\+PLLP\+\_\+\+\_\+}{, }\item[{}]{\+\_\+\+\_\+\+PLLQ\+\_\+\+\_\+}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\ \ (RCC-\/>PLLCFGR\ =\ (0x20000000U\ |\ (\_\_RCC\_PLLSource\_\_)\ |\ (\_\_PLLM\_\_)|\ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ((\_\_PLLN\_\_)\ <<\ RCC\_PLLCFGR\_PLLN\_Pos)\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ |\ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ((((\_\_PLLP\_\_)\ >>\ 1U)\ -\/1U)\ <<\ RCC\_PLLCFGR\_PLLP\_Pos)\ \ \ \ |\ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ((\_\_PLLQ\_\_)\ <<\ RCC\_PLLCFGR\_PLLQ\_Pos)))}
+
+\end{DoxyCode}
+
+
+Macro to configure the main PLL clock source, multiplication and division factors. 
+
+\begin{DoxyNote}{Note}
+This function must be used only when the main PLL is disabled. 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+\+\_\+\+RCC\+\_\+\+PLLSource\+\_\+\+\_\+} & specifies the PLL entry clock source. This parameter can be one of the following values\+: \begin{DoxyItemize}
+\item RCC\+\_\+\+PLLSOURCE\+\_\+\+HSI\+: HSI oscillator clock selected as PLL clock entry \item RCC\+\_\+\+PLLSOURCE\+\_\+\+HSE\+: HSE oscillator clock selected as PLL clock entry \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+This clock source (RCC\+\_\+\+PLLSource) is common for the main PLL and PLLI2S. 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+\+\_\+\+PLLM\+\_\+\+\_\+} & specifies the division factor for PLL VCO input clock This parameter must be a number between Min\+\_\+\+Data = 2 and Max\+\_\+\+Data = 63. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+You have to set the PLLM parameter correctly to ensure that the VCO input frequency ranges from 1 to 2 MHz. It is recommended to select a frequency of 2 MHz to limit PLL jitter. 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+\+\_\+\+PLLN\+\_\+\+\_\+} & specifies the multiplication factor for PLL VCO output clock This parameter must be a number between Min\+\_\+\+Data = 50 and Max\+\_\+\+Data = 432 Except for STM32\+F411xE devices where Min\+\_\+\+Data = 192. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+You have to set the PLLN parameter correctly to ensure that the VCO output frequency is between 100 and 432 MHz, Except for STM32\+F411xE devices where frequency is between 192 and 432 MHz. 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+\+\_\+\+PLLP\+\_\+\+\_\+} & specifies the division factor for main system clock (SYSCLK) This parameter must be a number in the range \{2, 4, 6, or 8\}.\\
+\hline
+{\em \+\_\+\+\_\+\+PLLQ\+\_\+\+\_\+} & specifies the division factor for OTG FS, SDIO and RNG clocks This parameter must be a number between Min\+\_\+\+Data = 2 and Max\+\_\+\+Data = 15. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+If the USB OTG FS is used in your application, you have to set the PLLQ parameter correctly to have 48 MHz clock for the USB. However, the SDIO and RNG need a frequency lower than or equal to 48 MHz to work correctly. 
+\end{DoxyNote}
+\Hypertarget{group___r_c_c_ex___exported___macros_ga5a2fa2687b621f6eda72457d09715298}\index{RCCEx Exported Macros@{RCCEx Exported Macros}!\_\_HAL\_RCC\_PLLI2S\_CONFIG@{\_\_HAL\_RCC\_PLLI2S\_CONFIG}}
+\index{\_\_HAL\_RCC\_PLLI2S\_CONFIG@{\_\_HAL\_RCC\_PLLI2S\_CONFIG}!RCCEx Exported Macros@{RCCEx Exported Macros}}
+\doxysubsubsubsubsection{\texorpdfstring{\_\_HAL\_RCC\_PLLI2S\_CONFIG}{\_\_HAL\_RCC\_PLLI2S\_CONFIG}}
+{\footnotesize\ttfamily \label{group___r_c_c_ex___exported___macros_ga5a2fa2687b621f6eda72457d09715298} 
+\#define \+\_\+\+\_\+\+HAL\+\_\+\+RCC\+\_\+\+PLLI2\+S\+\_\+\+CONFIG(\begin{DoxyParamCaption}\item[{}]{\+\_\+\+\_\+\+PLLI2\+SN\+\_\+\+\_\+}{, }\item[{}]{\+\_\+\+\_\+\+PLLI2\+SR\+\_\+\+\_\+}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\ \ (RCC-\/>PLLI2SCFGR\ =\ (((\_\_PLLI2SN\_\_)\ <<\ RCC\_PLLI2SCFGR\_PLLI2SN\_Pos)\ \ |\(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ((\_\_PLLI2SR\_\_)\ <<\ RCC\_PLLI2SCFGR\_PLLI2SR\_Pos)))}
+
+\end{DoxyCode}
+
+
+Macro to configure the PLLI2S clock multiplication and division factors . 
+
+\begin{DoxyNote}{Note}
+This macro must be used only when the PLLI2S is disabled. 
+
+PLLI2S clock source is common with the main PLL (configured in HAL\+\_\+\+RCC\+\_\+\+Clock\+Config() API). 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+\+\_\+\+PLLI2\+SN\+\_\+\+\_\+} & specifies the multiplication factor for PLLI2S VCO output clock This parameter must be a number between Min\+\_\+\+Data = 50 and Max\+\_\+\+Data = 432. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+You have to set the PLLI2\+SN parameter correctly to ensure that the VCO output frequency is between Min\+\_\+\+Data = 100 and Max\+\_\+\+Data = 432 MHz.
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+\+\_\+\+PLLI2\+SR\+\_\+\+\_\+} & specifies the division factor for I2S clock This parameter must be a number between Min\+\_\+\+Data = 2 and Max\+\_\+\+Data = 7. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+You have to set the PLLI2\+SR parameter correctly to not exceed 192 MHz on the I2S clock frequency. 
+\end{DoxyNote}

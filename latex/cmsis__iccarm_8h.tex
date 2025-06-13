@@ -1,0 +1,290 @@
+\doxysection{Drivers/\+CMSIS/\+Include/cmsis\+\_\+iccarm.h File Reference}
+\hypertarget{cmsis__iccarm_8h}{}\label{cmsis__iccarm_8h}\index{Drivers/CMSIS/Include/cmsis\_iccarm.h@{Drivers/CMSIS/Include/cmsis\_iccarm.h}}
+
+
+CMSIS compiler ICCARM (IAR Compiler for Arm) header file.  
+
+
+{\ttfamily \#include $<$intrinsics.\+h$>$}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct____iar__u32}{\+\_\+\+\_\+iar\+\_\+u32}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{cmsis__iccarm_8h_a3e769b5b7bc4f5d17d8da74663073393}\label{cmsis__iccarm_8h_a3e769b5b7bc4f5d17d8da74663073393} 
+\#define {\bfseries \+\_\+\+\_\+\+IAR\+\_\+\+FT}~\+\_\+\+Pragma("{}inline=forced"{}) \+\_\+\+\_\+intrinsic
+\item 
+\Hypertarget{cmsis__iccarm_8h_ada3e360f585385631c8548f73fa59e09}\label{cmsis__iccarm_8h_ada3e360f585385631c8548f73fa59e09} 
+\#define {\bfseries \+\_\+\+\_\+\+ICCARM\+\_\+\+V8}~0
+\item 
+\Hypertarget{cmsis__iccarm_8h_aa65ef8f7a5e8b7a6ea6c1d48b4c78e55}\label{cmsis__iccarm_8h_aa65ef8f7a5e8b7a6ea6c1d48b4c78e55} 
+\#define {\bfseries \+\_\+\+\_\+\+ALIGNED}(x)
+\item 
+\Hypertarget{cmsis__iccarm_8h_a6c0c4e21065cda012c4275eeb205d18e}\label{cmsis__iccarm_8h_a6c0c4e21065cda012c4275eeb205d18e} 
+\#define {\bfseries \+\_\+\+\_\+\+IAR\+\_\+\+M0\+\_\+\+FAMILY}~0
+\item 
+\Hypertarget{cmsis__iccarm_8h_a1378040bcf22428955c6e3ce9c2053cd}\label{cmsis__iccarm_8h_a1378040bcf22428955c6e3ce9c2053cd} 
+\#define {\bfseries \+\_\+\+\_\+\+ASM}~\+\_\+\+\_\+asm
+\item 
+\#define \mbox{\hyperlink{cmsis__iccarm_8h_a6516fb12ab0dd45c734f8cef7d921af6}{\+\_\+\+\_\+\+COMPILER\+\_\+\+BARRIER}}()
+\item 
+\Hypertarget{cmsis__iccarm_8h_ade2d8d7118f8ff49547f60aa0c3382bb}\label{cmsis__iccarm_8h_ade2d8d7118f8ff49547f60aa0c3382bb} 
+\#define {\bfseries \+\_\+\+\_\+\+INLINE}~inline
+\item 
+\Hypertarget{cmsis__iccarm_8h_a153a4a31b276a9758959580538720a51}\label{cmsis__iccarm_8h_a153a4a31b276a9758959580538720a51} 
+\#define {\bfseries \+\_\+\+\_\+\+NO\+\_\+\+RETURN}~\+\_\+\+Pragma("{}object\+\_\+attribute=\+\_\+\+\_\+noreturn"{})
+\item 
+\Hypertarget{cmsis__iccarm_8h_abe8996d3d985ee1529475443cc635bf1}\label{cmsis__iccarm_8h_abe8996d3d985ee1529475443cc635bf1} 
+\#define {\bfseries \+\_\+\+\_\+\+PACKED}~\+\_\+\+\_\+packed
+\item 
+\Hypertarget{cmsis__iccarm_8h_a4dbb70fab85207c27b581ecb6532b314}\label{cmsis__iccarm_8h_a4dbb70fab85207c27b581ecb6532b314} 
+\#define {\bfseries \+\_\+\+\_\+\+PACKED\+\_\+\+STRUCT}~\+\_\+\+\_\+packed struct
+\item 
+\Hypertarget{cmsis__iccarm_8h_a6fba34d08b0a526830b4231d2ea0b89a}\label{cmsis__iccarm_8h_a6fba34d08b0a526830b4231d2ea0b89a} 
+\#define {\bfseries \+\_\+\+\_\+\+PACKED\+\_\+\+UNION}~\+\_\+\+\_\+packed union
+\item 
+\Hypertarget{cmsis__iccarm_8h_a378ac21329d33f561f90265eef89f564}\label{cmsis__iccarm_8h_a378ac21329d33f561f90265eef89f564} 
+\#define {\bfseries \+\_\+\+\_\+\+RESTRICT}~restrict
+\item 
+\Hypertarget{cmsis__iccarm_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c}\label{cmsis__iccarm_8h_aba87361bfad2ae52cfe2f40c1a1dbf9c} 
+\#define {\bfseries \+\_\+\+\_\+\+STATIC\+\_\+\+INLINE}~static inline
+\item 
+\Hypertarget{cmsis__iccarm_8h_a2ecb43ce8e7aa73d32f50afa67b42c76}\label{cmsis__iccarm_8h_a2ecb43ce8e7aa73d32f50afa67b42c76} 
+\#define {\bfseries \+\_\+\+\_\+\+FORCEINLINE}~\+\_\+\+Pragma("{}inline=forced"{})
+\item 
+\Hypertarget{cmsis__iccarm_8h_ab904513442afdf77d4f8c74f23cbb040}\label{cmsis__iccarm_8h_ab904513442afdf77d4f8c74f23cbb040} 
+\#define {\bfseries \+\_\+\+\_\+\+STATIC\+\_\+\+FORCEINLINE}~\+\_\+\+\_\+\+FORCEINLINE \+\_\+\+\_\+\+STATIC\+\_\+\+INLINE
+\item 
+\#define \mbox{\hyperlink{cmsis__iccarm_8h_affc86c22f56e906edc36b79fc834ac54}{\+\_\+\+\_\+\+UNALIGNED\+\_\+\+UINT16\+\_\+\+READ}}(PTR)
+\item 
+\#define \mbox{\hyperlink{cmsis__iccarm_8h_a5020b449a1efa49e9acd6e1e4544ad77}{\+\_\+\+\_\+\+UNALIGNED\+\_\+\+UINT16\+\_\+\+WRITE}}(PTR,  VAL)
+\item 
+\#define \mbox{\hyperlink{cmsis__iccarm_8h_a9f1782e04d6a7d8fe1639383b5ca1bf9}{\+\_\+\+\_\+\+UNALIGNED\+\_\+\+UINT32\+\_\+\+READ}}(PTR)
+\item 
+\#define \mbox{\hyperlink{cmsis__iccarm_8h_af746f04ad965c639fdd4eb8d086e19dd}{\+\_\+\+\_\+\+UNALIGNED\+\_\+\+UINT32\+\_\+\+WRITE}}(PTR,  VAL)
+\item 
+\#define \mbox{\hyperlink{cmsis__iccarm_8h_a683ea97ff9463291187253f7861ebc56}{\+\_\+\+\_\+\+UNALIGNED\+\_\+\+UINT32}}(PTR)
+\item 
+\Hypertarget{cmsis__iccarm_8h_a3e40e4c553fc11588f7a4c2a19e789e0}\label{cmsis__iccarm_8h_a3e40e4c553fc11588f7a4c2a19e789e0} 
+\#define {\bfseries \+\_\+\+\_\+\+USED}~\+\_\+\+Pragma("{}\+\_\+\+\_\+root"{})
+\item 
+\Hypertarget{cmsis__iccarm_8h_ac607bf387b29162be6a9b77fc7999539}\label{cmsis__iccarm_8h_ac607bf387b29162be6a9b77fc7999539} 
+\#define {\bfseries \+\_\+\+\_\+\+WEAK}~\+\_\+\+Pragma("{}\+\_\+\+\_\+weak"{})
+\item 
+\Hypertarget{cmsis__iccarm_8h_a72db8b026c5e100254080fefabd9fd88}\label{cmsis__iccarm_8h_a72db8b026c5e100254080fefabd9fd88} 
+\#define {\bfseries \+\_\+\+\_\+\+PROGRAM\+\_\+\+START}~\+\_\+\+\_\+iar\+\_\+program\+\_\+start
+\item 
+\Hypertarget{cmsis__iccarm_8h_a1002e751427b1189f92787d4e4eef965}\label{cmsis__iccarm_8h_a1002e751427b1189f92787d4e4eef965} 
+\#define {\bfseries \+\_\+\+\_\+\+INITIAL\+\_\+\+SP}~CSTACK\$\$\+Limit
+\item 
+\Hypertarget{cmsis__iccarm_8h_a84b0bad4aa39632d3faea46aa1e102a8}\label{cmsis__iccarm_8h_a84b0bad4aa39632d3faea46aa1e102a8} 
+\#define {\bfseries \+\_\+\+\_\+\+STACK\+\_\+\+LIMIT}~CSTACK\$\$\+Base
+\item 
+\Hypertarget{cmsis__iccarm_8h_ab94ebeb20055f1848d7b707d3c7cfc5d}\label{cmsis__iccarm_8h_ab94ebeb20055f1848d7b707d3c7cfc5d} 
+\#define {\bfseries \+\_\+\+\_\+\+VECTOR\+\_\+\+TABLE}~\+\_\+\+\_\+vector\+\_\+table
+\item 
+\Hypertarget{cmsis__iccarm_8h_a4f65c96effa79fbd610fea43ee7d745b}\label{cmsis__iccarm_8h_a4f65c96effa79fbd610fea43ee7d745b} 
+\#define {\bfseries \+\_\+\+\_\+\+VECTOR\+\_\+\+TABLE\+\_\+\+ATTRIBUTE}~@"{}.intvec"{}
+\item 
+\Hypertarget{cmsis__iccarm_8h_a2cf5e66520f87c928ab4395d5787e4df}\label{cmsis__iccarm_8h_a2cf5e66520f87c928ab4395d5787e4df} 
+\#define {\bfseries \+\_\+\+\_\+\+ICCARM\+\_\+\+INTRINSICS\+\_\+\+VERSION\+\_\+\+\_\+}~0
+\item 
+\#define \mbox{\hyperlink{cmsis__iccarm_8h_af56e3c942846b8643cbf8f5208d6a63b}{\+\_\+\+\_\+get\+\_\+\+FPSCR}}
+\item 
+\Hypertarget{cmsis__iccarm_8h_a63b3bbd6ccb6b92ed6c0bbc489529f0f}\label{cmsis__iccarm_8h_a63b3bbd6ccb6b92ed6c0bbc489529f0f} 
+\#define {\bfseries \+\_\+\+\_\+set\+\_\+\+FPSCR}~\+\_\+\+\_\+cmsis\+\_\+iar\+\_\+set\+\_\+\+FPSR\+\_\+not\+\_\+active
+\item 
+\#define \mbox{\hyperlink{cmsis__iccarm_8h_a6b3a48e13de4b114653b4e06145a601d}{\+\_\+\+\_\+get\+\_\+\+FPSCR}}()
+\item 
+\#define \mbox{\hyperlink{cmsis__iccarm_8h_a1cfee62c8cc63a1f72c134ffa096b911}{\+\_\+\+\_\+set\+\_\+\+FPSCR}}(VALUE)
+\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___core___reg_acc_functions_ga63ab98aec1a5bde0e191fb22e693f480}{\+\_\+\+\_\+enable\+\_\+irq}}
+\begin{DoxyCompactList}\small\item\em Enable IRQ Interrupts. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___core___reg_acc_functions_ga9a8f966bf50cc372e7ac092f612efd1a}{\+\_\+\+\_\+disable\+\_\+irq}}
+\begin{DoxyCompactList}\small\item\em Disable IRQ Interrupts. \end{DoxyCompactList}\item 
+\Hypertarget{cmsis__iccarm_8h_abd585ddc865fb9b7f2493af1eee1a572}\label{cmsis__iccarm_8h_abd585ddc865fb9b7f2493af1eee1a572} 
+\#define {\bfseries \+\_\+\+\_\+\+NOP}~\+\_\+\+\_\+no\+\_\+operation
+\item 
+\#define \mbox{\hyperlink{group___c_m_s_i_s___core___reg_acc_functions_gae0d8e20f8c3c2a502075dabcff733c05}{\+\_\+\+\_\+get\+\_\+x\+PSR}}
+\begin{DoxyCompactList}\small\item\em Get x\+PSR Register. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{cmsis__iccarm_8h_a15ea6bd3c507d3e81c3b3a1258e46397}{\+\_\+\+\_\+\+BKPT}}(value)
+\item 
+\#define \mbox{\hyperlink{cmsis__iccarm_8h_a6cfc7fe62ef04578af6a1f360dc38245}{\+\_\+\+\_\+\+SXTB16\+\_\+\+RORn}}(ARG1,  ARG2)
+\item 
+\#define \mbox{\hyperlink{cmsis__iccarm_8h_aefefc7eb15bebfb76044494b9491496e}{\+\_\+\+\_\+\+SXTAB16\+\_\+\+RORn}}(ARG1,  ARG2,  ARG3)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{cmsis__iccarm_8h_a1305dc7358478164e7ae459adad136d9}\label{cmsis__iccarm_8h_a1305dc7358478164e7ae459adad136d9} 
+\+\_\+\+\_\+\+IAR\+\_\+\+FT uint16\+\_\+t {\bfseries \+\_\+\+\_\+iar\+\_\+uint16\+\_\+read} (void const \texorpdfstring{$\ast$}{*}ptr)
+\item 
+\Hypertarget{cmsis__iccarm_8h_a68e7687068868fc26ad03774570131c6}\label{cmsis__iccarm_8h_a68e7687068868fc26ad03774570131c6} 
+\+\_\+\+\_\+\+IAR\+\_\+\+FT void {\bfseries \+\_\+\+\_\+iar\+\_\+uint16\+\_\+write} (void const \texorpdfstring{$\ast$}{*}ptr, uint16\+\_\+t val)
+\item 
+\Hypertarget{cmsis__iccarm_8h_a3f6f0554c695fa3f5a9a7b62987378ba}\label{cmsis__iccarm_8h_a3f6f0554c695fa3f5a9a7b62987378ba} 
+\+\_\+\+\_\+\+IAR\+\_\+\+FT uint32\+\_\+t {\bfseries \+\_\+\+\_\+iar\+\_\+uint32\+\_\+read} (void const \texorpdfstring{$\ast$}{*}ptr)
+\item 
+\Hypertarget{cmsis__iccarm_8h_a9be6bc4e50ac50dca4005e28e648a675}\label{cmsis__iccarm_8h_a9be6bc4e50ac50dca4005e28e648a675} 
+\+\_\+\+\_\+\+IAR\+\_\+\+FT void {\bfseries \+\_\+\+\_\+iar\+\_\+uint32\+\_\+write} (void const \texorpdfstring{$\ast$}{*}ptr, uint32\+\_\+t val)
+\item 
+\Hypertarget{cmsis__iccarm_8h_afe7e42185902df89a66f328a9792690b}\label{cmsis__iccarm_8h_afe7e42185902df89a66f328a9792690b} 
+\+\_\+\+\_\+\+IAR\+\_\+\+FT uint32\+\_\+t {\bfseries \+\_\+\+\_\+\+LDREXW} (uint32\+\_\+t volatile \texorpdfstring{$\ast$}{*}ptr)
+\item 
+\Hypertarget{cmsis__iccarm_8h_ab861d5af605077b6e52ffc8e67a8f9c6}\label{cmsis__iccarm_8h_ab861d5af605077b6e52ffc8e67a8f9c6} 
+\+\_\+\+\_\+\+IAR\+\_\+\+FT uint32\+\_\+t {\bfseries \+\_\+\+\_\+\+STREXW} (uint32\+\_\+t value, uint32\+\_\+t volatile \texorpdfstring{$\ast$}{*}ptr)
+\item 
+\Hypertarget{cmsis__iccarm_8h_a7105032649bf6158d4d2d5dc38a3f94c}\label{cmsis__iccarm_8h_a7105032649bf6158d4d2d5dc38a3f94c} 
+\+\_\+\+\_\+\+IAR\+\_\+\+FT uint32\+\_\+t {\bfseries \+\_\+\+\_\+\+ROR} (uint32\+\_\+t op1, uint32\+\_\+t op2)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+CMSIS compiler ICCARM (IAR Compiler for Arm) header file. 
+
+\begin{DoxyVersion}{Version}
+V5.\+3.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+14. April 2021 
+\end{DoxyDate}
+
+
+\label{doc-define-members}
+\Hypertarget{cmsis__iccarm_8h_doc-define-members}
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{cmsis__iccarm_8h_a15ea6bd3c507d3e81c3b3a1258e46397}\index{cmsis\_iccarm.h@{cmsis\_iccarm.h}!\_\_BKPT@{\_\_BKPT}}
+\index{\_\_BKPT@{\_\_BKPT}!cmsis\_iccarm.h@{cmsis\_iccarm.h}}
+\doxysubsubsection{\texorpdfstring{\_\_BKPT}{\_\_BKPT}}
+{\footnotesize\ttfamily \label{cmsis__iccarm_8h_a15ea6bd3c507d3e81c3b3a1258e46397} 
+\#define \+\_\+\+\_\+\+BKPT(\begin{DoxyParamCaption}\item[{}]{value}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\_\_asm\ \textcolor{keyword}{volatile}\ (\textcolor{stringliteral}{"{}BKPT\ \ \ \ \ \%0"{}}\ :\ :\ \textcolor{stringliteral}{"{}i"{}}(value))}
+
+\end{DoxyCode}
+\Hypertarget{cmsis__iccarm_8h_a6516fb12ab0dd45c734f8cef7d921af6}\index{cmsis\_iccarm.h@{cmsis\_iccarm.h}!\_\_COMPILER\_BARRIER@{\_\_COMPILER\_BARRIER}}
+\index{\_\_COMPILER\_BARRIER@{\_\_COMPILER\_BARRIER}!cmsis\_iccarm.h@{cmsis\_iccarm.h}}
+\doxysubsubsection{\texorpdfstring{\_\_COMPILER\_BARRIER}{\_\_COMPILER\_BARRIER}}
+{\footnotesize\ttfamily \label{cmsis__iccarm_8h_a6516fb12ab0dd45c734f8cef7d921af6} 
+\#define \+\_\+\+\_\+\+COMPILER\+\_\+\+BARRIER(\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\_\_ASM\ \textcolor{keyword}{volatile}(\textcolor{stringliteral}{"{}"{}}:::\textcolor{stringliteral}{"{}memory"{}})}
+
+\end{DoxyCode}
+\Hypertarget{cmsis__iccarm_8h_af56e3c942846b8643cbf8f5208d6a63b}\index{cmsis\_iccarm.h@{cmsis\_iccarm.h}!\_\_get\_FPSCR@{\_\_get\_FPSCR}}
+\index{\_\_get\_FPSCR@{\_\_get\_FPSCR}!cmsis\_iccarm.h@{cmsis\_iccarm.h}}
+\doxysubsubsection{\texorpdfstring{\_\_get\_FPSCR}{\_\_get\_FPSCR}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{cmsis__iccarm_8h_af56e3c942846b8643cbf8f5208d6a63b} 
+\#define \+\_\+\+\_\+get\+\_\+\+FPSCR(\begin{DoxyParamCaption}\item[{}]{void}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\_\_cmsis\_iar\_get\_FPSR\_not\_active}
+
+\end{DoxyCode}
+\Hypertarget{cmsis__iccarm_8h_a6b3a48e13de4b114653b4e06145a601d}\index{cmsis\_iccarm.h@{cmsis\_iccarm.h}!\_\_get\_FPSCR@{\_\_get\_FPSCR}}
+\index{\_\_get\_FPSCR@{\_\_get\_FPSCR}!cmsis\_iccarm.h@{cmsis\_iccarm.h}}
+\doxysubsubsection{\texorpdfstring{\_\_get\_FPSCR}{\_\_get\_FPSCR}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{cmsis__iccarm_8h_a6b3a48e13de4b114653b4e06145a601d} 
+\#define \+\_\+\+\_\+get\+\_\+\+FPSCR(\begin{DoxyParamCaption}\item[{}]{void}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(0)}
+
+\end{DoxyCode}
+\Hypertarget{cmsis__iccarm_8h_a1cfee62c8cc63a1f72c134ffa096b911}\index{cmsis\_iccarm.h@{cmsis\_iccarm.h}!\_\_set\_FPSCR@{\_\_set\_FPSCR}}
+\index{\_\_set\_FPSCR@{\_\_set\_FPSCR}!cmsis\_iccarm.h@{cmsis\_iccarm.h}}
+\doxysubsubsection{\texorpdfstring{\_\_set\_FPSCR}{\_\_set\_FPSCR}}
+{\footnotesize\ttfamily \label{cmsis__iccarm_8h_a1cfee62c8cc63a1f72c134ffa096b911} 
+\#define \+\_\+\+\_\+set\+\_\+\+FPSCR(\begin{DoxyParamCaption}\item[{}]{VALUE}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{((void)VALUE)}
+
+\end{DoxyCode}
+\Hypertarget{cmsis__iccarm_8h_aefefc7eb15bebfb76044494b9491496e}\index{cmsis\_iccarm.h@{cmsis\_iccarm.h}!\_\_SXTAB16\_RORn@{\_\_SXTAB16\_RORn}}
+\index{\_\_SXTAB16\_RORn@{\_\_SXTAB16\_RORn}!cmsis\_iccarm.h@{cmsis\_iccarm.h}}
+\doxysubsubsection{\texorpdfstring{\_\_SXTAB16\_RORn}{\_\_SXTAB16\_RORn}}
+{\footnotesize\ttfamily \label{cmsis__iccarm_8h_aefefc7eb15bebfb76044494b9491496e} 
+\#define \+\_\+\+\_\+\+SXTAB16\+\_\+\+RORn(\begin{DoxyParamCaption}\item[{}]{ARG1}{, }\item[{}]{ARG2}{, }\item[{}]{ARG3}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\_\_SXTAB16(ARG1,\ \mbox{\hyperlink{group___c_m_s_i_s___core___instruction_interface_ga95b9bd281ddeda378b85afdb8f2ced86}{\_\_ROR}}(ARG2,\ ARG3))}
+
+\end{DoxyCode}
+\Hypertarget{cmsis__iccarm_8h_a6cfc7fe62ef04578af6a1f360dc38245}\index{cmsis\_iccarm.h@{cmsis\_iccarm.h}!\_\_SXTB16\_RORn@{\_\_SXTB16\_RORn}}
+\index{\_\_SXTB16\_RORn@{\_\_SXTB16\_RORn}!cmsis\_iccarm.h@{cmsis\_iccarm.h}}
+\doxysubsubsection{\texorpdfstring{\_\_SXTB16\_RORn}{\_\_SXTB16\_RORn}}
+{\footnotesize\ttfamily \label{cmsis__iccarm_8h_a6cfc7fe62ef04578af6a1f360dc38245} 
+\#define \+\_\+\+\_\+\+SXTB16\+\_\+\+RORn(\begin{DoxyParamCaption}\item[{}]{ARG1}{, }\item[{}]{ARG2}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\_\_SXTB16(\mbox{\hyperlink{group___c_m_s_i_s___core___instruction_interface_ga95b9bd281ddeda378b85afdb8f2ced86}{\_\_ROR}}(ARG1,\ ARG2))}
+
+\end{DoxyCode}
+\Hypertarget{cmsis__iccarm_8h_affc86c22f56e906edc36b79fc834ac54}\index{cmsis\_iccarm.h@{cmsis\_iccarm.h}!\_\_UNALIGNED\_UINT16\_READ@{\_\_UNALIGNED\_UINT16\_READ}}
+\index{\_\_UNALIGNED\_UINT16\_READ@{\_\_UNALIGNED\_UINT16\_READ}!cmsis\_iccarm.h@{cmsis\_iccarm.h}}
+\doxysubsubsection{\texorpdfstring{\_\_UNALIGNED\_UINT16\_READ}{\_\_UNALIGNED\_UINT16\_READ}}
+{\footnotesize\ttfamily \label{cmsis__iccarm_8h_affc86c22f56e906edc36b79fc834ac54} 
+\#define \+\_\+\+\_\+\+UNALIGNED\+\_\+\+UINT16\+\_\+\+READ(\begin{DoxyParamCaption}\item[{}]{PTR}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\_\_iar\_uint16\_read(PTR)}
+
+\end{DoxyCode}
+\Hypertarget{cmsis__iccarm_8h_a5020b449a1efa49e9acd6e1e4544ad77}\index{cmsis\_iccarm.h@{cmsis\_iccarm.h}!\_\_UNALIGNED\_UINT16\_WRITE@{\_\_UNALIGNED\_UINT16\_WRITE}}
+\index{\_\_UNALIGNED\_UINT16\_WRITE@{\_\_UNALIGNED\_UINT16\_WRITE}!cmsis\_iccarm.h@{cmsis\_iccarm.h}}
+\doxysubsubsection{\texorpdfstring{\_\_UNALIGNED\_UINT16\_WRITE}{\_\_UNALIGNED\_UINT16\_WRITE}}
+{\footnotesize\ttfamily \label{cmsis__iccarm_8h_a5020b449a1efa49e9acd6e1e4544ad77} 
+\#define \+\_\+\+\_\+\+UNALIGNED\+\_\+\+UINT16\+\_\+\+WRITE(\begin{DoxyParamCaption}\item[{}]{PTR}{, }\item[{}]{VAL}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\_\_iar\_uint16\_write(PTR,VAL)}
+
+\end{DoxyCode}
+\Hypertarget{cmsis__iccarm_8h_a683ea97ff9463291187253f7861ebc56}\index{cmsis\_iccarm.h@{cmsis\_iccarm.h}!\_\_UNALIGNED\_UINT32@{\_\_UNALIGNED\_UINT32}}
+\index{\_\_UNALIGNED\_UINT32@{\_\_UNALIGNED\_UINT32}!cmsis\_iccarm.h@{cmsis\_iccarm.h}}
+\doxysubsubsection{\texorpdfstring{\_\_UNALIGNED\_UINT32}{\_\_UNALIGNED\_UINT32}}
+{\footnotesize\ttfamily \label{cmsis__iccarm_8h_a683ea97ff9463291187253f7861ebc56} 
+\#define \+\_\+\+\_\+\+UNALIGNED\+\_\+\+UINT32(\begin{DoxyParamCaption}\item[{}]{PTR}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(((\textcolor{keyword}{struct\ }\mbox{\hyperlink{struct____iar__u32}{\_\_iar\_u32}}\ *)(PTR))-\/>v)}
+
+\end{DoxyCode}
+\Hypertarget{cmsis__iccarm_8h_a9f1782e04d6a7d8fe1639383b5ca1bf9}\index{cmsis\_iccarm.h@{cmsis\_iccarm.h}!\_\_UNALIGNED\_UINT32\_READ@{\_\_UNALIGNED\_UINT32\_READ}}
+\index{\_\_UNALIGNED\_UINT32\_READ@{\_\_UNALIGNED\_UINT32\_READ}!cmsis\_iccarm.h@{cmsis\_iccarm.h}}
+\doxysubsubsection{\texorpdfstring{\_\_UNALIGNED\_UINT32\_READ}{\_\_UNALIGNED\_UINT32\_READ}}
+{\footnotesize\ttfamily \label{cmsis__iccarm_8h_a9f1782e04d6a7d8fe1639383b5ca1bf9} 
+\#define \+\_\+\+\_\+\+UNALIGNED\+\_\+\+UINT32\+\_\+\+READ(\begin{DoxyParamCaption}\item[{}]{PTR}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\_\_iar\_uint32\_read(PTR)}
+
+\end{DoxyCode}
+\Hypertarget{cmsis__iccarm_8h_af746f04ad965c639fdd4eb8d086e19dd}\index{cmsis\_iccarm.h@{cmsis\_iccarm.h}!\_\_UNALIGNED\_UINT32\_WRITE@{\_\_UNALIGNED\_UINT32\_WRITE}}
+\index{\_\_UNALIGNED\_UINT32\_WRITE@{\_\_UNALIGNED\_UINT32\_WRITE}!cmsis\_iccarm.h@{cmsis\_iccarm.h}}
+\doxysubsubsection{\texorpdfstring{\_\_UNALIGNED\_UINT32\_WRITE}{\_\_UNALIGNED\_UINT32\_WRITE}}
+{\footnotesize\ttfamily \label{cmsis__iccarm_8h_af746f04ad965c639fdd4eb8d086e19dd} 
+\#define \+\_\+\+\_\+\+UNALIGNED\+\_\+\+UINT32\+\_\+\+WRITE(\begin{DoxyParamCaption}\item[{}]{PTR}{, }\item[{}]{VAL}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\_\_iar\_uint32\_write(PTR,VAL)}
+
+\end{DoxyCode}

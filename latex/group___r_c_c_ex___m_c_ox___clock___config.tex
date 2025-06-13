@@ -1,0 +1,72 @@
+\doxysubsubsubsection{RCC Extended MCOx Clock Config }
+\hypertarget{group___r_c_c_ex___m_c_ox___clock___config}{}\label{group___r_c_c_ex___m_c_ox___clock___config}\index{RCC Extended MCOx Clock Config@{RCC Extended MCOx Clock Config}}
+\doxysubsubsubsubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group___r_c_c_ex___m_c_ox___clock___config_ga7e5f7f1efc92794b6f0e96068240b45e}{\+\_\+\+\_\+\+HAL\+\_\+\+RCC\+\_\+\+MCO1\+\_\+\+CONFIG}}(\+\_\+\+\_\+\+MCOCLKSOURCE\+\_\+\+\_\+,  \+\_\+\+\_\+\+MCODIV\+\_\+\+\_\+)
+\begin{DoxyCompactList}\small\item\em Macro to configure the MCO1 clock. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___r_c_c_ex___m_c_ox___clock___config_gabb7360422910dd65312786fc49722d25}{\+\_\+\+\_\+\+HAL\+\_\+\+RCC\+\_\+\+MCO2\+\_\+\+CONFIG}}(\+\_\+\+\_\+\+MCOCLKSOURCE\+\_\+\+\_\+,  \+\_\+\+\_\+\+MCODIV\+\_\+\+\_\+)
+\begin{DoxyCompactList}\small\item\em Macro to configure the MCO2 clock. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsubsubsubsection{Detailed Description}
+
+
+\label{doc-define-members}
+\Hypertarget{group___r_c_c_ex___m_c_ox___clock___config_doc-define-members}
+\doxysubsubsubsubsection{Macro Definition Documentation}
+\Hypertarget{group___r_c_c_ex___m_c_ox___clock___config_ga7e5f7f1efc92794b6f0e96068240b45e}\index{RCC Extended MCOx Clock Config@{RCC Extended MCOx Clock Config}!\_\_HAL\_RCC\_MCO1\_CONFIG@{\_\_HAL\_RCC\_MCO1\_CONFIG}}
+\index{\_\_HAL\_RCC\_MCO1\_CONFIG@{\_\_HAL\_RCC\_MCO1\_CONFIG}!RCC Extended MCOx Clock Config@{RCC Extended MCOx Clock Config}}
+\doxysubsubsubsubsubsection{\texorpdfstring{\_\_HAL\_RCC\_MCO1\_CONFIG}{\_\_HAL\_RCC\_MCO1\_CONFIG}}
+{\footnotesize\ttfamily \label{group___r_c_c_ex___m_c_ox___clock___config_ga7e5f7f1efc92794b6f0e96068240b45e} 
+\#define \+\_\+\+\_\+\+HAL\+\_\+\+RCC\+\_\+\+MCO1\+\_\+\+CONFIG(\begin{DoxyParamCaption}\item[{}]{\+\_\+\+\_\+\+MCOCLKSOURCE\+\_\+\+\_\+}{, }\item[{}]{\+\_\+\+\_\+\+MCODIV\+\_\+\+\_\+}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\ \ MODIFY\_REG(RCC-\/>CFGR,\ (RCC\_CFGR\_MCO1\ |\ RCC\_CFGR\_MCO1PRE),\ ((\_\_MCOCLKSOURCE\_\_)\ |\ (\_\_MCODIV\_\_)))}
+
+\end{DoxyCode}
+
+
+Macro to configure the MCO1 clock. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+\+\_\+\+MCOCLKSOURCE\+\_\+\+\_\+} & specifies the MCO clock source. This parameter can be one of the following values\+: \begin{DoxyItemize}
+\item RCC\+\_\+\+MCO1\+SOURCE\+\_\+\+HSI\+: HSI clock selected as MCO1 source \item RCC\+\_\+\+MCO1\+SOURCE\+\_\+\+LSE\+: LSE clock selected as MCO1 source \item RCC\+\_\+\+MCO1\+SOURCE\+\_\+\+HSE\+: HSE clock selected as MCO1 source \item RCC\+\_\+\+MCO1\+SOURCE\+\_\+\+PLLCLK\+: main PLL clock selected as MCO1 source \end{DoxyItemize}
+\\
+\hline
+{\em \+\_\+\+\_\+\+MCODIV\+\_\+\+\_\+} & specifies the MCO clock prescaler. This parameter can be one of the following values\+: \begin{DoxyItemize}
+\item RCC\+\_\+\+MCODIV\+\_\+1\+: no division applied to MCOx clock \item RCC\+\_\+\+MCODIV\+\_\+2\+: division by 2 applied to MCOx clock \item RCC\+\_\+\+MCODIV\+\_\+3\+: division by 3 applied to MCOx clock \item RCC\+\_\+\+MCODIV\+\_\+4\+: division by 4 applied to MCOx clock \item RCC\+\_\+\+MCODIV\+\_\+5\+: division by 5 applied to MCOx clock \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+\Hypertarget{group___r_c_c_ex___m_c_ox___clock___config_gabb7360422910dd65312786fc49722d25}\index{RCC Extended MCOx Clock Config@{RCC Extended MCOx Clock Config}!\_\_HAL\_RCC\_MCO2\_CONFIG@{\_\_HAL\_RCC\_MCO2\_CONFIG}}
+\index{\_\_HAL\_RCC\_MCO2\_CONFIG@{\_\_HAL\_RCC\_MCO2\_CONFIG}!RCC Extended MCOx Clock Config@{RCC Extended MCOx Clock Config}}
+\doxysubsubsubsubsubsection{\texorpdfstring{\_\_HAL\_RCC\_MCO2\_CONFIG}{\_\_HAL\_RCC\_MCO2\_CONFIG}}
+{\footnotesize\ttfamily \label{group___r_c_c_ex___m_c_ox___clock___config_gabb7360422910dd65312786fc49722d25} 
+\#define \+\_\+\+\_\+\+HAL\+\_\+\+RCC\+\_\+\+MCO2\+\_\+\+CONFIG(\begin{DoxyParamCaption}\item[{}]{\+\_\+\+\_\+\+MCOCLKSOURCE\+\_\+\+\_\+}{, }\item[{}]{\+\_\+\+\_\+\+MCODIV\+\_\+\+\_\+}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\ \ MODIFY\_REG(RCC-\/>CFGR,\ (RCC\_CFGR\_MCO2\ |\ RCC\_CFGR\_MCO2PRE),\ ((\_\_MCOCLKSOURCE\_\_)\ |\ ((\_\_MCODIV\_\_)\ <<\ 3U)));}
+
+\end{DoxyCode}
+
+
+Macro to configure the MCO2 clock. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+\+\_\+\+MCOCLKSOURCE\+\_\+\+\_\+} & specifies the MCO clock source. This parameter can be one of the following values\+: \begin{DoxyItemize}
+\item RCC\+\_\+\+MCO2\+SOURCE\+\_\+\+SYSCLK\+: System clock (SYSCLK) selected as MCO2 source \item RCC\+\_\+\+MCO2\+SOURCE\+\_\+\+PLLI2\+SCLK\+: PLLI2S clock selected as MCO2 source, available for all STM32\+F4 devices except STM32\+F410xx \item RCC\+\_\+\+MCO2\+SOURCE\+\_\+\+I2\+SCLK\+: I2\+SCLK clock selected as MCO2 source, available only for STM32\+F410\+Rx devices \item RCC\+\_\+\+MCO2\+SOURCE\+\_\+\+HSE\+: HSE clock selected as MCO2 source \item RCC\+\_\+\+MCO2\+SOURCE\+\_\+\+PLLCLK\+: main PLL clock selected as MCO2 source \end{DoxyItemize}
+\\
+\hline
+{\em \+\_\+\+\_\+\+MCODIV\+\_\+\+\_\+} & specifies the MCO clock prescaler. This parameter can be one of the following values\+: \begin{DoxyItemize}
+\item RCC\+\_\+\+MCODIV\+\_\+1\+: no division applied to MCOx clock \item RCC\+\_\+\+MCODIV\+\_\+2\+: division by 2 applied to MCOx clock \item RCC\+\_\+\+MCODIV\+\_\+3\+: division by 3 applied to MCOx clock \item RCC\+\_\+\+MCODIV\+\_\+4\+: division by 4 applied to MCOx clock \item RCC\+\_\+\+MCODIV\+\_\+5\+: division by 5 applied to MCOx clock \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+For STM32\+F410\+Rx devices, to output I2\+SCLK clock on MCO2, you should have at least one of the SPI clocks enabled (SPI1, SPI2 or SPI5). 
+\end{DoxyNote}

@@ -1,0 +1,635 @@
+\doxysubsubsection{UART Exported Macros }
+\hypertarget{group___u_a_r_t___exported___macros}{}\label{group___u_a_r_t___exported___macros}\index{UART Exported Macros@{UART Exported Macros}}
+\doxysubsubsubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group___u_a_r_t___exported___macros_ga19deab848407b106998416c78092fa9b}{\+\_\+\+\_\+\+HAL\+\_\+\+UART\+\_\+\+RESET\+\_\+\+HANDLE\+\_\+\+STATE}}(\+\_\+\+\_\+\+HANDLE\+\_\+\+\_\+)
+\begin{DoxyCompactList}\small\item\em Reset UART handle gstate \& Rx\+State. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___u_a_r_t___exported___macros_gafc4f20cb0f29ba146c9bc14167c52744}{\+\_\+\+\_\+\+HAL\+\_\+\+UART\+\_\+\+FLUSH\+\_\+\+DRREGISTER}}(\+\_\+\+\_\+\+HANDLE\+\_\+\+\_\+)
+\begin{DoxyCompactList}\small\item\em Flushes the UART DR register. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___u_a_r_t___exported___macros_ga261fe8a2afe84ec048113654266c5bf6}{\+\_\+\+\_\+\+HAL\+\_\+\+UART\+\_\+\+GET\+\_\+\+FLAG}}(\+\_\+\+\_\+\+HANDLE\+\_\+\+\_\+,  \+\_\+\+\_\+\+FLAG\+\_\+\+\_\+)
+\begin{DoxyCompactList}\small\item\em Checks whether the specified UART flag is set or not. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___u_a_r_t___exported___macros_ga9bd035161d41cde4f2568c7af06493bf}{\+\_\+\+\_\+\+HAL\+\_\+\+UART\+\_\+\+CLEAR\+\_\+\+FLAG}}(\+\_\+\+\_\+\+HANDLE\+\_\+\+\_\+,  \+\_\+\+\_\+\+FLAG\+\_\+\+\_\+)
+\begin{DoxyCompactList}\small\item\em Clears the specified UART pending flag. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___u_a_r_t___exported___macros_gaba5e19c60e0f37341b1585a380b84d49}{\+\_\+\+\_\+\+HAL\+\_\+\+UART\+\_\+\+CLEAR\+\_\+\+PEFLAG}}(\+\_\+\+\_\+\+HANDLE\+\_\+\+\_\+)
+\begin{DoxyCompactList}\small\item\em Clears the UART PE pending flag. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___u_a_r_t___exported___macros_gae1dfc7777b089a10464841045b524caa}{\+\_\+\+\_\+\+HAL\+\_\+\+UART\+\_\+\+CLEAR\+\_\+\+FEFLAG}}(\+\_\+\+\_\+\+HANDLE\+\_\+\+\_\+)
+\begin{DoxyCompactList}\small\item\em Clears the UART FE pending flag. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___u_a_r_t___exported___macros_gaa1f69421585b3ada4d2b81d502a3ae6b}{\+\_\+\+\_\+\+HAL\+\_\+\+UART\+\_\+\+CLEAR\+\_\+\+NEFLAG}}(\+\_\+\+\_\+\+HANDLE\+\_\+\+\_\+)
+\begin{DoxyCompactList}\small\item\em Clears the UART NE pending flag. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___u_a_r_t___exported___macros_ga9cdc2f2d55eaaa7895996bf6848df42e}{\+\_\+\+\_\+\+HAL\+\_\+\+UART\+\_\+\+CLEAR\+\_\+\+OREFLAG}}(\+\_\+\+\_\+\+HANDLE\+\_\+\+\_\+)
+\begin{DoxyCompactList}\small\item\em Clears the UART ORE pending flag. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___u_a_r_t___exported___macros_ga1345aa0af53d82269b13835c225e91d0}{\+\_\+\+\_\+\+HAL\+\_\+\+UART\+\_\+\+CLEAR\+\_\+\+IDLEFLAG}}(\+\_\+\+\_\+\+HANDLE\+\_\+\+\_\+)
+\begin{DoxyCompactList}\small\item\em Clears the UART IDLE pending flag. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___u_a_r_t___exported___macros_gaba94165ed584d49c1ec12df9819bd4bb}{\+\_\+\+\_\+\+HAL\+\_\+\+UART\+\_\+\+ENABLE\+\_\+\+IT}}(\+\_\+\+\_\+\+HANDLE\+\_\+\+\_\+,  \+\_\+\+\_\+\+INTERRUPT\+\_\+\+\_\+)
+\begin{DoxyCompactList}\small\item\em Enable the specified UART interrupt. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___u_a_r_t___exported___macros_ga3c29b33f38658acbf592e9aaf84c6f33}{\+\_\+\+\_\+\+HAL\+\_\+\+UART\+\_\+\+DISABLE\+\_\+\+IT}}(\+\_\+\+\_\+\+HANDLE\+\_\+\+\_\+,  \+\_\+\+\_\+\+INTERRUPT\+\_\+\+\_\+)
+\begin{DoxyCompactList}\small\item\em Disable the specified UART interrupt. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___u_a_r_t___exported___macros_gab7ad503802bf56bf397c392fc8e18b77}{\+\_\+\+\_\+\+HAL\+\_\+\+UART\+\_\+\+GET\+\_\+\+IT\+\_\+\+SOURCE}}(\+\_\+\+\_\+\+HANDLE\+\_\+\+\_\+,  \+\_\+\+\_\+\+IT\+\_\+\+\_\+)
+\begin{DoxyCompactList}\small\item\em Checks whether the specified UART interrupt source is enabled or not. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___u_a_r_t___exported___macros_ga4a77213945844bca4c22ba6a14b7ee4c}{\+\_\+\+\_\+\+HAL\+\_\+\+UART\+\_\+\+HWCONTROL\+\_\+\+CTS\+\_\+\+ENABLE}}(\+\_\+\+\_\+\+HANDLE\+\_\+\+\_\+)
+\begin{DoxyCompactList}\small\item\em Enable CTS flow control. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___u_a_r_t___exported___macros_ga0a26cb3a576c2700f76a7c697c86a499}{\+\_\+\+\_\+\+HAL\+\_\+\+UART\+\_\+\+HWCONTROL\+\_\+\+CTS\+\_\+\+DISABLE}}(\+\_\+\+\_\+\+HANDLE\+\_\+\+\_\+)
+\begin{DoxyCompactList}\small\item\em Disable CTS flow control. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___u_a_r_t___exported___macros_ga017ec9001ff33136f87cc4034b2709a6}{\+\_\+\+\_\+\+HAL\+\_\+\+UART\+\_\+\+HWCONTROL\+\_\+\+RTS\+\_\+\+ENABLE}}(\+\_\+\+\_\+\+HANDLE\+\_\+\+\_\+)
+\begin{DoxyCompactList}\small\item\em Enable RTS flow control This macro allows to enable RTS hardware flow control for a given UART instance, without need to call HAL\+\_\+\+UART\+\_\+\+Init() function. As involving direct access to UART registers, usage of this macro should be fully endorsed by user. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___u_a_r_t___exported___macros_ga8c034e96ad8f263cafeb5898ff7311fd}{\+\_\+\+\_\+\+HAL\+\_\+\+UART\+\_\+\+HWCONTROL\+\_\+\+RTS\+\_\+\+DISABLE}}(\+\_\+\+\_\+\+HANDLE\+\_\+\+\_\+)
+\begin{DoxyCompactList}\small\item\em Disable RTS flow control This macro allows to disable RTS hardware flow control for a given UART instance, without need to call HAL\+\_\+\+UART\+\_\+\+Init() function. As involving direct access to UART registers, usage of this macro should be fully endorsed by user. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___u_a_r_t___exported___macros_ga3524747e5896296ab066d786431503ce}{\+\_\+\+\_\+\+HAL\+\_\+\+UART\+\_\+\+ONE\+\_\+\+BIT\+\_\+\+SAMPLE\+\_\+\+ENABLE}}(\+\_\+\+\_\+\+HANDLE\+\_\+\+\_\+)
+\begin{DoxyCompactList}\small\item\em Macro to enable the UART\textquotesingle{}s one bit sample method. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___u_a_r_t___exported___macros_ga2dbd7e6592e8c5999f817b69f0fd24bb}{\+\_\+\+\_\+\+HAL\+\_\+\+UART\+\_\+\+ONE\+\_\+\+BIT\+\_\+\+SAMPLE\+\_\+\+DISABLE}}(\+\_\+\+\_\+\+HANDLE\+\_\+\+\_\+)
+\begin{DoxyCompactList}\small\item\em Macro to disable the UART\textquotesingle{}s one bit sample method. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___u_a_r_t___exported___macros_ga49eb5ea4996a957afeb8be2793ba3fe9}{\+\_\+\+\_\+\+HAL\+\_\+\+UART\+\_\+\+ENABLE}}(\+\_\+\+\_\+\+HANDLE\+\_\+\+\_\+)
+\begin{DoxyCompactList}\small\item\em Enable UART. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___u_a_r_t___exported___macros_gad2f9fbdb4adf3a09939e201eaeea072f}{\+\_\+\+\_\+\+HAL\+\_\+\+UART\+\_\+\+DISABLE}}(\+\_\+\+\_\+\+HANDLE\+\_\+\+\_\+)
+\begin{DoxyCompactList}\small\item\em Disable UART. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsubsubsection{Detailed Description}
+
+
+\label{doc-define-members}
+\Hypertarget{group___u_a_r_t___exported___macros_doc-define-members}
+\doxysubsubsubsection{Macro Definition Documentation}
+\Hypertarget{group___u_a_r_t___exported___macros_gae1dfc7777b089a10464841045b524caa}\index{UART Exported Macros@{UART Exported Macros}!\_\_HAL\_UART\_CLEAR\_FEFLAG@{\_\_HAL\_UART\_CLEAR\_FEFLAG}}
+\index{\_\_HAL\_UART\_CLEAR\_FEFLAG@{\_\_HAL\_UART\_CLEAR\_FEFLAG}!UART Exported Macros@{UART Exported Macros}}
+\doxysubsubsubsubsection{\texorpdfstring{\_\_HAL\_UART\_CLEAR\_FEFLAG}{\_\_HAL\_UART\_CLEAR\_FEFLAG}}
+{\footnotesize\ttfamily \label{group___u_a_r_t___exported___macros_gae1dfc7777b089a10464841045b524caa} 
+\#define \+\_\+\+\_\+\+HAL\+\_\+\+UART\+\_\+\+CLEAR\+\_\+\+FEFLAG(\begin{DoxyParamCaption}\item[{}]{\+\_\+\+\_\+\+HANDLE\+\_\+\+\_\+}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{group___u_a_r_t___exported___macros_gaba5e19c60e0f37341b1585a380b84d49}{\_\_HAL\_UART\_CLEAR\_PEFLAG}}(\_\_HANDLE\_\_)}
+
+\end{DoxyCode}
+
+
+Clears the UART FE pending flag. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+\+\_\+\+HANDLE\+\_\+\+\_\+} & specifies the UART Handle. UART Handle selects the USARTx or UARTy peripheral (USART,UART availability and x,y values depending on device). \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\Hypertarget{group___u_a_r_t___exported___macros_ga9bd035161d41cde4f2568c7af06493bf}\index{UART Exported Macros@{UART Exported Macros}!\_\_HAL\_UART\_CLEAR\_FLAG@{\_\_HAL\_UART\_CLEAR\_FLAG}}
+\index{\_\_HAL\_UART\_CLEAR\_FLAG@{\_\_HAL\_UART\_CLEAR\_FLAG}!UART Exported Macros@{UART Exported Macros}}
+\doxysubsubsubsubsection{\texorpdfstring{\_\_HAL\_UART\_CLEAR\_FLAG}{\_\_HAL\_UART\_CLEAR\_FLAG}}
+{\footnotesize\ttfamily \label{group___u_a_r_t___exported___macros_ga9bd035161d41cde4f2568c7af06493bf} 
+\#define \+\_\+\+\_\+\+HAL\+\_\+\+UART\+\_\+\+CLEAR\+\_\+\+FLAG(\begin{DoxyParamCaption}\item[{}]{\+\_\+\+\_\+\+HANDLE\+\_\+\+\_\+}{, }\item[{}]{\+\_\+\+\_\+\+FLAG\+\_\+\+\_\+}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{((\_\_HANDLE\_\_)-\/>Instance-\/>SR\ =\ \string~(\_\_FLAG\_\_))}
+
+\end{DoxyCode}
+
+
+Clears the specified UART pending flag. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+\+\_\+\+HANDLE\+\_\+\+\_\+} & specifies the UART Handle. UART Handle selects the USARTx or UARTy peripheral (USART,UART availability and x,y values depending on device). \\
+\hline
+{\em \+\_\+\+\_\+\+FLAG\+\_\+\+\_\+} & specifies the flag to check. This parameter can be any combination of the following values\+: \begin{DoxyItemize}
+\item UART\+\_\+\+FLAG\+\_\+\+CTS\+: CTS Change flag (not available for UART4 and UART5). \item UART\+\_\+\+FLAG\+\_\+\+LBD\+: LIN Break detection flag. \item UART\+\_\+\+FLAG\+\_\+\+TC\+: Transmission Complete flag. \item UART\+\_\+\+FLAG\+\_\+\+RXNE\+: Receive data register not empty flag.\end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+PE (Parity error), FE (Framing error), NE (Noise error), ORE (Overrun error) and IDLE (Idle line detected) flags are cleared by software sequence\+: a read operation to USART\+\_\+\+SR register followed by a read operation to USART\+\_\+\+DR register. 
+
+RXNE flag can be also cleared by a read to the USART\+\_\+\+DR register. 
+
+TC flag can be also cleared by software sequence\+: a read operation to USART\+\_\+\+SR register followed by a write operation to USART\+\_\+\+DR register. 
+
+TXE flag is cleared only by a write to the USART\+\_\+\+DR register.
+\end{DoxyNote}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\Hypertarget{group___u_a_r_t___exported___macros_ga1345aa0af53d82269b13835c225e91d0}\index{UART Exported Macros@{UART Exported Macros}!\_\_HAL\_UART\_CLEAR\_IDLEFLAG@{\_\_HAL\_UART\_CLEAR\_IDLEFLAG}}
+\index{\_\_HAL\_UART\_CLEAR\_IDLEFLAG@{\_\_HAL\_UART\_CLEAR\_IDLEFLAG}!UART Exported Macros@{UART Exported Macros}}
+\doxysubsubsubsubsection{\texorpdfstring{\_\_HAL\_UART\_CLEAR\_IDLEFLAG}{\_\_HAL\_UART\_CLEAR\_IDLEFLAG}}
+{\footnotesize\ttfamily \label{group___u_a_r_t___exported___macros_ga1345aa0af53d82269b13835c225e91d0} 
+\#define \+\_\+\+\_\+\+HAL\+\_\+\+UART\+\_\+\+CLEAR\+\_\+\+IDLEFLAG(\begin{DoxyParamCaption}\item[{}]{\+\_\+\+\_\+\+HANDLE\+\_\+\+\_\+}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{group___u_a_r_t___exported___macros_gaba5e19c60e0f37341b1585a380b84d49}{\_\_HAL\_UART\_CLEAR\_PEFLAG}}(\_\_HANDLE\_\_)}
+
+\end{DoxyCode}
+
+
+Clears the UART IDLE pending flag. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+\+\_\+\+HANDLE\+\_\+\+\_\+} & specifies the UART Handle. UART Handle selects the USARTx or UARTy peripheral (USART,UART availability and x,y values depending on device). \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\Hypertarget{group___u_a_r_t___exported___macros_gaa1f69421585b3ada4d2b81d502a3ae6b}\index{UART Exported Macros@{UART Exported Macros}!\_\_HAL\_UART\_CLEAR\_NEFLAG@{\_\_HAL\_UART\_CLEAR\_NEFLAG}}
+\index{\_\_HAL\_UART\_CLEAR\_NEFLAG@{\_\_HAL\_UART\_CLEAR\_NEFLAG}!UART Exported Macros@{UART Exported Macros}}
+\doxysubsubsubsubsection{\texorpdfstring{\_\_HAL\_UART\_CLEAR\_NEFLAG}{\_\_HAL\_UART\_CLEAR\_NEFLAG}}
+{\footnotesize\ttfamily \label{group___u_a_r_t___exported___macros_gaa1f69421585b3ada4d2b81d502a3ae6b} 
+\#define \+\_\+\+\_\+\+HAL\+\_\+\+UART\+\_\+\+CLEAR\+\_\+\+NEFLAG(\begin{DoxyParamCaption}\item[{}]{\+\_\+\+\_\+\+HANDLE\+\_\+\+\_\+}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{group___u_a_r_t___exported___macros_gaba5e19c60e0f37341b1585a380b84d49}{\_\_HAL\_UART\_CLEAR\_PEFLAG}}(\_\_HANDLE\_\_)}
+
+\end{DoxyCode}
+
+
+Clears the UART NE pending flag. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+\+\_\+\+HANDLE\+\_\+\+\_\+} & specifies the UART Handle. UART Handle selects the USARTx or UARTy peripheral (USART,UART availability and x,y values depending on device). \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\Hypertarget{group___u_a_r_t___exported___macros_ga9cdc2f2d55eaaa7895996bf6848df42e}\index{UART Exported Macros@{UART Exported Macros}!\_\_HAL\_UART\_CLEAR\_OREFLAG@{\_\_HAL\_UART\_CLEAR\_OREFLAG}}
+\index{\_\_HAL\_UART\_CLEAR\_OREFLAG@{\_\_HAL\_UART\_CLEAR\_OREFLAG}!UART Exported Macros@{UART Exported Macros}}
+\doxysubsubsubsubsection{\texorpdfstring{\_\_HAL\_UART\_CLEAR\_OREFLAG}{\_\_HAL\_UART\_CLEAR\_OREFLAG}}
+{\footnotesize\ttfamily \label{group___u_a_r_t___exported___macros_ga9cdc2f2d55eaaa7895996bf6848df42e} 
+\#define \+\_\+\+\_\+\+HAL\+\_\+\+UART\+\_\+\+CLEAR\+\_\+\+OREFLAG(\begin{DoxyParamCaption}\item[{}]{\+\_\+\+\_\+\+HANDLE\+\_\+\+\_\+}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{group___u_a_r_t___exported___macros_gaba5e19c60e0f37341b1585a380b84d49}{\_\_HAL\_UART\_CLEAR\_PEFLAG}}(\_\_HANDLE\_\_)}
+
+\end{DoxyCode}
+
+
+Clears the UART ORE pending flag. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+\+\_\+\+HANDLE\+\_\+\+\_\+} & specifies the UART Handle. UART Handle selects the USARTx or UARTy peripheral (USART,UART availability and x,y values depending on device). \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\Hypertarget{group___u_a_r_t___exported___macros_gaba5e19c60e0f37341b1585a380b84d49}\index{UART Exported Macros@{UART Exported Macros}!\_\_HAL\_UART\_CLEAR\_PEFLAG@{\_\_HAL\_UART\_CLEAR\_PEFLAG}}
+\index{\_\_HAL\_UART\_CLEAR\_PEFLAG@{\_\_HAL\_UART\_CLEAR\_PEFLAG}!UART Exported Macros@{UART Exported Macros}}
+\doxysubsubsubsubsection{\texorpdfstring{\_\_HAL\_UART\_CLEAR\_PEFLAG}{\_\_HAL\_UART\_CLEAR\_PEFLAG}}
+{\footnotesize\ttfamily \label{group___u_a_r_t___exported___macros_gaba5e19c60e0f37341b1585a380b84d49} 
+\#define \+\_\+\+\_\+\+HAL\+\_\+\+UART\+\_\+\+CLEAR\+\_\+\+PEFLAG(\begin{DoxyParamCaption}\item[{}]{\+\_\+\+\_\+\+HANDLE\+\_\+\+\_\+}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{do}\{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{core__armv81mml_8h_aec43007d9998a0a0e01faede4133d6be}{\_\_IO}}\ uint32\_t\ tmpreg\ =\ 0x00U;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ tmpreg\ =\ (\_\_HANDLE\_\_)-\/>Instance-\/>SR;\ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ tmpreg\ =\ (\_\_HANDLE\_\_)-\/>Instance-\/>DR;\ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ UNUSED(tmpreg);\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \}\ \textcolor{keywordflow}{while}(0U)}
+
+\end{DoxyCode}
+
+
+Clears the UART PE pending flag. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+\+\_\+\+HANDLE\+\_\+\+\_\+} & specifies the UART Handle. UART Handle selects the USARTx or UARTy peripheral (USART,UART availability and x,y values depending on device). \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\Hypertarget{group___u_a_r_t___exported___macros_gad2f9fbdb4adf3a09939e201eaeea072f}\index{UART Exported Macros@{UART Exported Macros}!\_\_HAL\_UART\_DISABLE@{\_\_HAL\_UART\_DISABLE}}
+\index{\_\_HAL\_UART\_DISABLE@{\_\_HAL\_UART\_DISABLE}!UART Exported Macros@{UART Exported Macros}}
+\doxysubsubsubsubsection{\texorpdfstring{\_\_HAL\_UART\_DISABLE}{\_\_HAL\_UART\_DISABLE}}
+{\footnotesize\ttfamily \label{group___u_a_r_t___exported___macros_gad2f9fbdb4adf3a09939e201eaeea072f} 
+\#define \+\_\+\+\_\+\+HAL\+\_\+\+UART\+\_\+\+DISABLE(\begin{DoxyParamCaption}\item[{}]{\+\_\+\+\_\+\+HANDLE\+\_\+\+\_\+}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{((\_\_HANDLE\_\_)-\/>Instance-\/>CR1\ \&=\ \ \mbox{\hyperlink{group___peripheral___registers___bits___definition_ga2bb650676aaae4a5203f372d497d5947}{\string~USART\_CR1\_UE}})}
+
+\end{DoxyCode}
+
+
+Disable UART. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+\+\_\+\+HANDLE\+\_\+\+\_\+} & specifies the UART Handle. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\Hypertarget{group___u_a_r_t___exported___macros_ga3c29b33f38658acbf592e9aaf84c6f33}\index{UART Exported Macros@{UART Exported Macros}!\_\_HAL\_UART\_DISABLE\_IT@{\_\_HAL\_UART\_DISABLE\_IT}}
+\index{\_\_HAL\_UART\_DISABLE\_IT@{\_\_HAL\_UART\_DISABLE\_IT}!UART Exported Macros@{UART Exported Macros}}
+\doxysubsubsubsubsection{\texorpdfstring{\_\_HAL\_UART\_DISABLE\_IT}{\_\_HAL\_UART\_DISABLE\_IT}}
+{\footnotesize\ttfamily \label{group___u_a_r_t___exported___macros_ga3c29b33f38658acbf592e9aaf84c6f33} 
+\#define \+\_\+\+\_\+\+HAL\+\_\+\+UART\+\_\+\+DISABLE\+\_\+\+IT(\begin{DoxyParamCaption}\item[{}]{\+\_\+\+\_\+\+HANDLE\+\_\+\+\_\+}{, }\item[{}]{\+\_\+\+\_\+\+INTERRUPT\+\_\+\+\_\+}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ((((\_\_INTERRUPT\_\_)\ >>\ 28U)\ ==\ UART\_CR1\_REG\_INDEX)?\ ((\_\_HANDLE\_\_)-\/>Instance-\/>CR1\ \&=\ \string~((\_\_INTERRUPT\_\_)\ \&\ \mbox{\hyperlink{group___u_a_r_t___private___constants_ga869439269c26e8dee93d49b1c7e67448}{UART\_IT\_MASK}})):\ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (((\_\_INTERRUPT\_\_)\ >>\ 28U)\ ==\ UART\_CR2\_REG\_INDEX)?\ ((\_\_HANDLE\_\_)-\/>Instance-\/>CR2\ \&=\ \string~((\_\_INTERRUPT\_\_)\ \&\ \mbox{\hyperlink{group___u_a_r_t___private___constants_ga869439269c26e8dee93d49b1c7e67448}{UART\_IT\_MASK}})):\ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ((\_\_HANDLE\_\_)-\/>Instance-\/>CR3\ \&=\ \string~\ ((\_\_INTERRUPT\_\_)\ \&\ \mbox{\hyperlink{group___u_a_r_t___private___constants_ga869439269c26e8dee93d49b1c7e67448}{UART\_IT\_MASK}})))}
+
+\end{DoxyCode}
+
+
+Disable the specified UART interrupt. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+\+\_\+\+HANDLE\+\_\+\+\_\+} & specifies the UART Handle. UART Handle selects the USARTx or UARTy peripheral (USART,UART availability and x,y values depending on device). \\
+\hline
+{\em \+\_\+\+\_\+\+INTERRUPT\+\_\+\+\_\+} & specifies the UART interrupt source to disable. This parameter can be one of the following values\+: \begin{DoxyItemize}
+\item UART\+\_\+\+IT\+\_\+\+CTS\+: CTS change interrupt \item UART\+\_\+\+IT\+\_\+\+LBD\+: LIN Break detection interrupt \item UART\+\_\+\+IT\+\_\+\+TXE\+: Transmit Data Register empty interrupt \item UART\+\_\+\+IT\+\_\+\+TC\+: Transmission complete interrupt \item UART\+\_\+\+IT\+\_\+\+RXNE\+: Receive Data register not empty interrupt \item UART\+\_\+\+IT\+\_\+\+IDLE\+: Idle line detection interrupt \item UART\+\_\+\+IT\+\_\+\+PE\+: Parity Error interrupt \item UART\+\_\+\+IT\+\_\+\+ERR\+: Error interrupt(\+Frame error, noise error, overrun error) \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\Hypertarget{group___u_a_r_t___exported___macros_ga49eb5ea4996a957afeb8be2793ba3fe9}\index{UART Exported Macros@{UART Exported Macros}!\_\_HAL\_UART\_ENABLE@{\_\_HAL\_UART\_ENABLE}}
+\index{\_\_HAL\_UART\_ENABLE@{\_\_HAL\_UART\_ENABLE}!UART Exported Macros@{UART Exported Macros}}
+\doxysubsubsubsubsection{\texorpdfstring{\_\_HAL\_UART\_ENABLE}{\_\_HAL\_UART\_ENABLE}}
+{\footnotesize\ttfamily \label{group___u_a_r_t___exported___macros_ga49eb5ea4996a957afeb8be2793ba3fe9} 
+\#define \+\_\+\+\_\+\+HAL\+\_\+\+UART\+\_\+\+ENABLE(\begin{DoxyParamCaption}\item[{}]{\+\_\+\+\_\+\+HANDLE\+\_\+\+\_\+}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{((\_\_HANDLE\_\_)-\/>Instance-\/>CR1\ |=\ \ \mbox{\hyperlink{group___peripheral___registers___bits___definition_ga2bb650676aaae4a5203f372d497d5947}{USART\_CR1\_UE}})}
+
+\end{DoxyCode}
+
+
+Enable UART. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+\+\_\+\+HANDLE\+\_\+\+\_\+} & specifies the UART Handle. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\Hypertarget{group___u_a_r_t___exported___macros_gaba94165ed584d49c1ec12df9819bd4bb}\index{UART Exported Macros@{UART Exported Macros}!\_\_HAL\_UART\_ENABLE\_IT@{\_\_HAL\_UART\_ENABLE\_IT}}
+\index{\_\_HAL\_UART\_ENABLE\_IT@{\_\_HAL\_UART\_ENABLE\_IT}!UART Exported Macros@{UART Exported Macros}}
+\doxysubsubsubsubsection{\texorpdfstring{\_\_HAL\_UART\_ENABLE\_IT}{\_\_HAL\_UART\_ENABLE\_IT}}
+{\footnotesize\ttfamily \label{group___u_a_r_t___exported___macros_gaba94165ed584d49c1ec12df9819bd4bb} 
+\#define \+\_\+\+\_\+\+HAL\+\_\+\+UART\+\_\+\+ENABLE\+\_\+\+IT(\begin{DoxyParamCaption}\item[{}]{\+\_\+\+\_\+\+HANDLE\+\_\+\+\_\+}{, }\item[{}]{\+\_\+\+\_\+\+INTERRUPT\+\_\+\+\_\+}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ((((\_\_INTERRUPT\_\_)\ >>\ 28U)\ ==\ UART\_CR1\_REG\_INDEX)?\ ((\_\_HANDLE\_\_)-\/>Instance-\/>CR1\ |=\ ((\_\_INTERRUPT\_\_)\ \&\ \mbox{\hyperlink{group___u_a_r_t___private___constants_ga869439269c26e8dee93d49b1c7e67448}{UART\_IT\_MASK}})):\ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (((\_\_INTERRUPT\_\_)\ >>\ 28U)\ ==\ UART\_CR2\_REG\_INDEX)?\ ((\_\_HANDLE\_\_)-\/>Instance-\/>CR2\ |=\ ((\_\_INTERRUPT\_\_)\ \&\ \mbox{\hyperlink{group___u_a_r_t___private___constants_ga869439269c26e8dee93d49b1c7e67448}{UART\_IT\_MASK}})):\ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ((\_\_HANDLE\_\_)-\/>Instance-\/>CR3\ |=\ ((\_\_INTERRUPT\_\_)\ \&\ \mbox{\hyperlink{group___u_a_r_t___private___constants_ga869439269c26e8dee93d49b1c7e67448}{UART\_IT\_MASK}})))}
+
+\end{DoxyCode}
+
+
+Enable the specified UART interrupt. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+\+\_\+\+HANDLE\+\_\+\+\_\+} & specifies the UART Handle. UART Handle selects the USARTx or UARTy peripheral (USART,UART availability and x,y values depending on device). \\
+\hline
+{\em \+\_\+\+\_\+\+INTERRUPT\+\_\+\+\_\+} & specifies the UART interrupt source to enable. This parameter can be one of the following values\+: \begin{DoxyItemize}
+\item UART\+\_\+\+IT\+\_\+\+CTS\+: CTS change interrupt \item UART\+\_\+\+IT\+\_\+\+LBD\+: LIN Break detection interrupt \item UART\+\_\+\+IT\+\_\+\+TXE\+: Transmit Data Register empty interrupt \item UART\+\_\+\+IT\+\_\+\+TC\+: Transmission complete interrupt \item UART\+\_\+\+IT\+\_\+\+RXNE\+: Receive Data register not empty interrupt \item UART\+\_\+\+IT\+\_\+\+IDLE\+: Idle line detection interrupt \item UART\+\_\+\+IT\+\_\+\+PE\+: Parity Error interrupt \item UART\+\_\+\+IT\+\_\+\+ERR\+: Error interrupt(\+Frame error, noise error, overrun error) \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\Hypertarget{group___u_a_r_t___exported___macros_gafc4f20cb0f29ba146c9bc14167c52744}\index{UART Exported Macros@{UART Exported Macros}!\_\_HAL\_UART\_FLUSH\_DRREGISTER@{\_\_HAL\_UART\_FLUSH\_DRREGISTER}}
+\index{\_\_HAL\_UART\_FLUSH\_DRREGISTER@{\_\_HAL\_UART\_FLUSH\_DRREGISTER}!UART Exported Macros@{UART Exported Macros}}
+\doxysubsubsubsubsection{\texorpdfstring{\_\_HAL\_UART\_FLUSH\_DRREGISTER}{\_\_HAL\_UART\_FLUSH\_DRREGISTER}}
+{\footnotesize\ttfamily \label{group___u_a_r_t___exported___macros_gafc4f20cb0f29ba146c9bc14167c52744} 
+\#define \+\_\+\+\_\+\+HAL\+\_\+\+UART\+\_\+\+FLUSH\+\_\+\+DRREGISTER(\begin{DoxyParamCaption}\item[{}]{\+\_\+\+\_\+\+HANDLE\+\_\+\+\_\+}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{((\_\_HANDLE\_\_)-\/>Instance-\/>DR)}
+
+\end{DoxyCode}
+
+
+Flushes the UART DR register. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+\+\_\+\+HANDLE\+\_\+\+\_\+} & specifies the UART Handle. UART Handle selects the USARTx or UARTy peripheral (USART,UART availability and x,y values depending on device). \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group___u_a_r_t___exported___macros_ga261fe8a2afe84ec048113654266c5bf6}\index{UART Exported Macros@{UART Exported Macros}!\_\_HAL\_UART\_GET\_FLAG@{\_\_HAL\_UART\_GET\_FLAG}}
+\index{\_\_HAL\_UART\_GET\_FLAG@{\_\_HAL\_UART\_GET\_FLAG}!UART Exported Macros@{UART Exported Macros}}
+\doxysubsubsubsubsection{\texorpdfstring{\_\_HAL\_UART\_GET\_FLAG}{\_\_HAL\_UART\_GET\_FLAG}}
+{\footnotesize\ttfamily \label{group___u_a_r_t___exported___macros_ga261fe8a2afe84ec048113654266c5bf6} 
+\#define \+\_\+\+\_\+\+HAL\+\_\+\+UART\+\_\+\+GET\+\_\+\+FLAG(\begin{DoxyParamCaption}\item[{}]{\+\_\+\+\_\+\+HANDLE\+\_\+\+\_\+}{, }\item[{}]{\+\_\+\+\_\+\+FLAG\+\_\+\+\_\+}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(((\_\_HANDLE\_\_)-\/>Instance-\/>SR\ \&\ (\_\_FLAG\_\_))\ ==\ (\_\_FLAG\_\_))}
+
+\end{DoxyCode}
+
+
+Checks whether the specified UART flag is set or not. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+\+\_\+\+HANDLE\+\_\+\+\_\+} & specifies the UART Handle. UART Handle selects the USARTx or UARTy peripheral (USART,UART availability and x,y values depending on device). \\
+\hline
+{\em \+\_\+\+\_\+\+FLAG\+\_\+\+\_\+} & specifies the flag to check. This parameter can be one of the following values\+: \begin{DoxyItemize}
+\item UART\+\_\+\+FLAG\+\_\+\+CTS\+: CTS Change flag (not available for UART4 and UART5) \item UART\+\_\+\+FLAG\+\_\+\+LBD\+: LIN Break detection flag \item UART\+\_\+\+FLAG\+\_\+\+TXE\+: Transmit data register empty flag \item UART\+\_\+\+FLAG\+\_\+\+TC\+: Transmission Complete flag \item UART\+\_\+\+FLAG\+\_\+\+RXNE\+: Receive data register not empty flag \item UART\+\_\+\+FLAG\+\_\+\+IDLE\+: Idle Line detection flag \item UART\+\_\+\+FLAG\+\_\+\+ORE\+: Overrun Error flag \item UART\+\_\+\+FLAG\+\_\+\+NE\+: Noise Error flag \item UART\+\_\+\+FLAG\+\_\+\+FE\+: Framing Error flag \item UART\+\_\+\+FLAG\+\_\+\+PE\+: Parity Error flag \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & new state of {\bfseries{FLAG}} (TRUE or FALSE). \\
+\hline
+\end{DoxyRetVals}
+\Hypertarget{group___u_a_r_t___exported___macros_gab7ad503802bf56bf397c392fc8e18b77}\index{UART Exported Macros@{UART Exported Macros}!\_\_HAL\_UART\_GET\_IT\_SOURCE@{\_\_HAL\_UART\_GET\_IT\_SOURCE}}
+\index{\_\_HAL\_UART\_GET\_IT\_SOURCE@{\_\_HAL\_UART\_GET\_IT\_SOURCE}!UART Exported Macros@{UART Exported Macros}}
+\doxysubsubsubsubsection{\texorpdfstring{\_\_HAL\_UART\_GET\_IT\_SOURCE}{\_\_HAL\_UART\_GET\_IT\_SOURCE}}
+{\footnotesize\ttfamily \label{group___u_a_r_t___exported___macros_gab7ad503802bf56bf397c392fc8e18b77} 
+\#define \+\_\+\+\_\+\+HAL\+\_\+\+UART\+\_\+\+GET\+\_\+\+IT\+\_\+\+SOURCE(\begin{DoxyParamCaption}\item[{}]{\+\_\+\+\_\+\+HANDLE\+\_\+\+\_\+}{, }\item[{}]{\+\_\+\+\_\+\+IT\+\_\+\+\_\+}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (((((\_\_IT\_\_)\ >>\ 28U)\ ==\ UART\_CR1\_REG\_INDEX)?\ (\_\_HANDLE\_\_)-\/>Instance-\/>CR1:(((((uint32\_t)(\_\_IT\_\_))\ >>\ 28U)\ ==\ UART\_CR2\_REG\_INDEX)?\ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (\_\_HANDLE\_\_)-\/>Instance-\/>CR2\ :\ (\_\_HANDLE\_\_)-\/>Instance-\/>CR3))\ \&\ (((uint32\_t)(\_\_IT\_\_))\ \&\ \mbox{\hyperlink{group___u_a_r_t___private___constants_ga869439269c26e8dee93d49b1c7e67448}{UART\_IT\_MASK}}))}
+
+\end{DoxyCode}
+
+
+Checks whether the specified UART interrupt source is enabled or not. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+\+\_\+\+HANDLE\+\_\+\+\_\+} & specifies the UART Handle. UART Handle selects the USARTx or UARTy peripheral (USART,UART availability and x,y values depending on device). \\
+\hline
+{\em \+\_\+\+\_\+\+IT\+\_\+\+\_\+} & specifies the UART interrupt source to check. This parameter can be one of the following values\+: \begin{DoxyItemize}
+\item UART\+\_\+\+IT\+\_\+\+CTS\+: CTS change interrupt (not available for UART4 and UART5) \item UART\+\_\+\+IT\+\_\+\+LBD\+: LIN Break detection interrupt \item UART\+\_\+\+IT\+\_\+\+TXE\+: Transmit Data Register empty interrupt \item UART\+\_\+\+IT\+\_\+\+TC\+: Transmission complete interrupt \item UART\+\_\+\+IT\+\_\+\+RXNE\+: Receive Data register not empty interrupt \item UART\+\_\+\+IT\+\_\+\+IDLE\+: Idle line detection interrupt \item UART\+\_\+\+IT\+\_\+\+ERR\+: Error interrupt \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & new state of {\bfseries{IT}} (TRUE or FALSE). \\
+\hline
+\end{DoxyRetVals}
+\Hypertarget{group___u_a_r_t___exported___macros_ga0a26cb3a576c2700f76a7c697c86a499}\index{UART Exported Macros@{UART Exported Macros}!\_\_HAL\_UART\_HWCONTROL\_CTS\_DISABLE@{\_\_HAL\_UART\_HWCONTROL\_CTS\_DISABLE}}
+\index{\_\_HAL\_UART\_HWCONTROL\_CTS\_DISABLE@{\_\_HAL\_UART\_HWCONTROL\_CTS\_DISABLE}!UART Exported Macros@{UART Exported Macros}}
+\doxysubsubsubsubsection{\texorpdfstring{\_\_HAL\_UART\_HWCONTROL\_CTS\_DISABLE}{\_\_HAL\_UART\_HWCONTROL\_CTS\_DISABLE}}
+{\footnotesize\ttfamily \label{group___u_a_r_t___exported___macros_ga0a26cb3a576c2700f76a7c697c86a499} 
+\#define \+\_\+\+\_\+\+HAL\+\_\+\+UART\+\_\+\+HWCONTROL\+\_\+\+CTS\+\_\+\+DISABLE(\begin{DoxyParamCaption}\item[{}]{\+\_\+\+\_\+\+HANDLE\+\_\+\+\_\+}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{do}\{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ ATOMIC\_CLEAR\_BIT((\_\_HANDLE\_\_)-\/>Instance-\/>CR3,\ \mbox{\hyperlink{group___peripheral___registers___bits___definition_gaa125f026b1ca2d76eab48b191baed265}{USART\_CR3\_CTSE}});\ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ (\_\_HANDLE\_\_)-\/>Init.HwFlowCtl\ \&=\ \string~(\mbox{\hyperlink{group___peripheral___registers___bits___definition_gaa125f026b1ca2d76eab48b191baed265}{USART\_CR3\_CTSE}});\ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \}\ \textcolor{keywordflow}{while}(0U)}
+
+\end{DoxyCode}
+
+
+Disable CTS flow control. 
+
+\begin{DoxyNote}{Note}
+This macro allows to disable CTS hardware flow control for a given UART instance, without need to call HAL\+\_\+\+UART\+\_\+\+Init() function. As involving direct access to UART registers, usage of this macro should be fully endorsed by user. 
+
+As macro is expected to be used for modifying CTS Hw flow control feature activation, without need for USART instance Deinit/\+Init, following conditions for macro call should be fulfilled \+:
+\begin{DoxyItemize}
+\item UART instance should have already been initialised (through call of HAL\+\_\+\+UART\+\_\+\+Init() )
+\item macro could only be called when corresponding UART instance is disabled (i.\+e {\bfseries{HAL\+\_\+\+UART\+\_\+\+DISABLE(\+\_\+\+\_\+\+HANDLE}})) and should be followed by an Enable macro (i.\+e {\bfseries{HAL\+\_\+\+UART\+\_\+\+ENABLE(\+\_\+\+\_\+\+HANDLE}})). 
+\end{DoxyItemize}
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+\+\_\+\+HANDLE\+\_\+\+\_\+} & specifies the UART Handle. The Handle Instance can be any USARTx (supporting the HW Flow control feature). It is used to select the USART peripheral (USART availability and x value depending on device). \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\Hypertarget{group___u_a_r_t___exported___macros_ga4a77213945844bca4c22ba6a14b7ee4c}\index{UART Exported Macros@{UART Exported Macros}!\_\_HAL\_UART\_HWCONTROL\_CTS\_ENABLE@{\_\_HAL\_UART\_HWCONTROL\_CTS\_ENABLE}}
+\index{\_\_HAL\_UART\_HWCONTROL\_CTS\_ENABLE@{\_\_HAL\_UART\_HWCONTROL\_CTS\_ENABLE}!UART Exported Macros@{UART Exported Macros}}
+\doxysubsubsubsubsection{\texorpdfstring{\_\_HAL\_UART\_HWCONTROL\_CTS\_ENABLE}{\_\_HAL\_UART\_HWCONTROL\_CTS\_ENABLE}}
+{\footnotesize\ttfamily \label{group___u_a_r_t___exported___macros_ga4a77213945844bca4c22ba6a14b7ee4c} 
+\#define \+\_\+\+\_\+\+HAL\+\_\+\+UART\+\_\+\+HWCONTROL\+\_\+\+CTS\+\_\+\+ENABLE(\begin{DoxyParamCaption}\item[{}]{\+\_\+\+\_\+\+HANDLE\+\_\+\+\_\+}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{do}\{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ ATOMIC\_SET\_BIT((\_\_HANDLE\_\_)-\/>Instance-\/>CR3,\ \mbox{\hyperlink{group___peripheral___registers___bits___definition_gaa125f026b1ca2d76eab48b191baed265}{USART\_CR3\_CTSE}});\ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ (\_\_HANDLE\_\_)-\/>Init.HwFlowCtl\ |=\ \mbox{\hyperlink{group___peripheral___registers___bits___definition_gaa125f026b1ca2d76eab48b191baed265}{USART\_CR3\_CTSE}};\ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \}\ \textcolor{keywordflow}{while}(0U)}
+
+\end{DoxyCode}
+
+
+Enable CTS flow control. 
+
+\begin{DoxyNote}{Note}
+This macro allows to enable CTS hardware flow control for a given UART instance, without need to call HAL\+\_\+\+UART\+\_\+\+Init() function. As involving direct access to UART registers, usage of this macro should be fully endorsed by user. 
+
+As macro is expected to be used for modifying CTS Hw flow control feature activation, without need for USART instance Deinit/\+Init, following conditions for macro call should be fulfilled \+:
+\begin{DoxyItemize}
+\item UART instance should have already been initialised (through call of HAL\+\_\+\+UART\+\_\+\+Init() )
+\item macro could only be called when corresponding UART instance is disabled (i.\+e {\bfseries{HAL\+\_\+\+UART\+\_\+\+DISABLE(\+\_\+\+\_\+\+HANDLE}})) and should be followed by an Enable macro (i.\+e {\bfseries{HAL\+\_\+\+UART\+\_\+\+ENABLE(\+\_\+\+\_\+\+HANDLE}})). 
+\end{DoxyItemize}
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+\+\_\+\+HANDLE\+\_\+\+\_\+} & specifies the UART Handle. The Handle Instance can be any USARTx (supporting the HW Flow control feature). It is used to select the USART peripheral (USART availability and x value depending on device). \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\Hypertarget{group___u_a_r_t___exported___macros_ga8c034e96ad8f263cafeb5898ff7311fd}\index{UART Exported Macros@{UART Exported Macros}!\_\_HAL\_UART\_HWCONTROL\_RTS\_DISABLE@{\_\_HAL\_UART\_HWCONTROL\_RTS\_DISABLE}}
+\index{\_\_HAL\_UART\_HWCONTROL\_RTS\_DISABLE@{\_\_HAL\_UART\_HWCONTROL\_RTS\_DISABLE}!UART Exported Macros@{UART Exported Macros}}
+\doxysubsubsubsubsection{\texorpdfstring{\_\_HAL\_UART\_HWCONTROL\_RTS\_DISABLE}{\_\_HAL\_UART\_HWCONTROL\_RTS\_DISABLE}}
+{\footnotesize\ttfamily \label{group___u_a_r_t___exported___macros_ga8c034e96ad8f263cafeb5898ff7311fd} 
+\#define \+\_\+\+\_\+\+HAL\+\_\+\+UART\+\_\+\+HWCONTROL\+\_\+\+RTS\+\_\+\+DISABLE(\begin{DoxyParamCaption}\item[{}]{\+\_\+\+\_\+\+HANDLE\+\_\+\+\_\+}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{do}\{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ ATOMIC\_CLEAR\_BIT((\_\_HANDLE\_\_)-\/>Instance-\/>CR3,\ \mbox{\hyperlink{group___peripheral___registers___bits___definition_ga7c5d6fcd84a4728cda578a0339b4cac2}{USART\_CR3\_RTSE}});\(\backslash\)}
+\DoxyCodeLine{\ \ \ \ (\_\_HANDLE\_\_)-\/>Init.HwFlowCtl\ \&=\ \string~(\mbox{\hyperlink{group___peripheral___registers___bits___definition_ga7c5d6fcd84a4728cda578a0339b4cac2}{USART\_CR3\_RTSE}});\ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \}\ \textcolor{keywordflow}{while}(0U)}
+
+\end{DoxyCode}
+
+
+Disable RTS flow control This macro allows to disable RTS hardware flow control for a given UART instance, without need to call HAL\+\_\+\+UART\+\_\+\+Init() function. As involving direct access to UART registers, usage of this macro should be fully endorsed by user. 
+
+\begin{DoxyNote}{Note}
+As macro is expected to be used for modifying RTS Hw flow control feature activation, without need for USART instance Deinit/\+Init, following conditions for macro call should be fulfilled \+:
+\begin{DoxyItemize}
+\item UART instance should have already been initialised (through call of HAL\+\_\+\+UART\+\_\+\+Init() )
+\item macro could only be called when corresponding UART instance is disabled (i.\+e {\bfseries{HAL\+\_\+\+UART\+\_\+\+DISABLE(\+\_\+\+\_\+\+HANDLE}})) and should be followed by an Enable macro (i.\+e {\bfseries{HAL\+\_\+\+UART\+\_\+\+ENABLE(\+\_\+\+\_\+\+HANDLE}})). 
+\end{DoxyItemize}
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+\+\_\+\+HANDLE\+\_\+\+\_\+} & specifies the UART Handle. The Handle Instance can be any USARTx (supporting the HW Flow control feature). It is used to select the USART peripheral (USART availability and x value depending on device). \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\Hypertarget{group___u_a_r_t___exported___macros_ga017ec9001ff33136f87cc4034b2709a6}\index{UART Exported Macros@{UART Exported Macros}!\_\_HAL\_UART\_HWCONTROL\_RTS\_ENABLE@{\_\_HAL\_UART\_HWCONTROL\_RTS\_ENABLE}}
+\index{\_\_HAL\_UART\_HWCONTROL\_RTS\_ENABLE@{\_\_HAL\_UART\_HWCONTROL\_RTS\_ENABLE}!UART Exported Macros@{UART Exported Macros}}
+\doxysubsubsubsubsection{\texorpdfstring{\_\_HAL\_UART\_HWCONTROL\_RTS\_ENABLE}{\_\_HAL\_UART\_HWCONTROL\_RTS\_ENABLE}}
+{\footnotesize\ttfamily \label{group___u_a_r_t___exported___macros_ga017ec9001ff33136f87cc4034b2709a6} 
+\#define \+\_\+\+\_\+\+HAL\+\_\+\+UART\+\_\+\+HWCONTROL\+\_\+\+RTS\+\_\+\+ENABLE(\begin{DoxyParamCaption}\item[{}]{\+\_\+\+\_\+\+HANDLE\+\_\+\+\_\+}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{do}\{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ ATOMIC\_SET\_BIT((\_\_HANDLE\_\_)-\/>Instance-\/>CR3,\ \mbox{\hyperlink{group___peripheral___registers___bits___definition_ga7c5d6fcd84a4728cda578a0339b4cac2}{USART\_CR3\_RTSE}});\ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ (\_\_HANDLE\_\_)-\/>Init.HwFlowCtl\ |=\ \mbox{\hyperlink{group___peripheral___registers___bits___definition_ga7c5d6fcd84a4728cda578a0339b4cac2}{USART\_CR3\_RTSE}};\ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \}\ \textcolor{keywordflow}{while}(0U)}
+
+\end{DoxyCode}
+
+
+Enable RTS flow control This macro allows to enable RTS hardware flow control for a given UART instance, without need to call HAL\+\_\+\+UART\+\_\+\+Init() function. As involving direct access to UART registers, usage of this macro should be fully endorsed by user. 
+
+\begin{DoxyNote}{Note}
+As macro is expected to be used for modifying RTS Hw flow control feature activation, without need for USART instance Deinit/\+Init, following conditions for macro call should be fulfilled \+:
+\begin{DoxyItemize}
+\item UART instance should have already been initialised (through call of HAL\+\_\+\+UART\+\_\+\+Init() )
+\item macro could only be called when corresponding UART instance is disabled (i.\+e {\bfseries{HAL\+\_\+\+UART\+\_\+\+DISABLE(\+\_\+\+\_\+\+HANDLE}})) and should be followed by an Enable macro (i.\+e {\bfseries{HAL\+\_\+\+UART\+\_\+\+ENABLE(\+\_\+\+\_\+\+HANDLE}})). 
+\end{DoxyItemize}
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+\+\_\+\+HANDLE\+\_\+\+\_\+} & specifies the UART Handle. The Handle Instance can be any USARTx (supporting the HW Flow control feature). It is used to select the USART peripheral (USART availability and x value depending on device). \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\Hypertarget{group___u_a_r_t___exported___macros_ga2dbd7e6592e8c5999f817b69f0fd24bb}\index{UART Exported Macros@{UART Exported Macros}!\_\_HAL\_UART\_ONE\_BIT\_SAMPLE\_DISABLE@{\_\_HAL\_UART\_ONE\_BIT\_SAMPLE\_DISABLE}}
+\index{\_\_HAL\_UART\_ONE\_BIT\_SAMPLE\_DISABLE@{\_\_HAL\_UART\_ONE\_BIT\_SAMPLE\_DISABLE}!UART Exported Macros@{UART Exported Macros}}
+\doxysubsubsubsubsection{\texorpdfstring{\_\_HAL\_UART\_ONE\_BIT\_SAMPLE\_DISABLE}{\_\_HAL\_UART\_ONE\_BIT\_SAMPLE\_DISABLE}}
+{\footnotesize\ttfamily \label{group___u_a_r_t___exported___macros_ga2dbd7e6592e8c5999f817b69f0fd24bb} 
+\#define \+\_\+\+\_\+\+HAL\+\_\+\+UART\+\_\+\+ONE\+\_\+\+BIT\+\_\+\+SAMPLE\+\_\+\+DISABLE(\begin{DoxyParamCaption}\item[{}]{\+\_\+\+\_\+\+HANDLE\+\_\+\+\_\+}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ((\_\_HANDLE\_\_)-\/>Instance-\/>CR3\(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \&=\ (uint16\_t)\string~((uint16\_t)\mbox{\hyperlink{group___peripheral___registers___bits___definition_ga9a96fb1a7beab602cbc8cb0393593826}{USART\_CR3\_ONEBIT}}))}
+
+\end{DoxyCode}
+
+
+Macro to disable the UART\textquotesingle{}s one bit sample method. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+\+\_\+\+HANDLE\+\_\+\+\_\+} & specifies the UART Handle. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\Hypertarget{group___u_a_r_t___exported___macros_ga3524747e5896296ab066d786431503ce}\index{UART Exported Macros@{UART Exported Macros}!\_\_HAL\_UART\_ONE\_BIT\_SAMPLE\_ENABLE@{\_\_HAL\_UART\_ONE\_BIT\_SAMPLE\_ENABLE}}
+\index{\_\_HAL\_UART\_ONE\_BIT\_SAMPLE\_ENABLE@{\_\_HAL\_UART\_ONE\_BIT\_SAMPLE\_ENABLE}!UART Exported Macros@{UART Exported Macros}}
+\doxysubsubsubsubsection{\texorpdfstring{\_\_HAL\_UART\_ONE\_BIT\_SAMPLE\_ENABLE}{\_\_HAL\_UART\_ONE\_BIT\_SAMPLE\_ENABLE}}
+{\footnotesize\ttfamily \label{group___u_a_r_t___exported___macros_ga3524747e5896296ab066d786431503ce} 
+\#define \+\_\+\+\_\+\+HAL\+\_\+\+UART\+\_\+\+ONE\+\_\+\+BIT\+\_\+\+SAMPLE\+\_\+\+ENABLE(\begin{DoxyParamCaption}\item[{}]{\+\_\+\+\_\+\+HANDLE\+\_\+\+\_\+}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{((\_\_HANDLE\_\_)-\/>Instance-\/>CR3|=\ \mbox{\hyperlink{group___peripheral___registers___bits___definition_ga9a96fb1a7beab602cbc8cb0393593826}{USART\_CR3\_ONEBIT}})}
+
+\end{DoxyCode}
+
+
+Macro to enable the UART\textquotesingle{}s one bit sample method. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+\+\_\+\+HANDLE\+\_\+\+\_\+} & specifies the UART Handle. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\Hypertarget{group___u_a_r_t___exported___macros_ga19deab848407b106998416c78092fa9b}\index{UART Exported Macros@{UART Exported Macros}!\_\_HAL\_UART\_RESET\_HANDLE\_STATE@{\_\_HAL\_UART\_RESET\_HANDLE\_STATE}}
+\index{\_\_HAL\_UART\_RESET\_HANDLE\_STATE@{\_\_HAL\_UART\_RESET\_HANDLE\_STATE}!UART Exported Macros@{UART Exported Macros}}
+\doxysubsubsubsubsection{\texorpdfstring{\_\_HAL\_UART\_RESET\_HANDLE\_STATE}{\_\_HAL\_UART\_RESET\_HANDLE\_STATE}}
+{\footnotesize\ttfamily \label{group___u_a_r_t___exported___macros_ga19deab848407b106998416c78092fa9b} 
+\#define \+\_\+\+\_\+\+HAL\+\_\+\+UART\+\_\+\+RESET\+\_\+\+HANDLE\+\_\+\+STATE(\begin{DoxyParamCaption}\item[{}]{\+\_\+\+\_\+\+HANDLE\+\_\+\+\_\+}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{do}\{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (\_\_HANDLE\_\_)-\/>gState\ =\ \mbox{\hyperlink{group___u_a_r_t___exported___types_ggaf55d844a35379c204c90be5d1e8e50baa9c7d889fce61ccc717228d099a61d113}{HAL\_UART\_STATE\_RESET}};\ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (\_\_HANDLE\_\_)-\/>RxState\ =\ \mbox{\hyperlink{group___u_a_r_t___exported___types_ggaf55d844a35379c204c90be5d1e8e50baa9c7d889fce61ccc717228d099a61d113}{HAL\_UART\_STATE\_RESET}};\ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{while}(0U)}
+
+\end{DoxyCode}
+
+
+Reset UART handle gstate \& Rx\+State. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+\+\_\+\+HANDLE\+\_\+\+\_\+} & specifies the UART Handle. UART Handle selects the USARTx or UARTy peripheral (USART,UART availability and x,y values depending on device). \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}

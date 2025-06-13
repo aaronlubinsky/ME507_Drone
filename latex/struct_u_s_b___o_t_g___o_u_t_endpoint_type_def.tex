@@ -1,0 +1,83 @@
+\doxysection{USB\+\_\+\+OTG\+\_\+\+OUTEndpoint\+Type\+Def Struct Reference}
+\hypertarget{struct_u_s_b___o_t_g___o_u_t_endpoint_type_def}{}\label{struct_u_s_b___o_t_g___o_u_t_endpoint_type_def}\index{USB\_OTG\_OUTEndpointTypeDef@{USB\_OTG\_OUTEndpointTypeDef}}
+
+
+USB\+\_\+\+OTG\+\_\+\+OUT\+\_\+\+Endpoint-\/\+Specific\+\_\+\+Registers.  
+
+
+
+
+{\ttfamily \#include $<$stm32f411xe.\+h$>$}
+
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{core__armv81mml_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} uint32\+\_\+t \mbox{\hyperlink{struct_u_s_b___o_t_g___o_u_t_endpoint_type_def_a86a62895d4b90531c30f5a48f404ddea}{DOEPCTL}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{struct_u_s_b___o_t_g___o_u_t_endpoint_type_def_a76533e00218c269a8064cf68c3daf7e9}{Reserved04}}
+\item 
+\mbox{\hyperlink{core__armv81mml_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} uint32\+\_\+t \mbox{\hyperlink{struct_u_s_b___o_t_g___o_u_t_endpoint_type_def_a0b8b826828cba51585aabe9b73074d07}{DOEPINT}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{struct_u_s_b___o_t_g___o_u_t_endpoint_type_def_a1d7bc9b546c4dd8ce2fe792945cf7a9d}{Reserved0C}}
+\item 
+\mbox{\hyperlink{core__armv81mml_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} uint32\+\_\+t \mbox{\hyperlink{struct_u_s_b___o_t_g___o_u_t_endpoint_type_def_a5e4876bb58a4a01eacf675b69f36df26}{DOEPTSIZ}}
+\item 
+\mbox{\hyperlink{core__armv81mml_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} uint32\+\_\+t \mbox{\hyperlink{struct_u_s_b___o_t_g___o_u_t_endpoint_type_def_a189d59fa4e34c96ce7eb25c0afd50cd7}{DOEPDMA}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{struct_u_s_b___o_t_g___o_u_t_endpoint_type_def_a51b162457add1bb7cc254b7aeb9f94bd}{Reserved18}} \mbox{[}2\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+USB\+\_\+\+OTG\+\_\+\+OUT\+\_\+\+Endpoint-\/\+Specific\+\_\+\+Registers. 
+
+\label{doc-variable-members}
+\Hypertarget{struct_u_s_b___o_t_g___o_u_t_endpoint_type_def_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{struct_u_s_b___o_t_g___o_u_t_endpoint_type_def_a86a62895d4b90531c30f5a48f404ddea}\index{USB\_OTG\_OUTEndpointTypeDef@{USB\_OTG\_OUTEndpointTypeDef}!DOEPCTL@{DOEPCTL}}
+\index{DOEPCTL@{DOEPCTL}!USB\_OTG\_OUTEndpointTypeDef@{USB\_OTG\_OUTEndpointTypeDef}}
+\doxysubsubsection{\texorpdfstring{DOEPCTL}{DOEPCTL}}
+{\footnotesize\ttfamily \label{struct_u_s_b___o_t_g___o_u_t_endpoint_type_def_a86a62895d4b90531c30f5a48f404ddea} 
+\mbox{\hyperlink{core__armv81mml_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} uint32\+\_\+t USB\+\_\+\+OTG\+\_\+\+OUTEndpoint\+Type\+Def\+::\+DOEPCTL}
+
+dev OUT Endpoint Control Reg B00h + (ep\+\_\+num \texorpdfstring{$\ast$}{*} 20h) + 00h \Hypertarget{struct_u_s_b___o_t_g___o_u_t_endpoint_type_def_a189d59fa4e34c96ce7eb25c0afd50cd7}\index{USB\_OTG\_OUTEndpointTypeDef@{USB\_OTG\_OUTEndpointTypeDef}!DOEPDMA@{DOEPDMA}}
+\index{DOEPDMA@{DOEPDMA}!USB\_OTG\_OUTEndpointTypeDef@{USB\_OTG\_OUTEndpointTypeDef}}
+\doxysubsubsection{\texorpdfstring{DOEPDMA}{DOEPDMA}}
+{\footnotesize\ttfamily \label{struct_u_s_b___o_t_g___o_u_t_endpoint_type_def_a189d59fa4e34c96ce7eb25c0afd50cd7} 
+\mbox{\hyperlink{core__armv81mml_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} uint32\+\_\+t USB\+\_\+\+OTG\+\_\+\+OUTEndpoint\+Type\+Def\+::\+DOEPDMA}
+
+dev OUT Endpoint DMA Address B00h + (ep\+\_\+num \texorpdfstring{$\ast$}{*} 20h) + 14h \Hypertarget{struct_u_s_b___o_t_g___o_u_t_endpoint_type_def_a0b8b826828cba51585aabe9b73074d07}\index{USB\_OTG\_OUTEndpointTypeDef@{USB\_OTG\_OUTEndpointTypeDef}!DOEPINT@{DOEPINT}}
+\index{DOEPINT@{DOEPINT}!USB\_OTG\_OUTEndpointTypeDef@{USB\_OTG\_OUTEndpointTypeDef}}
+\doxysubsubsection{\texorpdfstring{DOEPINT}{DOEPINT}}
+{\footnotesize\ttfamily \label{struct_u_s_b___o_t_g___o_u_t_endpoint_type_def_a0b8b826828cba51585aabe9b73074d07} 
+\mbox{\hyperlink{core__armv81mml_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} uint32\+\_\+t USB\+\_\+\+OTG\+\_\+\+OUTEndpoint\+Type\+Def\+::\+DOEPINT}
+
+dev OUT Endpoint Itr Reg B00h + (ep\+\_\+num \texorpdfstring{$\ast$}{*} 20h) + 08h \Hypertarget{struct_u_s_b___o_t_g___o_u_t_endpoint_type_def_a5e4876bb58a4a01eacf675b69f36df26}\index{USB\_OTG\_OUTEndpointTypeDef@{USB\_OTG\_OUTEndpointTypeDef}!DOEPTSIZ@{DOEPTSIZ}}
+\index{DOEPTSIZ@{DOEPTSIZ}!USB\_OTG\_OUTEndpointTypeDef@{USB\_OTG\_OUTEndpointTypeDef}}
+\doxysubsubsection{\texorpdfstring{DOEPTSIZ}{DOEPTSIZ}}
+{\footnotesize\ttfamily \label{struct_u_s_b___o_t_g___o_u_t_endpoint_type_def_a5e4876bb58a4a01eacf675b69f36df26} 
+\mbox{\hyperlink{core__armv81mml_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} uint32\+\_\+t USB\+\_\+\+OTG\+\_\+\+OUTEndpoint\+Type\+Def\+::\+DOEPTSIZ}
+
+dev OUT Endpoint Txfer Size B00h + (ep\+\_\+num \texorpdfstring{$\ast$}{*} 20h) + 10h \Hypertarget{struct_u_s_b___o_t_g___o_u_t_endpoint_type_def_a76533e00218c269a8064cf68c3daf7e9}\index{USB\_OTG\_OUTEndpointTypeDef@{USB\_OTG\_OUTEndpointTypeDef}!Reserved04@{Reserved04}}
+\index{Reserved04@{Reserved04}!USB\_OTG\_OUTEndpointTypeDef@{USB\_OTG\_OUTEndpointTypeDef}}
+\doxysubsubsection{\texorpdfstring{Reserved04}{Reserved04}}
+{\footnotesize\ttfamily \label{struct_u_s_b___o_t_g___o_u_t_endpoint_type_def_a76533e00218c269a8064cf68c3daf7e9} 
+uint32\+\_\+t USB\+\_\+\+OTG\+\_\+\+OUTEndpoint\+Type\+Def\+::\+Reserved04}
+
+Reserved B00h + (ep\+\_\+num \texorpdfstring{$\ast$}{*} 20h) + 04h \Hypertarget{struct_u_s_b___o_t_g___o_u_t_endpoint_type_def_a1d7bc9b546c4dd8ce2fe792945cf7a9d}\index{USB\_OTG\_OUTEndpointTypeDef@{USB\_OTG\_OUTEndpointTypeDef}!Reserved0C@{Reserved0C}}
+\index{Reserved0C@{Reserved0C}!USB\_OTG\_OUTEndpointTypeDef@{USB\_OTG\_OUTEndpointTypeDef}}
+\doxysubsubsection{\texorpdfstring{Reserved0C}{Reserved0C}}
+{\footnotesize\ttfamily \label{struct_u_s_b___o_t_g___o_u_t_endpoint_type_def_a1d7bc9b546c4dd8ce2fe792945cf7a9d} 
+uint32\+\_\+t USB\+\_\+\+OTG\+\_\+\+OUTEndpoint\+Type\+Def\+::\+Reserved0C}
+
+Reserved B00h + (ep\+\_\+num \texorpdfstring{$\ast$}{*} 20h) + 0Ch \Hypertarget{struct_u_s_b___o_t_g___o_u_t_endpoint_type_def_a51b162457add1bb7cc254b7aeb9f94bd}\index{USB\_OTG\_OUTEndpointTypeDef@{USB\_OTG\_OUTEndpointTypeDef}!Reserved18@{Reserved18}}
+\index{Reserved18@{Reserved18}!USB\_OTG\_OUTEndpointTypeDef@{USB\_OTG\_OUTEndpointTypeDef}}
+\doxysubsubsection{\texorpdfstring{Reserved18}{Reserved18}}
+{\footnotesize\ttfamily \label{struct_u_s_b___o_t_g___o_u_t_endpoint_type_def_a51b162457add1bb7cc254b7aeb9f94bd} 
+uint32\+\_\+t USB\+\_\+\+OTG\+\_\+\+OUTEndpoint\+Type\+Def\+::\+Reserved18\mbox{[}2\mbox{]}}
+
+Reserved B00h + (ep\+\_\+num \texorpdfstring{$\ast$}{*} 20h) + 18h -\/ B00h + (ep\+\_\+num \texorpdfstring{$\ast$}{*} 20h) + 1Ch 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Drivers/\+CMSIS/\+Device/\+ST/\+STM32\+F4xx/\+Include/\mbox{\hyperlink{stm32f411xe_8h}{stm32f411xe.\+h}}\end{DoxyCompactItemize}

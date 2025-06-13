@@ -1,0 +1,110 @@
+\doxysection{Core/\+Inc/\+ESC.h File Reference}
+\hypertarget{_e_s_c_8h}{}\label{_e_s_c_8h}\index{Core/Inc/ESC.h@{Core/Inc/ESC.h}}
+
+
+Motor ESC (Electronic Speed Controller) interface functions.  
+
+
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{_e_s_c_8h_a41f9c5fb8b08eb5dc3edce4dcb37fee7}\label{_e_s_c_8h_a41f9c5fb8b08eb5dc3edce4dcb37fee7} 
+\#define {\bfseries true}~1
+\begin{DoxyCompactList}\small\item\em Definition for boolean true. \end{DoxyCompactList}\item 
+\Hypertarget{_e_s_c_8h_a65e9886d74aaee76545e83dd09011727}\label{_e_s_c_8h_a65e9886d74aaee76545e83dd09011727} 
+\#define {\bfseries false}~0
+\begin{DoxyCompactList}\small\item\em Definition for boolean false. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_e_s_c_8h_a37829b14100fdc7ade2b050b5f2e0199}{update\+\_\+\+Motors}} (void)
+\begin{DoxyCompactList}\small\item\em Updates the motor speeds based on control inputs. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_e_s_c_8h_a3d61e8556d773eec7ce6d53f546efc45}{arm\+ESC}} (void)
+\begin{DoxyCompactList}\small\item\em Arms the ESCs with a minimum throttle signal. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Motor ESC (Electronic Speed Controller) interface functions. 
+
+This file declares functions used to arm and update ESCs for quadcopter motor control.
+
+\begin{DoxyAuthor}{Author}
+Aaron 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+May 20, 2025 
+\end{DoxyDate}
+
+
+\label{doc-func-members}
+\Hypertarget{_e_s_c_8h_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{_e_s_c_8h_a3d61e8556d773eec7ce6d53f546efc45}\index{ESC.h@{ESC.h}!armESC@{armESC}}
+\index{armESC@{armESC}!ESC.h@{ESC.h}}
+\doxysubsubsection{\texorpdfstring{armESC()}{armESC()}}
+{\footnotesize\ttfamily \label{_e_s_c_8h_a3d61e8556d773eec7ce6d53f546efc45} 
+void arm\+ESC (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+Arms the ESCs with a minimum throttle signal. 
+
+This function initializes the ESCs so they are ready to receive throttle commands. It must be called before any attempt to update motor speeds.
+
+Arms the ESCs with a minimum throttle signal.
+
+This function sends the proper PWM signals to arm all four ESC motors. It starts PWM generation on all channels and sends a specific pulse width (approximately 1000μs) to arm the ESCs. The function continues until the roll\+\_\+set value reaches a threshold, indicating the system is ready.
+
+\begin{DoxyNote}{Note}
+This function blocks execution until arming is complete 
+\end{DoxyNote}
+\begin{DoxyWarning}{Warning}
+Ensure motors are properly secured before calling this function
+\end{DoxyWarning}
+\begin{DoxySeeAlso}{See also}
+\doxylink{_e_s_c_8h_a37829b14100fdc7ade2b050b5f2e0199}{update\+\_\+\+Motors()} 
+\end{DoxySeeAlso}
+\Hypertarget{_e_s_c_8h_a37829b14100fdc7ade2b050b5f2e0199}\index{ESC.h@{ESC.h}!update\_Motors@{update\_Motors}}
+\index{update\_Motors@{update\_Motors}!ESC.h@{ESC.h}}
+\doxysubsubsection{\texorpdfstring{update\_Motors()}{update\_Motors()}}
+{\footnotesize\ttfamily \label{_e_s_c_8h_a37829b14100fdc7ade2b050b5f2e0199} 
+void update\+\_\+\+Motors (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+Updates the motor speeds based on control inputs. 
+
+This function should be called in the main control loop to continuously update motor PWM signals.
+
+Updates the motor speeds based on control inputs.
+
+This function performs the main control loop operation\+:
+\begin{DoxyEnumerate}
+\item Calculates PID errors for roll, pitch, and yaw axes
+\item Computes PID control efforts for each axis
+\item Mixes control efforts to determine individual motor speeds
+\item Applies safety limits and updates PWM outputs
+\end{DoxyEnumerate}
+
+The motor mixing follows a standard quadcopter X-\/configuration\+:
+\begin{DoxyItemize}
+\item Motor A (front-\/right)\+: +pitch, -\/roll, -\/yaw
+\item Motor B (rear-\/right)\+: -\/pitch, -\/roll, +yaw
+\item Motor C (rear-\/left)\+: -\/pitch, +roll, -\/yaw
+\item Motor D (front-\/left)\+: +pitch, +roll, +yaw
+\end{DoxyItemize}
+
+\begin{DoxyNote}{Note}
+PWM range\+: 960 (0\% throttle) to 2000 (100\% throttle) 
+
+For safety, maximum throttle is limited to 1500 (≈50\%) 
+
+Function should be called at regular intervals (typically 1k\+Hz)
+\end{DoxyNote}
+\begin{DoxyWarning}{Warning}
+
+\end{DoxyWarning}
+\begin{DoxySeeAlso}{See also}
+\doxylink{_e_s_c_8h_a3d61e8556d773eec7ce6d53f546efc45}{arm\+ESC()} 
+\end{DoxySeeAlso}

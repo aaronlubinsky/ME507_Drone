@@ -1,0 +1,83 @@
+\doxysection{FLASH\+\_\+\+OBProgram\+Init\+Type\+Def Struct Reference}
+\hypertarget{struct_f_l_a_s_h___o_b_program_init_type_def}{}\label{struct_f_l_a_s_h___o_b_program_init_type_def}\index{FLASH\_OBProgramInitTypeDef@{FLASH\_OBProgramInitTypeDef}}
+
+
+FLASH Option Bytes Program structure definition.  
+
+
+
+
+{\ttfamily \#include $<$stm32f4xx\+\_\+hal\+\_\+flash\+\_\+ex.\+h$>$}
+
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{struct_f_l_a_s_h___o_b_program_init_type_def_a46bffc2a63ea02e15b9187856535d890}{Option\+Type}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{struct_f_l_a_s_h___o_b_program_init_type_def_a2607ba046f7a3af46e7209b8f1e9e20d}{WRPState}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{struct_f_l_a_s_h___o_b_program_init_type_def_aa3db423f4b3038a56b67ca2d48af79ff}{WRPSector}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{struct_f_l_a_s_h___o_b_program_init_type_def_a5fdf437b5f79d79945f5c0777f76d0eb}{Banks}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{struct_f_l_a_s_h___o_b_program_init_type_def_a1f613ba2b87cf9caa84dc1d493e96dae}{RDPLevel}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{struct_f_l_a_s_h___o_b_program_init_type_def_a51a6af507ed8f57590f19b6ba6c9c33d}{BORLevel}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{struct_f_l_a_s_h___o_b_program_init_type_def_ae6c9b55d49bc9627a2319ba680a924de}{USERConfig}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+FLASH Option Bytes Program structure definition. 
+
+\label{doc-variable-members}
+\Hypertarget{struct_f_l_a_s_h___o_b_program_init_type_def_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{struct_f_l_a_s_h___o_b_program_init_type_def_a5fdf437b5f79d79945f5c0777f76d0eb}\index{FLASH\_OBProgramInitTypeDef@{FLASH\_OBProgramInitTypeDef}!Banks@{Banks}}
+\index{Banks@{Banks}!FLASH\_OBProgramInitTypeDef@{FLASH\_OBProgramInitTypeDef}}
+\doxysubsubsection{\texorpdfstring{Banks}{Banks}}
+{\footnotesize\ttfamily \label{struct_f_l_a_s_h___o_b_program_init_type_def_a5fdf437b5f79d79945f5c0777f76d0eb} 
+uint32\+\_\+t FLASH\+\_\+\+OBProgram\+Init\+Type\+Def\+::\+Banks}
+
+Select banks for WRP activation/deactivation of all sectors. This parameter must be a value of \doxylink{group___f_l_a_s_h_ex___banks}{FLASH Banks} \Hypertarget{struct_f_l_a_s_h___o_b_program_init_type_def_a51a6af507ed8f57590f19b6ba6c9c33d}\index{FLASH\_OBProgramInitTypeDef@{FLASH\_OBProgramInitTypeDef}!BORLevel@{BORLevel}}
+\index{BORLevel@{BORLevel}!FLASH\_OBProgramInitTypeDef@{FLASH\_OBProgramInitTypeDef}}
+\doxysubsubsection{\texorpdfstring{BORLevel}{BORLevel}}
+{\footnotesize\ttfamily \label{struct_f_l_a_s_h___o_b_program_init_type_def_a51a6af507ed8f57590f19b6ba6c9c33d} 
+uint32\+\_\+t FLASH\+\_\+\+OBProgram\+Init\+Type\+Def\+::\+BORLevel}
+
+Set the BOR Level. This parameter can be a value of \doxylink{group___f_l_a_s_h_ex___b_o_r___reset___level}{FLASH BOR Reset Level} \Hypertarget{struct_f_l_a_s_h___o_b_program_init_type_def_a46bffc2a63ea02e15b9187856535d890}\index{FLASH\_OBProgramInitTypeDef@{FLASH\_OBProgramInitTypeDef}!OptionType@{OptionType}}
+\index{OptionType@{OptionType}!FLASH\_OBProgramInitTypeDef@{FLASH\_OBProgramInitTypeDef}}
+\doxysubsubsection{\texorpdfstring{OptionType}{OptionType}}
+{\footnotesize\ttfamily \label{struct_f_l_a_s_h___o_b_program_init_type_def_a46bffc2a63ea02e15b9187856535d890} 
+uint32\+\_\+t FLASH\+\_\+\+OBProgram\+Init\+Type\+Def\+::\+Option\+Type}
+
+Option byte to be configured. This parameter can be a value of \doxylink{group___f_l_a_s_h_ex___option___type}{FLASH Option Type} \Hypertarget{struct_f_l_a_s_h___o_b_program_init_type_def_a1f613ba2b87cf9caa84dc1d493e96dae}\index{FLASH\_OBProgramInitTypeDef@{FLASH\_OBProgramInitTypeDef}!RDPLevel@{RDPLevel}}
+\index{RDPLevel@{RDPLevel}!FLASH\_OBProgramInitTypeDef@{FLASH\_OBProgramInitTypeDef}}
+\doxysubsubsection{\texorpdfstring{RDPLevel}{RDPLevel}}
+{\footnotesize\ttfamily \label{struct_f_l_a_s_h___o_b_program_init_type_def_a1f613ba2b87cf9caa84dc1d493e96dae} 
+uint32\+\_\+t FLASH\+\_\+\+OBProgram\+Init\+Type\+Def\+::\+RDPLevel}
+
+Set the read protection level. This parameter can be a value of \doxylink{group___f_l_a_s_h_ex___option___bytes___read___protection}{FLASH Option Bytes Read Protection} \Hypertarget{struct_f_l_a_s_h___o_b_program_init_type_def_ae6c9b55d49bc9627a2319ba680a924de}\index{FLASH\_OBProgramInitTypeDef@{FLASH\_OBProgramInitTypeDef}!USERConfig@{USERConfig}}
+\index{USERConfig@{USERConfig}!FLASH\_OBProgramInitTypeDef@{FLASH\_OBProgramInitTypeDef}}
+\doxysubsubsection{\texorpdfstring{USERConfig}{USERConfig}}
+{\footnotesize\ttfamily \label{struct_f_l_a_s_h___o_b_program_init_type_def_ae6c9b55d49bc9627a2319ba680a924de} 
+uint8\+\_\+t FLASH\+\_\+\+OBProgram\+Init\+Type\+Def\+::\+USERConfig}
+
+Program the FLASH User Option Byte\+: IWDG\+\_\+\+SW / RST\+\_\+\+STOP / RST\+\_\+\+STDBY. \Hypertarget{struct_f_l_a_s_h___o_b_program_init_type_def_aa3db423f4b3038a56b67ca2d48af79ff}\index{FLASH\_OBProgramInitTypeDef@{FLASH\_OBProgramInitTypeDef}!WRPSector@{WRPSector}}
+\index{WRPSector@{WRPSector}!FLASH\_OBProgramInitTypeDef@{FLASH\_OBProgramInitTypeDef}}
+\doxysubsubsection{\texorpdfstring{WRPSector}{WRPSector}}
+{\footnotesize\ttfamily \label{struct_f_l_a_s_h___o_b_program_init_type_def_aa3db423f4b3038a56b67ca2d48af79ff} 
+uint32\+\_\+t FLASH\+\_\+\+OBProgram\+Init\+Type\+Def\+::\+WRPSector}
+
+Specifies the sector(s) to be write protected. The value of this parameter depend on device used within the same series \Hypertarget{struct_f_l_a_s_h___o_b_program_init_type_def_a2607ba046f7a3af46e7209b8f1e9e20d}\index{FLASH\_OBProgramInitTypeDef@{FLASH\_OBProgramInitTypeDef}!WRPState@{WRPState}}
+\index{WRPState@{WRPState}!FLASH\_OBProgramInitTypeDef@{FLASH\_OBProgramInitTypeDef}}
+\doxysubsubsection{\texorpdfstring{WRPState}{WRPState}}
+{\footnotesize\ttfamily \label{struct_f_l_a_s_h___o_b_program_init_type_def_a2607ba046f7a3af46e7209b8f1e9e20d} 
+uint32\+\_\+t FLASH\+\_\+\+OBProgram\+Init\+Type\+Def\+::\+WRPState}
+
+Write protection activation or deactivation. This parameter can be a value of \doxylink{group___f_l_a_s_h_ex___w_r_p___state}{FLASH WRP State} 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Drivers/\+STM32\+F4xx\+\_\+\+HAL\+\_\+\+Driver/\+Inc/\mbox{\hyperlink{stm32f4xx__hal__flash__ex_8h}{stm32f4xx\+\_\+hal\+\_\+flash\+\_\+ex.\+h}}\end{DoxyCompactItemize}

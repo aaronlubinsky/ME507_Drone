@@ -1,0 +1,59 @@
+\doxysubsubsubsection{LSE Configuration }
+\hypertarget{group___r_c_c___l_s_e___configuration}{}\label{group___r_c_c___l_s_e___configuration}\index{LSE Configuration@{LSE Configuration}}
+\doxysubsubsubsubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group___r_c_c___l_s_e___configuration_ga6b2b48f429e347c1c9c469122c64798b}{\+\_\+\+\_\+\+HAL\+\_\+\+RCC\+\_\+\+LSE\+\_\+\+CONFIG}}(\+\_\+\+\_\+\+STATE\+\_\+\+\_\+)
+\begin{DoxyCompactList}\small\item\em Macro to configure the External Low Speed oscillator (LSE). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsubsubsubsection{Detailed Description}
+
+
+\label{doc-define-members}
+\Hypertarget{group___r_c_c___l_s_e___configuration_doc-define-members}
+\doxysubsubsubsubsection{Macro Definition Documentation}
+\Hypertarget{group___r_c_c___l_s_e___configuration_ga6b2b48f429e347c1c9c469122c64798b}\index{LSE Configuration@{LSE Configuration}!\_\_HAL\_RCC\_LSE\_CONFIG@{\_\_HAL\_RCC\_LSE\_CONFIG}}
+\index{\_\_HAL\_RCC\_LSE\_CONFIG@{\_\_HAL\_RCC\_LSE\_CONFIG}!LSE Configuration@{LSE Configuration}}
+\doxysubsubsubsubsubsection{\texorpdfstring{\_\_HAL\_RCC\_LSE\_CONFIG}{\_\_HAL\_RCC\_LSE\_CONFIG}}
+{\footnotesize\ttfamily \label{group___r_c_c___l_s_e___configuration_ga6b2b48f429e347c1c9c469122c64798b} 
+\#define \+\_\+\+\_\+\+HAL\+\_\+\+RCC\+\_\+\+LSE\+\_\+\+CONFIG(\begin{DoxyParamCaption}\item[{}]{\+\_\+\+\_\+\+STATE\+\_\+\+\_\+}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{do}\ \{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ if((\_\_STATE\_\_)\ ==\ RCC\_LSE\_ON)\ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ SET\_BIT(RCC-\/>BDCR,\ RCC\_BDCR\_LSEON);\ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}((\_\_STATE\_\_)\ ==\ RCC\_LSE\_BYPASS)\ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ SET\_BIT(RCC-\/>BDCR,\ RCC\_BDCR\_LSEBYP);\ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ SET\_BIT(RCC-\/>BDCR,\ RCC\_BDCR\_LSEON);\ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{else}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ CLEAR\_BIT(RCC-\/>BDCR,\ RCC\_BDCR\_LSEON);\ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ CLEAR\_BIT(RCC-\/>BDCR,\ RCC\_BDCR\_LSEBYP);\ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \}\ \textcolor{keywordflow}{while}(0U)}
+
+\end{DoxyCode}
+
+
+Macro to configure the External Low Speed oscillator (LSE). 
+
+\begin{DoxyNote}{Note}
+Transition LSE Bypass to LSE On and LSE On to LSE Bypass are not supported by this macro. User should request a transition to LSE Off first and then LSE On or LSE Bypass. 
+
+As the LSE is in the Backup domain and write access is denied to this domain after reset, you have to enable write access using HAL\+\_\+\+PWR\+\_\+\+Enable\+Bk\+Up\+Access() function before to configure the LSE (to be done once after reset). 
+
+After enabling the LSE (RCC\+\_\+\+LSE\+\_\+\+ON or RCC\+\_\+\+LSE\+\_\+\+BYPASS), the application software should wait on LSERDY flag to be set indicating that LSE clock is stable and can be used to clock the RTC. 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+\+\_\+\+STATE\+\_\+\+\_\+} & specifies the new state of the LSE. This parameter can be one of the following values\+: \begin{DoxyItemize}
+\item RCC\+\_\+\+LSE\+\_\+\+OFF\+: turn OFF the LSE oscillator, LSERDY flag goes low after 6 LSE oscillator clock cycles. \item RCC\+\_\+\+LSE\+\_\+\+ON\+: turn ON the LSE oscillator. \item RCC\+\_\+\+LSE\+\_\+\+BYPASS\+: LSE oscillator bypassed with external clock. \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}

@@ -1,0 +1,165 @@
+\doxysubsubsubsection{FLASH Private macros to check input parameters }
+\hypertarget{group___f_l_a_s_h_ex___i_s___f_l_a_s_h___definitions}{}\label{group___f_l_a_s_h_ex___i_s___f_l_a_s_h___definitions}\index{FLASH Private macros to check input parameters@{FLASH Private macros to check input parameters}}
+\doxysubsubsubsubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group___f_l_a_s_h_ex___i_s___f_l_a_s_h___definitions_gaf15a6822d2421a33b6857059348ab476}{IS\+\_\+\+FLASH\+\_\+\+TYPEERASE}}(VALUE)
+\item 
+\#define \mbox{\hyperlink{group___f_l_a_s_h_ex___i_s___f_l_a_s_h___definitions_gaa9682aea9d9ceebca83c48e53f9f6028}{IS\+\_\+\+VOLTAGERANGE}}(RANGE)
+\item 
+\#define \mbox{\hyperlink{group___f_l_a_s_h_ex___i_s___f_l_a_s_h___definitions_ga8164622401a6cacf006679166de93c21}{IS\+\_\+\+WRPSTATE}}(VALUE)
+\item 
+\#define \mbox{\hyperlink{group___f_l_a_s_h_ex___i_s___f_l_a_s_h___definitions_ga87cd48c2373f47668470a38892ed07e3}{IS\+\_\+\+OPTIONBYTE}}(VALUE)
+\item 
+\#define \mbox{\hyperlink{group___f_l_a_s_h_ex___i_s___f_l_a_s_h___definitions_ga8d602a97cd688390b3d1956d9970e712}{IS\+\_\+\+OB\+\_\+\+RDP\+\_\+\+LEVEL}}(LEVEL)
+\item 
+\#define \mbox{\hyperlink{group___f_l_a_s_h_ex___i_s___f_l_a_s_h___definitions_gaf2871652c08e76499d9449be6556f12c}{IS\+\_\+\+OB\+\_\+\+IWDG\+\_\+\+SOURCE}}(SOURCE)
+\item 
+\#define \mbox{\hyperlink{group___f_l_a_s_h_ex___i_s___f_l_a_s_h___definitions_ga131ae3434f300c8317dd6b3b349c7cab}{IS\+\_\+\+OB\+\_\+\+STOP\+\_\+\+SOURCE}}(SOURCE)
+\item 
+\#define \mbox{\hyperlink{group___f_l_a_s_h_ex___i_s___f_l_a_s_h___definitions_ga8a05393df3a5e89551b4e2e1e8c5b884}{IS\+\_\+\+OB\+\_\+\+STDBY\+\_\+\+SOURCE}}(SOURCE)
+\item 
+\#define \mbox{\hyperlink{group___f_l_a_s_h_ex___i_s___f_l_a_s_h___definitions_gac97ecd832fce5f4b4ff9ef7bc4493013}{IS\+\_\+\+OB\+\_\+\+BOR\+\_\+\+LEVEL}}(LEVEL)
+\item 
+\#define \mbox{\hyperlink{group___f_l_a_s_h_ex___i_s___f_l_a_s_h___definitions_gad0c8166ba15a0b8d458412a8bb74e2f0}{IS\+\_\+\+FLASH\+\_\+\+ADDRESS}}(ADDRESS)
+\item 
+\#define \mbox{\hyperlink{group___f_l_a_s_h_ex___i_s___f_l_a_s_h___definitions_ga5b85e63e0066bf7ca518cb3790ad67e0}{IS\+\_\+\+FLASH\+\_\+\+NBSECTORS}}(NBSECTORS)
+\end{DoxyCompactItemize}
+
+
+\doxysubsubsubsubsection{Detailed Description}
+
+
+\label{doc-define-members}
+\Hypertarget{group___f_l_a_s_h_ex___i_s___f_l_a_s_h___definitions_doc-define-members}
+\doxysubsubsubsubsection{Macro Definition Documentation}
+\Hypertarget{group___f_l_a_s_h_ex___i_s___f_l_a_s_h___definitions_gad0c8166ba15a0b8d458412a8bb74e2f0}\index{FLASH Private macros to check input parameters@{FLASH Private macros to check input parameters}!IS\_FLASH\_ADDRESS@{IS\_FLASH\_ADDRESS}}
+\index{IS\_FLASH\_ADDRESS@{IS\_FLASH\_ADDRESS}!FLASH Private macros to check input parameters@{FLASH Private macros to check input parameters}}
+\doxysubsubsubsubsubsection{\texorpdfstring{IS\_FLASH\_ADDRESS}{IS\_FLASH\_ADDRESS}}
+{\footnotesize\ttfamily \label{group___f_l_a_s_h_ex___i_s___f_l_a_s_h___definitions_gad0c8166ba15a0b8d458412a8bb74e2f0} 
+\#define IS\+\_\+\+FLASH\+\_\+\+ADDRESS(\begin{DoxyParamCaption}\item[{}]{ADDRESS}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ((((ADDRESS)\ >=\ \mbox{\hyperlink{group___peripheral__memory__map_ga23a9099a5f8fc9c6e253c0eecb2be8db}{FLASH\_BASE}})\ \&\&\ ((ADDRESS)\ <=\ \mbox{\hyperlink{group___peripheral__memory__map_ga8be554f354e5aa65370f6db63d4f3ee4}{FLASH\_END}}))\ ||\ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (((ADDRESS)\ >=\ \mbox{\hyperlink{group___peripheral__memory__map_ga91d296a67aec0da8f31c368cbc0eea94}{FLASH\_OTP\_BASE}})\ \&\&\ ((ADDRESS)\ <=\ \mbox{\hyperlink{group___peripheral__memory__map_ga5bec9c5a91e312fca36f256f508ceee1}{FLASH\_OTP\_END}})))}
+
+\end{DoxyCode}
+\Hypertarget{group___f_l_a_s_h_ex___i_s___f_l_a_s_h___definitions_ga5b85e63e0066bf7ca518cb3790ad67e0}\index{FLASH Private macros to check input parameters@{FLASH Private macros to check input parameters}!IS\_FLASH\_NBSECTORS@{IS\_FLASH\_NBSECTORS}}
+\index{IS\_FLASH\_NBSECTORS@{IS\_FLASH\_NBSECTORS}!FLASH Private macros to check input parameters@{FLASH Private macros to check input parameters}}
+\doxysubsubsubsubsubsection{\texorpdfstring{IS\_FLASH\_NBSECTORS}{IS\_FLASH\_NBSECTORS}}
+{\footnotesize\ttfamily \label{group___f_l_a_s_h_ex___i_s___f_l_a_s_h___definitions_ga5b85e63e0066bf7ca518cb3790ad67e0} 
+\#define IS\+\_\+\+FLASH\+\_\+\+NBSECTORS(\begin{DoxyParamCaption}\item[{}]{NBSECTORS}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(((NBSECTORS)\ !=\ 0)\ \&\&\ ((NBSECTORS)\ <=\ FLASH\_SECTOR\_TOTAL))}
+
+\end{DoxyCode}
+\Hypertarget{group___f_l_a_s_h_ex___i_s___f_l_a_s_h___definitions_gaf15a6822d2421a33b6857059348ab476}\index{FLASH Private macros to check input parameters@{FLASH Private macros to check input parameters}!IS\_FLASH\_TYPEERASE@{IS\_FLASH\_TYPEERASE}}
+\index{IS\_FLASH\_TYPEERASE@{IS\_FLASH\_TYPEERASE}!FLASH Private macros to check input parameters@{FLASH Private macros to check input parameters}}
+\doxysubsubsubsubsubsection{\texorpdfstring{IS\_FLASH\_TYPEERASE}{IS\_FLASH\_TYPEERASE}}
+{\footnotesize\ttfamily \label{group___f_l_a_s_h_ex___i_s___f_l_a_s_h___definitions_gaf15a6822d2421a33b6857059348ab476} 
+\#define IS\+\_\+\+FLASH\+\_\+\+TYPEERASE(\begin{DoxyParamCaption}\item[{}]{VALUE}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (((VALUE)\ ==\ \mbox{\hyperlink{group___f_l_a_s_h_ex___type___erase_gaee700cbbc746cf72fca3ebf07ee20c4e}{FLASH\_TYPEERASE\_SECTORS}})\ ||\ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ((VALUE)\ ==\ \mbox{\hyperlink{group___f_l_a_s_h_ex___type___erase_ga9bc03534e69c625e1b4f0f05c3852243}{FLASH\_TYPEERASE\_MASSERASE}}))}
+
+\end{DoxyCode}
+\Hypertarget{group___f_l_a_s_h_ex___i_s___f_l_a_s_h___definitions_gac97ecd832fce5f4b4ff9ef7bc4493013}\index{FLASH Private macros to check input parameters@{FLASH Private macros to check input parameters}!IS\_OB\_BOR\_LEVEL@{IS\_OB\_BOR\_LEVEL}}
+\index{IS\_OB\_BOR\_LEVEL@{IS\_OB\_BOR\_LEVEL}!FLASH Private macros to check input parameters@{FLASH Private macros to check input parameters}}
+\doxysubsubsubsubsubsection{\texorpdfstring{IS\_OB\_BOR\_LEVEL}{IS\_OB\_BOR\_LEVEL}}
+{\footnotesize\ttfamily \label{group___f_l_a_s_h_ex___i_s___f_l_a_s_h___definitions_gac97ecd832fce5f4b4ff9ef7bc4493013} 
+\#define IS\+\_\+\+OB\+\_\+\+BOR\+\_\+\+LEVEL(\begin{DoxyParamCaption}\item[{}]{LEVEL}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (((LEVEL)\ ==\ \mbox{\hyperlink{group___f_l_a_s_h_ex___b_o_r___reset___level_ga3a888b788e75f0bc1f9add85c9ccd9d6}{OB\_BOR\_LEVEL1}})\ ||\ ((LEVEL)\ ==\ \mbox{\hyperlink{group___f_l_a_s_h_ex___b_o_r___reset___level_gad678e849fcf817f6ed2d837538e8ebc2}{OB\_BOR\_LEVEL2}})\ ||\(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ((LEVEL)\ ==\ \mbox{\hyperlink{group___f_l_a_s_h_ex___b_o_r___reset___level_ga3132b8202c0a345e9dd33d136714b046}{OB\_BOR\_LEVEL3}})\ ||\ ((LEVEL)\ ==\ \mbox{\hyperlink{group___f_l_a_s_h_ex___b_o_r___reset___level_gaabc231cb1d05a94fe860f67bb5a37b12}{OB\_BOR\_OFF}}))}
+
+\end{DoxyCode}
+\Hypertarget{group___f_l_a_s_h_ex___i_s___f_l_a_s_h___definitions_gaf2871652c08e76499d9449be6556f12c}\index{FLASH Private macros to check input parameters@{FLASH Private macros to check input parameters}!IS\_OB\_IWDG\_SOURCE@{IS\_OB\_IWDG\_SOURCE}}
+\index{IS\_OB\_IWDG\_SOURCE@{IS\_OB\_IWDG\_SOURCE}!FLASH Private macros to check input parameters@{FLASH Private macros to check input parameters}}
+\doxysubsubsubsubsubsection{\texorpdfstring{IS\_OB\_IWDG\_SOURCE}{IS\_OB\_IWDG\_SOURCE}}
+{\footnotesize\ttfamily \label{group___f_l_a_s_h_ex___i_s___f_l_a_s_h___definitions_gaf2871652c08e76499d9449be6556f12c} 
+\#define IS\+\_\+\+OB\+\_\+\+IWDG\+\_\+\+SOURCE(\begin{DoxyParamCaption}\item[{}]{SOURCE}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(((SOURCE)\ ==\ \mbox{\hyperlink{group___f_l_a_s_h_ex___option___bytes___i_watchdog_ga5a357e232c955444c3f2ccb9a937ffce}{OB\_IWDG\_SW}})\ ||\ ((SOURCE)\ ==\ \mbox{\hyperlink{group___f_l_a_s_h_ex___option___bytes___i_watchdog_gadfcbfa963d79c339ec8e2d5a7734e47a}{OB\_IWDG\_HW}}))}
+
+\end{DoxyCode}
+\Hypertarget{group___f_l_a_s_h_ex___i_s___f_l_a_s_h___definitions_ga8d602a97cd688390b3d1956d9970e712}\index{FLASH Private macros to check input parameters@{FLASH Private macros to check input parameters}!IS\_OB\_RDP\_LEVEL@{IS\_OB\_RDP\_LEVEL}}
+\index{IS\_OB\_RDP\_LEVEL@{IS\_OB\_RDP\_LEVEL}!FLASH Private macros to check input parameters@{FLASH Private macros to check input parameters}}
+\doxysubsubsubsubsubsection{\texorpdfstring{IS\_OB\_RDP\_LEVEL}{IS\_OB\_RDP\_LEVEL}}
+{\footnotesize\ttfamily \label{group___f_l_a_s_h_ex___i_s___f_l_a_s_h___definitions_ga8d602a97cd688390b3d1956d9970e712} 
+\#define IS\+\_\+\+OB\+\_\+\+RDP\+\_\+\+LEVEL(\begin{DoxyParamCaption}\item[{}]{LEVEL}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (((LEVEL)\ ==\ OB\_RDP\_LEVEL\_0)\ ||\(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ((LEVEL)\ ==\ OB\_RDP\_LEVEL\_1)\ ||\(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ((LEVEL)\ ==\ \mbox{\hyperlink{group___f_l_a_s_h_ex___option___bytes___read___protection_ga2262afca565429ce2808d835c49e5ee6}{OB\_RDP\_LEVEL\_2}}))}
+
+\end{DoxyCode}
+\Hypertarget{group___f_l_a_s_h_ex___i_s___f_l_a_s_h___definitions_ga8a05393df3a5e89551b4e2e1e8c5b884}\index{FLASH Private macros to check input parameters@{FLASH Private macros to check input parameters}!IS\_OB\_STDBY\_SOURCE@{IS\_OB\_STDBY\_SOURCE}}
+\index{IS\_OB\_STDBY\_SOURCE@{IS\_OB\_STDBY\_SOURCE}!FLASH Private macros to check input parameters@{FLASH Private macros to check input parameters}}
+\doxysubsubsubsubsubsection{\texorpdfstring{IS\_OB\_STDBY\_SOURCE}{IS\_OB\_STDBY\_SOURCE}}
+{\footnotesize\ttfamily \label{group___f_l_a_s_h_ex___i_s___f_l_a_s_h___definitions_ga8a05393df3a5e89551b4e2e1e8c5b884} 
+\#define IS\+\_\+\+OB\+\_\+\+STDBY\+\_\+\+SOURCE(\begin{DoxyParamCaption}\item[{}]{SOURCE}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(((SOURCE)\ ==\ \mbox{\hyperlink{group___f_l_a_s_h_ex___option___bytes__n_r_s_t___s_t_d_b_y_gad776ed7b3b9a98013aac9976eedb7e94}{OB\_STDBY\_NO\_RST}})\ ||\ ((SOURCE)\ ==\ \mbox{\hyperlink{group___f_l_a_s_h_ex___option___bytes__n_r_s_t___s_t_d_b_y_ga69451a6f69247528f58735c9c83499ce}{OB\_STDBY\_RST}}))}
+
+\end{DoxyCode}
+\Hypertarget{group___f_l_a_s_h_ex___i_s___f_l_a_s_h___definitions_ga131ae3434f300c8317dd6b3b349c7cab}\index{FLASH Private macros to check input parameters@{FLASH Private macros to check input parameters}!IS\_OB\_STOP\_SOURCE@{IS\_OB\_STOP\_SOURCE}}
+\index{IS\_OB\_STOP\_SOURCE@{IS\_OB\_STOP\_SOURCE}!FLASH Private macros to check input parameters@{FLASH Private macros to check input parameters}}
+\doxysubsubsubsubsubsection{\texorpdfstring{IS\_OB\_STOP\_SOURCE}{IS\_OB\_STOP\_SOURCE}}
+{\footnotesize\ttfamily \label{group___f_l_a_s_h_ex___i_s___f_l_a_s_h___definitions_ga131ae3434f300c8317dd6b3b349c7cab} 
+\#define IS\+\_\+\+OB\+\_\+\+STOP\+\_\+\+SOURCE(\begin{DoxyParamCaption}\item[{}]{SOURCE}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(((SOURCE)\ ==\ \mbox{\hyperlink{group___f_l_a_s_h_ex___option___bytes__n_r_s_t___s_t_o_p_ga7344fe0ec25c5eb2d11db7c855325436}{OB\_STOP\_NO\_RST}})\ ||\ ((SOURCE)\ ==\ \mbox{\hyperlink{group___f_l_a_s_h_ex___option___bytes__n_r_s_t___s_t_o_p_gaef92c03b1f279c532bfa13d3bb074b57}{OB\_STOP\_RST}}))}
+
+\end{DoxyCode}
+\Hypertarget{group___f_l_a_s_h_ex___i_s___f_l_a_s_h___definitions_ga87cd48c2373f47668470a38892ed07e3}\index{FLASH Private macros to check input parameters@{FLASH Private macros to check input parameters}!IS\_OPTIONBYTE@{IS\_OPTIONBYTE}}
+\index{IS\_OPTIONBYTE@{IS\_OPTIONBYTE}!FLASH Private macros to check input parameters@{FLASH Private macros to check input parameters}}
+\doxysubsubsubsubsubsection{\texorpdfstring{IS\_OPTIONBYTE}{IS\_OPTIONBYTE}}
+{\footnotesize\ttfamily \label{group___f_l_a_s_h_ex___i_s___f_l_a_s_h___definitions_ga87cd48c2373f47668470a38892ed07e3} 
+\#define IS\+\_\+\+OPTIONBYTE(\begin{DoxyParamCaption}\item[{}]{VALUE}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(((VALUE)\ <=\ (\mbox{\hyperlink{group___f_l_a_s_h_ex___option___type_ga48712a166ea192ddcda0f2653679f9ec}{OPTIONBYTE\_WRP}}|\mbox{\hyperlink{group___f_l_a_s_h_ex___option___type_ga8f0bdb21ef13bae39d5d8b6619e2df06}{OPTIONBYTE\_RDP}}|\mbox{\hyperlink{group___f_l_a_s_h_ex___option___type_gac7d843e666e15c79688a1914e8ffe7a5}{OPTIONBYTE\_USER}}|\mbox{\hyperlink{group___f_l_a_s_h_ex___option___type_gaf4063216c8386467d187663190936c07}{OPTIONBYTE\_BOR}})))}
+
+\end{DoxyCode}
+\Hypertarget{group___f_l_a_s_h_ex___i_s___f_l_a_s_h___definitions_gaa9682aea9d9ceebca83c48e53f9f6028}\index{FLASH Private macros to check input parameters@{FLASH Private macros to check input parameters}!IS\_VOLTAGERANGE@{IS\_VOLTAGERANGE}}
+\index{IS\_VOLTAGERANGE@{IS\_VOLTAGERANGE}!FLASH Private macros to check input parameters@{FLASH Private macros to check input parameters}}
+\doxysubsubsubsubsubsection{\texorpdfstring{IS\_VOLTAGERANGE}{IS\_VOLTAGERANGE}}
+{\footnotesize\ttfamily \label{group___f_l_a_s_h_ex___i_s___f_l_a_s_h___definitions_gaa9682aea9d9ceebca83c48e53f9f6028} 
+\#define IS\+\_\+\+VOLTAGERANGE(\begin{DoxyParamCaption}\item[{}]{RANGE}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (((RANGE)\ ==\ \mbox{\hyperlink{group___f_l_a_s_h_ex___voltage___range_ga5cadf49a63c968cde3b980e5139d398e}{FLASH\_VOLTAGE\_RANGE\_1}})\ ||\ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ((RANGE)\ ==\ \mbox{\hyperlink{group___f_l_a_s_h_ex___voltage___range_gad047be2bc7aa9be946b5b0c6b3062ef3}{FLASH\_VOLTAGE\_RANGE\_2}})\ ||\ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ((RANGE)\ ==\ \mbox{\hyperlink{group___f_l_a_s_h_ex___voltage___range_ga50950407a789684eec9216f49e0831a0}{FLASH\_VOLTAGE\_RANGE\_3}})\ ||\ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ((RANGE)\ ==\ \mbox{\hyperlink{group___f_l_a_s_h_ex___voltage___range_gabf8037a482f18815c5a67f287223a658}{FLASH\_VOLTAGE\_RANGE\_4}}))}
+
+\end{DoxyCode}
+\Hypertarget{group___f_l_a_s_h_ex___i_s___f_l_a_s_h___definitions_ga8164622401a6cacf006679166de93c21}\index{FLASH Private macros to check input parameters@{FLASH Private macros to check input parameters}!IS\_WRPSTATE@{IS\_WRPSTATE}}
+\index{IS\_WRPSTATE@{IS\_WRPSTATE}!FLASH Private macros to check input parameters@{FLASH Private macros to check input parameters}}
+\doxysubsubsubsubsubsection{\texorpdfstring{IS\_WRPSTATE}{IS\_WRPSTATE}}
+{\footnotesize\ttfamily \label{group___f_l_a_s_h_ex___i_s___f_l_a_s_h___definitions_ga8164622401a6cacf006679166de93c21} 
+\#define IS\+\_\+\+WRPSTATE(\begin{DoxyParamCaption}\item[{}]{VALUE}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (((VALUE)\ ==\ \mbox{\hyperlink{group___f_l_a_s_h_ex___w_r_p___state_gaa34eb6205fe554f65a311ee974d5a4ab}{OB\_WRPSTATE\_DISABLE}})\ ||\ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ((VALUE)\ ==\ \mbox{\hyperlink{group___f_l_a_s_h_ex___w_r_p___state_ga9fc463145ab57616baa36d95523186a1}{OB\_WRPSTATE\_ENABLE}}))}
+
+\end{DoxyCode}
