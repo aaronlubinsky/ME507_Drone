@@ -1,7 +1,7 @@
 var searchData=
 [
   ['safety_20stops_0',['Safety Stops',['../index.html#safety_sec',1,'']]],
-  ['sample_5findex_1',['sample_index',['../_b_n_o055_8h.html#ac8e20b2a06607543792ab55e4f74294b',1,'sample_index:&#160;BNO055.c'],['../_b_n_o055_8c.html#ac8e20b2a06607543792ab55e4f74294b',1,'sample_index:&#160;BNO055.c']]],
+  ['sample_5findex_1',['sample_index',['../bno055_8h.html#ac8e20b2a06607543792ab55e4f74294b',1,'sample_index:&#160;bno055.c'],['../bno055_8c.html#ac8e20b2a06607543792ab55e4f74294b',1,'sample_index:&#160;bno055.c']]],
   ['stm32f4xx_5fhal_5fmsp_2ec_2',['stm32f4xx_hal_msp.c',['../stm32f4xx__hal__msp_8c.html',1,'']]],
   ['stm32f4xx_5fit_2ec_3',['stm32f4xx_it.c',['../stm32f4xx__it_8c.html',1,'']]],
   ['stm32f4xx_5fit_2eh_4',['stm32f4xx_it.h',['../stm32f4xx__it_8h.html',1,'']]],

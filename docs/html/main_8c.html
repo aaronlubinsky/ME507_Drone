@@ -98,9 +98,9 @@ $(function(){initNavTree('main_8c.html','',''); });
 <div class="textblock"><code>#include &quot;<a class="el" href="main_8h_source.html">main.h</a>&quot;</code><br />
 <code>#include &lt;unistd.h&gt;</code><br />
 <code>#include &lt;string.h&gt;</code><br />
-<code>#include &quot;<a class="el" href="_b_n_o055_8h_source.html">BNO055.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="_h_c05_8h_source.html">HC05.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="_e_s_c_8h_source.html">ESC.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="bno055_8h_source.html">BNO055.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="hc05_8h_source.html">HC05.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="esc_8h_source.html">ESC.h</a>&quot;</code><br />
 </div>
 <p><a href="main_8c_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -135,7 +135,7 @@ Variables</h2></td></tr>
 <tr class="memitem:aa9479c261d65eecedd3d9582f7f0f89c" id="r_aa9479c261d65eecedd3d9582f7f0f89c"><td class="memItemLeft" align="right" valign="top">UART_HandleTypeDef&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa9479c261d65eecedd3d9582f7f0f89c">huart2</a></td></tr>
 <tr class="memdesc:aa9479c261d65eecedd3d9582f7f0f89c"><td class="mdescLeft">&#160;</td><td class="mdescRight">UART2 handle for HC-05 communication.  <br /></td></tr>
 <tr class="memitem:a784aa25dc7e4580cfbf80658340f482c" id="r_a784aa25dc7e4580cfbf80658340f482c"><td class="memItemLeft" align="right" valign="top">DMA_HandleTypeDef&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a784aa25dc7e4580cfbf80658340f482c">hdma_usart2_rx</a></td></tr>
-<tr class="memitem:a9b6b56c45dac5e1804b4e36c4722f67b" id="r_a9b6b56c45dac5e1804b4e36c4722f67b"><td class="memItemLeft" align="right" valign="top">UART_HandleTypeDef *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9b6b56c45dac5e1804b4e36c4722f67b">BT_UART_ptr</a> = &amp;<a class="el" href="_h_c05_8c.html#aa9479c261d65eecedd3d9582f7f0f89c">huart2</a></td></tr>
+<tr class="memitem:a9b6b56c45dac5e1804b4e36c4722f67b" id="r_a9b6b56c45dac5e1804b4e36c4722f67b"><td class="memItemLeft" align="right" valign="top">UART_HandleTypeDef *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9b6b56c45dac5e1804b4e36c4722f67b">BT_UART_ptr</a> = &amp;<a class="el" href="hc05_8c.html#aa9479c261d65eecedd3d9582f7f0f89c">huart2</a></td></tr>
 <tr class="memitem:a4fcbe303fd38925efbd6405696058c18" id="r_a4fcbe303fd38925efbd6405696058c18"><td class="memItemLeft" align="right" valign="top">UART_HandleTypeDef *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4fcbe303fd38925efbd6405696058c18">STLink_UART_ptr</a> = &amp;huart1</td></tr>
 <tr class="memitem:a6b8a1e8a120cbda0010568da228ee55e" id="r_a6b8a1e8a120cbda0010568da228ee55e"><td class="memItemLeft" align="right" valign="top">volatile int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6b8a1e8a120cbda0010568da228ee55e">imu_request</a> = 0</td></tr>
 <tr class="memitem:a89f234133d3efe315836311cbf21c64b" id="r_a89f234133d3efe315836311cbf21c64b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a89f234133d3efe315836311cbf21c64b">state</a> = 0</td></tr>
@@ -159,7 +159,7 @@ Variables</h2></td></tr>
 <tr class="memdesc:ae1c73004cc7fb7d458f92af71d615db0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pitch control output effort.  <br /></td></tr>
 <tr class="memitem:ac4510abc73810610befb687e30df131f" id="r_ac4510abc73810610befb687e30df131f"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac4510abc73810610befb687e30df131f">yaw_effort</a></td></tr>
 <tr class="memdesc:ac4510abc73810610befb687e30df131f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Yaw control output effort.  <br /></td></tr>
-<tr class="memitem:a34dabc2467bce0d04c80b8f680944684" id="r_a34dabc2467bce0d04c80b8f680944684"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a34dabc2467bce0d04c80b8f680944684">stopFlag</a> = <a class="el" href="_b_n_o055_8h.html#a65e9886d74aaee76545e83dd09011727">false</a></td></tr>
+<tr class="memitem:a34dabc2467bce0d04c80b8f680944684" id="r_a34dabc2467bce0d04c80b8f680944684"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a34dabc2467bce0d04c80b8f680944684">stopFlag</a> = <a class="el" href="bno055_8h.html#a65e9886d74aaee76545e83dd09011727">false</a></td></tr>
 <tr class="memitem:a76c604ed6a7014bf38104c8cd30efa69" id="r_a76c604ed6a7014bf38104c8cd30efa69"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a76c604ed6a7014bf38104c8cd30efa69">roll_integral</a></td></tr>
 <tr class="memdesc:a76c604ed6a7014bf38104c8cd30efa69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Roll integral term accumulator.  <br /></td></tr>
 <tr class="memitem:a6143d6fd2185d0b8c69bc3aa8f52af71" id="r_a6143d6fd2185d0b8c69bc3aa8f52af71"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6143d6fd2185d0b8c69bc3aa8f52af71">pitch_integral</a></td></tr>
@@ -445,7 +445,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">UART_HandleTypeDef* BT_UART_ptr = &amp;<a class="el" href="_h_c05_8c.html#aa9479c261d65eecedd3d9582f7f0f89c">huart2</a></td>
+          <td class="memname">UART_HandleTypeDef* BT_UART_ptr = &amp;<a class="el" href="hc05_8c.html#aa9479c261d65eecedd3d9582f7f0f89c">huart2</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1146,7 +1146,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int stopFlag = <a class="el" href="_b_n_o055_8h.html#a65e9886d74aaee76545e83dd09011727">false</a></td>
+          <td class="memname">int stopFlag = <a class="el" href="bno055_8h.html#a65e9886d74aaee76545e83dd09011727">false</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
