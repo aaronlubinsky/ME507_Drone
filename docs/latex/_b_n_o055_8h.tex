@@ -1,0 +1,220 @@
+\doxysection{C\+:/\+Users/aaron/\+STM32\+Cube\+IDE/workspace\+\_\+1.18.0/\+ME507\+\_\+\+Drone/\+Core/\+Inc/\+BNO055.h File Reference}
+\hypertarget{_b_n_o055_8h}{}\label{_b_n_o055_8h}\index{C:/Users/aaron/STM32CubeIDE/workspace\_1.18.0/ME507\_Drone/Core/Inc/BNO055.h@{C:/Users/aaron/STM32CubeIDE/workspace\_1.18.0/ME507\_Drone/Core/Inc/BNO055.h}}
+
+
+Interface to the Adafruit BNO055 IMU for orientation sensing.  
+
+
+{\ttfamily \#include "{}main.\+h"{}}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_i_m_u_sample}{IMUSample}}
+\begin{DoxyCompactList}\small\item\em Structure holding IMU roll/pitch data and their setpoints. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{_b_n_o055_8h_a495c8fe60d6f1ecaddd0b67a74786d8e}\label{_b_n_o055_8h_a495c8fe60d6f1ecaddd0b67a74786d8e} 
+\#define {\bfseries BNO055\+\_\+\+I2\+C\+\_\+\+ADDR}~(0x28 $<$$<$ 1)
+\begin{DoxyCompactList}\small\item\em 7-\/bit I2C address shifted for STM32 HAL \end{DoxyCompactList}\item 
+\Hypertarget{_b_n_o055_8h_ad9719051e81c82ea2576c81da755bf45}\label{_b_n_o055_8h_ad9719051e81c82ea2576c81da755bf45} 
+\#define {\bfseries BNO055\+\_\+\+OPR\+\_\+\+MODE\+\_\+\+ADDR}~0x3D
+\begin{DoxyCompactList}\small\item\em Operation mode register. \end{DoxyCompactList}\item 
+\Hypertarget{_b_n_o055_8h_ae5209e708eb1d5516226023212cd6717}\label{_b_n_o055_8h_ae5209e708eb1d5516226023212cd6717} 
+\#define {\bfseries BNO055\+\_\+\+EULER\+\_\+\+LSB}~0x1A
+\begin{DoxyCompactList}\small\item\em Start of Euler angle registers. \end{DoxyCompactList}\item 
+\Hypertarget{_b_n_o055_8h_a8238b8e53c81cca65781b44a580e6dcd}\label{_b_n_o055_8h_a8238b8e53c81cca65781b44a580e6dcd} 
+\#define {\bfseries BNO055\+\_\+\+CALIB\+\_\+\+STAT}~0x35
+\begin{DoxyCompactList}\small\item\em Calibration status register. \end{DoxyCompactList}\item 
+\Hypertarget{_b_n_o055_8h_a7f8ed09e9b6e21deecd115251849a3c7}\label{_b_n_o055_8h_a7f8ed09e9b6e21deecd115251849a3c7} 
+\#define {\bfseries BNO055\+\_\+\+OFFSET\+\_\+X}~0x55
+\item 
+\Hypertarget{_b_n_o055_8h_a78f316da3a87bf72cb1647786b64bf0e}\label{_b_n_o055_8h_a78f316da3a87bf72cb1647786b64bf0e} 
+\#define {\bfseries MAX\+\_\+\+SAMPLES}~5000
+\begin{DoxyCompactList}\small\item\em Maximum samples for blackbox logging. \end{DoxyCompactList}\item 
+\Hypertarget{_b_n_o055_8h_a676adf38fae27a17643f7c1b66cd54d3}\label{_b_n_o055_8h_a676adf38fae27a17643f7c1b66cd54d3} 
+\#define {\bfseries blackbox\+Freq}~2
+\begin{DoxyCompactList}\small\item\em Logging frequency (Hz) \end{DoxyCompactList}\item 
+\Hypertarget{_b_n_o055_8h_a41f9c5fb8b08eb5dc3edce4dcb37fee7}\label{_b_n_o055_8h_a41f9c5fb8b08eb5dc3edce4dcb37fee7} 
+\#define {\bfseries true}~1
+\begin{DoxyCompactList}\small\item\em Boolean true. \end{DoxyCompactList}\item 
+\Hypertarget{_b_n_o055_8h_a65e9886d74aaee76545e83dd09011727}\label{_b_n_o055_8h_a65e9886d74aaee76545e83dd09011727} 
+\#define {\bfseries false}~0
+\begin{DoxyCompactList}\small\item\em Boolean false. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_b_n_o055_8h_a348c74c0f81f24bf3c32c2474bdda081}{BNO\+\_\+\+Init}} (void)
+\begin{DoxyCompactList}\small\item\em \texorpdfstring{$<$}{<} Include for STM32 HAL types and definitions \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_b_n_o055_8h_aa4793269f7c346ae889fcb8a24130133}{BNO\+\_\+\+Read}} (int32\+\_\+t \texorpdfstring{$\ast$}{*}roll, int32\+\_\+t \texorpdfstring{$\ast$}{*}pitch, int32\+\_\+t \texorpdfstring{$\ast$}{*}yaw)
+\begin{DoxyCompactList}\small\item\em Reads Euler angles from the BNO055 sensor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{_b_n_o055_8h_a24394da6e7fd9425d68e049138dfcdc8}\label{_b_n_o055_8h_a24394da6e7fd9425d68e049138dfcdc8} 
+uint8\+\_\+t {\bfseries ndof\+\_\+buf}
+\begin{DoxyCompactList}\small\item\em Buffer storing raw IMU data samples. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_i_m_u_sample}{IMUSample}} \mbox{\hyperlink{_b_n_o055_8h_a6a8efb4992e24f1a844be2b330aad53b}{blackbox}} \mbox{[}\mbox{\hyperlink{_b_n_o055_8h_a78f316da3a87bf72cb1647786b64bf0e}{MAX\+\_\+\+SAMPLES}}\mbox{]}
+\begin{DoxyCompactList}\small\item\em Flight data buffer. \end{DoxyCompactList}\item 
+uint16\+\_\+t \mbox{\hyperlink{_b_n_o055_8h_ac8e20b2a06607543792ab55e4f74294b}{sample\+\_\+index}}
+\begin{DoxyCompactList}\small\item\em Index for blackbox samples. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_b_n_o055_8h_a617a47c70795bcff659815ad0efd2266}{counter}}
+\begin{DoxyCompactList}\small\item\em Sample counter or general use variable. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface to the Adafruit BNO055 IMU for orientation sensing. 
+
+This file contains initialization and reading functions for the BNO055 inertial measurement unit (IMU), as well as constants and data structures for storing and analyzing flight data.
+
+\begin{DoxyAuthor}{Author}
+Aaron 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+May 17, 2025 
+\end{DoxyDate}
+
+
+\label{doc-func-members}
+\Hypertarget{_b_n_o055_8h_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{_b_n_o055_8h_a348c74c0f81f24bf3c32c2474bdda081}\index{BNO055.h@{BNO055.h}!BNO\_Init@{BNO\_Init}}
+\index{BNO\_Init@{BNO\_Init}!BNO055.h@{BNO055.h}}
+\doxysubsubsection{\texorpdfstring{BNO\_Init()}{BNO\_Init()}}
+{\footnotesize\ttfamily \label{_b_n_o055_8h_a348c74c0f81f24bf3c32c2474bdda081} 
+void BNO\+\_\+\+Init (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+\texorpdfstring{$<$}{<} Include for STM32 HAL types and definitions 
+
+Initializes the BNO055 sensor in NDOF mode.
+
+\texorpdfstring{$<$}{<} Include for STM32 HAL types and definitions
+
+This function performs a complete initialization sequence\+:
+\begin{DoxyEnumerate}
+\item Verifies I2C communication with the BNO055
+\item Resets the sensor and I2C interface if needed
+\item Configures the sensor to NDOF (Nine Degrees of Freedom) mode
+\item Waits for full system calibration before returning
+\end{DoxyEnumerate}
+
+The function implements robust error handling with automatic retry logic. It toggles the hardware reset pin and reinitializes I2C if communication fails.
+
+\begin{DoxyNote}{Note}
+NDOF mode provides absolute orientation by fusing all 9 sensor axes 
+
+Calibration can take 30-\/60 seconds depending on movement patterns 
+
+Red LED (PA0) remains on during calibration process
+\end{DoxyNote}
+\begin{DoxyWarning}{Warning}
+This function blocks until calibration is complete 
+
+Ensure sensor is moved through various orientations for proper calibration
+\end{DoxyWarning}
+\begin{DoxySeeAlso}{See also}
+\doxylink{_b_n_o055_8h_aa4793269f7c346ae889fcb8a24130133}{BNO\+\_\+\+Read()} 
+\end{DoxySeeAlso}
+\texorpdfstring{$<$}{<} NDOF operation mode value
+
+\texorpdfstring{$<$}{<} Configuration mode value
+
+\texorpdfstring{$<$}{<} Flag for successful I2C communication
+
+\texorpdfstring{$<$}{<} Data read from chip ID register
+
+\texorpdfstring{$<$}{<} Calibration completion flag\Hypertarget{_b_n_o055_8h_aa4793269f7c346ae889fcb8a24130133}\index{BNO055.h@{BNO055.h}!BNO\_Read@{BNO\_Read}}
+\index{BNO\_Read@{BNO\_Read}!BNO055.h@{BNO055.h}}
+\doxysubsubsection{\texorpdfstring{BNO\_Read()}{BNO\_Read()}}
+{\footnotesize\ttfamily \label{_b_n_o055_8h_aa4793269f7c346ae889fcb8a24130133} 
+void BNO\+\_\+\+Read (\begin{DoxyParamCaption}\item[{int32\+\_\+t \texorpdfstring{$\ast$}{*}}]{roll}{, }\item[{int32\+\_\+t \texorpdfstring{$\ast$}{*}}]{pitch}{, }\item[{int32\+\_\+t \texorpdfstring{$\ast$}{*}}]{yaw}{}\end{DoxyParamCaption})}
+
+
+
+Reads Euler angles from the BNO055 sensor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em roll} & Pointer to variable storing the roll angle. \\
+\hline
+{\em pitch} & Pointer to variable storing the pitch angle. \\
+\hline
+{\em yaw} & Pointer to variable storing the yaw angle.\\
+\hline
+\end{DoxyParams}
+Reads Euler angles from the BNO055 sensor.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{out}}  & {\em roll} & Pointer to store roll angle (in millidegrees) \\
+\hline
+\mbox{\texttt{out}}  & {\em pitch} & Pointer to store pitch angle (in millidegrees) \\
+\hline
+\mbox{\texttt{out}}  & {\em yaw} & Pointer to store yaw angle (in millidegrees)\\
+\hline
+\end{DoxyParams}
+This function reads 6 bytes of Euler angle data from the BNO055 and converts them to 32-\/bit signed integers in millidegrees. The raw 16-\/bit values are scaled by 1000/16 to convert from the BNO055\textquotesingle{}s native 1/16 degree resolution to millidegrees.
+
+Additionally, this function implements flight data logging by storing pitch and roll data in the blackbox buffer at a configurable rate.
+
+\begin{DoxyNote}{Note}
+Euler angles are returned in millidegrees (1/1000 of a degree) 
+
+Yaw range\+: 0° to 360° (0 to 360000 millidegrees) 
+
+Roll/\+Pitch range\+: -\/180° to +180° (-\/180000 to +180000 millidegrees) 
+
+Data logging frequency controlled by blackbox\+Freq variable
+\end{DoxyNote}
+\begin{DoxyWarning}{Warning}
+Pointers must be valid and point to allocated memory 
+
+Function should be called at regular intervals for smooth control
+\end{DoxyWarning}
+\begin{DoxySeeAlso}{See also}
+\doxylink{_b_n_o055_8h_a348c74c0f81f24bf3c32c2474bdda081}{BNO\+\_\+\+Init()} 
+\end{DoxySeeAlso}
+\texorpdfstring{$<$}{<} Raw Euler angle data buffer (6 bytes)
+
+\texorpdfstring{$<$}{<} Raw 16-\/bit yaw value
+
+\texorpdfstring{$<$}{<} Raw 16-\/bit pitch value
+
+\texorpdfstring{$<$}{<} Raw 16-\/bit roll value
+
+\label{doc-var-members}
+\Hypertarget{_b_n_o055_8h_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{_b_n_o055_8h_a6a8efb4992e24f1a844be2b330aad53b}\index{BNO055.h@{BNO055.h}!blackbox@{blackbox}}
+\index{blackbox@{blackbox}!BNO055.h@{BNO055.h}}
+\doxysubsubsection{\texorpdfstring{blackbox}{blackbox}}
+{\footnotesize\ttfamily \label{_b_n_o055_8h_a6a8efb4992e24f1a844be2b330aad53b} 
+\mbox{\hyperlink{struct_i_m_u_sample}{IMUSample}} blackbox\mbox{[}\mbox{\hyperlink{_b_n_o055_8h_a78f316da3a87bf72cb1647786b64bf0e}{MAX\+\_\+\+SAMPLES}}\mbox{]}\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Flight data buffer. 
+
+Flight data buffer. \Hypertarget{_b_n_o055_8h_a617a47c70795bcff659815ad0efd2266}\index{BNO055.h@{BNO055.h}!counter@{counter}}
+\index{counter@{counter}!BNO055.h@{BNO055.h}}
+\doxysubsubsection{\texorpdfstring{counter}{counter}}
+{\footnotesize\ttfamily \label{_b_n_o055_8h_a617a47c70795bcff659815ad0efd2266} 
+int counter\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Sample counter or general use variable. 
+
+Sample counter or general use variable. \Hypertarget{_b_n_o055_8h_ac8e20b2a06607543792ab55e4f74294b}\index{BNO055.h@{BNO055.h}!sample\_index@{sample\_index}}
+\index{sample\_index@{sample\_index}!BNO055.h@{BNO055.h}}
+\doxysubsubsection{\texorpdfstring{sample\_index}{sample\_index}}
+{\footnotesize\ttfamily \label{_b_n_o055_8h_ac8e20b2a06607543792ab55e4f74294b} 
+uint16\+\_\+t sample\+\_\+index\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Index for blackbox samples. 
+
+Index for blackbox samples. 
