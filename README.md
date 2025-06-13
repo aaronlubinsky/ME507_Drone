@@ -24,7 +24,7 @@ The drone consists of a custom electronics system powered by an STM32F411 develo
 The flight control system is built using a 3-axis PID loop, with separate PID controllers for roll, pitch, and yaw. Commands are received wirelessly from an Xbox controller via Bluetooth, with a Python script parsing joystick input and mapping it to setpoints for angle and throttle. The STM32’s main loop is structured as a finite state machine with stages for initialization, calibration, ESC arming, PID updates, and sending blackbox data. Orientation measurements are handled using the BNO055 9 axis IMU in fusion mode. Motor outputs are updated every control cycle, with PWM signals generated using STM32 timers. 
 
 ## Modeling and Tuning
-[Insert Image of Block Diagram]
+![Image](github.com/aaronlubinsky/ME507_Drone/blob/main/DroneBlockDiagram.png)
 
 A dynamic model of the drone was used to derive tuning parameters for the PID loops. Control effort and responsiveness were balanced using empirical tuning and log analysis. Pitch and roll dynamics were first tuned independently using step-response testing. Sensor data such as pitch, roll, and yaw angles were logged and plotted to visualize control performance. This allowed iterative tuning to reduce overshoot and steady-state error.
 
