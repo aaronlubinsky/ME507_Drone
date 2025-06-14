@@ -36,9 +36,6 @@ The complete codebase is documented using Doxygen. Visit the hosted documentatio
 [aaronlubinsky.github.io/ME507_Drone](https://aaronlubinsky.github.io/ME507_Drone/html/index.html)
 
 ## Future Improvements
-Transition to the custom PCB with integrated STM32F411CEU6 and BNO055 for a compact design.
-Enhance Python ground station software with real-time plotting and tuning interfaces.
-Implement advanced control algorithms (e.g., model predictive control) for improved stability.
 To advance this project, several key improvements are planned to enhance its functionality, compactness, and performance. A primary goal is transitioning from the current Blackpill development board and Bosch BNO055 development board to a custom-designed PCB integrating the STM32F411CEU6 microcontroller and BNO055 IMU. This will streamline the electronics, reduce weight, and improve reliability by eliminating the dependency on external development boards, addressing the challenges faced with in-house PCB manufacturing failures. Additionally, the Python-based ground station software will be enhanced to include a more robust user interface, featuring real-time plotting of critical flight parameters such as orientation, throttle, and control effort, alongside interactive tuning capabilities for PID gains. Another potential upgrade would be integrating a more robust wireless communication protocol, such as Wi-Fi or a dedicated RF module, to replace the HC-05 Bluetooth module, which would increase range and data throughput.
 
 ## Acknowledgments
